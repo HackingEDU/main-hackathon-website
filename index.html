@@ -1,0 +1,131 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>HackingEDU | World's Largest Education Hackathon</title>
+    <script src="assets/js/typekit.js"></script>
+    <script>try{Typekit.load();}catch(e){}</script>
+    <link href="assets/css/normalize.css" rel="stylesheet">
+  </head>
+  <body>
+    <section id="hero">
+
+       <div id="large-header" class="large-header">
+          <canvas id="demo-canvas"></canvas>
+            <h1 class="main-title">
+            <img class ="main-logo" src="assets/img/HackingEDU_Logo_Tagline.png">
+            </span></h1>
+         </div>
+
+
+    </section>
+
+    <section class="dark" id="gettingstarted">
+      <div class="content">
+        <h1>Getting Started</h1>
+        <h2>You can grab a copy of Trianglify from <a href="https://www.npmjs.com/package/trianglify">npm</a>, <a href="http://bower.io/search/?q=trianglify">bower</a>, or <a href="https://cdnjs.com/libraries/trianglify">cdnjs</a></h2>
+        <div class="trianglify-canvas" data-options='{"height": 300, "width": 300, "cell_size": 40, "x_colors": "YlGnBu"}' > </div>
+<pre><code class="language-javascript">var pattern = Trianglify({
+  height: 300,
+  width: 300,
+  cell_size: 40});
+
+document.body.appendChild(pattern.canvas());
+      </code></pre>
+        <p>Not a coder? You can use the <a href="http://qrohlf.com/trianglify-generator/">Trianglify Generator</a> example to tweak parameters and generate images for your designs.</p>
+      </div>
+    </section>
+
+    <section class="light">
+      <div class="content">
+        <h1>Variance</h1>
+        <h2>Specify the amount of randomness used when generating the pattern</h2>
+        <div class="trianglify-demo" data-demo="variance"> </div>
+      </div>
+    </section>
+
+    <section class="dark blue">
+      <div class="content">
+        <h1>Cell Size</h1>
+        <h2>Specify the granularity of the pattern</h2>
+        <div class="trianglify-demo" data-demo="cell_size"> </div>
+      </div>
+    </section>
+
+    <section class="light">
+      <div class="content">
+        <h1>Color</h1>
+        <h2>Trianglify comes bundled with the <a href="http://bl.ocks.org/mbostock/5577023">colorbrewer</a> palette set</h2>
+        <div id="trianglify-demo-colorbrewer"> </div>
+        <p>The above examples are just a subset of the available color gradients that Trianglify supports out of the box. See <a href="http://bl.ocks.org/mbostock/5577023">this page</a> for a full list of the scales included with colorbrewer.</p>
+      </div>
+    </section>
+
+    <section class="dark">
+      <div class="content">
+        <h1>Output Formats</h1>
+
+        <h2>Canvas, SVG, and PNG built in</h2>
+<pre><code>var pattern = Trianglify();
+
+//SVG DOM node
+pattern.svg();
+
+//Canvas DOM node
+pattern.canvas();
+
+//Render to existing canvas
+pattern.canvas(document.getElementById('mycanvas'));
+
+//PNG data URI string
+pattern.png();
+</code></pre>
+
+        <p>It's possible to write your own rendering implementations using the geometry in <code>pattern.polys</code>, which
+        contains an array of each polygon's vertices and color.</p>
+      </div>
+    </section>
+
+    <section class="light">
+      <div class="content">
+        <h1>More Options</h1>
+<pre><code>var defaults = {
+  cell_size: 75,
+  variance: 0.75,
+  x_colors: 'random',
+  y_colors: 'match_x',
+  palette: Trianglify.colorbrewer,
+  color_space: 'lab',
+  color_function: false,
+  stroke_width: 1.51,
+  width: 600,
+  height: 400,
+  seed: null
+};
+</code></pre>
+        <p>For more information on what the above options do and what values they accept check out the <a href="https://github.com/qrohlf/Trianglify">README</a> on GitHub.</p>
+      </div>
+    </section>
+
+    <section class="dark blue">
+      <div class="content">
+        <h2>Trianglify was written by <a href="http://qrohlf.com">Quinn Rohlf</a>. Check it out on <a href="https://github.com/qrohlf/trianglify">GitHub</a>!</h2>
+      </div>
+    </section>
+
+    <script src="assets/js/vivek.js"></script>
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-40241848-1', 'auto');
+  ga('send', 'pageview');
+
+  </script>
+  </body>
+</html>
