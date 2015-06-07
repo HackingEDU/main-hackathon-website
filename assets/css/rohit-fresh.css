@@ -1,0 +1,94 @@
+/* Table of contents
+––––––––––––––––––––––––––––––––––––––––––––––––––
+-Header
+-Header-Buttons
+-Why
+*/
+
+
+
+/* Header */
+.large-header {
+	position: relative;
+	width: 100%;
+	overflow: hidden;
+	background-size: cover;
+	background-position: center center;
+	z-index: 1;
+}
+
+#hero{
+	background: black;
+}
+
+
+.main-title {
+	position: absolute;
+	margin: 0;
+	padding: 0;
+	color: #f9f1e9;
+	text-align: center;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate3d(-50%,-50%,0);
+	transform: translate3d(-50%,-50%,0);
+}
+
+
+.demo-4 .main-title {
+	font-size: 6em;
+	font-weight: 300;
+	padding: 10px 30px;
+	text-transform: uppercase;
+	color: #222;
+}
+
+.title-resize{
+	max-width: 75%;
+	height: auto;
+	margin-bottom: 25px;
+
+}
+
+.substatement{
+	color:white;
+}
+
+/* Header-Buttons */
+#apply-butt{
+	display:inline-block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 300px;
+	height:55px;
+	font-size: 15px;
+	margin-bottom:40px;
+
+}
+
+#sponsor-butt{
+	display:inline-block;
+	margin-left:auto;
+	margin-right: auto;
+	width: 300px;
+	height:55px;
+	font-size:15px;
+
+}
+
+
+/* Why */
+
+
+#why{
+}
+
+.text-center{
+	text-align: center;
+}
+
+.why-text{
+	padding-top:60px;
+}
+
+

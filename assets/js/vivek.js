@@ -1,100 +1,84 @@
-(function() {
+  var w = c.width = window.innerWidth,
+  h = c.height = window.innerHeight,
+  ctx = c.getContext('2d'),
 
-    var width, height, largeHeader, canvas, ctx, lines, target, size, animateHeader = true;
+  spawnProb = 1,
+  numberOfMoves = [8, 16], //[min, max]
+  distance = [50, 200],
+  attenuator = 900,
+  timeBetweenMoves = [6, 10],
+  size = [.5, 3],
 
-    // Main
-    initHeader();
-    addListeners();
-    initAnimation();
+  lines = [],
+  frame = (Math.random() * 360) | 0;
 
-    function initHeader() {
-        width = window.innerWidth;
-        height = window.innerHeight;
-        size = width > height ? height : width;
-        target = {x: 0, y: height};
+function rand(ar) {
+  return Math.random() * (ar[1] - ar[0]) + ar[0];
+}
 
-        largeHeader = document.getElementById('hero');
-        largeHeader.style.height = height+'px';
+function Line() {
+  this.x = Math.random() * w;
+  this.y = Math.random() * h;
+  this.vx = this.vy = 0;
+  this.last = {};
+  this.target = {};
+  this.totalMoves = rand(numberOfMoves);
+  this.move = 0;
+  this.timeBetweenMoves = rand(timeBetweenMoves);
+  this.timeSpentThisMove = this.timeBetweenMoves;
+  this.distance = rand(distance);
 
-        canvas = document.getElementById('demo-canvas');
-        canvas.width = width;
-        canvas.height = height;
-        ctx = canvas.getContext('2d');
+  this.color = 'hsl(hue, 80%, 50%)'.replace('hue', frame % 360);
 
-        // create particles
-        lines = [];
-        for(var i = 0; i < 90; i++) {
-            var l = new Line(Math.random()*360);
-            lines.push(l);
-        }
+  this.size = rand(size);
+}
+Line.prototype.use = function() {
+  ++this.timeSpentThisMove;
+  if (this.timeSpentThisMove >= this.timeBetweenMoves) {
+    ++this.move;
+    this.timeSpentThisMove = 0;
+
+    var rad = Math.random() * 2 * Math.PI;
+    this.target.x = this.x + Math.cos(rad) * this.distance;
+    this.target.y = this.y + Math.sin(rad) * this.distance;
+  }
+
+  this.last.x = this.x;
+  this.last.y = this.y;
+
+  this.vx += (this.x - this.target.x) / attenuator;
+  this.vy += (this.y - this.target.y) / attenuator;
+
+  this.x += this.vx;
+  this.y += this.vy;
+
+  ctx.lineWidth = this.size;
+  ctx.strokeStyle = ctx.shadowColor = this.color;
+  ctx.beginPath();
+  ctx.moveTo(this.last.x, this.last.y);
+  ctx.lineTo(this.x, this.y);
+  ctx.stroke();
+}
+
+function anim() {
+  window.requestAnimationFrame(anim);
+
+  ++frame;
+
+  ctx.shadowBlur = 0;
+  ctx.fillStyle = 'rgba(0, 0, 0, .04)';
+  ctx.fillRect(0, 0, w, h);
+  ctx.shadowBlur = 20;
+
+  if (Math.random() < spawnProb) lines.push(new Line);
+
+  for (var i = 0; i < lines.length; ++i) {
+    lines[i].use();
+
+    if (lines[i].move >= lines[i].totalMoves) {
+      lines.splice(i, 1);
+      --i;
     }
-
-    function initAnimation() {
-        animate();
-    }
-
-    // Event handling
-    function addListeners() {
-        window.addEventListener('scroll', scrollCheck);
-        window.addEventListener('resize', resize);
-    }
-
-    function scrollCheck() {
-        if(document.body.scrollTop > height) animateHeader = false;
-        else animateHeader = true;
-    }
-
-    function resize() {
-        width = window.innerWidth;
-        height = window.innerHeight;
-        size = width > height ? height : width;
-        largeHeader.style.height = height+'px';
-        canvas.width = width;
-        canvas.height = height;
-    }
-
-    function animate() {
-        if(animateHeader) {
-            ctx.clearRect(0,0,width,height);
-            for(var i in lines) {
-                lines[i].draw();
-            }
-        }
-        requestAnimationFrame(animate);
-    }
-
-    // Canvas manipulation
-    function Line(angle) {
-        var _this = this;
-
-        // constructor
-        (function() {
-            _this.angle = angle;
-
-        })();
-
-        this.draw = function() {
-
-            var r1 = Math.random()*(size < 500 ? 500 : size)*0.6;
-            var r2 = Math.random()*(size < 500 ? 500 : size)*0.6;
-            var x1 = r1*Math.cos(_this.angle*(Math.PI/180)) + width*0.5;
-            var y1 = r1*Math.sin(_this.angle*(Math.PI/180)) + height*0.48;
-            var x2 = r2*Math.cos(_this.angle*(Math.PI/180)) + width*0.5;
-            var y2 = r2*Math.sin(_this.angle*(Math.PI/180)) + height*0.48;
-            ctx.beginPath();
-            ctx.moveTo(x1, y1);
-            ctx.lineTo(x2, y2);
-            ctx.strokeStyle = 'rgba(255,193,127,'+(0.5+Math.random()*0.5)+')';
-
-            ctx.stroke();
-
-            ctx.beginPath();
-            ctx.arc(x1, y1, 2, 0, 2 * Math.PI, false);
-            ctx.fillStyle = 'rgba(255,165,70,'+(0.5+Math.random()*0.5)+')';
-            ctx.fill();
-
-            _this.angle += Math.random();
-        };
-    }
-
-})();
+  }
+}
+anim();

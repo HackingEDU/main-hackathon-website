@@ -6,115 +6,51 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HackingEDU | World's Largest Education Hackathon</title>
-    <script src="assets/js/typekit.js"></script>
-    <script>try{Typekit.load();}catch(e){}</script>
+    <link rel="icon" href="assets/img/favicon.ico">
     <link href="assets/css/normalize.css" rel="stylesheet">
+    <link href="assets/css/skeleton.css" rel="stylesheet">
+    <link href="assets/css/rohit-fresh.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
   </head>
   <body>
     <section id="hero">
 
        <div id="large-header" class="large-header">
-          <canvas id="demo-canvas"></canvas>
-            <h1 class="main-title">
-            <img class ="main-logo" src="assets/img/HackingEDU_Logo_Tagline.png">
-            </span></h1>
+
+          <canvas id="c"></canvas>
+          <div class="main-title">
+
+          <img class="title-resize"src="assets/img/mainLogo.png">
+
+          <h4 class="substatement">Learn. Build. Change. </h4>
+
+          <button class="substatement"id="apply-butt">Apply Now</button>
+
+          <button class="substatement"id="sponsor-butt">Sponsor Us</button>
+
+          </span></div>
+
          </div>
 
-
     </section>
 
-    <section class="dark" id="gettingstarted">
-      <div class="content">
-        <h1>Getting Started</h1>
-        <h2>You can grab a copy of Trianglify from <a href="https://www.npmjs.com/package/trianglify">npm</a>, <a href="http://bower.io/search/?q=trianglify">bower</a>, or <a href="https://cdnjs.com/libraries/trianglify">cdnjs</a></h2>
-        <div class="trianglify-canvas" data-options='{"height": 300, "width": 300, "cell_size": 40, "x_colors": "YlGnBu"}' > </div>
-<pre><code class="language-javascript">var pattern = Trianglify({
-  height: 300,
-  width: 300,
-  cell_size: 40});
+    <section id="why">
+      <div class="container">
 
-document.body.appendChild(pattern.canvas());
-      </code></pre>
-        <p>Not a coder? You can use the <a href="http://qrohlf.com/trianglify-generator/">Trianglify Generator</a> example to tweak parameters and generate images for your designs.</p>
+      <h2 class="text-center why-text">What is HackingEDU?</h2>
+
+        <p>HackingEDU is a hackathon conceived and executed by students, for students, with the intent of disrupting the classroom and really pushing the envelope on the contemporary education system. This is the largest student run hackathon encompassing all the major San Francisco Bay Area Universities and those along the west coast.</p>
+
+      <h2 class="text-center ">Our Mission</h2>
+
+        <p>Our biggest goal is to inspire the next generation of students to solve the problems that plague our education system. This is an opportunity for us as college students to raise our voice. It’s our time to redefine education. HackingEDU is excited to provide a launchpad for fellow students to invent the future.</p>
+
+
       </div>
+
+
     </section>
 
-    <section class="light">
-      <div class="content">
-        <h1>Variance</h1>
-        <h2>Specify the amount of randomness used when generating the pattern</h2>
-        <div class="trianglify-demo" data-demo="variance"> </div>
-      </div>
-    </section>
-
-    <section class="dark blue">
-      <div class="content">
-        <h1>Cell Size</h1>
-        <h2>Specify the granularity of the pattern</h2>
-        <div class="trianglify-demo" data-demo="cell_size"> </div>
-      </div>
-    </section>
-
-    <section class="light">
-      <div class="content">
-        <h1>Color</h1>
-        <h2>Trianglify comes bundled with the <a href="http://bl.ocks.org/mbostock/5577023">colorbrewer</a> palette set</h2>
-        <div id="trianglify-demo-colorbrewer"> </div>
-        <p>The above examples are just a subset of the available color gradients that Trianglify supports out of the box. See <a href="http://bl.ocks.org/mbostock/5577023">this page</a> for a full list of the scales included with colorbrewer.</p>
-      </div>
-    </section>
-
-    <section class="dark">
-      <div class="content">
-        <h1>Output Formats</h1>
-
-        <h2>Canvas, SVG, and PNG built in</h2>
-<pre><code>var pattern = Trianglify();
-
-//SVG DOM node
-pattern.svg();
-
-//Canvas DOM node
-pattern.canvas();
-
-//Render to existing canvas
-pattern.canvas(document.getElementById('mycanvas'));
-
-//PNG data URI string
-pattern.png();
-</code></pre>
-
-        <p>It's possible to write your own rendering implementations using the geometry in <code>pattern.polys</code>, which
-        contains an array of each polygon's vertices and color.</p>
-      </div>
-    </section>
-
-    <section class="light">
-      <div class="content">
-        <h1>More Options</h1>
-<pre><code>var defaults = {
-  cell_size: 75,
-  variance: 0.75,
-  x_colors: 'random',
-  y_colors: 'match_x',
-  palette: Trianglify.colorbrewer,
-  color_space: 'lab',
-  color_function: false,
-  stroke_width: 1.51,
-  width: 600,
-  height: 400,
-  seed: null
-};
-</code></pre>
-        <p>For more information on what the above options do and what values they accept check out the <a href="https://github.com/qrohlf/Trianglify">README</a> on GitHub.</p>
-      </div>
-    </section>
-
-    <section class="dark blue">
-      <div class="content">
-        <h2>Trianglify was written by <a href="http://qrohlf.com">Quinn Rohlf</a>. Check it out on <a href="https://github.com/qrohlf/trianglify">GitHub</a>!</h2>
-      </div>
-    </section>
 
     <script src="assets/js/vivek.js"></script>
     <script>
