@@ -16,6 +16,30 @@ function rand(ar) {
   return Math.random() * (ar[1] - ar[0]) + ar[0];
 }
 
+
+
+  // Event handling
+  function addListeners() {
+      window.addEventListener('scroll', scrollCheck);
+      window.addEventListener('resize', resize);
+  }
+
+  function scrollCheck() {
+      if(document.body.scrollTop > height) animateHeader = false;
+      else animateHeader = true;
+  }
+
+  function resize() {
+      w = window.innerWidth;
+      h = window.innerHeight;
+      size = w > h ? h : w;
+      largeHeader.style.height = h+'px';
+      canvas.width = w;
+      canvas.height = h;
+  }
+
+
+
 function Line() {
   this.x = Math.random() * w;
   this.y = Math.random() * h;
@@ -81,4 +105,5 @@ function anim() {
     }
   }
 }
+addListeners();
 anim();
