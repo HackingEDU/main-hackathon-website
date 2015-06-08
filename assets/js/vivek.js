@@ -1,44 +1,23 @@
-  var w = c.width = window.innerWidth,
-  h = c.height = window.innerHeight,
-  ctx = c.getContext('2d'),
+var c = document.getElementById('c'),
+    largeHeader = document.getElementById('h');
 
-  spawnProb = 1,
-  numberOfMoves = [8, 16], //[min, max]
-  distance = [50, 200],
-  attenuator = 900,
-  timeBetweenMoves = [6, 10],
-  size = [.5, 3],
+var w = c.width = window.innerWidth,
+    h = c.height = window.innerHeight,
+    ctx = c.getContext('2d'),
 
-  lines = [],
-  frame = (Math.random() * 360) | 0;
+    spawnProb = 1,
+    numberOfMoves = [8, 16], //[min, max]
+    distance = [50, 200],
+    attenuator = 900,
+    timeBetweenMoves = [6, 10],
+    size = [0.5, 3],
+
+    lines = [],
+    frame = (Math.random() * 360) | 0;
 
 function rand(ar) {
   return Math.random() * (ar[1] - ar[0]) + ar[0];
 }
-
-
-
-  // Event handling
-  function addListeners() {
-      window.addEventListener('scroll', scrollCheck);
-      window.addEventListener('resize', resize);
-  }
-
-  function scrollCheck() {
-      if(document.body.scrollTop > height) animateHeader = false;
-      else animateHeader = true;
-  }
-
-  function resize() {
-      w = window.innerWidth;
-      h = window.innerHeight;
-      size = w > h ? h : w;
-      largeHeader.style.height = h+'px';
-      canvas.width = w;
-      canvas.height = h;
-  }
-
-
 
 function Line() {
   this.x = Math.random() * w;
@@ -82,7 +61,7 @@ Line.prototype.use = function() {
   ctx.moveTo(this.last.x, this.last.y);
   ctx.lineTo(this.x, this.y);
   ctx.stroke();
-}
+};
 
 function anim() {
   window.requestAnimationFrame(anim);
@@ -94,7 +73,7 @@ function anim() {
   ctx.fillRect(0, 0, w, h);
   ctx.shadowBlur = 20;
 
-  if (Math.random() < spawnProb) lines.push(new Line);
+  if (Math.random() < spawnProb) lines.push(new Line());
 
   for (var i = 0; i < lines.length; ++i) {
     lines[i].use();
@@ -105,5 +84,13 @@ function anim() {
     }
   }
 }
-addListeners();
 anim();
+
+function resize() {
+  w = window.innerWidth;
+  h = window.innerHeight;
+  c.width = w;
+  c.height = h;
+}
+
+window.addEventListener('resize', resize);
