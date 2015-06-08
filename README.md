@@ -1,2 +1,3 @@
-# HackingEDU-Rohit
 # HackingEDU-Ro
+
+Just a sexy website. Plain and simple. 
