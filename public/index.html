@@ -6,41 +6,54 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HackingEDU | World's Largest Education Hackathon</title>
-    <link rel="icon" href="assets/img/favicon.ico">
+    <link rel="icon" href="img/favicon.ico">
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     
-    <link href="assets/css/normalize.css" rel="stylesheet">
-    <link href="assets/css/skeleton.css" rel="stylesheet">
-    <link href="assets/css/rohit-fresh.css" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/skeleton.css" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-    <section id="hero">
-
+    <!-- NAVIGATION BAR -->
+    <nav id="header" class="header navbar navbar-default sticky">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#why">About</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                    <li><a href="#tdaySection">Training Day</a></li>
+                    <li><a href="#twitter_feed">Twitter Feed</a></li>
+                    <li><a href="#apply">Apply</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section id="hero" class="scrollto">
        <div id="large-header" class="large-header">
-
           <canvas id="c"></canvas>
           <div class="main-title">
-
-          <img class="title-resize"src="assets/img/mainLogo.png">
-
+          <img class="title-resize"src="img/mainLogo.png">
           <h4 class="substatement">Learn. Build. Change. </h4>
-
           <button class="substatement"id="apply-butt">Apply Now</button>
-
           <button class="substatement"id="sponsor-butt">Sponsor Us</button>
-
           </span></div>
-
          </div>
-
     </section>
 
-
 <section id="long-prism">
-    <section id="why">
+    <section id="why" class="scrollto">
       <div class="container">
 
       <h2 class="text-center why-text">What is HackingEDU?</h2>
@@ -80,7 +93,7 @@
 
        <div class="row">
         <div class="col-md-4 text-center">
-          <img class="float-left"src="assets/img/icons/book-2.png">
+          <img class="float-left"src="img/icons/book-2.png">
           <h2>Learn</h2>
 
           <p>We want the students to not only learn, but to show the world what new educational evolutions can be created to push our current system forward. To inspire a new kind of educational system that works more effectively than the current one.</p>
@@ -88,12 +101,12 @@
 
         </div>
         <div class="col-md-4 text-center">
-          <img class="float-left"src="assets/img/icons/curlybrace-2.png">
+          <img class="float-left"src="img/icons/curlybrace-2.png">
           <h2>Build</h2>
           <p>It's time to show what you've got! They say ideas are great, but execution is where people fall short. Let's see what you can do in the 36 hours provided. </p>
         </div>
         <div class="col-md-4 text-center">
-          <img class="float-left"src="assets/img/icons/bulb-2.png">
+          <img class="float-left"src="img/icons/bulb-2.png">
           <h2>Change</h2>
 
           <p>We believe that the current education system is outdated. We need to use our creativity and drive not only to build innovative solutions to inspire change, but also redefine the way we think about education as a whole.</p>
@@ -108,7 +121,7 @@
 
 
     <hr>
-    <section id="faq">
+    <section id="faq" class="scrollto">
       <div class="container">
 
       <h1 class="text-center"> FAQ </h1>
@@ -168,71 +181,40 @@
 
     </section>
 
-    <section id="tdaySection"> 
+    <section id="tdaySection" class="scrollto"> 
     <h1 class="text-center padtop60"> Training Day </h1>
-
       <div class="container">
         <div class="row"> 
           <div class="col-md-4">
             <div class="image1 resize">
               <h4 class="center-middle">Speakers</h4>
-
-
-            
             </div>
-
           </div>
-          
-
-
           <div class="col-md-4 ">
-
-
             <div class="image2 resize">
               <h4 class="center-middle">Swag</h4>
-
-            
             </div>
-
           </div>
-
-
-
           <div class="col-md-4 ">
-
             <div class="image3 resize ">
               <h4 class="center-middle">Workshops</h4>
-            
             </div>
-
-
-
-
-
-            
           </div>
-
-
-
-
         </div>
 
         <p class="text-center tdaytext"> Training Day was a pre-hackathon event full of workshops and hands-on-training at the Paypal Headquarters in San Jose, CA. For an entire day, mentors and tech guides gave talks on various technologies( some being Node.JS, Firebase, Twilio APIs, Pebble, iOS ) and worked with students to help them master the tools they will need to develop their skills in preparation for the main hackathon.</p>
       </div>
-
-
-     
-
     </section>
 
-
-
-
-
-
+    <section id="twitter_feed" class="scrollto">
+      <div class="container">
+        <h2 class="text-center">Twitter Feed</h2>
+        <ul id="tweet_list"></ul>
+        <a href="https://twitter.com/intent/tweet?text=Check%20out%20@hackingedusf:%20The%20largest%20education%20hackathon%20on%20the%20west%20 coast!%20http://hackingedu.co%20%23hackingedu" class="twitter-share-button text-center" data-url="http://hackingedu.co" data-text="HackingEDU: The largest hackathon on the west coast!" data-size="large" data-related="hackingedusf" data-hashtags="hackingedu" target="_blank" data-dnt="true">Tweet About Us!</a>
+      </div>
+    </section>
 
     <section id="sponsor"> 
-
       <div class="container text-center">
         <h2 class=" top60 text-center">Sponsors</h2>
         <div class="tier1">
@@ -270,28 +252,12 @@
           <figure class="lahacks"><a href="http://lahacks.com"></a></figure>
         </div>
       </div>
-
-
-
-
-
-
-
     </section>
-
-
-
-
-
-
-
-
   </section>
-
 
  <div class="footer fluid-container text-center">
       <h2 class="padtop60">Are you ready to <b>change education</b>?</h2>
-      <a class="sexy padtop20" href="#apply">Apply Now!</a>
+      <a href="#apply"><button class="sexy">Apply Now!</button></a>
       <div class="social">
         <a href="https://www.facebook.com/hackingedusf" target="_blank"><i class="fa fa-facebook"></i></a>
         <a href="https://twitter.com/hackingedusf" target="_blank"><i class="fa fa-twitter"></i></a>
@@ -300,11 +266,15 @@
       </div>
     </div>
 
-
-
-
-
-    <script src="assets/js/vivek.js"></script>
+    <script src="js/vivek.js"></script>
+    <script src="https://cdn.socket.io/socket.io-1.3.5.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="js/navbar.js?v=1"></script>
+    <script src="js/TwitterStream.js"></script>
+    <script src="js/animatedModal/animatedModal.js"></script>
+    <script src="js/main.js"></script>
     <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
