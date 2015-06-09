@@ -1,6 +1,5 @@
 // Require our dependencies
 var express = require('express'),
-  JSX = require('node-jsx').install(),
   http = require('http'),
   mongoose = require('mongoose'),
   twitter = require('twitter'),
