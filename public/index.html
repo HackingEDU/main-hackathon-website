@@ -46,7 +46,7 @@
           <div class="main-title">
           <img class="title-resize"src="img/mainLogo.png">
           <h4 class="substatement">Learn. Build. Change. </h4>
-          <button class="substatement"id="apply-butt">Apply Now</button>
+          <a href="#apply"><button class="substatement se"id="apply-butt">Apply Now</button></a>
           <button class="substatement"id="sponsor-butt">Sponsor Us</button>
           </span></div>
          </div>
@@ -116,7 +116,7 @@
           <h5>What is a hackathon?</h5>
 
               <p>A hackathon is a 24-36 hour long programming event. Hundreds of passionate students come together, form teams, share ideas, and help each other build innovative applications. It's a fantastic opportunity to meet new people, learn from mentors, and make cool stuff. They're very beginner friendly. Everybody is there to help each other and have fun.</p>
-          
+
 
         </div>
         <div class="col-md-4">
@@ -129,7 +129,7 @@
         <div class="col-md-4">
           <h5>How do I get there?</h5>
             <p>More precise information coming soon. We will have buses and shuttles from most major university in California. Don't worry we got you covered.</p>
-          
+
 
         </div>
       </div>
@@ -141,7 +141,7 @@
           <div class="col-md-4">
             <h5>Who can attend?</h5>
               <p>All undergraduate, graduate, and high school students from any school are welcome. If you are under 18, we’ll need a parental consent form.</p>
-          
+
 
         </div>
         <div class="col-md-4">
@@ -149,8 +149,8 @@
 
         <h5>I can't write code but still want to attend. Help?</h5>
             <p>The hackathon community welcomes you with open arms - plenty of mentors want to help you make your first hack a reality. We'll have mentors on site to teach you lots of new skills and guide you towards creating your first hack. All the students are very friendly and willing to help each other out. Come along and be a part of the tens of thousands of hackers worldwide.</p>
-          
-          
+
+
 
         </div>
         <div class="col-md-4">
@@ -166,10 +166,10 @@
 
     </section>
 
-    <section id="tdaySection"> 
+    <section id="tdaySection">
     <h1 class="text-center padtop60"> Training Day </h1>
       <div class="container">
-        <div class="row"> 
+        <div class="row">
           <div class="col-md-4">
             <div class="image1 resize">
               <h4 class="center-middle">Speakers</h4>
@@ -199,7 +199,7 @@
       </div>
     </section>
 
-    <section id="sponsor"> 
+    <section id="sponsor">
       <div class="container text-center">
         <h2 class=" top60 text-center">Sponsors</h2>
         <div class="tier1">
@@ -240,7 +240,7 @@
     </section>
   </section>
 
- <div class="footer fluid-container text-center">
+ <div id="apply" class="footer fluid-container text-center">
       <h2 class="padtop60">Are you ready to <b>change education</b>?</h2>
       <a href="#apply"><button class="sexy">Apply Now!</button></a>
       <div class="social-footer">
@@ -249,6 +249,155 @@
         <a href="https://instagram.com/hackingedusf/" target="_blank"><i class="fa fa-instagram"></i></a>
         <a href="https://medium.com/@hackingedu/latest" target="_blank"><i class="fa fa-medium"></i></a>
       </div>
+
+      <form>
+        <div class="row">
+          <h2>Account Info</h2>
+          <!-- Facebook one-click login here (Capture all the data!)-->
+          <div class="col-sm-6 col-md-4 col-lg-3">
+            First Name:<br><input type="text" name="firstname"><br>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-3">
+            Last Name:<br><input type="text" name="lastname"><br>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-3">
+            Email:<br><input type="email" name="email">
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-3">
+            Phone Number:<br><input type="text" name="phone">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-6 col-md-4 col-lg-3">
+            Password:<br><input type="password" name="email">
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-3">
+            Confirm Password:<br><input type="password" name="email">
+          </div>
+        </div>
+
+        <hr>
+
+        <div class="row">
+          <h2>Account Info</h2>
+
+          <div class="col-sm-6 col-md-4 col-lg-3">
+            Street Address:<br><input type="text" name="street">
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-3">
+            City:<br><input type="text" name="city">
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-3">
+            State:<br><input type="text" name="state">
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-3">
+            Zip:<br><input type="text" name="zip">
+          </div>
+        </div>
+
+        <hr>
+
+        <div class="row">
+          <div class="col-sm-6 col-md-4 col-lg-3">
+            School:<br><input type="text" name="school">
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-3">
+            Date of Birth (DD/MM/YYYY):<br><input type="text" name="school" placeholder="01/13/1997">
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-3">
+            LinkedIn URL:<br><input type="text" name="linkedin">
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-3">
+            Github URL:<br><input type="text" name="github">
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-3">
+            Resume/CV (.pdf, .doc, .docx):<br><input type="text" name="github">
+            <!-- file upload btn -->
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-3">
+            Interested in a job in Tech?<br>
+            <input type="radio" name="job" value="true" checked>Yes
+            <br>
+            <input type="radio" name="job" value="false">No
+            <br>
+          </div>
+          <br>
+        </div>
+
+        <hr>
+
+        <div class="row">
+
+          <div class="col-sm-6 col-md-4 col-lg-3">
+            Gender:<br>
+            <input type="radio" name="gender" value="male" checked>Male
+            <br>
+            <input type="radio" name="gender" value="female">Female
+            <br>
+          </div>
+
+          <div class="col-sm-6 col-md-4 col-lg-3">
+            Have you been to a hackathon before?<br>
+            <input type="radio" name="veteran" value="true" checked>Yes
+            <br>
+            <input type="radio" name="veteran" value="false">No
+            <br>
+          </div>
+
+          <div class="col-sm-6 col-md-4 col-lg-3">
+            What type of hacker are you? (check all that apply)<br>
+            <input type="checkbox" name="hacker" value="designer">Designer
+            <br>
+            <input type="checkbox" name="hacker" value="developer">Developer
+            <br>
+            <input type="checkbox" name="hacker" value="product">Product
+            <br>
+            <input type="checkbox" name="hacker" value="web">Web
+            <br>
+            <input type="checkbox" name="dev" value="ios">iOS
+            <br>
+            <input type="checkbox" name="dev" value="android">Android
+            <br>
+            <input type="checkbox" name="dev" value="hardware">Hardware
+            <br>
+          </div>
+
+          <div class="col-sm-6 col-md-4 col-lg-3">
+            Shirt Size:<br>
+            <input type="radio" name="shirt" value="S" checked>S
+            <br>
+            <input type="radio" name="shirt" value="M">M
+            <br>
+            <input type="radio" name="shirt" value="L">L
+            <br>
+            <input type="radio" name="shirt" value="XL">XL<br>
+          </div>
+
+          <div class="col-sm-6 col-md-4 col-lg-3">
+            Transporation:<br>
+            <input type="radio" name="bus" value="true">Yes
+            <br>
+            <input type="radio" name="bus" value="false" checked>No
+            <br>
+          </div>
+
+          <div class="col-sm-6 col-md-4 col-lg-3">
+            Dietary Restrictions:<br>
+            <input type="radio" name="diet" value="none" checked>None
+            <br>
+            <input type="radio" name="diet" value="veg">Vegetarian
+            <br>
+            <input type="radio" name="diet" value="vegan">Vegan
+            <br>
+            <input type="radio" name="diet" value="gluten">Gluten-Free
+            <br>
+          </div>
+
+        </div>
+
+        <input type="submit" value="Apply">
+      </form>
+
     </div>
 
     <script src="js/vivek.js"></script>
