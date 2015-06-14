@@ -47,6 +47,45 @@
     border-radius: 0px;
 }
 
+/* HEADER ANIMATION */
+
+#large-header img {
+  max-height: 500px;
+}
+#large-header {
+  background: linear-gradient(270deg, #1daa86, #d55b37, #3181df, #d7df6f, #e88a1d);
+  background-size: 1000% 1000%;
+  height: 100vh;
+  -webkit-animation: hackingedu-header 14s ease infinite;
+  -moz-animation: hackingedu-header 14s ease infinite;
+  -o-animation: hackingedu-header 14s ease infinite;
+  animation: hackingedu-header 14s ease infinite;
+}
+
+@-webkit-keyframes hackingedu-header {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
+@-moz-keyframes hackingedu-header {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
+@-o-keyframes hackingedu-header {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
+@keyframes hackingedu-header {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
 /* Navigation */
 #navbar {
     font-size: 1em;
@@ -145,6 +184,10 @@
 
 }
 
+#hero {
+  background: black;
+}
+
 /* Header */
 
 .large-header {
@@ -156,13 +199,9 @@
 	z-index: 1;
 }
 
-#hero{
-	background: black;
-}
-
 
 .main-title {
-	position: absolute;
+  position: absolute;
 	margin: 0;
 	padding: 0;
 	color: #f9f1e9;
@@ -173,20 +212,10 @@
 	transform: translate3d(-50%,-50%,0);
 }
 
-
-.demo-4 .main-title {
-	font-size: 6em;
-	font-weight: 300;
-	padding: 10px 30px;
-	text-transform: uppercase;
-	color: #222;
-}
-
 .title-resize{
 	max-width: 75%;
 	height: auto;
 	margin-bottom: 25px;
-
 }
 
 .substatement{
