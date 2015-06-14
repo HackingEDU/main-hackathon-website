@@ -5,6 +5,10 @@ module.exports = {
     res.sendFile(path.join(__dirname, 'public/index.html'));
   },
 
+  signup: function(req, res) {
+    res.sendFile(path.join(__dirname, 'public/signup.html'));
+  },
+
   page: function(req, res) {
     // Fetch tweets by page via param
     Tweet.getTweets(req.params.page, req.params.skip, function(tweets) {
