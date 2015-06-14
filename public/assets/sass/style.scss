@@ -458,9 +458,15 @@ fa { color:#fff; }
 
 #sponsor .sponsorName {background: url('http://static.planetminecraft.com/files/resource_media/screenshot/1327/1328800264_minecraft-logo_5843730_lrg.jpg')}
 
-#sponsor .chegg {background: url('../img/sponsors/chegg.png')}
+#sponsor .chegg {
+  background: url('../img/sponsors/chegg.png');
+  width: 40%;
+}
 
-#sponsor .PayPal {background: url('../img/sponsors/paypal.jpg')}
+#sponsor .PayPal {
+  background: url('../img/sponsors/paypal.png');
+  width: 30%;
+}
 
 #sponsor .ibm {background: url('../img/sponsors/ibm.jpg')}
 
@@ -503,7 +509,7 @@ fa { color:#fff; }
 #sponsor .lahacks {background: url('../img/sponsors/lahacks.jpeg')}
 
 #sponsor figure {
-	margin: 0.5em 3em;
+	margin: -2em 3em;
 	height: 50vh;
 	width: 50vw;
 	background-size: contain !important;
@@ -524,7 +530,6 @@ fa { color:#fff; }
 	height: 20vh;
 	width: 10vw;
 	min-width: 10em;
-	margin-bottom: 1em
  }
 
 #sponsor .tier4 figure {
@@ -533,6 +538,10 @@ fa { color:#fff; }
 	margin-bottom: 16px;
 	min-width: 10em;
 	margin-top: 16px
+ }
+
+ #partners .tier4 figure {
+  z-index: -1;
  }
 
 
