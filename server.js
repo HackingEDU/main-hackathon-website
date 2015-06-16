@@ -37,7 +37,8 @@ app.use(
 app.use('/', express.static(path.join(__dirname, 'public/assets')));
 
 // Index Route
-app.use('/', routes.home);
+app.get('/', routes.home);
+app.get('/signup', routes.signup);
 
 // Page Route
 app.get('/page/:page/:skip', routes.page);
