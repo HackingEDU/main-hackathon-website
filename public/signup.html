@@ -16,7 +16,7 @@
   </head>
   <body>
     <div class="container-fluid">
-      <form class="col-md-offset-3">
+      <form id="signup_form" class="col-md-offset-3">
         <div class="col-md-7">
           <h2>Account Info</h2>
           <!-- Facebook one-click login here (Capture all the data!)-->
@@ -105,15 +105,11 @@
 
           <div class="form-inline">
             <label>Interested in a job in Tech?</label>
-            <div class="form-group">
-              <label for="yes_job" class="radio inline">Yes</label>
-              <input type="radio" name="job" value="true" id="yes_job"checked>
-            </div>
-
-            <div class="form-group">
-              <label for="no_job" class="radio inline">No</label>
-              <input type="radio" name="job" value="false" id="no_job">
-            </div>
+            <select name="job" class="form-control" id="job">
+              <option></option>
+              <option value="yes">Yes</option>
+              <option values="no">No</option>
+            </select>
           </div>
 
           <hr>
@@ -121,35 +117,23 @@
           <h2>About You</h2>
           <div class="form-inline">
             <label>Gender</label>
-            <div class="form-group">
-              <label for="gender_male" class="radio inline">Male</label>
-              <input type="radio" name="gender" value="male" id="gender_male" checked>
-            </div>
-
-            <div class="form-group">
-              <label for="gender_female" class="radio inline">Female</label>
-              <input type="radio" name="gender" value="female" id="gender_female">
-            </div>
-
-            <div class="form-group">
-              <label for="gender_null" class="radio inline">Decline to state</label>
-              <input type="radio" name="gender" value="null" id="gender_null">
-            </div>
+            <select class="form-control" name="gender">
+              <option value=""></option>
+              <option value="male">Male</option>
+              <option value="female">Female</option>
+              <option value="none">Decline to state</option>
+            </select>
           </div>
 
           <br>
 
           <div class="form-inline">
             <label>Have you been to a hackathon before?</label>
-            <div class="form-group">
-              <label for="hackathon_vet" class="radio inline">Yes</label>
-              <input type="radio" name="veteran" id="hackathon_vet" value="true" checked>
-            </div>
-
-            <div class="form-group">
-              <label for="hackathon_novice" class="radio inline">No</label>
-              <input type="radio" name="veteran" id="hackathon_novice" value="false">
-            </div>
+            <select class="form-control" name="veteran">
+              <option value=""></option>
+              <option value="yes">Yes</option>
+              <option value="no">No</option>
+            </select>
           </div>
 
           <br>
@@ -182,52 +166,87 @@
 
           <div class="form-group">
             <label>Shirt Size</label>
-            <div class="form-inline">
-              <label for="shirt_s" class="radio inline">S</label>
-              <input type="radio" name="shirt" value="S" id="shirt_s" checked>
-              <label for="shirt_m" class="radio inline">M</label>
-              <input type="radio" name="shirt" value="M" id="shirt_m">
-              <label for="shirt_l" class="radio inline">L</label>
-              <input type="radio" name="shirt" value="L" id="shirt_l">
-              <label for="shirt_xl" class="radio inline">XL</label>
-              <input type="radio" name="shirt" value="XL" id="shirt_xl">
-            </div>
+            <select class="form-control" name="shirt" id="shirt">
+              <option value=""></option>
+              <option value="S">S</option>
+              <option value="M">M</option>
+              <option value="L">L</option>
+              <option value="XL">XL</option>
+            </select>
           </div>
 
           <div class="form-inline">
             <label>Will you need transportation? (Bus)</label>
-            <div class="form-group">
-              <label for="bus_yes" class="radio inline">Yes</label>
-              <input type="radio" name="bus" id="bus_yes" value="true">
-            </div>
-
-            <div class="form-group">
-              <label for="bus_no" class="radio inline">No</label>
-              <input type="radio" name="bus" value="false" id="bus_no" checked>
-            </div>
+            <select class="form-control" name="bus" id="bus">
+              <option value=""></option>
+              <option value="yes">Yes</option>
+              <option value="no">No</option>
+            </select>
           </div>
 
           <br>
 
           <div class="form-inline">
             <label>Dietary Restrictions</label>
-            <input type="radio" name="diet" value="none" id="diet_none" checked>
-            <label for="diet_none" class="radio">None</label><br>
-
-            <input type="radio" name="diet" value="veg" id="diet_veg">
-            <label for="diet_veg" class="radio">Vegetarian</label><br>
-
-            <input type="radio" name="diet" value="vegan" id="diet_vegan">
-            <label for="diet_vegan" class="radio">Vegan</label><br>
-
-            <input type="radio" name="diet" value="gluten" id="diet_gluten">
-            <label for="diet_gluten" class="radio">Gluten-Free</label><br>
+            <select class="form-control" name="diet">
+              <option value="none">None</option>
+              <option value="vegetarian">Vegetarian</option>
+              <option value="vegan">Vegan</option>
+              <option value="gluten free">Gluten Free</option>
+            </select>
           </div>
         </div>
 
+        <div class="form-group">
+          <div class="checkbox">
+            <label for="tos">
+              <input type="checkbox" name="tos" id="tos">I agree to the <a href="https://drive.google.com/a/thekao.com/file/d/0BzF-e8GGV_UiOThlSGcxU01lWG8/view?pli=1" target="_blank"> Terms of Service
+              </a>
+            </label>
+          </div>
+        </div>
         <input type="submit" value="Apply" style="width: 100%;">
       </form>
     </div>
   </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script>
+    $('#signup_form').on('submit', function(event) {
+      event.preventDefault();
+ 
+      if ($("input[name='password']").val() !== $("input[name='confirm_password']").val()) {
+        alert('Those passwords don\'t match.');
+        return false;
+      }
+
+      if (!$("input[name='tos']").prop('checked')) {
+        alert('You must agree to the Terms of Service to sign up.');
+        return false;
+      }
+
+      sendForm();
+    });
+
+
+    var sendForm = function() {
+      $.ajax('/new_user', {
+          type: 'POST',
+          datatype: 'json',
+          data: $('#signup_form').serialize(),
+          success: signupSuccess,
+          error: signupFail
+      });
+    }
+
+    var signupSuccess = function(result) {
+      alert(result.msg);
+      console.log(result);
+    }
+
+    var signupFail = function(result) {
+      alert(result.msg);
+      console.log(result);
+    }
+  </script>
   </body>
 </html>
