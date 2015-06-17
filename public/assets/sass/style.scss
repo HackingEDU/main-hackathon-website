@@ -542,6 +542,8 @@ fa { color:#fff; }
 
 #sponsor .globalcommit {background: url('../img/sponsors/globalcommit.png')}
 
+#sponsor .redbull {background: url('../img/sponsors/redbull.png')}
+
 
 #sponsor figure {
 	margin: -2em 3em;
@@ -556,15 +558,21 @@ fa { color:#fff; }
 #sponsor .tier1 figure {height: 25vh}
 
 #sponsor .tier2 figure {
+  min-height:20vh;
 	width: 13vw;
 	min-width: 12em;
-	height: 30vh
+	height: 30vh;
+  margin-top: 16px;
+
  }
 
 #sponsor .tier3 figure {
-	height: 20vh;
-	width: 10vw;
-	min-width: 10em;
+
+  height: 15vh;
+  width: 8vw;
+  margin-bottom: 16px;
+  min-width: 10em;
+  margin-top: 16px;
  }
 
 #sponsor .tier4 figure {
@@ -572,7 +580,7 @@ fa { color:#fff; }
 	width: 8vw;
 	margin-bottom: 16px;
 	min-width: 10em;
-	margin-top: 16px
+	margin-top: 16px;
  }
 
  #partners .tier4 figure {
@@ -613,7 +621,7 @@ fa { color:#fff; }
   z-index:1;
   left:50%;
   margin-left:-5em;
-  background:#111;
+  background:transparent;
   width:10em;
   height:10em;
   padding:4em 2em;
@@ -645,7 +653,7 @@ fa { color:#fff; }
   height: 0px;
   border-style: solid;
   border-width: 3em 3em 0 3em;
-  border-color: #111 transparent transparent transparent;
+  border-color: transparent transparent transparent transparent;
   -webkit-transform:rotate(360deg);/* added for better anti-aliasing on webkit browsers */
 }
 
