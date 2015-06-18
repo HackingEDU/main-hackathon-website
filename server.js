@@ -1,10 +1,11 @@
 // Require our dependencies
 var express = require('express'),
+  bodyParser = require('body-parser'),
   http = require('http'),
   mongoose = require('mongoose'),
-  twitter = require('twitter'),
+  //twitter = require('twitter'),
   routes = require('./routes'),
-  config = require('./config'),
+  //config = require('./config'),
   streamHandler = require('./utils/streamHandler'),
   debug = require('debug'),
   sassMiddleware = require('node-sass-middleware'),
@@ -21,7 +22,7 @@ app.disable('etag');
 mongoose.connect('mongodb://localhost:27017/tweets');
 
 // Create a new ntwitter instance
-var twit = new twitter(config.twitter);
+//var twit = new twitter(config.twitter);
 
 // Set /public as our static content dir
 app.use(
@@ -35,10 +36,13 @@ app.use(
 );
 
 app.use('/', express.static(path.join(__dirname, 'public/assets')));
+app.use(bodyParser.urlencoded({extended: true}));
+app.use(bodyParser.json());
 
 // Index Route
 app.get('/', routes.home);
 app.get('/signup', routes.signup);
+app.post('/new_user', routes.newUser);
 
 // Page Route
 app.get('/page/:page/:skip', routes.page);
@@ -51,20 +55,20 @@ var server = http.createServer(app).listen(port, function() {
 // Initialize socket.io
 var io = require('socket.io').listen(server);
 
-io.on('connection', function(socket) {
-  socket.on('get_tweets', function(data) {
-    twit.get('search/tweets', {q: 'hackingedu OR hackingedusf'}, function(error, tweets, response){
-      //add error handling later
-      var statuses = tweets.statuses;
-      if (statuses.length > data.amount) {
-        statuses = statuses.slice(0, data.amount);
-      }
-      socket.emit('tweet_search_results', statuses);
-    });
-  });
-});
+// io.on('connection', function(socket) {
+//   socket.on('get_tweets', function(data) {
+//     twit.get('search/tweets', {q: 'hackingedu OR hackingedusf'}, function(error, tweets, response){
+//       //add error handling later
+//       var statuses = tweets.statuses;
+//       if (statuses.length > data.amount) {
+//         statuses = statuses.slice(0, data.amount);
+//       }
+//       socket.emit('tweet_search_results', statuses);
+//     });
+//   });
+// });
 
 // Set a stream listener for tweets matching tracking keywords
-twit.stream('statuses/filter',{ track: 'hackingedu, hackingedusf'}, function(stream){
-  streamHandler(stream,io);
-});
+// twit.stream('statuses/filter',{ track: 'hackingedu, hackingedusf'}, function(stream){
+//   streamHandler(stream,io);
+// });
