@@ -25,6 +25,8 @@
           the FB.login() function when clicked.
           -->
           <fb:login-button scope="public_profile,email,user_friends"  data-max-rows="1" data-size="xlarge" data-show-faces="false" data-auto-logout-link="true" onlogin="checkLoginState();"></fb:login-button>
+          <div id="status" class="status"></div>
+          <div id="fb-root"></div>
 
           <div class="form-group">
             <label for="firstname">First Name</label>
@@ -269,7 +271,7 @@
           <h2>About You</h2>
           <div class="form-inline">
             <label>Gender</label>
-            <select class="form-control" name="gender">
+            <select class="form-control" name="gender" id="gender">
               <option value=""></option>
               <option value="male">Male</option>
               <option value="female">Female</option>
@@ -384,6 +386,11 @@
   </div>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
   <script>
+    var firstname = document.getElementById("firstname");
+    var lastname = document.getElementById("lastname");
+    var email = document.getElementById("email");
+    var gender = document.getElementById("gender");
+
     // This is called with the results from from FB.getLoginStatus().
     function statusChangeCallback(response) {
       console.log('statusChangeCallback');
@@ -463,6 +470,11 @@
         console.log('Successful login for: ' + response.name);
         document.getElementById('status').innerHTML =
           'Thanks for logging in, ' + response.name + '!';
+        firstname.value = document.getElementById("firstname");
+        lastname.value = document.getElementById("lastname");
+        email.value = document.getElementById("email");
+        gender.value = document.getElementById("gender");
+        console.log(JSON.stringify(response));
       });
     }
 
@@ -485,10 +497,6 @@
           document.getElementById('email').value = data[0].email;
         }
       }
-    });
-
-    FB.api('/me', function(response) {
-      console.log(JSON.stringify(response));
     });
   </script>
 
@@ -513,7 +521,6 @@
       city.value = data.results[0].address_components[3].long_name;
       state.value = data.results[0].address_components[5].short_name;
       zip.value = data.results[0].address_components[7].short_name;
-      console.log(street.value);
     }
 
     function getInfo(position) {
