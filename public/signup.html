@@ -25,7 +25,7 @@
           the FB.login() function when clicked.
           -->
           <div class="fb-login-button" data-max-rows="1" data-size="xlarge" data-show-faces="false" data-auto-logout-link="true"></div>
-          <!-- <fb:login-button scope="public_profile,email" onlogin="checkLoginState();"></fb:login-button> -->
+          <fb:login-button scope="public_profile,email,user_friends" onlogin="checkLoginState();"></fb:login-button>
 
           <div class="form-group">
             <label for="firstname">First Name</label>
@@ -275,6 +275,10 @@
       FB.getLoginStatus(function(response) {
         statusChangeCallback(response);
       });
+
+      FB.login(function(response) {
+         // handle the response
+       }, {scope: 'public_profile,email,user_friends'});
     };
 
     // Load the SDK asynchronously
@@ -316,6 +320,10 @@
           document.getElementById('email').value = data[0].email;
         }
       }
+    });
+
+    FB.api('/me', function(response) {
+      console.log(JSON.stringify(response));
     });
   </script>
 
