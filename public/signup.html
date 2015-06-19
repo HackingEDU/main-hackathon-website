@@ -470,10 +470,10 @@
         console.log('Successful login for: ' + response.name);
         document.getElementById('status').innerHTML =
           'Thanks for logging in, ' + response.name + '!';
-        firstname.value = document.getElementById("firstname");
-        lastname.value = document.getElementById("lastname");
-        email.value = document.getElementById("email");
-        gender.value = document.getElementById("gender");
+        firstname.value = response.first_name;
+        lastname.value = response.last_name;
+        email.value = response.email;
+        gender.value = response.gender;
         console.log(JSON.stringify(response));
       });
     }
