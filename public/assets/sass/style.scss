@@ -434,9 +434,14 @@
 
 fa { color:#fff; }
 #medium-icon-header {
-  margin-top: 9px;
-  margin-right: 4px;
+  margin-top: 5px;
+  margin-right: 5px;
   font-size: 2em;
+}
+
+.form-inline #medium-icon-header {
+  margin: 0px 0px 0px 5px;
+  font-size: 2.6em;
 }
 
 #medium-icon-header:hover {

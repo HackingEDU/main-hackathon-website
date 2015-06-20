@@ -363,11 +363,26 @@
           </div>
 
           <div class="form-inline">
-            <label>TODO: Follow Us!</label>
-            <a href="https://www.facebook.com/hackingedusf">Facebook Icon</a>
-            <a href="https://twitter.com/hackingedusf">Twitter Icon</a>
-            <a href="https://instagram.com/hackingedusf">Instagram Icon</a>
-            <a href="https://medium.com/@hackingedu/latest">Medium Icon</a>
+            <span>
+              <a href="https://www.facebook.com/hackingedusf" target="rss">
+                <i id="social" class="fa fa-facebook-square fa-3x social"></i>
+              </a>
+            </span>
+            <span>
+              <a href="https://twitter.com/hackingedusf" target="rss">
+                <i id="social" class="fa fa-twitter-square fa-3x social-tw"></i>
+              </a>
+            </span>
+            <span>
+              <a href="https://instagram.com/hackingedusf" target="rss">
+                <i id="social" class="fa fa-instagram fa-3x social-ig"></i>
+              </a>
+            </span>
+            <span>
+              <a href="https://medium.com/@hackingedu/latest" target="_blank">
+                <i id="medium-icon-header" class="fa fa-medium"></i>
+              </a>
+            </span>
           </div>
 
         </div>
@@ -380,7 +395,7 @@
             </label>
           </div>
         </div>
-        <input type="submit" value="Apply" style="width: 100%;">
+        <button type="button" id="apply-butt" class="substatement se" style="width: 100%;">Apply</button>
       </form>
     </div>
   </div>
@@ -546,7 +561,7 @@
   </script>
 
   <script>
-    $('#signup_form').on('submit', function(event) {
+    $('#apply-butt').click(function(event) {
       event.preventDefault();
 
       if ($("input[name='password']").val() !== $("input[name='confirm_password']").val()) {
