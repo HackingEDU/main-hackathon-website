@@ -47,6 +47,10 @@
     border-radius: 0px;
 }
 
+#header li {
+    margin-bottom: 0;
+}
+
 /* HEADER ANIMATION */
 
 #large-header img {
@@ -253,6 +257,13 @@
 	float:left;
 }
 
+/* Social buttons */
+
+.social-block {
+  clear: both;
+  position: absolute;
+  margin-top: 1em;
+}
 
 /* Why */
 
