@@ -196,7 +196,14 @@
     }
 
 }
-
+@media (max-height: 825px) {
+    .arrow-wrap {
+        display: none !important;
+    }
+    .arrow {
+        display: none !important;
+    }
+}
 #hero {
   background: black;
 }
