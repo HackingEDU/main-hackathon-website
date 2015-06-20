@@ -47,6 +47,10 @@
     border-radius: 0px;
 }
 
+#header li {
+    margin-bottom: 0;
+}
+
 /* HEADER ANIMATION */
 
 #large-header img {
@@ -126,6 +130,9 @@
     text-decoration: none;
     background-color: transparent;
 }
+.navbar {
+    margin-bottom: 0;
+}
 .navbar-toggle {
     float: left !important;
     margin-left: 15px;
@@ -148,6 +155,12 @@
         display: table;
         table-layout: fixed;
         float:none;
+        display: inline-block !important;
+    }
+    #header .container {
+        max-width: 100%;
+        width: 100%;
+        text-align: center;
     }
 }
 @media (max-width: 768px) {
@@ -183,7 +196,14 @@
     }
 
 }
-
+@media (max-height: 825px) {
+    .arrow-wrap {
+        display: none !important;
+    }
+    .arrow {
+        display: none !important;
+    }
+}
 #hero {
   background: black;
 }
@@ -253,6 +273,13 @@
 	float:left;
 }
 
+/* Social buttons */
+
+.social-block {
+  clear: both;
+  position: absolute;
+  margin-top: 1em;
+}
 
 /* Why */
 
@@ -407,9 +434,14 @@
 
 fa { color:#fff; }
 #medium-icon-header {
-  margin-top: 9px;
-  margin-right: 4px;
+  margin-top: 5px;
+  margin-right: 5px;
   font-size: 2em;
+}
+
+.form-inline #medium-icon-header {
+  margin: 0px 0px 0px 5px;
+  font-size: 2.6em;
 }
 
 #medium-icon-header:hover {
