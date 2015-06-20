@@ -47,12 +47,6 @@
     border-radius: 0px;
 }
 
-#header .container {
-    max-width: 100%;
-    width: 100%;
-    text-align: center;
-}
-
 #header li {
     margin-bottom: 0;
 }
@@ -100,7 +94,6 @@
 #navbar {
     font-size: 1em;
     z-index: 2;
-    display: inline-block !important;
 }
 #navbar ul {
     margin: 0;
@@ -162,6 +155,12 @@
         display: table;
         table-layout: fixed;
         float:none;
+        display: inline-block !important;
+    }
+    #header .container {
+        max-width: 100%;
+        width: 100%;
+        text-align: center;
     }
 }
 @media (max-width: 768px) {
