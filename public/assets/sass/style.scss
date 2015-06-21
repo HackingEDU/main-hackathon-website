@@ -689,3 +689,12 @@ fa { color:#fff; }
   -webkit-transform:rotate(360deg);/* added for better anti-aliasing on webkit browsers */
 }
 
+.next-btn {
+  width: 30%;
+  float: right;
+}
+
+.prev-btn {
+  width: 30%;
+  float: left;
+}

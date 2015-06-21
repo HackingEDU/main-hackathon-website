@@ -3,8 +3,8 @@ var url = require('url');
 var Config = require('./config')
 var Parse = require('node-parse-api').Parse;
 var options = {
-    app_id: Config.parse.id,
-    api_key: Config.parse.api_key
+    app_id: Config.parse.test.id,
+    api_key: Config.parse.test.api_key
 };
 
 var parse = new Parse(options);

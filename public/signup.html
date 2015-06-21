@@ -15,387 +15,393 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body background="img/signupprism.png">
-    <div class="container-fluid">
-      <form id="signup_form" class="col-md-offset-3">
+    <div class="container-fluid col-md-offset-3">
+      <h1 style="padding: 1em 1em;">HackingEDU Signup</h1>
+      <form id="signup_form" >
         <div class="col-md-7">
-          <h2>Account Info</h2>
-          <!--
-          Below we include the Login Button social plugin. This button uses
-          the JavaScript SDK to present a graphical Login button that triggers
-          the FB.login() function when clicked.
-          -->
-          <fb:login-button scope="public_profile,email,user_friends"  data-max-rows="1" data-size="xlarge" data-show-faces="false" data-auto-logout-link="true" onlogin="checkLoginState();"></fb:login-button>
-          <div id="status" class="status"></div>
-          <div id="fb-root"></div>
+          <fieldset class="signup_fieldset active">
+            <h2>Account Info</h2>
+            <!--
+            Below we include the Login Button social plugin. This button uses
+            the JavaScript SDK to present a graphical Login button that triggers
+            the FB.login() function when clicked.
+            -->
+            <fb:login-button scope="public_profile,email,user_friends"  data-max-rows="1" data-size="xlarge" data-show-faces="false" data-auto-logout-link="true" onlogin="checkLoginState();"></fb:login-button>
+            <div id="status" class="status"></div>
+            <div id="fb-root"></div>
 
-          <div class="form-group">
-            <label for="firstname">First Name</label>
-            <input type="text" class="form-control" id="firstname" name="firstname" placeholder="Hacker">
-          </div>
-
-          <div class="form-group">
-            <label for="lastname">Last Name</label>
-            <input type="text" class="form-control" id="lastname" name="lastname" placeholder="McHackerton">
-          </div>
-
-          <div class="form-group">
-            <label for="email">Email</label>
-            <input type="email" class="form-control" id="email" name="email" placeholder="you@youremail.com">
-          </div>
-
-          <div class="form-group">
-            <label for="phone">Phone #</label>
-            <input type="text" class="form-control" id="phone" name="phone" placeholder="000-111-2222">
-          </div>
-
-          <div class="form-group">
-            <label for="password">Password</label>
-            <input type="password" class="form-control" id="password" name="password">
-          </div>
-
-          <div class="form-group">
-            <label for="confirm_password">Confirm Password</label>
-            <br><input type="password" class="form-control" id="confirm_password" name="confirm_password" onblur="confirmEmail()">
-          </div>
-
-          <div class="form-group">
-            <label for="email">Other Emails</label>
-            <textarea rows="3" cols="40" class="form-control" id="other_emails" name="other_emails" placeholder="you@youremail.com, your@otheremail.com"></textarea>
-          </div>
-
-          <hr>
-
-          <h2>Location</h2>
-          <button id="okbutton" >Get your Location (takes ~10 seconds >:()</button>
-          <div class="form-group">
-            <label for="street">Street Address</label>
-            <input type="text" class="form-control" id="street" name="street" placeholder="12345 Test Dr">
-          </div>
-
-          <div class="form-inline">
             <div class="form-group">
-              <label for="city">City</label>
-              <input type="text" class="form-control" id="city" name="city" placeholder="San Francisco">
+              <label for="firstname">First Name</label>
+              <input type="text" class="form-control" id="firstname" name="firstname" placeholder="Hacker">
             </div>
 
             <div class="form-group">
-              <label for="state">State</label>
-              <input type="text" class="form-control" id="state" name="state" placeholder="CA">
+              <label for="lastname">Last Name</label>
+              <input type="text" class="form-control" id="lastname" name="lastname" placeholder="McHackerton">
             </div>
 
             <div class="form-group">
-              <label for="zip">Zip</label>
-              <input type="text" class="form-control" id="zip" name="zip" placeholder="94107">
+              <label for="email">Email</label>
+              <input type="email" class="form-control" id="email" name="email" placeholder="you@youremail.com">
             </div>
-          </div>
 
-          <hr>
+            <div class="form-group">
+              <label for="phone">Phone #</label>
+              <input type="text" class="form-control" id="phone" name="phone" placeholder="000-111-2222">
+            </div>
 
-          <h2>School & Experience</h2>
-          <div class="form-group">
-            <label for="school">School</label>
-            <select class="form-control" name="school" id="school">
-              <option value="1">Academy of Art University</option>
-              <option value="2">Alliant International University</option>
-              <option value="3">American Film Institute Conservatory</option>
-              <option value="4">American Jewish University</option>
-              <option value="5">Antioch University Los Angeles</option>
-              <option value="6">Antioch University Santa Barbara</option>
-              <option value="7">Art Center College of Design</option>
-              <option value="8">Azusa Pacific University</option>
-              <option value="9">Bethesda University of California</option>
-              <option value="10">Biola University</option>
-              <option value="11">California Baptist University</option>
-              <option value="12">California College of the Arts</option>
-              <option value="13">California Institute of Integral Studies</option>
-              <option value="14">California Institute of Technology</option>
-              <option value="15">California Institute of the Arts</option>
-              <option value="16">California Lutheran University</option>
-              <option value="17">California Maritime Academy</option>
-              <option value="18">California Polytechnic State University, San Luis Obispo</option>
-              <option value="19">California State Polytechnic University, Pomona</option>
-              <option value="20">California State University Channel Islands</option>
-              <option value="21">California State University San Marcos</option>
-              <option value="22">California State University Stanislaus</option>
-              <option value="23">California State University, Bakersfield</option>
-              <option value="24">California State University, Chico</option>
-              <option value="25">California State University, Dominguez Hills</option>
-              <option value="26">California State University, East Bay</option>
-              <option value="27">California State University, Fresno</option>
-              <option value="28">California State University, Fullerton</option>
-              <option value="29">California State University, Long Beach</option>
-              <option value="30">California State University, Los Angeles</option>
-              <option value="31">California State University, Monterey Bay</option>
-              <option value="32">California State University, Northridge</option>
-              <option value="33">California State University, Sacramento</option>
-              <option value="34">California State University, San Bernardino</option>
-              <option value="35">California Western School of Law</option>
-              <option value="36">Chapman University</option>
-              <option value="37">Charles R. Drew University of Medicine and Science</option>
-              <option value="38">Claremont Graduate University</option>
-              <option value="39">Claremont McKenna College</option>
-              <option value="40">Cogswell Polytechnical College</option>
-              <option value="41">Concordia University</option>
-              <option value="42">Dominican School of Philosophy and Theology</option>
-              <option value="43">Dominican University of California</option>
-              <option value="44">Fielding Graduate University</option>
-              <option value="45">Frederick S. Pardee RAND Graduate School</option>
-              <option value="46">Fresno Pacific University</option>
-              <option value="47">Golden Gate University</option>
-              <option value="48">Harvey Mudd College</option>
-              <option value="49">Holy Names University</option>
-              <option value="50">Hope International University</option>
-              <option value="51">Humboldt State University</option>
-              <option value="52">Humphreys College</option>
-              <option value="53">Irell &amp; Manella Graduate School of Biological Sciences</option>
-              <option value="54">John F. Kennedy University</option>
-              <option value="55">Keck Graduate Institute of Applied Life Sciences</option>
-              <option value="56">La Sierra University</option>
-              <option value="57">Life Pacific College</option>
-              <option value="58">Lincoln University</option>
-              <option value="59">Loma Linda University</option>
-              <option value="60">Loyola Marymount University</option>
-              <option value="61">Marshall B. Ketchum University</option>
-              <option value="62">Menlo College</option>
-              <option value="63">Mills College</option>
-              <option value="64">Mount St. Mary's College</option>
-              <option value="65">National University</option>
-              <option value="66">Naval Postgraduate School</option>
-              <option value="67">Notre Dame de Namur University</option>
-              <option value="68">Occidental College</option>
-              <option value="69">Otis College of Art and Design</option>
-              <option value="70">Pacific Oaks College</option>
-              <option value="71">Pacific Union College</option>
-              <option value="72">Pacifica Graduate Institute</option>
-              <option value="73">Palo Alto University</option>
-              <option value="74">Patten University</option>
-              <option value="75">Pepperdine University</option>
-              <option value="76">Phillips Graduate Institute</option>
-              <option value="77">Pitzer College</option>
-              <option value="78">Point Loma Nazarene University</option>
-              <option value="79">Pomona College</option>
-              <option value="80">Saint Mary's College of California</option>
-              <option value="81">Samuel Merritt University</option>
-              <option value="82">San Diego Christian College</option>
-              <option value="83">San Diego State University</option>
-              <option value="84">San Francisco Art Institute</option>
-              <option value="85">San Francisco Conservatory of Music</option>
-              <option value="86">San Francisco State University</option>
-              <option value="87">San Joaquin College of Law</option>
-              <option value="88">San Jos&eacute; State University</option>
-              <option value="89">Santa Clara University</option>
-              <option value="90">Saybrook University</option>
-              <option value="91">Scripps College</option>
-              <option value="92">Simpson University</option>
-              <option value="93">Soka University of America</option>
-              <option value="94">Sonoma State University</option>
-              <option value="95">Southern California Institute of Architecture</option>
-              <option value="96">Southwestern Law School</option>
-              <option value="97">Stanford University</option>
-              <option value="98">The King's University</option>
-              <option value="99">The Master's College</option>
-              <option value="100">The National Hispanic University</option>
-              <option value="101">The University of West Los Angeles</option>
-              <option value="102">The Wright Institute</option>
-              <option value="103">Thomas Aquinas College</option>
-              <option value="104">Thomas Jefferson School of Law</option>
-              <option value="105">University of California, Berkeley</option>
-              <option value="106">University of California, Davis</option>
-              <option value="107">University of California, Hastings College of the Law</option>
-              <option value="108">University of California, Irvine</option>
-              <option value="109">University of California, Los Angeles</option>
-              <option value="110">University of California, Merced</option>
-              <option value="111">University of California, Riverside</option>
-              <option value="112">University of California, San Diego</option>
-              <option value="113">University of California, San Francisco</option>
-              <option value="114">University of California, Santa Barbara</option>
-              <option value="115">University of California, Santa Cruz</option>
-              <option value="116">University of La Verne</option>
-              <option value="117">University of Redlands</option>
-              <option value="118">University of San Diego</option>
-              <option value="119">University of San Francisco</option>
-              <option value="120">University of Southern California</option>
-              <option value="121">University of the Pacific</option>
-              <option value="122">Vanguard University of Southern California</option>
-              <option value="123">Western State University College of Law</option>
-              <option value="124">Western University of Health Sciences</option>
-              <option value="125">Westmont College</option>
-              <option value="126">Whittier College</option>
-              <option value="127">William Jessup University</option>
-              <option value="128">Woodbury University</option>
-            </select>
-          </div>
+            <div class="form-group">
+              <label for="password">Password</label>
+              <input type="password" class="form-control" id="password" name="password">
+            </div>
 
-          <div class="form-group">
-            <label for="dob">Date of Birth (DD/MM/YYYY)</label>
-            <input type="text" class="form-control" name="dob" id="dob" placeholder="01/13/1997">
-          </div>
+            <div class="form-group">
+              <label for="confirm_password">Confirm Password</label>
+              <br><input type="password" class="form-control" id="confirm_password" name="confirm_password" onblur="confirmEmail()">
+            </div>
 
-          <div class="form-group">
-            <label for="linkedin">LinkedIn URL</label>
-            <input type="text" class="form-control" name="linkedin" id="linkedin">
-          </div>
+            <div class="form-group">
+              <label for="email">Other Emails</label>
+              <textarea rows="3" cols="40" class="form-control" id="other_emails" name="other_emails" placeholder="you@youremail.com, your@otheremail.com"></textarea>
+            </div>
+            <button type="button" class="substatement se next-btn">Next</button>
+          </fieldset>
 
-          <div class="form-group">
-            <label for="github">Github Handle</label>
-            <input type="text" class="form-control" name="github" id="github">
-          </div>
+          <fieldset class="signup_fieldset">
+            <h2>Location</h2>
+            <button id="okbutton" >Get your Location (takes ~10 seconds >:()</button>
+            <div class="form-group">
+              <label for="street">Street Address</label>
+              <input type="text" class="form-control" id="street" name="street" placeholder="12345 Test Dr">
+            </div>
 
-          <div class="form-group">
-            <label for="github">Twitter Handle</label>
-            <input type="text" class="form-control" name="twitter" id="twitter">
-          </div>
+            <div class="form-inline">
+              <div class="form-group">
+                <label for="city">City</label>
+                <input type="text" class="form-control" id="city" name="city" placeholder="San Francisco">
+              </div>
 
-          <div class="form-group">
-            <label for="github">ChallengePost Handle</label>
-            <input type="text" class="form-control" name="challengepost" id="challengepost">
-          </div>
+              <div class="form-group">
+                <label for="state">State</label>
+                <input type="text" class="form-control" id="state" name="state" placeholder="CA">
+              </div>
 
-          <div class="form-group">
-            <label for="resume">Link to Resume/CV (.pdf, .doc, .docx)</label>
-            <input type="text" class="form-control" name="resume" id="resume">
-          </div>
+              <div class="form-group">
+                <label for="zip">Zip</label>
+                <input type="text" class="form-control" id="zip" name="zip" placeholder="94107">
+              </div>
+            </div>
+            <button type="button" class="substatement se prev-btn">Go Back</button>
+            <button type="button" class="substatement se next-btn">Next</button>
+          </fieldset>
 
-          <div class="form-inline">
-            <label>Interested in a job in Tech?</label>
+          <fieldset class="signup_fieldset">
+            <h2>School & Experience</h2>
+            <div class="form-group">
+              <label for="school">School</label>
+              <select class="form-control" name="school" id="school">
+                <option value="1">Academy of Art University</option>
+                <option value="2">Alliant International University</option>
+                <option value="3">American Film Institute Conservatory</option>
+                <option value="4">American Jewish University</option>
+                <option value="5">Antioch University Los Angeles</option>
+                <option value="6">Antioch University Santa Barbara</option>
+                <option value="7">Art Center College of Design</option>
+                <option value="8">Azusa Pacific University</option>
+                <option value="9">Bethesda University of California</option>
+                <option value="10">Biola University</option>
+                <option value="11">California Baptist University</option>
+                <option value="12">California College of the Arts</option>
+                <option value="13">California Institute of Integral Studies</option>
+                <option value="14">California Institute of Technology</option>
+                <option value="15">California Institute of the Arts</option>
+                <option value="16">California Lutheran University</option>
+                <option value="17">California Maritime Academy</option>
+                <option value="18">California Polytechnic State University, San Luis Obispo</option>
+                <option value="19">California State Polytechnic University, Pomona</option>
+                <option value="20">California State University Channel Islands</option>
+                <option value="21">California State University San Marcos</option>
+                <option value="22">California State University Stanislaus</option>
+                <option value="23">California State University, Bakersfield</option>
+                <option value="24">California State University, Chico</option>
+                <option value="25">California State University, Dominguez Hills</option>
+                <option value="26">California State University, East Bay</option>
+                <option value="27">California State University, Fresno</option>
+                <option value="28">California State University, Fullerton</option>
+                <option value="29">California State University, Long Beach</option>
+                <option value="30">California State University, Los Angeles</option>
+                <option value="31">California State University, Monterey Bay</option>
+                <option value="32">California State University, Northridge</option>
+                <option value="33">California State University, Sacramento</option>
+                <option value="34">California State University, San Bernardino</option>
+                <option value="35">California Western School of Law</option>
+                <option value="36">Chapman University</option>
+                <option value="37">Charles R. Drew University of Medicine and Science</option>
+                <option value="38">Claremont Graduate University</option>
+                <option value="39">Claremont McKenna College</option>
+                <option value="40">Cogswell Polytechnical College</option>
+                <option value="41">Concordia University</option>
+                <option value="42">Dominican School of Philosophy and Theology</option>
+                <option value="43">Dominican University of California</option>
+                <option value="44">Fielding Graduate University</option>
+                <option value="45">Frederick S. Pardee RAND Graduate School</option>
+                <option value="46">Fresno Pacific University</option>
+                <option value="47">Golden Gate University</option>
+                <option value="48">Harvey Mudd College</option>
+                <option value="49">Holy Names University</option>
+                <option value="50">Hope International University</option>
+                <option value="51">Humboldt State University</option>
+                <option value="52">Humphreys College</option>
+                <option value="53">Irell &amp; Manella Graduate School of Biological Sciences</option>
+                <option value="54">John F. Kennedy University</option>
+                <option value="55">Keck Graduate Institute of Applied Life Sciences</option>
+                <option value="56">La Sierra University</option>
+                <option value="57">Life Pacific College</option>
+                <option value="58">Lincoln University</option>
+                <option value="59">Loma Linda University</option>
+                <option value="60">Loyola Marymount University</option>
+                <option value="61">Marshall B. Ketchum University</option>
+                <option value="62">Menlo College</option>
+                <option value="63">Mills College</option>
+                <option value="64">Mount St. Mary's College</option>
+                <option value="65">National University</option>
+                <option value="66">Naval Postgraduate School</option>
+                <option value="67">Notre Dame de Namur University</option>
+                <option value="68">Occidental College</option>
+                <option value="69">Otis College of Art and Design</option>
+                <option value="70">Pacific Oaks College</option>
+                <option value="71">Pacific Union College</option>
+                <option value="72">Pacifica Graduate Institute</option>
+                <option value="73">Palo Alto University</option>
+                <option value="74">Patten University</option>
+                <option value="75">Pepperdine University</option>
+                <option value="76">Phillips Graduate Institute</option>
+                <option value="77">Pitzer College</option>
+                <option value="78">Point Loma Nazarene University</option>
+                <option value="79">Pomona College</option>
+                <option value="80">Saint Mary's College of California</option>
+                <option value="81">Samuel Merritt University</option>
+                <option value="82">San Diego Christian College</option>
+                <option value="83">San Diego State University</option>
+                <option value="84">San Francisco Art Institute</option>
+                <option value="85">San Francisco Conservatory of Music</option>
+                <option value="86">San Francisco State University</option>
+                <option value="87">San Joaquin College of Law</option>
+                <option value="88">San Jos&eacute; State University</option>
+                <option value="89">Santa Clara University</option>
+                <option value="90">Saybrook University</option>
+                <option value="91">Scripps College</option>
+                <option value="92">Simpson University</option>
+                <option value="93">Soka University of America</option>
+                <option value="94">Sonoma State University</option>
+                <option value="95">Southern California Institute of Architecture</option>
+                <option value="96">Southwestern Law School</option>
+                <option value="97">Stanford University</option>
+                <option value="98">The King's University</option>
+                <option value="99">The Master's College</option>
+                <option value="100">The National Hispanic University</option>
+                <option value="101">The University of West Los Angeles</option>
+                <option value="102">The Wright Institute</option>
+                <option value="103">Thomas Aquinas College</option>
+                <option value="104">Thomas Jefferson School of Law</option>
+                <option value="105">University of California, Berkeley</option>
+                <option value="106">University of California, Davis</option>
+                <option value="107">University of California, Hastings College of the Law</option>
+                <option value="108">University of California, Irvine</option>
+                <option value="109">University of California, Los Angeles</option>
+                <option value="110">University of California, Merced</option>
+                <option value="111">University of California, Riverside</option>
+                <option value="112">University of California, San Diego</option>
+                <option value="113">University of California, San Francisco</option>
+                <option value="114">University of California, Santa Barbara</option>
+                <option value="115">University of California, Santa Cruz</option>
+                <option value="116">University of La Verne</option>
+                <option value="117">University of Redlands</option>
+                <option value="118">University of San Diego</option>
+                <option value="119">University of San Francisco</option>
+                <option value="120">University of Southern California</option>
+                <option value="121">University of the Pacific</option>
+                <option value="122">Vanguard University of Southern California</option>
+                <option value="123">Western State University College of Law</option>
+                <option value="124">Western University of Health Sciences</option>
+                <option value="125">Westmont College</option>
+                <option value="126">Whittier College</option>
+                <option value="127">William Jessup University</option>
+                <option value="128">Woodbury University</option>
+              </select>
+            </div>
 
-            <select name="job" class="form-control" id="job">
-              <option></option>
-              <option value="yes">Yes</option>
-              <option values="no">No</option>
-            </select>
-          </div>
+            <div class="form-group">
+              <label for="dob">Date of Birth (DD/MM/YYYY)</label>
+              <input type="text" class="form-control" name="dob" id="dob" placeholder="01/13/1997">
+            </div>
 
-          <hr>
+            <div class="form-group">
+              <label for="linkedin">LinkedIn URL</label>
+              <input type="text" class="form-control" name="linkedin" id="linkedin">
+            </div>
 
-          <h2>About You</h2>
-          <div class="form-inline">
-            <label>Gender</label>
-            <select class="form-control" name="gender" id="gender">
-              <option value=""></option>
-              <option value="male">Male</option>
-              <option value="female">Female</option>
-              <option value="none">Decline to state</option>
-            </select>
-          </div>
+            <div class="form-group">
+              <label for="github">Github Handle</label>
+              <input type="text" class="form-control" name="github" id="github">
+            </div>
 
-          <br>
+            <div class="form-group">
+              <label for="github">Twitter Handle</label>
+              <input type="text" class="form-control" name="twitter" id="twitter">
+            </div>
 
-          <div class="form-inline">
-            <label>Have you been to a hackathon before?</label>
-            <select class="form-control" name="veteran">
-              <option value=""></option>
-              <option value="yes">Yes</option>
-              <option value="no">No</option>
-            </select>
-          </div>
+            <div class="form-group">
+              <label for="github">ChallengePost Handle</label>
+              <input type="text" class="form-control" name="challengepost" id="challengepost">
+            </div>
 
-          <br>
+            <div class="form-group">
+              <label for="resume">Link to Resume/CV (.pdf, .doc, .docx)</label>
+              <input type="text" class="form-control" name="resume" id="resume">
+            </div>
 
-          <div class="form-group">
-            <label>What type of hacker are you? (check all that apply)</label>
-            <div class="checkbox">
-              <label for="hacker_designer">
-                <input type="checkbox" name="hacker" value="designer" id="hacker_designer">Designer
-              </label>
-              <label for="hacker_developer">
-                <input type="checkbox" name="hacker" value="developer" id="hacker_developer">Developer
-              </label>
-              <label for="hacker_product">
-                <input type="checkbox" name="hacker" value="product" id="hacker_product">Product
-              </label>
-              <label for="hacker_web">
-                <input type="checkbox" name="hacker" value="web" id="hacker_web">Web
-              </label>
-              <label for="hacker_ios">
-                <input type="checkbox" name="hacker" value="ios" id="hacker_ios">iOS
-              </label>
-              <label for="hacker_android">
-                <input type="checkbox" name="hacker" value="android" id="hacker_android">Android
-              </label>
-              <label for="hacker_hardware">
-                <input type="checkbox" name="hacker" value="hardware" id="hacker_hardware">Hardware
-              </label>
-          </div>
+            <div class="form-inline">
+              <label>Interested in a job in Tech?</label>
+              <select name="job" class="form-control" id="job">
+                <option></option>
+                <option value="yes">Yes</option>
+                <option values="no">No</option>
+              </select>
+            </div>
+            <button type="button" class="substatement se prev-btn">Go Back</button>
+            <button type="button" class="substatement se next-btn">Next</button>
+          </fieldset>
 
-          <div class="form-group">
-            <label>Shirt Size</label>
-            <select class="form-control" name="shirt" id="shirt">
-              <option value=""></option>
-              <option value="S">S</option>
-              <option value="M">M</option>
-              <option value="L">L</option>
-              <option value="XL">XL</option>
-            </select>
-          </div>
+          <fieldset class="signup_fieldset">
+            <h2>About You</h2>
+            <div class="form-inline">
+              <label>Gender</label>
+              <select class="form-control" name="gender" id="gender">
+                <option value=""></option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="none">Decline to state</option>
+              </select>
+            </div>
+            <br>
 
-          <div class="form-inline">
-            <label>Will you need transportation? (Bus)</label>
-            <select class="form-control" name="bus" id="bus">
-              <option value=""></option>
-              <option value="yes">Yes</option>
-              <option value="no">No</option>
-            </select>
-            <label>If so, which location?</label>
-            <select class="form-control" name="bus_loc" id="bus_loc">
-              <option value=""></option>
-              <option value="1">Death Valley</option>
-              <option value="2">Yosemite</option>
-            </select>
-          </div>
+            <div class="form-inline">
+              <label>Have you been to a hackathon before?</label>
+              <select class="form-control" name="veteran">
+                <option value=""></option>
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+              </select>
+            </div>
 
-          <br>
+            <br>
 
-          <div class="form-inline">
-            <label>Dietary Restrictions</label>
-            <select class="form-control" name="diet">
-              <option value="none">None</option>
-              <option value="vegetarian">Vegetarian</option>
-              <option value="vegan">Vegan</option>
-              <option value="gluten free">Gluten Free</option>
-            </select>
-          </div>
+            <div class="form-group">
+              <label>What type of hacker are you? (check all that apply)</label>
+              <div class="checkbox">
+                <label for="hacker_designer">
+                  <input type="checkbox" name="hacker" value="designer" id="hacker_designer">Designer
+                </label>
+                <label for="hacker_developer">
+                  <input type="checkbox" name="hacker" value="developer" id="hacker_developer">Developer
+                </label>
+                <label for="hacker_product">
+                  <input type="checkbox" name="hacker" value="product" id="hacker_product">Product
+                </label>
+                <label for="hacker_web">
+                  <input type="checkbox" name="hacker" value="web" id="hacker_web">Web
+                </label>
+                <label for="hacker_ios">
+                  <input type="checkbox" name="hacker" value="ios" id="hacker_ios">iOS
+                </label>
+                <label for="hacker_android">
+                  <input type="checkbox" name="hacker" value="android" id="hacker_android">Android
+                </label>
+                <label for="hacker_hardware">
+                  <input type="checkbox" name="hacker" value="hardware" id="hacker_hardware">Hardware
+                </label>
+              </div>
+            </div>
 
-          <div class="form-inline">
-            <label>TODO: Download the mobile app! (replace with official app dl btns)</label>
-            <a href="#ios">iOS</a>
-            <a href="#android">Android</a>
-          </div>
+            <div class="form-group">
+              <label>Shirt Size</label>
+              <select class="form-control" name="shirt" id="shirt">
+                <option value=""></option>
+                <option value="S">S</option>
+                <option value="M">M</option>
+                <option value="L">L</option>
+                <option value="XL">XL</option>
+              </select>
+            </div>
 
-          <div class="form-inline">
-            <span>
-              <a href="https://www.facebook.com/hackingedusf" target="rss">
-                <i id="social" class="fa fa-facebook-square fa-3x social"></i>
-              </a>
-            </span>
-            <span>
-              <a href="https://twitter.com/hackingedusf" target="rss">
-                <i id="social" class="fa fa-twitter-square fa-3x social-tw"></i>
-              </a>
-            </span>
-            <span>
-              <a href="https://instagram.com/hackingedusf" target="rss">
-                <i id="social" class="fa fa-instagram fa-3x social-ig"></i>
-              </a>
-            </span>
-            <span>
-              <a href="https://medium.com/@hackingedu/latest" target="_blank">
-                <i id="medium-icon-header" class="fa fa-medium"></i>
-              </a>
-            </span>
-          </div>
+            <div class="form-inline">
+              <label>Will you need transportation? (Bus)</label>
+              <select class="form-control" name="bus" id="bus">
+                <option value=""></option>
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+              </select>
+              <label>If so, which location?</label>
+              <select class="form-control" name="bus_loc" id="bus_loc">
+                <option value=""></option>
+                <option value="1">Death Valley</option>
+                <option value="2">Yosemite</option>
+              </select>
+            </div>
 
-        </div>
+            <br>
 
-        <div class="form-group">
-          <div class="checkbox">
-            <label for="tos">
-              <input type="checkbox" name="tos" id="tos">I agree to the <a href="https://drive.google.com/a/thekao.com/file/d/0BzF-e8GGV_UiOThlSGcxU01lWG8/view?pli=1" target="_blank"> Terms of Service
-              </a>
-            </label>
-          </div>
-        </div>
-        <button type="button" id="apply-butt" class="substatement se" style="width: 100%;">Apply</button>
+            <div class="form-inline">
+              <label>Dietary Restrictions</label>
+              <select class="form-control" name="diet">
+                <option value="none">None</option>
+                <option value="vegetarian">Vegetarian</option>
+                <option value="vegan">Vegan</option>
+                <option value="gluten free">Gluten Free</option>
+              </select>
+            </div>
+
+            <div class="form-inline">
+              <label>TODO: Download the mobile app! (replace with official app dl btns)</label>
+              <a href="#ios">iOS</a>
+              <a href="#android">Android</a>
+            </div>
+
+            <div class="form-inline">
+              <span>
+                <a href="https://www.facebook.com/hackingedusf" target="rss">
+                  <i id="social" class="fa fa-facebook-square fa-3x social"></i>
+                </a>
+              </span>
+              <span>
+                <a href="https://twitter.com/hackingedusf" target="rss">
+                  <i id="social" class="fa fa-twitter-square fa-3x social-tw"></i>
+                </a>
+              </span>
+              <span>
+                <a href="https://instagram.com/hackingedusf" target="rss">
+                  <i id="social" class="fa fa-instagram fa-3x social-ig"></i>
+                </a>
+              </span>
+              <span>
+                <a href="https://medium.com/@hackingedu/latest" target="_blank">
+                  <i id="medium-icon-header" class="fa fa-medium"></i>
+                </a>
+              </span>
+            </div>
+
+            <div class="form-group">
+              <div class="checkbox">
+                <label for="tos">
+                  <input type="checkbox" name="tos" id="tos">I agree to the <a href="https://drive.google.com/a/thekao.com/file/d/0BzF-e8GGV_UiOThlSGcxU01lWG8/view?pli=1" target="_blank"> Terms of Service
+                  </a>
+                </label>
+              </div>
+            </div>
+            <button type="button" class="substatement se prev-btn">Go Back</button>
+            <button type="button" id="apply-butt" class="substatement se" style="width: 100%;">Apply</button>
+          </fieldset>
       </form>
     </div>
   </div>
@@ -561,6 +567,28 @@
   </script>
 
   <script>
+    var allFields = $('fieldset');
+    var formPos = 0;
+    allFields.hide();
+    $(allFields[0]).addClass('active').fadeIn();
+    $('fieldset').on('show', function() {
+      if ($(this).hasClass('active')) {
+        $(this).fadeIn();
+      } else {
+        $(this).hide();
+      }
+    });
+
+    $('.next-btn').click(function() {
+      $('.next-btn').parent().removeClass('active').trigger('show');
+      $(allFields[++formPos]).addClass('active').trigger('show');
+    });
+
+    $('.prev-btn').click(function() {
+      $('.prev-btn').parent().removeClass('active').trigger('show');
+      $(allFields[--formPos]).addClass('active').trigger('show');
+    });
+
     $('#apply-butt').click(function(event) {
       event.preventDefault();
 
@@ -589,12 +617,12 @@
     }
 
     var signupSuccess = function(result) {
-      alert(result.msg);
+      alert(result);
       console.log(result);
     }
 
     var signupFail = function(result) {
-      alert(result.msg);
+      alert(result);
       console.log(result);
     }
   </script>
