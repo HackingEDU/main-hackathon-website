@@ -580,10 +580,15 @@
     });
 
     $('.next-btn').click(function() {
-      $('.next-btn').parent().removeClass('active').trigger('show');
-      $(allFields[++formPos]).addClass('active').trigger('show');
+      var valid = isValidForm($(this).closest("fieldset"), formPos);
+      if (valid.result === true) {
+        $('.next-btn').parent().removeClass('active').trigger('show');
+        $(allFields[++formPos]).addClass('active').trigger('show');
+      } else {
+        //Do something better
+        alert(valid.message);
+      }
     });
-
     $('.prev-btn').click(function() {
       $('.prev-btn').parent().removeClass('active').trigger('show');
       $(allFields[--formPos]).addClass('active').trigger('show');
@@ -591,12 +596,13 @@
 
     $('#apply-butt').click(function(event) {
       event.preventDefault();
-
-      if ($("input[name='password']").val() !== $("input[name='confirm_password']").val()) {
-        alert('Those passwords don\'t match.');
+      
+      var valid = isValidForm($(this).closest("fieldset"), 3);
+      if (!valid.result) {
+        alert(valid.message);
         return false;
       }
-
+      
       if (!$("input[name='tos']").prop('checked')) {
         alert('You must agree to the Terms of Service to sign up.');
         return false;
@@ -624,6 +630,141 @@
     var signupFail = function(result) {
       alert(result);
       console.log(result);
+    }
+    
+    var isValidForm = function($fieldset, counter) {
+      if (counter === 0) {
+        if ($fieldset.find("input[name='firstname']").val() === "") {
+          return { 
+            "result": false,
+            "message": "Please enter a first name." 
+          };
+        }
+        if ($fieldset.find("input[name='lastname']").val() === "") {
+          return {
+            "result": false,
+            "message": "Please enter a last name."
+          };
+        }
+        if ($fieldset.find("input[name='email']").val() === "") {
+          return {
+            "result": false,
+            "message": "Please enter an email."
+          };
+        }
+        if ($fieldset.find("input[name='phone']").val() === "") {
+          return {
+            "result": false,
+            "message": "Please enter a phone number."
+          };
+        }
+        if ($fieldset.find("input[name='password']").val() === "") {
+          return {
+            "result": false,
+            "message": "Please enter a password."
+          };
+        }
+        if ($fieldset.find("input[name='confirm_password']").val() === "") {
+          return {
+            "result": false,
+            "message": "Please confirm your password."
+          };
+        }
+        if ($fieldset.find("input[name='password']").val() !== $fieldset.find("input[name='confirm_password']").val()) {
+          return {
+            "result": false,
+            "message": "Passwords do not match."
+          };
+        }
+        return {
+          "result": true,
+          "message": null
+        };
+      }
+      if (counter === 1) {
+        if ($fieldset.find("input[name='street']").val() === "") {
+          return {
+            "result": false,
+            "message": "Please enter a street address."
+          };
+        }
+        if ($fieldset.find("input[name='city']").val() === "") {
+          return {
+            "result": false,
+            "message": "Please enter a city."
+          };
+        }
+        if ($fieldset.find("input[name='state']").val() === "") {
+          return {
+            "result": false,
+            "message": "Please enter a state."
+          };
+        }
+        if ($fieldset.find("input[name='zip']").val() === "") {
+          return {
+            "result": false,
+            "message": "Please enter a zip code."
+          };
+        }
+        return {
+          "result": true,
+          "message": null
+        };
+      }
+      if (counter === 2) {
+        if ($fieldset.find("input[name='dob']").val() === "") {
+          return {
+            "result": false,
+            "message": "Please enter your date of birth."
+          };
+        }
+        if ($fieldset.find("select[name='job']").val() === "") {
+          return {
+            "result": false,
+            "message": "Please select whether you are interested in a tech job of not."
+          };
+        }
+        return {
+          "result": true,
+          "message": null
+        };
+      }
+      if (counter === 3) {
+        if ($fieldset.find("select[name='gender']").val() === "") {
+          return {
+            "result": false,
+            "message": "Please select your gender."
+          };
+        }
+        if ($fieldset.find("select[name='veteran']").val() === "") {
+          return {
+            "result": false,
+            "message": "Please select whether you have been to a hackathon before or not."
+          };
+        }
+        if ($fieldset.find("select[name='shirt']").val() === "") {
+          return {
+            "result": false,
+            "message": "Please select your t-shirt size."
+          };
+        }
+        if ($fieldset.find("select[name='bus']").val() === "") {
+          return {
+            "result": false,
+            "message": "Please select whether you need transportation or not."
+          };
+        }
+        if ($fieldset.find("select[name='diet']").val() === "") {
+          return {
+            "result": false,
+            "message": "Please select whether you have dietary restrictions."
+          };
+        }
+        return {
+          "result": true,
+          "message": null
+        };
+      }
     }
   </script>
   </body>
