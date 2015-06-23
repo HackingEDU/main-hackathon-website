@@ -1,14 +1,9 @@
 var path = require('path');
 var url = require('url');
 var Config = require('./config')
-var Parse = require('node-parse-api').Parse;
-var options = {
+var Parse = require("parse").Parse;
 
-    app_id: '8DnPzMRHvMamLLizP0GIRyIRMVOFqRKpMzmp1G5d',
-    api_key: '9v4U5x8fBjZ0N0wgbM5ffMfAa9ESHjgx1yPXQmDY'
-};
-
-var parse = new Parse(options);
+Parse.initialize(Config.parse.test.id, Config.parse.test.js_key);
 
 module.exports = {
   home: function(req, res) {
@@ -20,14 +15,34 @@ module.exports = {
   },
 
   newUser: function(req, res) {
-    parse.insert('TestUser', req.body, function(err, response) {
-      if (err) {
-        console.log('error: '+JSON.stringify(err));
-      }
+    // newUser AJAX call
+    // Validate user information, then save into parse database
 
-      var msg = err ? err.error : 'Your account was created!';
-      res.end(JSON.stringify({success: err === null, msg: msg}));
-    });
+    // Returns success message on user creation
+    // TODO: return undefined on user creation
+    // Returns error code and reason
+    var user = new Parse.User();
+
+    // TODO: field validation
+    // Validate school
+    // Validate email
+    delete req.body["confirm_password"]; // Remove confirm_password field
+
+    user.set(req.body);
+    user.set("username", req.body.email); // Mandatory field... set same as email
+
+    user.signUp(null).then(
+      function success(user) {
+        res.end("User created!");
+      },
+      function error(err) {
+        // Potential errors:
+        //  -1: Cannot sign up with empty username
+        //  -1: Cannot sign up with empty password
+        // 202: Username already taken
+        res.end("Error: "  + err.code + " " + err.message);
+      }
+    );
   },
 
   page: function(req, res) {
