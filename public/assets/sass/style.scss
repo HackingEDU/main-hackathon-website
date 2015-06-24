@@ -293,7 +293,7 @@
 }
 
 .why-text{
-	padding-top:60px;
+	padding-top:90px;
 }
 
 /* Quote */
@@ -302,7 +302,9 @@
 */}
 
 
-
+.faq {
+  margin-top: 90px;
+}
 
 /* Three Pillars */
 
@@ -310,9 +312,8 @@
 /*	background:#F67E7E;
 */}
 
- .top60{
-	margin-top: 60px;
-
+.tday {
+    margin-top: 90px;
 }
 
 .pad-45{
@@ -520,7 +521,8 @@ fa { color:#fff; }
 
 #sponsor .chegg {
   background: url('../img/sponsors/chegg.png');
-  width: 40%;
+  width: 20%;
+  margin-bottom: -100px;
 }
 
 #sponsor .PayPal {
@@ -528,9 +530,15 @@ fa { color:#fff; }
   width: 30%;
 }
 
-#sponsor .ibm {background: url('../img/sponsors/ibm.jpg')}
+#sponsor .ibm {
+  background: url('../img/sponsors/ibm.jpg');
+  background-size: 50% 45% !important;
+}
 
-#sponsor .auto {background: url('../img/sponsors/automattic.jpg')}
+#sponsor .auto {
+  background: url('../img/sponsors/automattic.jpg');
+  background-size: 100% 9% !important;
+}
 
 #sponsor .pebble {background: url('../img/sponsors/pebble.png')}
 
@@ -558,7 +566,10 @@ fa { color:#fff; }
 
 #sponsor .firebase {background: url('../img/sponsors/firebase.png')}
 
-#sponsor .gun {background: url('../img/sponsors/gun.png')}
+#sponsor .gun {
+  background: url('../img/sponsors/gun.png');
+  background-size: 70% 40% !important;
+}
 
 #sponsor .thalmiclabs {background: url('../img/sponsors/thalmiclabs.png')}
 
@@ -568,10 +579,17 @@ fa { color:#fff; }
 
 #sponsor .lahacks {background: url('../img/sponsors/lahacks.jpeg')}
 
-#sponsor .hack4baltimore {background: url('../img/sponsors/hack4baltimore.png')}
+#sponsor .hack4baltimore {
+  background: url('../img/sponsors/hack4baltimore.png');
+  background-size: 100% 50% !important;
+  width: 30% !important;
+}
 
-
-#sponsor .globalcommit {background: url('../img/sponsors/globalcommit.png')}
+#sponsor .globalcommit {
+  background: url('../img/sponsors/globalcommit.png');
+  background-size: 100% 50% !important;
+  width: 30% !important;
+}
 
 #sponsor .redbull {background: url('../img/sponsors/redbull.png')}
 
@@ -613,6 +631,10 @@ fa { color:#fff; }
 	min-width: 10em;
 	margin-top: 16px;
  }
+
+.sponsor {
+  margin-top: 90px;
+}
 
  #partners .tier4 figure {
   z-index: -1;
