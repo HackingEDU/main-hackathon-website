@@ -17,6 +17,7 @@
     "socket.io": "^1.3.5",
     "twitter": "^1.2.5",
     "parse": "*",
+    "promise": "*",
     "body-parser": "^1.13.1"
   },
   "description": "HackingEDU Web App | Built with Mongo, Express, React, Node, and <3",
