@@ -22,8 +22,8 @@ $('#workshops-modal-link').animatedModal({
 
 // Smooth scrolling plugin by Chris Coiyer
 // Source: http://css-tricks.com/snippets/jquery/smooth-scrolling/
-$(document).on('click', 'a[href*=#]:not([href=#])', function() {
-	if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+$('a[href*=#]:not([href=#])').click(function() {
+	if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') || location.hostname == this.hostname) {
 	  var target = $(this.hash);
 	  target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
 	  if (target.length) {

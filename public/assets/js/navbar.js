@@ -64,28 +64,29 @@
 
       /* Smooth scrolling logic */
       menuItems.click(function(e) {
-
-        // prevent default click behaviour
-        e.preventDefault();
-
-        // get href attr
-        var href,
-          currentHref,
-          i,
-          sectionOffsets,
-          sectionsLength;
-
+        
+        //get href attr
+        var href;
+        
         // cache href value
         if (options.selector === 'li') {
           href = $(this).children('a').attr('href');
         } else {
           href = $(this).attr('href');
         }
-
+        
         // let normal links in navigation redirect to location
-        if (href.substring(0, 4) === 'http' || (href.substring(0, 5) === 'https' || href.substring(0, 7) === 'mailto:')) {
-          return true;
+        if (href.substring(0, 1) !== "#") {
+          return;
         }
+        
+        // prevent default click behaviour
+        e.preventDefault();
+
+        var currentHref,
+          i,
+          sectionOffsets,
+          sectionsLength;
 
         // href attr of clicked nav link
         currentHref = href.substr(1); // remove # character with substr
@@ -101,7 +102,7 @@
         var toScroll = $self.hasClass('unsticky') ? sectionOffsets[currentHref] + 2 + 'px' : sectionOffsets[currentHref] + 2 + 'px';
 
         // on nav click navigate to selected section
-        $('html, body').stop().animate({
+        $('html, body').animate({
           scrollTop: toScroll
         }, {
           duration: options.animDuration,
