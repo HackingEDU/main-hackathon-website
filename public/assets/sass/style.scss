@@ -51,19 +51,26 @@
     margin-bottom: 0;
 }
 
+#shading {
+    background-color: rgba(0, 0, 0, 0.15);
+    height: 100vh
+}
+
 /* HEADER ANIMATION */
 
 #large-header img {
   max-height: 500px;
 }
 #large-header {
-  background: linear-gradient(270deg, #1daa86, #d55b37, #3181df, #d7df6f, #e88a1d);
-  background-size: 1000% 1000%;
+  background-image: url("../img/newPattern.png");
   height: 100vh;
-  -webkit-animation: hackingedu-header 14s ease infinite;
-  -moz-animation: hackingedu-header 14s ease infinite;
-  -o-animation: hackingedu-header 14s ease infinite;
-  animation: hackingedu-header 14s ease infinite;
+  // background: linear-gradient(270deg, #1daa86, #d55b37, #3181df, #d7df6f, #e88a1d);
+  // background-size: 1000% 1000%;
+  // height: 100vh;
+  // -webkit-animation: hackingedu-header 14s ease infinite;
+  // -moz-animation: hackingedu-header 14s ease infinite;
+  // -o-animation: hackingedu-header 14s ease infinite;
+  // animation: hackingedu-header 14s ease infinite;
 }
 
 @-webkit-keyframes hackingedu-header {

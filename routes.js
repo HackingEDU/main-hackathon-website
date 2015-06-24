@@ -18,7 +18,7 @@ module.exports = {
   signup: function(req, res) {
     res.sendFile(path.join(__dirname, 'public/signup.html'));
   },
-
+  
   newUser: function(req, res) {
     parse.insert('TestUser', req.body, function(err, response) {
       if (err) {
