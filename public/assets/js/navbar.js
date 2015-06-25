@@ -23,7 +23,20 @@
 ;(function($, window, document) {
 
   'use strict';
-
+  
+  var fadeDist = $("#large-header").height();
+  $(document).scroll(function() {
+    var scrolledDist = $(document).scrollTop();
+    if (scrolledDist <= fadeDist) {
+      var fractionFade = scrolledDist / fadeDist;
+      var scaledFade = 2 * fractionFade;
+      var newColor = "rgba(40, 40, 40, " + scaledFade + ")";
+      $("#header").css("background-color", newColor);
+    } else {
+      $("#header").css("background-color", "rgba(40, 40, 40, 1)");
+    }
+  });
+  
   $.fn.stickyNavbar = function(prop) {
 
     // Set default values
