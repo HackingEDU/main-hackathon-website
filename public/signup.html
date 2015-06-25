@@ -31,23 +31,8 @@
             <div id="fb-root"></div>
 
             <div class="form-group">
-              <label for="firstname">First Name</label>
-              <input type="text" class="form-control" id="firstname" name="firstname" placeholder="Hacker">
-            </div>
-
-            <div class="form-group">
-              <label for="lastname">Last Name</label>
-              <input type="text" class="form-control" id="lastname" name="lastname" placeholder="McHackerton">
-            </div>
-
-            <div class="form-group">
               <label for="email">Email</label>
               <input type="email" class="form-control" id="email" name="email" placeholder="you@youremail.com">
-            </div>
-
-            <div class="form-group">
-              <label for="phone">Phone #</label>
-              <input type="text" class="form-control" id="phone" name="phone" placeholder="000-111-2222">
             </div>
 
             <div class="form-group">
@@ -68,7 +53,22 @@
           </fieldset>
 
           <fieldset class="signup_fieldset">
-            <h2>Location</h2>
+            <h2>Who are you?</h2>
+            <div class="form-group">
+              <label for="firstname">First Name</label>
+              <input type="text" class="form-control" id="firstname" name="firstname" placeholder="Hacker">
+            </div>
+
+            <div class="form-group">
+              <label for="lastname">Last Name</label>
+              <input type="text" class="form-control" id="lastname" name="lastname" placeholder="McHackerton">
+            </div>
+
+            <div class="form-group">
+              <label for="phone">Phone #</label>
+              <input type="text" class="form-control" id="phone" name="phone" placeholder="000-111-2222">
+            </div>
+
             <button id="okbutton" >Get your Location (takes ~10 seconds >:()</button>
             <div class="form-group">
               <label for="street">Street Address</label>
@@ -91,15 +91,11 @@
                 <input type="text" class="form-control" id="zip" name="zip" placeholder="94107">
               </div>
             </div>
-            <button type="button" class="substatement se prev-btn">Go Back</button>
-            <button type="button" class="substatement se next-btn">Next</button>
-          </fieldset>
 
-          <fieldset class="signup_fieldset">
-            <h2>School & Experience</h2>
             <div class="form-group">
               <label for="school">School</label>
               <select class="form-control" name="school" id="school">
+                <option value="NA">N/A</option>
                 <option value="1">Academy of Art University</option>
                 <option value="2">Alliant International University</option>
                 <option value="3">American Film Institute Conservatory</option>
@@ -229,13 +225,20 @@
                 <option value="127">William Jessup University</option>
                 <option value="128">Woodbury University</option>
               </select>
+              <label for="other_school">Other</label>
+              <input type="text" placeholder="other" name="school" id="other_school"></input>
+
+              <div class="form-group">
+                <label for="dob">Date of Birth (DD/MM/YYYY)</label>
+                <input type="text" class="form-control" name="dob" id="dob" placeholder="01/13/1997">
+              </div>
             </div>
 
-            <div class="form-group">
-              <label for="dob">Date of Birth (DD/MM/YYYY)</label>
-              <input type="text" class="form-control" name="dob" id="dob" placeholder="01/13/1997">
-            </div>
+            <button type="button" class="substatement se prev-btn">Go Back</button>
+            <button type="button" class="substatement se next-btn">Next</button>
+          </fieldset>
 
+          <fieldset class="signup_fieldset">
             <div class="form-group">
               <label for="linkedin">LinkedIn URL</label>
               <input type="text" class="form-control" name="linkedin" id="linkedin">
@@ -269,21 +272,18 @@
                 <option values="no">No</option>
               </select>
             </div>
-            <button type="button" class="substatement se prev-btn">Go Back</button>
-            <button type="button" class="substatement se next-btn">Next</button>
-          </fieldset>
 
-          <fieldset class="signup_fieldset">
-            <h2>About You</h2>
             <div class="form-inline">
               <label>Gender</label>
               <select class="form-control" name="gender" id="gender">
                 <option value=""></option>
                 <option value="male">Male</option>
                 <option value="female">Female</option>
+                <option value="other">Other</option>
                 <option value="none">Decline to state</option>
               </select>
             </div>
+
             <br>
 
             <div class="form-inline">
@@ -297,96 +297,90 @@
 
             <br>
 
-        <div class="row">
+            <div class="row">
+              <div class="col-md-4 form-group">
+                <label>What type of hacker are you? (check all that apply)</label>
+                <div class="checkbox">
+                  <label for="hacker_designer">
+                    <input type="checkbox" name="hacker" value="designer" id="hacker_designer">Designer
+                  </label>
+                  <label for="hacker_developer">
+                    <input type="checkbox" name="hacker" value="developer" id="hacker_developer">Developer
+                  </label>
+                  <label for="hacker_product">
+                    <input type="checkbox" name="hacker" value="product" id="hacker_product">Product
+                  </label>
+                </div>
+              </div>
 
-            <div class="col-md-4 form-group">
-              <label>What type of hacker are you? (check all that apply)</label>
-              <div class="checkbox">
-                <label for="hacker_designer">
-                  <input type="checkbox" name="hacker" value="designer" id="hacker_designer">Designer
-                </label>
-                <label for="hacker_developer">
-                  <input type="checkbox" name="hacker" value="developer" id="hacker_developer">Developer
-                </label>
-                <label for="hacker_product">
-                  <input type="checkbox" name="hacker" value="product" id="hacker_product">Product
-                </label>
+              <div class="col-md-4 form-group">
+                <label>What programming languages do you use? (check all that apply)</label>
+                <div class="checkbox">
+                  <label for="language">
+                    <input type="checkbox" name="language" value="language_javascript" id="javascript">Javascript
+                  </label>
+                  <label for="language">
+                    <input type="checkbox" name="language" value="language_sql" id="sql">SQL
+                  </label>
+                  <label for="language">
+                    <input type="checkbox" name="language" value="language_java" id="java">Java
+                  </label>
+                  <label for="language">
+                    <input type="checkbox" name="language" value="language_c#" id="c#">C#
+                  </label>
+                  <label for="language">
+                    <input type="checkbox" name="language" value="language_php" id="php">PHP
+                  </label>
+                  <label for="language">
+                    <input type="checkbox" name="language" value="language_python" id="python">Python
+                  </label>
+                  <label for="language">
+                    <input type="checkbox" name="language" value="language_c++" id="c++">C++
+                  </label>
+                  <label for="language">
+                    <input type="checkbox" name="language" value="language_nodejs" id="nodejs">Node.js
+                  </label>
+                  <label for="language">
+                    <input type="checkbox" name="language" value="language_angularjs" id="angularjs">AngularJS
+                  </label>
+                  <label for="language">
+                    <input type="checkbox" name="language" value="language_ruby" id="ruby">Ruby
+                  </label>
+                  <label for="language">
+                    <input type="checkbox" name="language" value="language_objective-c" id="objective-c">Objective-C
+                  </label>
+                </div>
+              </div>
+
+              <div class="col-md-4 form-group">
+                <label>What do you hack on? (check all that apply)</label>
+                <div class="checkbox">
+                  <label for="hacker_web">
+                    <input type="checkbox" name="hacker" value="web" id="hacker_web">Web
+                  </label>
+                  <label for="hacker_ios">
+                    <input type="checkbox" name="hacker" value="ios" id="hacker_ios">iOS
+                  </label>
+                  <label for="hacker_android">
+                    <input type="checkbox" name="hacker" value="android" id="hacker_android">Android
+                  </label>
+                  <label for="hacker_hardware">
+                    <input type="checkbox" name="hacker" value="hardware" id="hacker_hardware">Hardware
+                  </label>
+                </div>
               </div>
             </div>
-
-            <div class="col-md-4 form-group">
-              <label>What programming languages do you use? (check all that apply)</label>
-              <div class="checkbox">
-                <label for="language">
-                  <input type="checkbox" name="language" value="language_javascript" id="javascript">Javascript
-                </label>
-                <label for="language">
-                  <input type="checkbox" name="language" value="language_sql" id="sql">SQL
-                </label>
-                <label for="language">
-                  <input type="checkbox" name="language" value="language_java" id="java">Java
-                </label>
-                <label for="language">
-                  <input type="checkbox" name="language" value="language_c#" id="c#">C#
-                </label>
-                <label for="language">
-                  <input type="checkbox" name="language" value="language_php" id="php">PHP
-                </label>
-                <label for="language">
-                  <input type="checkbox" name="language" value="language_python" id="python">Python
-                </label>
-                <label for="language">
-                  <input type="checkbox" name="language" value="language_c++" id="c++">C++
-                </label>
-                <label for="language">
-                  <input type="checkbox" name="language" value="language_nodejs" id="nodejs">Node.js
-                </label>
-                <label for="language">
-                  <input type="checkbox" name="language" value="language_angularjs" id="angularjs">AngularJS
-                </label>
-                <label for="language">
-                  <input type="checkbox" name="language" value="language_ruby" id="ruby">Ruby
-                </label>
-                <label for="language">
-                  <input type="checkbox" name="language" value="language_objective-c" id="objective-c">Objective-C
-                </label>
-              </div>
-            </div>
-
-
-            <div class="col-md-4 form-group">
-              <label>What do you hack on? (check all that apply)</label>
-              <div class="checkbox">
-                <label for="hacker_web">
-                  <input type="checkbox" name="hacker" value="web" id="hacker_web">Web
-                </label>
-                <label for="hacker_ios">
-                  <input type="checkbox" name="hacker" value="ios" id="hacker_ios">iOS
-                </label>
-                <label for="hacker_android">
-                  <input type="checkbox" name="hacker" value="android" id="hacker_android">Android
-                </label>
-                <label for="hacker_hardware">
-                  <input type="checkbox" name="hacker" value="hardware" id="hacker_hardware">Hardware
-                </label>
-              </div>
-            </div>
-
-
-        </div>
-
-
-
-
 
             <div class="form-group">
               <label>Shirt Size</label>
               <select class="form-control" name="shirt" id="shirt">
                 <option value=""></option>
+                <option value="XS">XS</option>
                 <option value="S">S</option>
                 <option value="M">M</option>
                 <option value="L">L</option>
                 <option value="XL">XL</option>
+                <option value="XXL">XXL</option>
               </select>
             </div>
 
