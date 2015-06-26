@@ -1,11 +1,9 @@
 var path = require('path');
+var querystring = require("querystring");
 var https = require("https");
 var url = require('url');
-var config = require('./config')
-var Parse = require("parse").Parse;
 var Promise = require("promise");
-
-Parse.initialize(config.parse.test.app_id, config.parse.test.js_key);
+var config = require('./config')
 
 module.exports = {
   home: function(req, res) {
@@ -15,96 +13,104 @@ module.exports = {
   signup: function(req, res) {
     res.sendFile(path.join(__dirname, 'public/signup.html'));
   },
-  
+
   newUser: function(req, res) {
-    // newUser AJAX call
-    // Validate user information, then save into parse database
+    // Create User URL: hackingedu.parseapp.com/actions/n0354d89c28ec399c00d3cb2d094cf093
+    //  Validation URL: hackingedu.parseapp.com/actions/v62110a75095ebf61417a51fff9af9c7f
 
-    // Returns success message on user creation
-    // TODO: return undefined on user creation
-    // Returns error code and reason
-    var user = new Parse.User();
+    // This is now a proxy to Cloud Code: will probably be better for security
+    // Also, all the validation is now handled by Parse servers (cloud code),
+    // might be better for server load
+    var post_data = querystring.stringify(req.body);
 
-    try {
-      // Begin promise chain
-      new Promise(
-        function validateFields(resolve, reject) {
-          var ajax_counter = 2;  // Number of fields to validate
-          var rejections   = []; // Hold rejection fields
-
-          function checkEnd() {
-            if(--ajax_counter <= 0) {
-              if(rejections.length > 0) {
-                return reject({
-                  code: 100,
-                  message: "Invalid fields",
-                  fields: rejections
-                });
-              } else {
-                return resolve( { "is_valid": true } );
-              }
-            }
+    // AJAX promise definitions
+    var validate = new Promise(
+      function(resolve, reject) {
+        // Validate fields
+        var val_request = https.request(
+          {
+              method: "POST",
+            hostname: "hackingedu.parseapp.com",
+                path: "/actions/v62110a75095ebf61417a51fff9af9c7f", // Validation AJAX
+             headers: {
+                        "Content-Type": "application/x-www-form-urlencoded",
+                        "Content-Length": post_data.length
+                      }
           }
+        ).on("response", function httpsResponse(response) {
+            response.setEncoding("utf8");
+            response.on("data", function(chunk) {
+              resolve(chunk);
+            });
+          }
+        ).on("error", function httpsResponse(response) {
+            console.log("POST error...?");
+            reject(response);
+          }
+        );
 
-          // Validate email with Mailgun REST function
-          https.get(
-            {
-                  auth: "api:" + config.mailgun.pub_key,
-              hostname: "api.mailgun.net",
-                  path: "/v3/address/validate" +
-                        "?address=" + req.body.email
-            }
-          ).on("response",
-            function httpsResponse(https_res) {
-              https_res.setEncoding("utf8");
-              https_res.on("data", function(data) {
-                var d = JSON.parse(data);
-                if(d.is_valid != true) { rejections.push("email"); }
-                checkEnd();
-              });
-            }
-          ).on("error",
-            function httpsError(https_err) {
-              rejections.push("email");
-              checkEnd();
-            }
-          );
+        val_request.write(post_data);
+        val_request.end();
+      }
+    );
 
-          // TODO: school validation...
-          // possibly another HTTP request? or an internal list of schools
-          // yeah let's do that
-          checkEnd();
-        }
-      ).then(
-        function saveUser(response) {
-          // Sanitize user fields before saving into Parse
-          delete req.body.confirm_password; // Remove confirm_password field
-          user.set(req.body);
-          user.set("username", req.body.email); // Mandatory field... set same as email
-          return user.signUp(null);
-        }
-      ).then(
-        function success(user) {
-          console.log(user);
-          res.end("Account created");
-        },
-        function error(err) {
-          // Potential errors:
-          //  -1: Cannot sign up with empty username
-          //  -1: Cannot sign up with empty password
-          // 202: Username already taken
-          //
-          //    : Invalid email
-          //    : Invalid school
-          console.log(err);
-          res.end(JSON.stringify(err));
-        }
-      );
+    var createUser = new Promise(
+      function(resolve, reject) {
+        // Validate fields
+        var new_request = https.request(
+          {
+              method: "POST",
+            hostname: "hackingedu.parseapp.com",
+                path: "/actions/n0354d89c28ec399c00d3cb2d094cf093", // New User AJAX
+             headers: {
+                        "Content-Type": "application/x-www-form-urlencoded",
+                        "Content-Length": post_data.length
+                      }
+          }
+        ).on("response", function httpsResponse(response) {
+            response.setEncoding("utf8");
+            response.on("data", function(chunk) {
+              resolve(chunk);
+            });
+          }
+        ).on("error", function httpsResponse(response) {
+            console.log("POST error...?");
+            reject(response);
+          }
+        );
 
-    } catch(e) {
-      console.log(e);
-      res.end("Internal Server Error");
-    }
+        new_request.write(post_data);
+        new_request.end();
+      }
+    );
+
+
+
+    validate.then(
+      function handleValidated(retval) {
+        // retval = { code: ..., message: ..., fields: ...
+        //  @code: status code
+        //  @message: ...
+        //  @fields: Array of invalid fields, if any
+        retval = JSON.parse(retval);
+        if(retval.fields.length > 0) return Promise.reject(retval);
+        return createUser;
+      }
+    ).then(
+      function handleCreated(retval) {
+        // retval = { code: ..., message: ..., fields: ...
+        //  @code: status code
+        //  @message: ...
+        //  @fields: Array of invalid fields, if any
+        console.log(retval);
+        res.end(retval);
+      },
+      function ajaxError(err) {
+        console.log(err);
+        res.end(err);
+      }
+    );
+
   },
 
   page: function(req, res) {
