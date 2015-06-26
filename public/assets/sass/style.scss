@@ -283,6 +283,10 @@
 
 /* Why */
 
+#stats span {
+  text-align: center;
+  margin-bottom: 60px;
+}
 
 #why{
 	/*background:url("../img/prism-background.jpg");
@@ -293,7 +297,7 @@
 	text-align: center;
 }
 
-.why-text{
+#about {
 	padding-top:90px;
 }
 
@@ -312,6 +316,11 @@
 #three-pill{
 /*	background:#F67E7E;
 */}
+
+#three-pill img {
+  margin-left: 40px;
+  margin-top: -10px;
+}
 
 .tday {
     margin-top: 90px;
