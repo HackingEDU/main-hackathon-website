@@ -440,9 +440,9 @@
               <div class="col-md-4 form-group">
                 <label>What type of hacker are you?</label>
                 <div class="radio">
-                  <label><input type="radio" name="hacker" id="hacker_designer" value="designer">Designer</label>
-                  <label><input type="radio" name="hacker" id="hacker_developer" value="developer">Developer</label>
-                  <label><input type="radio" name="hacker" id="hacker_product" value="product">Product</label>
+                  <label><input type="radio" name="hacker_type" id="hacker_designer" value="designer">Designer</label>
+                  <label><input type="radio" name="hacker_type" id="hacker_developer" value="developer">Developer</label>
+                  <label><input type="radio" name="hacker_type" id="hacker_product" value="product">Product</label>
                 </div>
               </div>
 
@@ -486,19 +486,19 @@
               </div>
 
               <div class="col-md-4 form-group">
-                <label>What do you hack on? (check all that apply)</label>
+                <label>What do you hack on? (Max: 2)</label>
                 <div class="checkbox">
-                  <label for="hacker_web">
-                    <input type="checkbox" name="hacker" value="web" id="hacker_web">Web
+                  <label for="hacker_platform_web">
+                    <input type="checkbox" name="hacker_platform" value="web" id="hacker_platform_web">Web
                   </label>
-                  <label for="hacker_ios">
-                    <input type="checkbox" name="hacker" value="ios" id="hacker_ios">iOS
+                  <label for="hacker_platform_ios">
+                    <input type="checkbox" name="hacker_platform" value="ios" id="hacker_platform_ios">iOS
                   </label>
-                  <label for="hacker_android">
-                    <input type="checkbox" name="hacker" value="android" id="hacker_android">Android
+                  <label for="hacker_platform_android">
+                    <input type="checkbox" name="hacker_platform" value="android" id="hacker_platform_android">Android
                   </label>
-                  <label for="hacker_hardware">
-                    <input type="checkbox" name="hacker" value="hardware" id="hacker_hardware">Hardware
+                  <label for="hacker_platform_hardware">
+                    <input type="checkbox" name="hacker_platform" value="hardware" id="hacker_platform_hardware">Hardware
                   </label>
                 </div>
               </div>
@@ -963,7 +963,14 @@
         if ($fieldset.find("input[name='language']:checked").length > 3) {
           return {
             "result": false,
-            "message": "You can only choose 3 languages."
+            "message": "Please only pick your top 3 languages."
+          }
+        }
+
+        if ($fieldset.find("input[name='hacker_platform']:checked").length > 2) {
+          return {
+            "result": false,
+            "message": "Please only pick the top 2 things you hack on."
           }
         }
         return {
