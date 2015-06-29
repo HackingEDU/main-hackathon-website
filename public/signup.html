@@ -69,7 +69,7 @@
               <input type="text" class="form-control" id="phone" name="phone" placeholder="000-111-2222">
             </div>
 
-            <button id="okbutton" >Get your Location (takes ~10 seconds >:()</button>
+            <button id="okbutton" >Click to Autofill Location</button>
             <div class="form-group">
               <label for="street">Street Address</label>
               <input type="text" class="form-control" id="street" name="street" placeholder="12345 Test Dr">
@@ -793,7 +793,7 @@
     $('#apply-butt').click(function(event) {
       event.preventDefault();
       
-      var valid = isValidForm($(this).closest("fieldset"), 3);
+      var valid = isValidForm($(this).closest("fieldset"), 2);
       if (!valid.result) {
         alert(valid.message);
         return false;
@@ -821,6 +821,7 @@
     var signupSuccess = function(result) {
       alert(result);
       console.log(result);
+      window.location.replace('localhost:8080');
     }
 
     var signupFail = function(result) {
@@ -830,10 +831,11 @@
     
     var isValidForm = function($fieldset, counter) {
       if (counter === 0) {
-        if ($fieldset.find("input[name='email']").val() === "") {
+        if ($fieldset.find("input[name='email']").val() === "" ||
+         !(/.+\@.+\.(com|co|org|edu|net)/).test($fieldset.find("input[name='email']").val())) {
           return {
             "result": false,
-            "message": "Please enter an email."
+            "message": "Please enter a valid email."
           };
         }
         if ($fieldset.find("input[name='password']").val() === "") {
@@ -852,6 +854,13 @@
           return {
             "result": false,
             "message": "Passwords do not match."
+          };
+        }
+
+        if ($fieldset.find("input[name='password']").val().length < 6) {
+          return {
+            "result": false,
+            "message": "Your password must be 6 characters in length or longer."
           };
         }
         return {
@@ -902,19 +911,44 @@
             "message": "Please enter a zip code."
           };
         }
+        if ($fieldset.find("select[name='dob-month']").val() === "" ||
+          $fieldset.find("select[name='dob-day']").val() === "" ||
+          $fieldset.find("select[name='dob-year']").val() === ""
+        ) {
+          return {
+            "result": false,
+            "message": "Please enter your date of birth."
+          };
+        }
         return {
           "result": true,
           "message": null
         };
       }
+
       if (counter === 2) {
-        if ($fieldset.find("input[name='dob-month']").val() === "" ||
-          $fieldset.find("input[name='dob-day']").val() === "" ||
-          $fieldset.find("input[name='dob-year']").val() === ""
-        ) {
+        if ((/((www\.)|(http)s|:\/\/|.com)/).test($fieldset.find("input[name='github']").val())) {
           return {
             "result": false,
-            "message": "Please enter your date of birth."
+            "message": "Please only include your Github username, not the full URL."
+          };
+        }
+        if ((/((www\.)|(http)s|:\/\/|.com)/).test($fieldset.find("input[name='linkedin']").val())) {
+          return {
+            "result": false,
+            "message": "Please only include your Linkedin username, not the full URL."
+          };
+        }
+        if ((/((www\.)|(http)s|:\/\/|.com)/).test($fieldset.find("input[name='challengepost']").val())) {
+          return {
+            "result": false,
+            "message": "Please only include your Challenge Post username, not the full URL."
+          };
+        }
+        if ((/((www\.)|(http)s|:\/\/|.com)/).test($fieldset.find("input[name='twitter']").val())) {
+          return {
+            "result": false,
+            "message": "Please only include your Twitter username, not the full URL."
           };
         }
         if ($fieldset.find("select[name='job']").val() === "") {
@@ -923,12 +957,6 @@
             "message": "Please select whether you are interested in a tech job of not."
           };
         }
-        return {
-          "result": true,
-          "message": null
-        };
-      }
-      if (counter === 3) {
         if ($fieldset.find("select[name='gender']").val() === "") {
           return {
             "result": false,
@@ -953,20 +981,31 @@
             "message": "Please select whether you need transportation or not."
           };
         }
-        if ($fieldset.find("select[name='diet']").val() === "") {
+        if ($fieldset.find("select[name='bus']").val() === "yes" &&
+          $fieldset.find("select[name='bus_loc']").val() === "") {
           return {
             "result": false,
-            "message": "Please select whether you have dietary restrictions."
-          };
+            "message": "Please select at which location you will need a bus."
+          }
         }
-
+        if ($fieldset.find("input[name='language']:checked").length < 1) {
+          return {
+            "result": false,
+            "message": "Please pick your top programming language."
+          }
+        }
+        if ($fieldset.find("input[name='hacker_platform']:checked").length < 1) {
+          return {
+            "result": false,
+            "message": "Please pick a platform that you enjoy hacking on."
+          }
+        }
         if ($fieldset.find("input[name='language']:checked").length > 3) {
           return {
             "result": false,
             "message": "Please only pick your top 3 languages."
           }
         }
-
         if ($fieldset.find("input[name='hacker_platform']:checked").length > 2) {
           return {
             "result": false,
