@@ -1,0 +1,40 @@
+<html>
+  <head>
+    <script type="text/javascript">
+      // Retrieve query strings
+      var req = { query: undefined };
+      (window.onpopstate = function () {
+          var match,
+              pl     = /\+/g,  // Regex for replacing addition symbol with a space
+              search = /([^&=]+)=?([^&]*)/g,
+              decode = function (s) { return decodeURIComponent(s.replace(pl, " ")); },
+              query  = window.location.search.substring(1);
+
+          req.query = {};
+          while (match = search.exec(query))
+             req.query[decode(match[1])] = decode(match[2]);
+      })();
+    </script>
+  </head>
+
+  <body>
+    <span id="s2" style="display: none;">You have been unsubscribed.</span>
+    <span id="s1" style="display: none;">Click <a id="a1" href="#">here</a> to unsubscribe.</span>
+
+    <script type="text/javascript">
+      // Span elements are rendered at this point
+      var a1 = document.getElementById("a1");
+      var s1 = document.getElementById("s1");
+      var s2 = document.getElementById("s2");
+
+      if(req.query.u) { // We already unsubscribed
+        s2.style.display = "block";
+      } else {
+        s1.style.display = "block";
+        a1.setAttribute("href", "/unsubscribe?q=" + req.query.q + "&u=1");
+      }
+
+    </script>
+  </body>
+
+</html>

@@ -1,5 +1,6 @@
 var path = require('path');
 var querystring = require("querystring");
+var request = require("request");
 var https = require("https");
 var url = require('url');
 var Promise = require("promise");
@@ -111,6 +112,25 @@ module.exports = {
       }
     );
 
+  },
+
+  unsubscribe: function(req, res) {
+    // User email unsubscribe page
+    //    @q: User's registration hash
+    //    @u: If set, unsubscribe this user from further emails
+    if(req.query.u) {
+      request.post("http://hackingedu.parseapp.com/webhooks/u63e1c9c825c067ac7475a85f606f6c72",
+        { form: { q: req.query.q } },
+        function(err, response, body) {
+          if(err) { console.log(err); }
+          else {
+            console.log(body);
+          }
+
+        }
+      );
+    }
+    res.sendFile(path.join(__dirname, 'public/unsubscribe.html'));
   },
 
   page: function(req, res) {
