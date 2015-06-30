@@ -57,6 +57,10 @@
     height: 100vh
 }
 
+.sub-text{
+  font-size: 24px;
+}
+
 /* HEADER ANIMATION */
 
 #large-header img {
@@ -238,6 +242,8 @@
 	margin-bottom: 25px;
 }
 
+
+
 .substatement{
 	color:white;
 }
@@ -254,6 +260,12 @@
 
 }
 
+#apply-butt:hover {
+  color:black;
+  background: white;
+
+}
+
 #sponsor-butt{
 	display:inline-block;
 	margin-left:auto;
@@ -262,6 +274,11 @@
 	height:55px;
 	font-size:15px;
 
+}
+
+#sponsor-butt:hover{
+  color:black;
+  background:white;
 }
 #long-prism{
 	background:url("../img/longprism.png");
@@ -289,8 +306,6 @@
 }
 
 #why{
-	/*background:url("../img/prism-background.jpg");
-	background-size: 100% auto contain;*/
 }
 
 .text-center{
@@ -325,6 +340,10 @@
   margin-right: auto;
 }
 
+.three-text{
+  font-size: 55px;
+
+}
 .tday {
     margin-top: 90px;
 }
@@ -394,6 +413,10 @@
 	position: relative;
 	background-size: cover;
 
+  }
+
+  .bold{
+    font-size: 1.9em;
   }
 
   .center-middle{
@@ -506,7 +529,7 @@ fa { color:#fff; }
   i.fa{
     box-sizing:content-box;
     font-size: 2em;
-    margin: 3em 1em;
+    margin: 2em .7em;
   }
 
   .fa-facebook:hover {
@@ -721,7 +744,7 @@ fa { color:#fff; }
   border-radius:50%;
   font-size:0.5em;
   display:block;
-  box-shadow:0px 0px 5px 0px #333;
+  box-shadow:0px 0px 5px 0px #FFF;
 }
 
 /* a triangle to make the main part of the arrow. Adjust the border-color to fit your needs */
