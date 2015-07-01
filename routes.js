@@ -19,6 +19,7 @@ module.exports = {
     // Also, all the validation is now handled by Parse servers (cloud code),
     // might be better for server load
 
+
     // AJAX promise definitions
     var validate = new Promise(
       function(resolve, reject) {
@@ -26,11 +27,18 @@ module.exports = {
         request.post("http://hackingedu.parseapp.com/actions/v62110a75095ebf61417a51fff9af9c7f",
           { form: req.body },
           function(err, response, body) {
-            if(err) { reject(err);   }
-            else    { resolve(body); }
+            // @body:
+            //   code: 200 if successful
+            //   message: "blahblahblah"
+            //   fields: [ "invalid", "fields" ]
+
+            body = JSON.parse(body);
+            if(body.code == 200) { resolve(body); }
+            else                 {  reject(body); }
           }
         );
       }
+
     );
 
     var createUser = new Promise(
@@ -44,6 +52,7 @@ module.exports = {
           }
         );
       }
+
     );
 
     validate.then(
@@ -52,22 +61,24 @@ module.exports = {
         //  @code: status code
         //  @message: ...
         //  @fields: Array of invalid fields, if any
-        retval = JSON.parse(retval);
-        if(retval.fields.length > 0) return Promise.reject(retval);
-        return createUser;
+        console.log(retval.fields);
+        if(retval.fields !== undefined) { return Promise.reject(retval); }
+        else                            { return createUser; }
       }
+
     ).then(
       function handleCreated(retval) {
         // retval = { code: ..., message: ..., fields: ...
         //  @code: status code
         //  @message: ...
-        console.log(retval);
         res.end(retval);
       },
       function ajaxError(err) {
-        console.log(err);
-        res.end(err);
+        // TODO: okay I'm not sure why we have to stringify this
+        // Super inconsistent for some reason, it hangs if we try to send the whole object!
+        res.end(JSON.stringify(err));
       }
+
     );
 
   },
