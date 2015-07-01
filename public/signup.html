@@ -16,11 +16,11 @@
   </head>
   <body background="img/signup_prism.png">
     <div class="container-fluid col-md-offset-3">
-      <h1 style="padding: 1em 1em;">HackingEDU Signup</h1>
+      <h1 style="padding: 1em 2em;">HackingEDU Signup</h1>
       <form id="signup_form" >
         <div class="col-md-7">
           <fieldset class="signup_fieldset active">
-            <h2>Account Info</h2>
+            <h2 class="text-center">Account Info</h2>
             <!--
             Below we include the Login Button social plugin. This button uses
             the JavaScript SDK to present a graphical Login button that triggers
@@ -45,12 +45,13 @@
               <br><input type="password" class="form-control" id="confirm_password" name="confirm_password" onblur="confirmEmail()">
             </div>
 
-            
+            <a href= "http://www.hackingedu.co"><button type="button" class="substatement se back-btn">Back</button></a>
+
             <button type="button" class="substatement se next-btn">Next</button>
           </fieldset>
 
           <fieldset class="signup_fieldset">
-            <h2>Who are you?</h2>
+            <h2 class="text-center">Who are you?</h2>
             <div class="form-group">
               <label for="firstname">First Name</label>
               <input type="text" class="form-control" id="firstname" name="firstname" placeholder="Hacker">
@@ -222,7 +223,7 @@
                 <option value="127">William Jessup University</option>
                 <option value="128">Woodbury University</option>
               </select>
-              <label for="other_school">Other</label>
+              <label for="other_school">Other School</label>
               <input type="text" placeholder="other" name="school" id="other_school"></input>
 
               <div class="form-group form-inline">
@@ -376,12 +377,12 @@
 
           <fieldset class="signup_fieldset">
             <div class="form-group">
-              <label for="linkedin">LinkedIn Username</label>
+              <label for="linkedin">*LinkedIn Username</label>
               <input type="text" class="form-control" name="linkedin" id="linkedin">
             </div>
 
             <div class="form-group">
-              <label for="github">Github Username</label>
+              <label for="github">*Github Username</label>
               <input type="text" class="form-control" name="github" id="github">
             </div>
 
@@ -396,12 +397,12 @@
             </div>
 
             <div class="form-group">
-              <label for="resume">Resume/CV (.pdf, .doc, .docx)</label>
+              <label for="resume">*Resume/CV (.pdf, .doc, .docx)</label>
               <input type="file" class="form-control" name="resume" id="resume" accept=".doc,.docx,.pdf">
             </div>
 
             <div class="form-inline">
-              <label>Interested in a job in Tech?</label>
+              <label>*Interested in a job in Tech?</label>
               <select name="job" class="form-control" id="job">
                 <option></option>
                 <option value="yes">Yes</option>
@@ -410,7 +411,7 @@
             </div>
 
             <div class="form-inline">
-              <label>Gender</label>
+              <label>*Gender</label>
               <select class="form-control" name="gender" id="gender">
                 <option value=""></option>
                 <option value="male">He/Him</option>
@@ -423,7 +424,7 @@
             <br>
 
             <div class="form-inline">
-              <label>Have you been to a hackathon before?</label>
+              <label>*Have you been to a hackathon before?</label>
               <select class="form-control" name="veteran">
                 <option value=""></option>
                 <option value="yes">Yes</option>
@@ -435,7 +436,7 @@
 
             <div class="row">
               <div class="col-md-4 form-group">
-                <label>What type of hacker are you?</label>
+                <label>*What type of hacker are you?</label>
                 <div class="radio">
                   <label><input type="radio" name="hacker_type" id="hacker_designer" value="designer">Designer</label>
                   <label><input type="radio" name="hacker_type" id="hacker_developer" value="developer">Developer</label>
@@ -444,7 +445,7 @@
               </div>
 
               <div class="col-md-4 form-group">
-                <label>What programming languages do you use? (Max: 3)</label>
+                <label>*What programming languages do you use? (Max: 3)</label>
                 <div class="checkbox">
                   <label for="javascript">
                     <input type="checkbox" name="language" value="language_javascript" id="javascript">Javascript
@@ -483,7 +484,7 @@
               </div>
 
               <div class="col-md-4 form-group">
-                <label>What do you hack on? (Max: 2)</label>
+                <label>*What do you hack on? (Max: 2)</label>
                 <div class="checkbox">
                   <label for="hacker_platform_web">
                     <input type="checkbox" name="hacker_platform" value="web" id="hacker_platform_web">Web
@@ -502,7 +503,7 @@
             </div>
 
             <div class="form-group">
-              <label>Shirt Size</label>
+              <label>*Shirt Size</label>
               <select class="form-control" name="shirt" id="shirt">
                 <option value=""></option>
                 <option value="XS">XS</option>
@@ -515,7 +516,7 @@
             </div>
 
             <div class="form-inline">
-              <label>Will you need transportation? (Bus)</label>
+              <label>*Will you need transportation? (Bus)</label>
               <select class="form-control" name="bus" id="bus">
                 <option value=""></option>
                 <option value="yes">Yes</option>
@@ -536,9 +537,8 @@
                 <option value="10">UCM</option>
                 <option value="11">Caltech</option>
                 <option value="12">SF State</option>
-                <option value="13">Death Valley</option>
-                <option value="14">UCSC</option>
-                <option value="15">UCI</option>
+                <option value="13">UCSC</option>
+                <option value="14">UCI</option>
 
               </select>
             </div>
@@ -546,7 +546,7 @@
             <br>
 
             <div class="form-inline">
-              <label>Dietary Restrictions</label>
+              <label>*Dietary Restrictions</label>
               <select class="form-control" name="diet">
                 <option value="none">None</option>
                 <option value="vegetarian">Vegetarian</option>
@@ -561,6 +561,7 @@
               <a href="#android">Android</a>
             </div> -->
 
+            <label>Follow us!</label>
             <div class="form-inline">
               <span>
                 <a href="https://www.facebook.com/hackingedusf" target="rss">
