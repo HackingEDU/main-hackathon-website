@@ -43,6 +43,7 @@ app.use(bodyParser.json());
 app.get('/', routes.home);
 app.get('/signup', routes.signup);
 app.post('/new_user', routes.newUser);
+app.get('/unsubscribe', routes.unsubscribe);
 
 // Page Route
 app.get('/page/:page/:skip', routes.page);
