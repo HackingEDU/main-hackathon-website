@@ -6,7 +6,7 @@ var express = require('express'),
   //twitter = require('twitter'),
   routes = require('./routes'),
   //config = require('./config'),
-  streamHandler = require('./utils/streamHandler'),
+  // streamHandler = require('./utils/streamHandler'),
   debug = require('debug'),
   sassMiddleware = require('node-sass-middleware'),
   path = require('path');
@@ -54,7 +54,7 @@ var server = http.createServer(app).listen(port, function() {
 });
 
 // Initialize socket.io
-var io = require('socket.io').listen(server);
+// var io = require('socket.io').listen(server);
 
 // io.on('connection', function(socket) {
 //   socket.on('get_tweets', function(data) {
