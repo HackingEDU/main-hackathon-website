@@ -267,7 +267,7 @@
 }
 
 .justified{
-  text-align: left;
+  text-align: justify;
 }
 
 #sponsor-butt{
@@ -321,6 +321,10 @@
 	text-align: center;
 }
 
+.extra-line-height{
+  line-height: 35px;
+}
+
 #about {
 	padding-top:90px;
 }
@@ -366,6 +370,8 @@
 	padding-top: 20px;
 }
 
+
+
 /*FAQ*/
 
 /*Training Day Section*/
@@ -379,6 +385,10 @@
  .padtop60{
  	padding-top:60px;
 
+ }
+
+ .padtop30{
+  padding-top: 30px;
  }
 
  .bottom-150{
@@ -792,3 +802,17 @@ fa { color:#fff; }
   width: 30%;
   float: left;
 }
+
+
+.marginbottom50{
+  margin-bottom:50px;
+}
+
+.neg30{
+  margin-top:-30px;
+}
+
+
+
+
+
