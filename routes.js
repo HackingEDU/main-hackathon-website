@@ -19,51 +19,52 @@ module.exports = {
     // Also, all the validation is now handled by Parse servers (cloud code),
     // might be better for server load
 
-
     // AJAX promise definitions
-    var validate = new Promise(
-      function(resolve, reject) {
-        // Request to validate fields
-        request.post("http://hackingedu.parseapp.com/actions/v62110a75095ebf61417a51fff9af9c7f",
-          { form: req.body },
-          function(err, response, body) {
-            // @body:
-            //   code: 200 if successful
-            //   message: "blahblahblah"
-            //   fields: [ "invalid", "fields" ]
+    var validate = function() {
+      return new Promise(
+        function(resolve, reject) {
+          // Request to validate fields
+          request.post("http://hackingedu.parseapp.com/actions/v62110a75095ebf61417a51fff9af9c7f",
+            { form: req.body },
+            function(err, response, body) {
+              // @body:
+              //   code: 200 if successful
+              //   message: "blahblahblah"
+              //   fields: [ "invalid", "fields" ]
 
-            body = JSON.parse(body);
-            if(body.code == 200) { resolve(body); }
-            else                 {  reject(body); }
-          }
-        );
-      }
+              body = JSON.parse(body);
+              if(body.code == 200) { resolve(body); }
+              else                 {  reject(body); }
+            }
+          );
+        }
+      );
+    }
 
-    );
 
-    var createUser = new Promise(
-      function(resolve, reject) {
-        // Request to create a new user
-        request.post("http://hackingedu.parseapp.com/actions/n0354d89c28ec399c00d3cb2d094cf093",
-          { form: req.body },
-          function(err, response, body) {
-            if(err) { reject(err);   }
-            else    { resolve(body); }
-          }
-        );
-      }
+    var createUser = function() {
+      return new Promise(
+        function(resolve, reject) {
+          // Request to create a new user
+          request.post("http://hackingedu.parseapp.com/actions/n0354d89c28ec399c00d3cb2d094cf093",
+            { form: req.body },
+            function(err, response, body) {
+              if(err) { reject(err);   }
+              else    { resolve(body); }
+            }
+          );
+        }
+      );
+    };
 
-    );
-
-    validate.then(
+    validate().then(
       function handleValidated(retval) {
         // retval = { code: ..., message: ..., fields: ...
         //  @code: status code
         //  @message: ...
         //  @fields: Array of invalid fields, if any
-        console.log(retval.fields);
         if(retval.fields !== undefined) { return Promise.reject(retval); }
-        else                            { return createUser; }
+        else                            { return createUser(); }
       }
 
     ).then(

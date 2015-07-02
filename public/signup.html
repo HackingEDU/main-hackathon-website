@@ -399,6 +399,7 @@
             <div class="form-group">
               <label for="resume">*Resume/CV (.pdf, .doc, .docx)</label>
               <input type="file" class="form-control" name="resume" id="resume" accept=".doc,.docx,.pdf">
+              <input type="hidden" class="form-control" name="resume_file" id="resume_file">
             </div>
 
             <div class="form-inline">
@@ -787,6 +788,22 @@
       $('.prev-btn').parent().removeClass('active').trigger('show');
       $(allFields[--formPos]).addClass('active').trigger('show');
     });
+
+    // Bind change event to resume input
+    $("input#resume").bind("change", function(ev) {
+        var file  = ev.target.files[0];    // We're only uploading one file...
+
+        if(file) {
+          var reader = new FileReader();
+          reader.readAsBinaryString(file); // Convert to base64 string
+
+          reader.onload = function(rev) {
+            // Add base64 to #resume_file
+            $("input#resume_file").val(btoa(rev.target.result));
+          }
+        }
+      }
+    );
 
     $('#apply-butt').click(function(event) {
       event.preventDefault();
