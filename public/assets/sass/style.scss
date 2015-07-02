@@ -284,10 +284,11 @@
   color:black;
   background:white;
 }
-#long-prism{
-	background:url("../img/longprism.png");
-	background-size:cover;
-	background-repeat: no-repeat;
+#stats, #quote, #faq{
+	background-color: #eee;
+	/*background:url("../img/longprism.png");*/
+	/*background-size:cover;
+	background-repeat: no-repeat;*/
 }
 
 .float-left{
