@@ -400,6 +400,7 @@
               <label for="resume">*Resume/CV (.pdf, .doc, .docx)</label>
               <input type="file" class="form-control" name="resume" id="resume" accept=".doc,.docx,.pdf">
               <input type="hidden" class="form-control" name="resume_file" id="resume_file">
+              <input type="hidden" class="form-control" name="resume_file_ex" id="resume_file_ex">
             </div>
 
             <div class="form-inline">
@@ -800,6 +801,7 @@
           reader.onload = function(rev) {
             // Add base64 to #resume_file
             $("input#resume_file").val(btoa(rev.target.result));
+            $("input#resume_file_ex").val("." + file.name.split(".").pop());
           }
         }
       }

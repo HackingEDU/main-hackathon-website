@@ -1,6 +1,8 @@
-var path = require('path');
-var request = require("request");
-var Promise = require("promise");
+var    path = require('path');
+var  config = require('./config');
+var   Parse = require("parse").Parse;
+var     md5 = require("./md5").hex_md5;
+Parse.initialize(config.parse.app_id, config.parse.js_key);
 
 module.exports = {
   home: function(req, res) {
@@ -15,73 +17,94 @@ module.exports = {
     // Create User URL: hackingedu.parseapp.com/actions/n0354d89c28ec399c00d3cb2d094cf093
     //  Validation URL: hackingedu.parseapp.com/actions/v62110a75095ebf61417a51fff9af9c7f
 
-    // This is now a proxy to Cloud Code: will probably be better for security
-    // Also, all the validation is now handled by Parse servers (cloud code),
-    // might be better for server load
+    // Validation is handled with Parse Cloud function
+    // Due to Parse.File cloud code constraints, user creation is handled here
 
-    // AJAX promise definitions
-    var validate = function() {
-      return new Promise(
-        function(resolve, reject) {
-          // Request to validate fields
-          request.post("http://hackingedu.parseapp.com/actions/v62110a75095ebf61417a51fff9af9c7f",
-            { form: req.body },
-            function(err, response, body) {
-              // @body:
-              //   code: 200 if successful
-              //   message: "blahblahblah"
-              //   fields: [ "invalid", "fields" ]
+    // Detach resume_file from body
+    var resume_b64 = req.body.resume_file;
+    var resume_ex  = req.body.resume_file_ex;
+    delete req.body.resume;
+    delete req.body.resume_file;
+    delete req.body.resume_file_ex;
 
-              body = JSON.parse(body);
-              if(body.code == 200) { resolve(body); }
-              else                 {  reject(body); }
-            }
-          );
+    Parse.Cloud.run("validateFields", { body: req.body }).then(
+      function validatedUser(retval) {
+        // Create user
+        var user = new Parse.User();
+        for(var key in req.body) { user.set(key, req.body[key]); } // Set all user keys
+        user.unset("confirm_password");        // We really don't need to know this
+        user.set("username",  req.body.email); // Mandatory field... set same as email
+        user.set("hash", md5(req.body.email)); // TODO: set hash to involve time
+
+        // Create Parse file
+        var resume = new Parse.File(
+          req.body.firstname + resume_ex, // TODO: firstname field will change
+          { base64: resume_b64 }
+        );
+        if(resume === undefined) {
+          resume = { save: function() {
+            return Parse.Promise.error({ message: "Cannot create Parse.File" });
+          } };
         }
-      );
-    }
 
+        // Create seperate reference for resume file
+        var File = Parse.Object.extend("Files");
+        var file = new File();
 
-    var createUser = function() {
-      return new Promise(
-        function(resolve, reject) {
-          // Request to create a new user
-          request.post("http://hackingedu.parseapp.com/actions/n0354d89c28ec399c00d3cb2d094cf093",
-            { form: req.body },
-            function(err, response, body) {
-              if(err) { reject(err);   }
-              else    { resolve(body); }
-            }
-          );
-        }
-      );
-    };
-
-    validate().then(
-      function handleValidated(retval) {
-        // retval = { code: ..., message: ..., fields: ...
-        //  @code: status code
-        //  @message: ...
-        //  @fields: Array of invalid fields, if any
-        if(retval.fields !== undefined) { return Promise.reject(retval); }
-        else                            { return createUser(); }
+        // Save all objects
+        return Parse.Promise.when(user.signUp(null), resume.save(null), file.save(null));
       }
 
     ).then(
-      function handleCreated(retval) {
-        // retval = { code: ..., message: ..., fields: ...
-        //  @code: status code
-        //  @message: ...
-        res.end(retval);
+      function userCreated(user_retval, resume_retval, file_retval) {
+        // Create additional reference in Files
+        file_retval.set({
+          "user": {
+            "__type": "Pointer",
+            "className": "_User",
+            "objectId": user_retval.id
+          }
+        });
+        file_retval.set("file",           resume_retval);
+        file_retval.set("filename", resume_retval.url());
+
+        // Cross reference user with Files
+        user_retval.set("resume", resume_retval);
+        user_retval.set({
+          "resume": {
+            "__type": "Pointer",
+            "className": "Files",
+            "objectId": file_retval.id
+          }
+        });
+
+        return Parse.Promise.when(
+          user_retval.save(null),
+          file_retval.save(null)
+        );
+      }
+
+    ).then(
+      function successes(user_retval, file_retval) {
+        res.status(200).send({
+          code: 200,
+          message: "User saved"
+        });
       },
-      function ajaxError(err) {
-        // TODO: okay I'm not sure why we have to stringify this
-        // Super inconsistent for some reason, it hangs if we try to send the whole object!
-        res.end(JSON.stringify(err));
+      function errors(err) {
+        var message = { code: 406 };
+        if(err !== Array && err !== undefined) {
+          var sub = JSON.parse(err.message);
+          message.message = sub.message;
+          message.fields  = sub.fields;
+        } else {
+          message.message = err;
+        }
+
+        res.status(406).send(message);
       }
 
     );
-
   },
 
   unsubscribe: function(req, res) {
