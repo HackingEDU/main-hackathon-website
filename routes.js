@@ -2,7 +2,9 @@ var    path = require('path');
 var  config = require('./config');
 var   Parse = require("parse").Parse;
 var     md5 = require("./md5").hex_md5;
-Parse.initialize(config.parse.app_id, config.parse.js_key);
+Parse.initialize('8DnPzMRHvMamLLizP0GIRyIRMVOFqRKpMzmp1G5d', '9v4U5x8fBjZ0N0wgbM5ffMfAa9ESHjgx1yPXQmDY');
+
+
 
 module.exports = {
   home: function(req, res) {
