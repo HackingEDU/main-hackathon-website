@@ -36,8 +36,8 @@ app.use(
 );
 
 app.use('/', express.static(path.join(__dirname, 'public/assets')));
-app.use(bodyParser.urlencoded({extended: true}));
-app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({limit: '10mb', extended: true}));
+app.use(bodyParser.json({limit: '10mb'}));
 
 // Index Route
 app.get('/', routes.home);
