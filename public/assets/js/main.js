@@ -1,6 +1,3 @@
-var socket = io.connect();
-var ts = new TwitterStream(socket, '#tweet_list', 10);
-
 //modals
 $('#sponsors-modal-link').animatedModal({
 	modalTarget: 'sponsors-modal',
