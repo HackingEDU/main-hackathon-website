@@ -60,6 +60,8 @@
 .sub-text{
   font-size: 24px;
   line-height: 10px;
+  font-family:Lato;
+  font-style:italic;
 }
 
 /* HEADER ANIMATION */
@@ -823,6 +825,10 @@ fa { color:#fff; }
 
 .marginbottom50{
   margin-bottom:50px;
+}
+
+.marginbottom-neg30{
+  margin-bottom:-30px;
 }
 
 .neg30{
