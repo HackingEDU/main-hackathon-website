@@ -23,7 +23,7 @@
 ;(function($, window, document) {
 
   'use strict';
-  
+
   var fadeDist = $("#large-header").height();
   $(document).scroll(function() {
     var scrolledDist = $(document).scrollTop();
@@ -36,7 +36,7 @@
       $("#header").css("background-color", "rgba(40, 40, 40, 1)");
     }
   });
-  
+
   $.fn.stickyNavbar = function(prop) {
 
     // Set default values
@@ -77,22 +77,22 @@
 
       /* Smooth scrolling logic */
       menuItems.click(function(e) {
-        
+
         //get href attr
         var href;
-        
+
         // cache href value
         if (options.selector === 'li') {
           href = $(this).children('a').attr('href');
         } else {
           href = $(this).attr('href');
         }
-        
+
         // let normal links in navigation redirect to location
         if (href.substring(0, 1) !== "#") {
           return;
         }
-        
+
         // prevent default click behaviour
         e.preventDefault();
 
@@ -163,10 +163,6 @@
           $self.removeClass(options.unstickyModeClass).addClass(' ' + options.stickyModeClass);
 
           // as soon as scrolling starts set position of this() to fixed
-          $self.css({
-            'position': 'fixed',
-            'zIndex': options.zindex
-          }).stop();
 
           // if jQuery effects are turned on
           if (options.jqueryEffects) {
