@@ -125,8 +125,8 @@ body {
   left: 0;
   height: 30px;
   width: auto;
-  left: 0.5em;
-  top: 0.5em;
+  left: 2em;
+  top: 0.7em;
   z-index: 3
 }
 
@@ -374,6 +374,8 @@ body {
   height:55px;
   font-size:15px;
   transition-duration: .4s;
+  margin-right: 8px;
+  margin-left: 8px;
 }
 
 .butt:hover {
@@ -381,7 +383,7 @@ body {
   background:white;
 }
 
-#stats{
+#about {
   background-color: #eee;
 }
 
@@ -390,9 +392,9 @@ body {
 }
 
 
-/* Why */
+/* About */
 
-#stats span {
+#about span {
   text-align: center;
   margin-bottom: 30px;
   margin-top: 30px;
@@ -438,7 +440,7 @@ body {
 
 /*Training Day Section*/
 
-#tdaySection {
+#training-day {
   background: url('../img/tdayBack.jpg');
   background-size:cover;
   background-repeat: no-repeat;
@@ -596,7 +598,6 @@ Social Links
   display: inline-block;
   width: 50px;
   margin-top: 3em;
-  text-align: center;
 }
 
 .fa-3x {
@@ -636,37 +637,37 @@ Social Links
   color: #FFFF66;
 }
 
-#sponsor {
+#sponsors {
   background:white;
 }
 
-#sponsor .sponsorName {background: url('http://static.planetminecraft.com/files/resource_media/screenshot/1327/1328800264_minecraft-logo_5843730_lrg.jpg')}
+#sponsors .sponsorName {background: url('http://static.planetminecraft.com/files/resource_media/screenshot/1327/1328800264_minecraft-logo_5843730_lrg.jpg')}
 
-#sponsor .chegg {
+#sponsors .chegg {
   background: url('../img/sponsors/chegg.png');
   width: 300px;
 }
 
-#sponsor .PayPal {
+#sponsors .PayPal {
   background: url('../img/sponsors/paypal.png');
   width: 180px !important;
 }
 
-#sponsor .ibm {
+#sponsors .ibm {
   background: url('../img/sponsors/ibm.jpg');
 }
 
-#sponsor .auto {
+#sponsors .auto {
   background: url('../img/sponsors/automattic.jpg');
 }
 
-#sponsor .pebble {
+#sponsors .pebble {
   background: url('../img/sponsors/pebble.png');
   width: 160px !important;
   margin-right: 0px !important;
 }
 
-#sponsor .leapmotion {
+#sponsors .leapmotion {
   background: url('../img/sponsors/leapmotion.png');
   width: 120px !important;
   min-width: 0px !important;
@@ -674,74 +675,74 @@ Social Links
   margin-right: 50px !important;
 }
 
-#sponsor .makeschool {
+#sponsors .makeschool {
   background: url('../img/sponsors/makeschool.png');
   margin-right: 60px !important;
 }
 
-#sponsor .twilio {background: url('../img/sponsors/twilio.png')}
+#sponsors .twilio {background: url('../img/sponsors/twilio.png')}
 
-#sponsor .twist {background: url('../img/sponsors/twist.png')}
+#sponsors .twist {background: url('../img/sponsors/twist.png')}
 
-#sponsor .draper {background: url('../img/sponsors/draper.png')}
+#sponsors .draper {background: url('../img/sponsors/draper.png')}
 
-#sponsor .bootstrap {
+#sponsors .bootstrap {
   background: url('../img/sponsors/bootstrap.png');
   width: 180px !important;
 }
 
-#sponsor .lyft {background: url('../img/sponsors/lyft.png')}
+#sponsors .lyft {background: url('../img/sponsors/lyft.png')}
 
-#sponsor .namecheap {
+#sponsors .namecheap {
   background: url('../img/sponsors/namecheap.png');
   width: 240px !important;
 }
 
-#sponsor .socket {
+#sponsors .socket {
   background: url('../img/sponsors/socket.png');
   width: 180px !important;
 }
 
-#sponsor .edsurge {background: url('../img/sponsors/edsurge.jpg')}
+#sponsors .edsurge {background: url('../img/sponsors/edsurge.jpg')}
 
-#sponsor .google {background: url('../img/sponsors/google.png')}
+#sponsors .google {background: url('../img/sponsors/google.png')}
 
-#sponsor .firebase {background: url('../img/sponsors/firebase.png')}
+#sponsors .firebase {background: url('../img/sponsors/firebase.png')}
 
-#sponsor .gun {
+#sponsors .gun {
   background: url('../img/sponsors/gun.png');
   width: 120px !important;
   min-width: 0px !important;
 }
 
-#sponsor .thalmiclabs {
+#sponsors .thalmiclabs {
   background: url('../img/sponsors/thalmiclabs.png');
   width: 180px !important;
   margin-left: 40px !important;
 }
 
-#sponsor .pearlhacks {background: url('../img/sponsors/pearlhacks.png')}
+#sponsors .pearlhacks {background: url('../img/sponsors/pearlhacks.png')}
 
-#sponsor .nwhacks {background: url('../img/sponsors/nwhacks.jpg')}
+#sponsors .nwhacks {background: url('../img/sponsors/nwhacks.jpg')}
 
-#sponsor .lahacks {background: url('../img/sponsors/lahacks.jpeg')}
+#sponsors .lahacks {background: url('../img/sponsors/lahacks.jpeg')}
 
-#sponsor .hack4baltimore {
+#sponsors .hack4baltimore {
   background: url('../img/sponsors/hack4baltimore.png');
   height: 100px !important;
   width: 200px !important;
 }
 
-#sponsor .globalcommit {
+#sponsors .globalcommit {
   background: url('../img/sponsors/globalcommit.png');
   height: 100px !important;
   width: 200px !important;
 }
 
-#sponsor .redbull {background: url('../img/sponsors/redbull.png')}
+#sponsors .redbull {background: url('../img/sponsors/redbull.png')}
 
 
-#sponsor figure {
+#sponsors figure {
   margin: -2em 3em;
   height: 50vh;
   width: 50vw;
@@ -751,9 +752,9 @@ Social Links
   background-repeat: no-repeat !important
 }
 
-#sponsor .tier1 figure {height: 25vh}
+#sponsors .tier1 figure {height: 25vh}
 
-#sponsor .tier2 figure {
+#sponsors .tier2 figure {
   min-height:20vh;
   width: 13vw;
   min-width: 12em;
@@ -761,11 +762,11 @@ Social Links
   margin-top: 16px;
 }
 
-#sponsor .tier2 .auto{
+#sponsors .tier2 .auto{
   min-width: 16em;
 }
 
-#sponsor .tier3 figure {
+#sponsors .tier3 figure {
   height: 8vh;
   width: 8vw;
   margin-bottom: 16px;
@@ -773,7 +774,7 @@ Social Links
   margin-top: 16px;
 }
 
-#sponsor .tier4 figure {
+#sponsors .tier4 figure {
   height: 15vh;
   width: 8vw;
   margin-bottom: 16px;
@@ -781,7 +782,7 @@ Social Links
   margin-top: 16px;
 }
 
- #partners .tier4 figure {
+#partners .tier4 figure {
   z-index: -1;
 }
 

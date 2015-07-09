@@ -18,7 +18,9 @@
 
     <!-- NAVIGATION BAR -->
     <div id="header" class="header sticky">
-      <img src="http://imgur.com/uFeQcop.png" class="nav-logo" alt="">
+      <a href="#home">
+        <img src="http://imgur.com/uFeQcop.png" class="nav-logo" alt="">
+      </a>
       <div class="navbar-header">
         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
           <span class="sr-only">Toggle navigation</span>
@@ -29,42 +31,44 @@
       </div>
       <div id="navbar" class="navbar-collapse collapse">
         <ul class="nav navbar-nav">
-          <li class="navlink"><a href="#hero">Home</a></li>
-          <li class="navlink"><a href="#why">About</a></li>
+          <li class="navlink"><a href="#home">Home</a></li>
+          <li class="navlink"><a href="#about">About</a></li>
           <li class="navlink"><a href="#faq">FAQ</a></li>
-          <li class="navlink"><a href="#tdaySection">Training Day</a></li>
-          <li class="navlink"><a href="#sponsor">Sponsors</a></li>
+          <li class="navlink"><a href="#training-day">Training Day</a></li>
+          <li class="navlink"><a href="#sponsors">Sponsors</a></li>
           <li class="pill-button"><a href="https://hackingedu.typeform.com/to/BEXo5M" data-mode="2" target="_blank">Apply</a></li>
         </ul>
       </div>
     </div>
 
     <section id="hero">
-      <div id="large-header" class="large-header">
-        <div id="shading">
-          <div class="main-title">
-            <h1 class="main-txt">World's <span class="bold">Largest</span><br>Education Hackathon</h1>
-            <p class="sub-text">San Mateo Event Center</p>
-            <p class="sub-text">October 23-25</p>
-            <a href="https://hackingedu.typeform.com/to/ynFajD" data-mode="2" target="_blank"><button class="butt substatement">Apply Now</button></a>
-            <a href="https://hackingedu.typeform.com/to/BEXo5M" data-mode="2" target="_blank"><button class="butt substatement ml-1em">Sponsor Us</button> </a>
+      <div id="home">
+        <div id="large-header" class="large-header">
+          <div id="shading">
+            <div class="main-title">
+              <h1 class="main-txt">World's <span class="bold">Largest</span><br>Education Hackathon</h1>
+              <p class="sub-text">San Mateo Event Center</p>
+              <p class="sub-text">October 23-25</p>
+              <a href="https://hackingedu.typeform.com/to/ynFajD" data-mode="2" target="_blank"><button class="butt substatement">Apply Now</button></a>
+              <a href="https://hackingedu.typeform.com/to/BEXo5M" data-mode="2" target="_blank"><button class="butt substatement">Sponsor Us</button> </a>
+            </div>
+            <span class="social-block">
+              <a href="https://www.facebook.com/hackingedusf" target="rss" id="social" class="fa fa-facebook-square fa-3x social-fb"></a>
+              <a href="https://twitter.com/hackingedusf" target="rss" id="social" class="fa fa-twitter-square fa-3x social-tw"></a>
+              <a href="https://instagram.com/hackingedusf" target="rss" id="social" class="fa fa-instagram fa-3x social-ig"></a>
+              <a href="/cdn-cgi/l/email-protection#d1a5b4b0bc91b9b0b2bab8bfb6b4b5a4ffb2be" target="rss" id="social" class="fa fa-envelope-square fa-3x social-em"></a>
+              <a href="https://medium.com/@hackingedu/latest" target="_blank" id="medium-icon-header" class="fa fa-medium"></a>
+            </span>
           </div>
-          <span class="social-block">
-            <a href="https://www.facebook.com/hackingedusf" target="rss" id="social" class="fa fa-facebook-square fa-3x social-fb"></a>
-            <a href="https://twitter.com/hackingedusf" target="rss" id="social" class="fa fa-twitter-square fa-3x social-tw"></a>
-            <a href="https://instagram.com/hackingedusf" target="rss" id="social" class="fa fa-instagram fa-3x social-ig"></a>
-            <a href="/cdn-cgi/l/email-protection#d1a5b4b0bc91b9b0b2bab8bfb6b4b5a4ffb2be" target="rss" id="social" class="fa fa-envelope-square fa-3x social-em"></a>
-            <a href="https://medium.com/@hackingedu/latest" target="_blank" id="medium-icon-header" class="fa fa-medium"></a>
-          </span>
         </div>
+        <a class="arrow-wrap" style="margin-top:0px;" href="#about">
+          <span class="arrow"></span>
+        </a>
       </div>
-      <a class="arrow-wrap" style="margin-top:0px;" href="#why">
-        <span class="arrow"></span>
-      </a>
     </section>
 
-    <div id="stats" class="spaced-container">
-      <div id="about" class="container">
+    <div id="about" class="spaced-container">
+      <div id="stats" class="container">
         <h2 class="text-center thin-header">What is HackingEDU?</h2>
         <div class="col-md-10 col-md-offset-1">
           <span class="col-md-4">
@@ -117,7 +121,7 @@
     <section id="faq" class="spaced-container">
       <div class="container">
         <div class="row faq">
-          <h2 class="text-center">Frequently Asked Questions</h2>
+          <h2 class="text-center thin-header">Frequently Asked Questions</h2>
           <br/>
           <div class="col-md-4">
             <strong>What is a hackathon?</strong>
@@ -150,14 +154,14 @@
           <div class="col-md-4">
             <strong>How do I get there?</strong>
             <br><br>
-            <p class="justified">The event is at the<a href="https://www.google.com/maps/place/San+Mateo+County+Event+Center"> San Mateo Event Center</a>. We will have shuttles going to most major Universities in California. There will also be plenty of parking at the event ($10/day) and the Hayward Park Caltrain station is less than 15 minutes away.</p>
+            <p class="justified">The event is at the <a href="https://www.google.com/maps/place/San+Mateo+County+Event+Center">San Mateo Event Center</a>. We will have shuttles going to most major Universities in California. There will also be plenty of parking at the event ($10/day) and the Hayward Park Caltrain station is less than 15 minutes away.</p>
           </div>
         </div>
         <br/>
       </div>
     </section>
 
-    <section id="tdaySection" class="spaced-container">
+    <section id="training-day" class="spaced-container">
       <div class="container">
         <h2 class="text-center thin-header black-text">Training Day</h2>
         <div class="row">
@@ -187,9 +191,9 @@
       </div>
     </section>
 
-    <section id="sponsor" class="spaced-container">
+    <section id="sponsors" class="spaced-container">
       <div class="container text-center">
-        <h2 class="text-center sponsor">Sponsors</h2>
+        <h2 class="text-center sponsor thin-header">Sponsors</h2>
         <br/>
         <div class="tier1">
           <a href="http://chegg.com" data-mode="2" target="_blank"><figure class="chegg"></figure></a>
@@ -234,7 +238,7 @@
 
     <div id="apply" class="footer fluid-container text-center spaced-container">
       <h3 class="padtop60 mb-50px">Are you ready to <b>Invent The Future</b>?</h3>
-      <a href="https://hackingedu.typeform.com/to/ynFajD" data-mode="2" target="_blank"><button class="substatement se mb-30px"id="apply-butt">Apply Now</button></a>
+      <a href="https://hackingedu.typeform.com/to/ynFajD" data-mode="2" target="_blank"><button class="butt substatement mb-50px" id="apply-butt">Apply Now</button></a>
 
       <div id="status"></div>
       <div class="social-footer">

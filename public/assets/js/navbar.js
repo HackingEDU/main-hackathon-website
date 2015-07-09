@@ -23,7 +23,11 @@
 ;(function($, window, document) {
 
   'use strict';
-
+  
+  if ($(document).scrollTop() !== 0) {
+    $("#header").css("background-color", "rgba(0, 0, 0, 255)");
+  }
+  
   var fadeDist = $("#large-header").height();
   $(document).scroll(function() {
     var scrolledDist = $(document).scrollTop();
