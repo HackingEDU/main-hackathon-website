@@ -125,7 +125,9 @@ body {
   left: 0;
   height: 30px;
   width: auto;
-  margin-left: 1em;
+  left: 0.5em;
+  top: 0.5em;
+  z-index: 3
 }
 
 #header li {
@@ -179,6 +181,67 @@ body {
   100%{background-position:0% 50%}
 }
 
+@media (max-height: 768px) {
+  .arrow-wrap {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
+  .navbar-toggle {
+    right: 3px;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-right: 0;
+  }
+  .navbar-toggle .icon-bar {
+    position: relative;
+    z-index: 5;
+    background-color: white;
+  }
+  #header  {
+    background-color: black;
+    height: 45px;
+  }
+  .pill-button {
+    display: none !important;
+  }
+  #navbar {
+    background-color: black !important;
+    z-index: 20;
+  }
+  #navbar ul {
+    float: left !important;
+    position: relative;
+    padding-top: 5em !important;
+    height: 250px;
+  }
+  .ml-1em {
+    margin-left: 0;
+  }
+  #sponsor .tier4 figure {
+    height: 8em !important;
+  }
+  .main-txt {
+    font-size: 2.3em
+  }
+  .arrow-wrap {
+    width: 40px !important;
+    height: 40px !important;
+  }
+  .arrow {
+    height: 10px !important;
+    width: 10px !important;
+    margin-top: 15px !important;
+  }
+  .sub-text {
+    font-size: 14pt
+  }
+}
+
 /* Navigation */
 #navbar {
   z-index: 2;
@@ -216,8 +279,7 @@ body {
   margin-bottom: 0;
 }
 .navbar-toggle {
-  float: left !important;
-  margin-left: 15px;
+  position: relative;
 }
 .navbar-default .navbar-toggle:focus,
 .navbar-default .navbar-toggle:hover {
@@ -381,10 +443,7 @@ body {
   background-size:cover;
   background-repeat: no-repeat;
   box-shadow: 0 0px 20px rgba(0,0,0,0.4);
-}
-
-.padtop60{
-  padding-top:60px;
+  position: relative
 }
 
 .padtop30{
@@ -395,14 +454,23 @@ body {
   padding-bottom: 150px;
 }
 
+.navbar-toggle {
+  position: absolute;
+  top: 0.5em;
+  right: 0.5em;
+}
+
 .tdaytext{
   margin-top: 50px;
-  background-color: white;
   padding: 2em;
 }
 
+.black-text {
+  color: black;
+}
+
 .image1{
-  background:url('../img/tday1Col.jpg');
+  background:url('../img/tday_info.jpg');
   background-size: auto 100%;
   background-position: center;
 }
@@ -410,7 +478,7 @@ body {
 
 
 .image2{
-  background:url('../img/tday2Col.jpg');
+  background:url('../img/tday_photos.jpg');
   background-size: auto 100%;
   background-position: center;
 }
@@ -418,7 +486,7 @@ body {
 .image2:hover {background-size: auto 130%}
 
 .image3{
-  background:url('../img/tday3Col.jpg');
+  background:url('../img/tday_workshops.jpg');
   background-size: auto 100%;
   background-position: center;
 }
@@ -568,10 +636,6 @@ Social Links
   color: #FFFF66;
 }
 
-/* =========================================================================
-                            Sponsor
-=======================================================================*/
-
 #sponsor {
   background:white;
 }
@@ -594,12 +658,12 @@ Social Links
 
 #sponsor .auto {
   background: url('../img/sponsors/automattic.jpg');
-  width: 300px !important;
 }
 
 #sponsor .pebble {
   background: url('../img/sponsors/pebble.png');
   width: 160px !important;
+  margin-right: 0px !important;
 }
 
 #sponsor .leapmotion {
@@ -615,18 +679,18 @@ Social Links
   margin-right: 60px !important;
 }
 
-#sponsor .twilio {background: url('../img/sponsors/twilio.png');}
+#sponsor .twilio {background: url('../img/sponsors/twilio.png')}
 
-#sponsor .twist {background: url('../img/sponsors/twist.png');}
+#sponsor .twist {background: url('../img/sponsors/twist.png')}
 
-#sponsor .draper {background: url('../img/sponsors/draper.png');}
+#sponsor .draper {background: url('../img/sponsors/draper.png')}
 
 #sponsor .bootstrap {
   background: url('../img/sponsors/bootstrap.png');
   width: 180px !important;
 }
 
-#sponsor .lyft {background: url('../img/sponsors/lyft.png');}
+#sponsor .lyft {background: url('../img/sponsors/lyft.png')}
 
 #sponsor .namecheap {
   background: url('../img/sponsors/namecheap.png');
@@ -646,7 +710,7 @@ Social Links
 
 #sponsor .gun {
   background: url('../img/sponsors/gun.png');
-  width: 85px !important;
+  width: 120px !important;
   min-width: 0px !important;
 }
 
@@ -676,6 +740,7 @@ Social Links
 
 #sponsor .redbull {background: url('../img/sponsors/redbull.png')}
 
+
 #sponsor figure {
   margin: -2em 3em;
   height: 50vh;
@@ -701,8 +766,7 @@ Social Links
 }
 
 #sponsor .tier3 figure {
-
-  height: 15vh;
+  height: 8vh;
   width: 8vw;
   margin-bottom: 16px;
   min-width: 10em;
@@ -717,11 +781,7 @@ Social Links
   margin-top: 16px;
 }
 
-.sponsor {
-  margin-top: 90px;
-}
-
-#partners .tier4 figure {
+ #partners .tier4 figure {
   z-index: -1;
 }
 
