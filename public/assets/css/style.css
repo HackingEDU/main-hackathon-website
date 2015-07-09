@@ -44,6 +44,10 @@ body {
   font-weight: lighter;
 }
 
+#hero {
+  position: relative;
+}
+
 /* =========================================================================
                             Sticky Navbar
 =======================================================================*/
@@ -67,6 +71,7 @@ body {
   -ms-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
 }
+
 #header {
   left: 0;
   right: 0;
@@ -82,16 +87,45 @@ body {
 
 }
 
-.pill-button{
+.pill-button {
   border: 1px solid white;
   border-radius: 50px;
   padding: 0.3em 1em;
   line-height: 1em;
+  background-color: transparent;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
 }
 
-.navlink{
+.pill-button > a {
+  color: white;
+}
+
+.pill-button:hover {
+  background-color: white;
+}
+
+.pill-button:hover > a {
+  color: black;
+}
+
+.navlink {
   display:inline-block;
   padding-top: 0.35em;
+}
+
+.navlink a {
+  color: white;
+}
+
+.nav-logo {
+  position: absolute;
+  left: 0;
+  height: 30px;
+  width: auto;
+  margin-left: 1em;
 }
 
 #header li {
@@ -107,6 +141,18 @@ body {
   font-size: 16pt;
   line-height: 10px;
   font-family:Lato;
+}
+
+.spaced-container {
+  padding: 100px 0;
+}
+
+.thin-header {
+  font-weight: 100;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #999;
+  font-family: 'Helvetica Neue', Avenir, Helvetica, Arial, sans-serif;
 }
 
 @-webkit-keyframes hackingedu-header {
@@ -138,6 +184,7 @@ body {
   z-index: 2;
 }
 #navbar ul {
+  float: right;
   margin: 0;
   padding: 0;
   list-style-type: none;
@@ -148,17 +195,10 @@ body {
   display: inline;
 }
 #navbar ul li a {
-  text-decoration: none;
-  margin: 0px;
   padding: 0px 15px;
-  color: #eee;
-  background-color: transparent;
 }
 #navbar ul li a:hover {
-  color: #fff;
-  text-decoration: none;
-  background-color: none;
-  font-weight: 700;
+  text-decoration: underline;
 }
 #navbar li.current-menu-item a {
   color: #fff;
@@ -193,11 +233,8 @@ body {
 /* Justified Alignment*/
 @media (min-width: 768px){
   #navbar{
-    margin: 0 auto;
-    display: table;
-    table-layout: fixed;
-    float:none;
-    display: inline-block !important;
+    display: inline-block;
+    widows: 100%;
   }
 }
 @media (max-width: 768px) {
@@ -284,7 +321,6 @@ body {
 
 #stats{
   background-color: #eee;
-  padding: 0% 12%;
 }
 
 .float-left{
@@ -300,10 +336,6 @@ body {
   margin-top: 30px;
 }
 
-#why{
-
-}
-
 .text-center{
   text-align: center;
 }
@@ -312,30 +344,14 @@ body {
   line-height: 35px;
 }
 
-#about {
-  padding-top:90px;
-}
-
 /* Quote */
 #quote{
   font-weight: bold;
 }
 
-.faq {
-  margin-top: 90px;
-}
-
 /* Three Pillars */
 
-#three-pill{
-  background: white;
-  padding: 30px 0px;
-  margin-top:-25px;
-}
-
 #three-pill img {
-  display: block;
-  margin-top: 60px;
   margin-bottom: 30px;
   margin-left: auto;
   margin-right: auto;
@@ -345,10 +361,6 @@ body {
   font-size: 55px;
 
 }
-.tday {
-  margin-top: 90px;
-}
-
 .pad-45{
   padding: 45px;
 }
@@ -384,14 +396,15 @@ body {
 }
 
 .tdaytext{
-  margin-top:60px;
-  font-size: 17.5px;
+  margin-top: 50px;
+  background-color: white;
+  padding: 2em;
 }
 
 .image1{
   background:url('../img/tday1Col.jpg');
   background-size: auto 100%;
-  background-position: center
+  background-position: center;
 }
 .image1:hover {background-size: auto 130%}
 
@@ -399,8 +412,7 @@ body {
 .image2{
   background:url('../img/tday2Col.jpg');
   background-size: auto 100%;
-  background-position: center
-
+  background-position: center;
 }
 
 .image2:hover {background-size: auto 130%}
@@ -408,8 +420,7 @@ body {
 .image3{
   background:url('../img/tday3Col.jpg');
   background-size: auto 100%;
-  background-position: center
-
+  background-position: center;
 }
 
 .image3:hover {background-size: auto 130%}
@@ -726,29 +737,30 @@ Social Links
 /* the wrapper element that will become the outer circle */
 .arrow-wrap {
   position:absolute;
-  z-index:1;
-  left:50%;
-  margin-left:-5em;
-  background:transparent;
-  width:10em;
-  height:10em;
-  padding:4em 2em;
-  border-radius:50%;
-  font-size:0.5em;
-  display:block;
-  box-shadow:0px 0px 5px 0px #FFF;
+  left: 0;
+  right: 0;
+  bottom: 2em;
+  width: 80px;
+  height: 80px;
+  border-radius:100%;
+  margin: auto;
+  border: 1px solid white;
 }
 
 /* a triangle to make the main part of the arrow. Adjust the border-color to fit your needs */
 .arrow {
-  float:left;
-  position:relative;
-  width: 0px;
-  height: 0px;
-  border-style: solid;
-  border-width: 3em 3em 0 3em;
-  border-color: #ffffff transparent transparent transparent;
-  -webkit-transform:rotate(360deg);/* added for better anti-aliasing on webkit browsers */
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 20px;
+  height: 20px;
+  border-right: 1px solid white;
+  border-bottom: 1px solid white;
+  transform: rotate(45deg);
+  margin-top: 25px;
 }
 
 /* a pseudo element arrow placed on top of the other one with the same color as the wrapper */

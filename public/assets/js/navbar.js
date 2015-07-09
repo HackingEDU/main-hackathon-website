@@ -30,10 +30,8 @@
     if (scrolledDist <= fadeDist) {
       var fractionFade = scrolledDist / fadeDist;
       var scaledFade = 2 * fractionFade;
-      var newColor = "rgba(40, 40, 40, " + scaledFade + ")";
+      var newColor = "rgba(0, 0, 0, " + scaledFade + ")";
       $("#header").css("background-color", newColor);
-    } else {
-      $("#header").css("background-color", "rgba(40, 40, 40, 1)");
     }
   });
 
