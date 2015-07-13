@@ -73,53 +73,53 @@
         windowPosition = $(window).scrollTop();
 
 
-      /* Smooth scrolling logic */
-      menuItems.click(function(e) {
+      // /* Smooth scrolling logic */
+      // menuItems.click(function(e) {
 
-        //get href attr
-        var href;
+      //   //get href attr
+      //   var href;
 
-        // cache href value
-        if (options.selector === 'li') {
-          href = $(this).children('a').attr('href');
-        } else {
-          href = $(this).attr('href');
-        }
+      //   // cache href value
+      //   if (options.selector === 'li') {
+      //     href = $(this).children('a').attr('href');
+      //   } else {
+      //     href = $(this).attr('href');
+      //   }
 
-        // let normal links in navigation redirect to location
-        if (href.substring(0, 1) !== "#") {
-          return;
-        }
+      //   // let normal links in navigation redirect to location
+      //   if (href.substring(0, 1) !== "#") {
+      //     return;
+      //   }
 
-        // prevent default click behaviour
-        e.preventDefault();
+      //   // prevent default click behaviour
+      //   e.preventDefault();
 
-        var currentHref,
-          i,
-          sectionOffsets,
-          sectionsLength;
+      //   var currentHref,
+      //     i,
+      //     sectionOffsets,
+      //     sectionsLength;
 
-        // href attr of clicked nav link
-        currentHref = href.substr(1); // remove # character with substr
-        sectionsLength = sections.length;
+      //   // href attr of clicked nav link
+      //   currentHref = href.substr(1); // remove # character with substr
+      //   sectionsLength = sections.length;
 
-        // create object which will hold all offsetTop values
-        // of each section
-        sectionOffsets = {};
-        for (i = 0; i < sectionsLength; i++) {
-          sectionOffsets[sections[i].id] = sections[i].offsetTop;
-        }
+      //   // create object which will hold all offsetTop values
+      //   // of each section
+      //   sectionOffsets = {};
+      //   for (i = 0; i < sectionsLength; i++) {
+      //     sectionOffsets[sections[i].id] = sections[i].offsetTop;
+      //   }
 
-        var toScroll = $self.hasClass('unsticky') ? sectionOffsets[currentHref] + 2 + 'px' : sectionOffsets[currentHref] + 2 + 'px';
+      //   var toScroll = $self.hasClass('unsticky') ? sectionOffsets[currentHref] + 2 + 'px' : sectionOffsets[currentHref] + 2 + 'px';
 
-        // on nav click navigate to selected section
-        $('html, body').animate({
-          scrollTop: toScroll
-        }, {
-          duration: options.animDuration,
-          easing: options.easing
-        });
-      });
+      //   // on nav click navigate to selected section
+      //   $('html, body').animate({
+      //     scrollTop: toScroll
+      //   }, {
+      //     duration: options.animDuration,
+      //     easing: options.easing
+      //   });
+      // });
 
 
       /* v1.1.0: Main function, then on bottom called window.scroll, ready and resize */
