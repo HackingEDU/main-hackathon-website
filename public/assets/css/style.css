@@ -370,6 +370,15 @@ body {
   color:white;
 }
 
+a.san-mateo{
+  color:white;
+
+}
+a.san-mateo:hover{
+  color: white;
+  text-decoration: underline;
+}
+
 /* Header-Buttons */
 .justified{
   text-align: justify;
