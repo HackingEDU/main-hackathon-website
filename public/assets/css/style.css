@@ -191,7 +191,7 @@ body {
 
 @media (max-height: 768px) {
   .arrow-wrap {
-    display: none;
+    display: block;
   }
 }
 
