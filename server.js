@@ -2,7 +2,6 @@
 var express = require('express'),
   bodyParser = require('body-parser'),
   http = require('http'),
-  mongoose = require('mongoose'),
   //twitter = require('twitter'),
   routes = require('./routes'),
   //config = require('./config'),
@@ -18,8 +17,6 @@ var port = process.env.PORT || 8080;
 // Disable etag headers on responses
 app.disable('etag');
 
-// Connect to our mongo database
-mongoose.connect('mongodb://localhost:27017/tweets');
 
 // Create a new ntwitter instance
 //var twit = new twitter(config.twitter);
