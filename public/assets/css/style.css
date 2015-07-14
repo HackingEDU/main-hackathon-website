@@ -596,7 +596,12 @@ Social Links
 .social-tw:hover { color: #00aced; }
 .social-ig:hover { color: #517fa4; }
 .social-em:hover { color: #dd4b39; }
-.social-me:hover { color: #ffff66; }
+.social-me:hover {
+  color: #ffff66;
+  -webkit-transform:scale(0.95) !important;
+  -moz-transform:scale(0.95)    !important;
+  -o-transform:scale(0.95)      !important;
+}
 
 .social-block {
   position: absolute;
