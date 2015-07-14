@@ -44,7 +44,7 @@ body {
                             Main Section
 =======================================================================*/
 .main-title {
-  font-family: avenir, sans-serif;
+  font-family: avenir;
   text-transform: uppercase;
   font-weight: lighter;
 }
@@ -390,6 +390,7 @@ a.san-mateo:hover{
   display:inline-block;
   width: 300px;
   height:55px;
+  font-family: Avenir, 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size:15px;
   transition-duration: .4s;
   margin-right: 8px;
@@ -581,6 +582,7 @@ Social Links
   -moz-transform:scale(1.1);
   -o-transform:scale(1.1);
 }
+
 #social {
   -webkit-transform:scale(0.8);
   /* Browser Variations: */
