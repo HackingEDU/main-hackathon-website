@@ -14,6 +14,7 @@
 
 body {
   font-family: Avenir, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  overflow-x: hidden;
 }
 
 *:hover {
@@ -94,8 +95,8 @@ body {
 .pill-button {
   border: 1px solid white;
   border-radius: 50px;
-  padding: 0.3em 1em;
   line-height: 1em;
+  margin-top: 4px;
   background-color: transparent;
   transition: all 0.3s ease-in-out;
   -webkit-transition: all 0.3s ease-in-out;
@@ -150,7 +151,7 @@ body {
 .sub-text{
   font-size: 16pt;
   line-height: 10px;
-  font-family:Lato;
+  font-family:Lato, sans-serif;
 }
 
 .spaced-container {
@@ -234,7 +235,7 @@ body {
     height: 8em !important;
   }
   .main-txt {
-    font-size: 2.3em
+    font-size: 2.1em;
   }
   .arrow-wrap {
     width: 40px !important;
@@ -246,7 +247,7 @@ body {
     margin-top: 15px !important;
   }
   .sub-text {
-    font-size: 14pt
+    font-size: 1.2em;
   }
 }
 
@@ -266,7 +267,7 @@ body {
   display: inline;
 }
 #navbar ul li a {
-  padding: 0px 15px;
+  padding: 0.3em 1.4em;
 }
 #navbar ul li a:hover {
   text-decoration: underline;
@@ -370,6 +371,15 @@ body {
   color:white;
 }
 
+a.san-mateo{
+  color:white;
+
+}
+a.san-mateo:hover{
+  color: white;
+  text-decoration: underline;
+}
+
 /* Header-Buttons */
 .justified{
   text-align: justify;
@@ -380,6 +390,7 @@ body {
   display:inline-block;
   width: 300px;
   height:55px;
+  font-family: Avenir, 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size:15px;
   transition-duration: .4s;
   margin-right: 8px;
@@ -513,6 +524,7 @@ body {
 }
 
 .bold{
+  line-height: 1;
   font-size: 1.9em;
 }
 
@@ -565,26 +577,12 @@ body {
 Social Links
 =======================================================================*/
 
-.form-inline #medium-icon-header {
-  margin: 0px 0px 0px 5px;
-  font-size: 2.6em;
-}
-
-#medium-icon-header:hover {
-  color: #FFFF66;
-  -webkit-transform:scale(1.1);
-  -moz-transform:scale(1.1);
-  -o-transform:scale(1.1);
-  -webkit-transition-duration: 0.5s;
-  -moz-transition-duration: 0.5s;
-  -o-transition-duration: 0.5s;
-}
-
 #social:hover {
   -webkit-transform:scale(1.1);
   -moz-transform:scale(1.1);
   -o-transform:scale(1.1);
 }
+
 #social {
   -webkit-transform:scale(0.8);
   /* Browser Variations: */
@@ -598,6 +596,12 @@ Social Links
 .social-tw:hover { color: #00aced; }
 .social-ig:hover { color: #517fa4; }
 .social-em:hover { color: #dd4b39; }
+.social-me:hover {
+  color: #ffff66;
+  -webkit-transform:scale(0.95) !important;
+  -moz-transform:scale(0.95)    !important;
+  -o-transform:scale(0.95)      !important;
+}
 
 .social-block {
   position: absolute;
@@ -606,6 +610,7 @@ Social Links
   display: inline-block;
   width: 50px;
   margin-top: 3em;
+  text-align: center;
 }
 
 .fa-3x {
@@ -617,16 +622,10 @@ Social Links
 }
 
 .fa {
+  display: block;
   box-sizing:content-box;
   font-size: 2em;
   margin-top: 0.5em;
-}
-
-.fa-medium {
-  font-size: 1.5em;
-  margin-top: 0.7em;
-  color: white;
-  display: block;
 }
 
 .fa-facebook:hover {
