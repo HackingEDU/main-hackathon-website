@@ -1,1 +1,789 @@
-#header .active{color:#fff !important;font-weight:700 !important;-webkit-transform:translate3d(0, 0, 0);-moz-transform:translate3d(0, 0, 0);-o-transform:translate3d(0, 0, 0);-ms-transform:translate3d(0, 0, 0);transform:translate3d(0, 0, 0)}#header .active{color:#fff !important;font-weight:700 !important;-webkit-transform:translate3d(0, 0, 0);-moz-transform:translate3d(0, 0, 0);-o-transform:translate3d(0, 0, 0);-ms-transform:translate3d(0, 0, 0);transform:translate3d(0, 0, 0)}#header{width:100%;padding:20px;top:0;line-height:10px;color:#fff;background-color:rgba(40,40,40,0);border:0px solid #adadad;font-family:'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;border-radius:0px}#header li{margin-bottom:0}#shading{background-color:rgba(0,0,0,0.15);height:100vh}.sub-text{font-size:24px}#large-header img{max-height:500px}#large-header{background-image:url("../img/hack_background.jpg");height:100vh}@-webkit-keyframes hackingedu-header{0%{background-position:0% 50%}50%{background-position:100% 50%}100%{background-position:0% 50%}}@-moz-keyframes hackingedu-header{0%{background-position:0% 50%}50%{background-position:100% 50%}100%{background-position:0% 50%}}@-o-keyframes hackingedu-header{0%{background-position:0% 50%}50%{background-position:100% 50%}100%{background-position:0% 50%}}@keyframes hackingedu-header{0%{background-position:0% 50%}50%{background-position:100% 50%}100%{background-position:0% 50%}}#navbar{font-size:1em;z-index:2}#navbar ul{margin:0;padding:0;list-style-type:none;list-style-image:none}#navbar li{margin-right:0;display:inline}#navbar ul li a{text-decoration:none;margin:0px;padding:0px 15px;color:#eee;background-color:transparent}#navbar ul li a:hover{color:#fff;text-decoration:none;background-color:none;font-weight:700}#navbar li.current-menu-item a{color:#fff;text-decoration:none}#navbar li.current_page_item{color:#fff;text-decoration:none}#navbar nav>li>a:focus,#navbar .nav>li>a:hover{text-decoration:none;background-color:transparent}.navbar{margin-bottom:0}.navbar-toggle{float:left !important;margin-left:15px}.navbar-default .navbar-toggle:focus,.navbar-default .navbar-toggle:hover{background-color:transparent !important}.navbar-default .navbar-toggle .icon-bar{background-color:#fff !important}#schedule h4,#schedule p{margin-top:20px !important;margin-bottom:0px !important}@media (min-width: 768px){#navbar{margin:0 auto;display:table;table-layout:fixed;float:none;display:inline-block !important}#header .container{max-width:100%;width:100%;text-align:center}}@media (max-width: 768px){.navbar-default .navbar-toggle{border:none}.navbar-default .navbar-collapse,.navbar-default .navbar-form{border-color:transparent}#header{padding:0px}ul{padding:0px}#navbar{border:none}#navbar ul li a{text-align:left;line-height:2em}#about p{font-size:16px;color:#333;text-align:justify;padding:0px 0px;margin:0px 0px 10px !important}#about p .special{color:#666 !important;font-size:16px !important}.scheduleSection .scheduleEvent p.text-thin{margin:0}}.large-header{position:relative;width:100%;overflow:hidden;background-size:cover;background-position:center center;z-index:1}.main-title{position:absolute;margin:0;padding:0;color:#f9f1e9;text-align:center;top:50%;left:50%;-webkit-transform:translate3d(-50%, -50%, 0);transform:translate3d(-50%, -50%, 0)}.title-resize{max-width:75%;height:auto;margin-bottom:25px}.substatement{color:white}#apply-butt{display:inline-block;margin-left:auto;margin-right:auto;width:300px;height:55px;font-size:15px;margin-bottom:40px}#apply-butt:hover{color:black;background:white}.justified{text-align:justify}#sponsor-butt{display:inline-block;margin-left:auto;margin-right:auto;width:300px;height:55px;font-size:15px}#sponsor-butt:hover{color:black;background:white}#stats{background-color:#eee;padding:0% 12%}.float-left{float:left}.social-block{clear:both;position:absolute;margin-top:1em}#stats span{text-align:center;margin-bottom:30px;margin-top:30px}.text-center{text-align:center}.extra-line-height{line-height:35px}#about{padding-top:90px}#quote{}.faq{margin-top:90px}#three-pill{background:#c0c5ce;padding:30px 0px}#three-pill img{display:block;margin-top:60px;margin-bottom:30px;margin-left:auto;margin-right:auto}.three-text{font-size:55px}.tday{margin-top:90px}.pad-45{padding:45px}.padtop20{padding-top:20px}#tdaySection{background:url('../img/tdayBack.jpg');background-size:cover;background-repeat:no-repeat}.padtop60{padding-top:60px}.padtop30{padding-top:30px}.bottom-150{padding-bottom:150px}.tdaytext{margin-top:60px;font-size:17.5px}.image1{background:url('../img/tday1Col.jpg');background-size:auto 100%;background-position:center}.image1:hover{background-size:auto 130%}.image2{background:url('../img/tday2Col.jpg');background-size:auto 100%;background-position:center}.image2:hover{background-size:auto 130%}.image3{background:url('../img/tday3Col.jpg');background-size:auto 100%;background-position:center}.image3:hover{background-size:auto 130%}.resize{width:100%;height:300px;clear:both;position:relative;background-size:cover}.bold{font-size:1.9em}.center-middle{text-align:center;padding-top:130px;color:white;font-style:italic}#tweet_list{list-style:none}#tweet_list .twitter_profile_pic{height:1.25em;border:1px solid white;margin-right:10px;float:left}#tweet_list li.tweet a{font-size:1.5em;line-height:2em;color:white}#twitter_feed{background-color:#55acee}#tweet_list li.tweet a:hover,#twitter_feed.twitter-share-button:hover{color:white !important;transition:none;border-bottom:3px dotted white}.screen-name{font-weight:bolder}.twitter-share-button{display:block;font-size:2em;color:white}fa{color:#fff}#medium-icon-header{margin-top:5px;margin-right:5px;font-size:2em}.form-inline #medium-icon-header{margin:0px 0px 0px 5px;font-size:2.6em}#medium-icon-header:hover{color:#FFFF66;-webkit-transform:scale(1.1);-moz-transform:scale(1.1);-o-transform:scale(1.1);-webkit-transition-duration:0.5s;-moz-transition-duration:0.5s;-o-transition-duration:0.5s}#social:hover{-webkit-transform:scale(1.1);-moz-transform:scale(1.1);-o-transform:scale(1.1)}#social{-webkit-transform:scale(0.8);-moz-transform:scale(0.8);-o-transform:scale(0.8);-webkit-transition-duration:0.5s;-moz-transition-duration:0.5s;-o-transition-duration:0.5s}.social-fb:hover{color:#3b5998}.social-tw:hover{color:#00aced}.social-ig:hover{color:#517fa4}.social-em:hover{color:#dd4b39}.social-block{position:absolute;right:1em;top:4em;z-index:9999}.social-block a{display:block;color:white}.fa-3x{color:white}.social-footer a{color:white}.social-footer a i.fa{box-sizing:content-box;font-size:2em;margin:2em .7em}.social-footer a .fa-facebook:hover{color:#3a5795}.social-footer a .fa-twitter:hover{color:#55acee}.social-footer a .fa-instagram:hover{color:#517fa4}.social-footer a .fa-medium:hover{color:#FFFF66}#sponsor{background:white}#sponsor .sponsorName{background:url('http://static.planetminecraft.com/files/resource_media/screenshot/1327/1328800264_minecraft-logo_5843730_lrg.jpg')}#sponsor .chegg{background:url('../img/sponsors/chegg.png');width:300px}#sponsor .PayPal{background:url('../img/sponsors/paypal.png');width:180px !important}#sponsor .ibm{background:url('../img/sponsors/ibm.jpg')}#sponsor .auto{background:url('../img/sponsors/automattic.jpg')}#sponsor .pebble{background:url('../img/sponsors/pebble.png');width:160px !important;margin-right:0px !important}#sponsor .leapmotion{background:url('../img/sponsors/leapmotion.png');width:120px !important;min-width:0px !important;margin-left:60px !important;margin-right:50px !important}#sponsor .makeschool{background:url('../img/sponsors/makeschool.png');margin-right:60px !important}#sponsor .twilio{background:url('../img/sponsors/twilio.png')}#sponsor .twist{background:url('../img/sponsors/twist.png')}#sponsor .draper{background:url('../img/sponsors/draper.png')}#sponsor .bootstrap{background:url('../img/sponsors/bootstrap.png');width:180px !important}#sponsor .lyft{background:url('../img/sponsors/lyft.png')}#sponsor .namecheap{background:url('../img/sponsors/namecheap.png');width:240px !important}#sponsor .socket{background:url('../img/sponsors/socket.png');width:180px !important}#sponsor .edsurge{background:url('../img/sponsors/edsurge.jpg')}#sponsor .google{background:url('../img/sponsors/google.png')}#sponsor .firebase{background:url('../img/sponsors/firebase.png')}#sponsor .gun{background:url('../img/sponsors/gun.png');width:120px !important;min-width:0px !important}#sponsor .thalmiclabs{background:url('../img/sponsors/thalmiclabs.png');width:180px !important;margin-left:40px !important}#sponsor .pearlhacks{background:url('../img/sponsors/pearlhacks.png')}#sponsor .nwhacks{background:url('../img/sponsors/nwhacks.jpg')}#sponsor .lahacks{background:url('../img/sponsors/lahacks.jpeg')}#sponsor .hack4baltimore{background:url('../img/sponsors/hack4baltimore.png');height:100px !important;width:200px !important}#sponsor .globalcommit{background:url('../img/sponsors/globalcommit.png');height:100px !important;width:200px !important}#sponsor .redbull{background:url('../img/sponsors/redbull.png')}#sponsor figure{margin:-2em 3em;height:50vh;width:50vw;background-size:contain !important;display:inline-block;background-position:center center !important;background-repeat:no-repeat !important}#sponsor .tier1 figure{height:25vh}#sponsor .tier2 figure{min-height:20vh;width:13vw;min-width:12em;height:30vh;margin-top:16px}#sponsor .tier2 .auto{min-width:16em}#sponsor .tier3 figure{height:15vh;width:8vw;margin-bottom:16px;min-width:10em;margin-top:16px}#sponsor .tier4 figure{height:15vh;width:8vw;margin-bottom:16px;min-width:10em;margin-top:16px}.sponsor{margin-top:90px}#partners .tier4 figure{z-index:-1}.footer{background:#111;color:#eee}.footer a.sexy{color:white;border:1px solid #eee;padding:0em 2em;font-size:16px;text-transform:uppercase;margin-top:20px;position:relative;top:20px;margin-bottom:20px}.footer button.sexy:hover{color:#1EAEDB}.footer button.sexy{color:white;font-size:1em}.arrow-wrap{position:absolute;z-index:1;left:50%;margin-left:-5em;background:transparent;width:10em;height:10em;padding:4em 2em;border-radius:50%;font-size:0.5em;display:block;box-shadow:0px 0px 5px 0px #FFF}.arrow{float:left;position:relative;width:0px;height:0px;border-style:solid;border-width:3em 3em 0 3em;border-color:#ffffff transparent transparent transparent;-webkit-transform:rotate(360deg)}.arrow:after{content:'';position:absolute;top:-3.2em;left:-3em;width:0px;height:0px;border-style:solid;border-width:3em 3em 0 3em;border-color:transparent transparent transparent transparent;-webkit-transform:rotate(360deg)}.next-btn{width:30%;float:right}.prev-btn{width:30%;float:left}.marginbottom50{margin-bottom:50px}.neg30{margin-top:-30px}
+/* Table of contents
+––––––––––––––––––––––––––––––––––––––––––––––––––
+-Header
+-Header-Buttons
+-Why
+-three-pill
+-quote
+-FAQ
+-Training Day Section
+-Sponsor
+-Footer
+
+ */
+
+body {
+  font-family: Avenir, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  overflow-x: hidden;
+}
+
+*:hover {
+  text-decoration: none !important;
+}
+
+/* =========================================================================
+                            Helpers
+=======================================================================*/
+.ml-1em {
+  margin-left: 1em;
+}
+
+.mb-50px {
+  margin-bottom: 50px;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.mb-30px{
+  margin-bottom:30px;
+}
+
+/* =========================================================================
+                            Main Section
+=======================================================================*/
+.main-title {
+  font-family: avenir;
+  text-transform: uppercase;
+  font-weight: lighter;
+}
+
+#hero {
+  position: relative;
+}
+
+/* =========================================================================
+                            Sticky Navbar
+=======================================================================*/
+#header .active {
+  color: #fff !important;
+  font-weight: 700 !important;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+/* Navigation */
+#header .active {
+  color: #fff !important;
+  font-weight: 700 !important;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+#header {
+  left: 0;
+  right: 0;
+  padding: 10px;
+  top: 0;
+  line-height: 10px;
+  color: #fff;
+  background-color: rgba(40,40,40,0);
+  position: fixed;
+  z-index: 1;
+  text-align: right;
+
+
+}
+
+.pill-button {
+  border: 1px solid white;
+  border-radius: 50px;
+  line-height: 1em;
+  margin-top: 4px;
+  background-color: transparent;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+}
+
+.pill-button > a {
+  color: white;
+}
+
+.pill-button:hover {
+  background-color: white;
+}
+
+.pill-button:hover > a {
+  color: black;
+}
+
+.navlink {
+  display:inline-block;
+  padding-top: 0.35em;
+}
+
+.navlink a {
+  color: white;
+}
+
+.navlink:hover {
+  font-weight: bold;
+}
+
+.nav-logo {
+  position: absolute;
+  left: 0;
+  height: 30px;
+  width: auto;
+  left: 2em;
+  top: 0.7em;
+  z-index: 3
+}
+
+#header li {
+  margin-bottom: 0;
+}
+
+#shading {
+  background-color: rgba(0, 0, 0, 0.15);
+  height: 100vh
+}
+
+.sub-text{
+  font-size: 16pt;
+  line-height: 10px;
+  font-family:Lato, sans-serif;
+}
+
+.spaced-container {
+  padding: 100px 0;
+}
+
+.thin-header {
+  font-weight: 100;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #999;
+  font-family: 'Helvetica Neue', Avenir, Helvetica, Arial, sans-serif;
+}
+
+@-webkit-keyframes hackingedu-header {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+
+@-moz-keyframes hackingedu-header {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+
+@-o-keyframes hackingedu-header {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+
+@keyframes hackingedu-header {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+
+@media (max-height: 768px) {
+  .arrow-wrap {
+    display: block;
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
+  .navbar-toggle {
+    right: 3px;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-right: 0;
+  }
+  .navbar-toggle .icon-bar {
+    position: relative;
+    z-index: 5;
+    background-color: white;
+  }
+  #header  {
+    background-color: black;
+    height: 45px;
+  }
+  .pill-button {
+    display: none !important;
+  }
+  #navbar {
+    background-color: black !important;
+    z-index: 20;
+  }
+  #navbar ul {
+    float: left !important;
+    position: relative;
+    padding-top: 5em !important;
+    height: 250px;
+  }
+  .ml-1em {
+    margin-left: 0;
+  }
+  #sponsor .tier4 figure {
+    height: 8em !important;
+  }
+  .main-txt {
+    font-size: 2.1em;
+  }
+  .arrow-wrap {
+    width: 40px !important;
+    height: 40px !important;
+  }
+  .arrow {
+    height: 10px !important;
+    width: 10px !important;
+    margin-top: 15px !important;
+  }
+  .sub-text {
+    font-size: 1.2em;
+  }
+}
+
+/* Navigation */
+#navbar {
+  z-index: 2;
+}
+#navbar ul {
+  float: right;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  list-style-image: none;
+}
+#navbar li {
+  margin-right: 0;
+  display: inline;
+}
+#navbar ul li a {
+  padding: 0.3em 1.4em;
+}
+#navbar ul li a:hover {
+  text-decoration: underline;
+}
+#navbar li.current-menu-item a {
+  color: #fff;
+  text-decoration: none;
+}
+#navbar li.current_page_item {
+  color: #fff;
+  text-decoration: none;
+}
+#navbar nav>li>a:focus, #navbar .nav>li>a:hover {
+  text-decoration: none;
+  background-color: transparent;
+}
+.navbar {
+  margin-bottom: 0;
+}
+.navbar-toggle {
+  position: relative;
+}
+.navbar-default .navbar-toggle:focus,
+.navbar-default .navbar-toggle:hover {
+  background-color: transparent !important;
+}
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #fff !important;
+}
+#schedule h4, #schedule p {
+  margin-top: 20px !important;
+  margin-bottom: 0px !important;
+}
+/* Justified Alignment*/
+@media (min-width: 768px){
+  #navbar{
+    display: inline-block;
+    widows: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .navbar-default .navbar-toggle { border: none; }
+  .navbar-default .navbar-collapse,
+  .navbar-default .navbar-form {
+    border-color: transparent;
+  }
+  #header {
+    background-color: rgba(0,0,0,.5); /* to undo gradient version for mobile */
+    padding: 0px;
+  }
+  ul { padding: 0px; }
+  #navbar { border: none; }
+  #navbar ul li a {
+    text-align: left;
+    line-height: 2em;
+  }
+  #about p{
+    font-size: 16px;
+    color: #333;
+    text-align: justify;
+    padding: 0px 0px;
+    margin: 0px 0px 10px !important;
+  }
+  #about p .special{
+    color: #666 !important;
+    font-size: 16px !important;
+  }
+  .scheduleSection .scheduleEvent p.text-thin{
+    margin: 0;
+  }
+
+}
+
+/* Header */
+.large-header {
+  background-image: url("../img/hack_background.jpg");
+  height: 100vh;
+  background-size: cover;
+  background-position: center center;
+}
+
+.main-title {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  color: #f9f1e9;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate3d(-50%,-50%,0);
+  transform: translate3d(-50%,-50%,0);
+}
+
+.title-resize{
+  max-width: 75%;
+  height: auto;
+  margin-bottom: 25px;
+}
+
+.substatement{
+  color:white;
+}
+
+a.san-mateo{
+  color:white;
+
+}
+a.san-mateo:hover{
+  color: white;
+  text-decoration: underline;
+}
+
+/* Header-Buttons */
+.justified{
+  text-align: justify;
+}
+
+.butt {
+  border-radius: .55em;
+  display:inline-block;
+  width: 300px;
+  height:55px;
+  font-family: Avenir, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size:15px;
+  transition-duration: .4s;
+  margin-right: 8px;
+  margin-left: 8px;
+}
+
+.butt:hover {
+  color:black;
+  background:white;
+}
+
+#about {
+  background-color: #eee;
+}
+
+.float-left{
+  float:left;
+}
+
+
+/* About */
+
+#about span {
+  text-align: center;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+
+.text-center{
+  text-align: center;
+}
+
+.extra-line-height{
+  line-height: 35px;
+}
+
+/* Quote */
+#quote{
+  font-weight: bold;
+}
+
+/* Three Pillars */
+
+#three-pill img {
+  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.three-text{
+  font-size: 55px;
+
+}
+.pad-45{
+  padding: 45px;
+}
+
+.padtop20{
+  padding-top: 20px;
+}
+
+/*FAQ*/
+#faq{
+  background-color:#eeeeee;
+}
+
+/*Training Day Section*/
+
+#training-day {
+  background: url('../img/tdayBack.jpg');
+  background-size:cover;
+  background-repeat: no-repeat;
+  box-shadow: 0 0px 20px rgba(0,0,0,0.4);
+  position: relative
+}
+
+.padtop30{
+  padding-top: 30px;
+}
+
+.bottom-150{
+  padding-bottom: 150px;
+}
+
+.navbar-toggle {
+  position: absolute;
+  top: 0.5em;
+  right: 0.5em;
+}
+
+.tdaytext{
+  margin-top: 50px;
+  padding: 2em;
+}
+
+.black-text {
+  color: black;
+}
+
+.image1{
+  background:url('../img/tday_info.jpg');
+  background-size: auto 100%;
+  background-position: center;
+}
+.image1:hover {background-size: auto 130%}
+
+
+.image2{
+  background:url('../img/tday_photos.jpg');
+  background-size: auto 100%;
+  background-position: center;
+}
+
+.image2:hover {background-size: auto 130%}
+
+.image3{
+  background:url('../img/tday_workshops.jpg');
+  background-size: auto 100%;
+  background-position: center;
+}
+
+.image3:hover {background-size: auto 130%}
+
+.resize{
+  width: 100%;
+  height: 300px;
+  clear: both;
+  position: relative;
+  background-size: cover;
+
+}
+
+.bold{
+  line-height: 1;
+  font-size: 1.9em;
+}
+
+.center-middle{
+  text-align: center;
+  padding-top: 130px;
+  color: white;
+  font-style: italic;
+}
+
+/*Twitter*/
+#tweet_list {
+  list-style: none;
+}
+
+.twitter_profile_pic {
+  height: 1.25em;
+  border: 1px solid white;
+  margin-right: 10px;
+  float: left;
+}
+
+#tweet_list li.tweet a {
+  font-size: 1.5em;
+  line-height: 2em;
+  color: white;
+}
+
+#twitter_feed {
+  background-color: #55acee;
+}
+
+#tweet_list li.tweet a:hover, #twitter_feed.twitter-share-button:hover {
+  color: white !important;
+  transition: none;
+  border-bottom: 3px dotted white;
+}
+
+.screen-name {
+  font-weight: bolder;
+}
+
+.twitter-share-button {
+  display: block;
+  font-size: 2em;
+  color: white;
+}
+
+/* =========================================================================
+Social Links
+=======================================================================*/
+
+#social:hover {
+  -webkit-transform:scale(1.1);
+  -moz-transform:scale(1.1);
+  -o-transform:scale(1.1);
+}
+
+#social {
+  -webkit-transform:scale(0.8);
+  /* Browser Variations: */
+  -moz-transform:scale(0.8);
+  -o-transform:scale(0.8);
+  -webkit-transition-duration: 0.5s;
+  -moz-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+}
+.social-fb:hover { color: #3b5998; }
+.social-tw:hover { color: #00aced; }
+.social-ig:hover { color: #517fa4; }
+.social-em:hover { color: #dd4b39; }
+.social-me:hover {
+  color: #ffff66;
+  -webkit-transform:scale(0.95) !important;
+  -moz-transform:scale(0.95)    !important;
+  -o-transform:scale(0.95)      !important;
+}
+
+.social-block {
+  position: absolute;
+  right: 0;
+  color: white;
+  display: inline-block;
+  width: 50px;
+  margin-top: 3em;
+  text-align: center;
+}
+
+.fa-3x {
+  color: white;
+}
+
+.social-footer a{
+  color: white;
+}
+
+.fa {
+  display: block;
+  box-sizing:content-box;
+  font-size: 2em;
+  margin-top: 0.5em;
+}
+
+.fa-facebook:hover {
+  color: #3a5795;
+}
+
+.fa-twitter:hover {
+  color: #55acee;
+}
+
+.fa-instagram:hover {
+  color: #517fa4;
+}
+
+.fa-medium:hover {
+  color: #FFFF66;
+}
+
+#sponsors {
+  background: white;
+  width:   100%;
+  padding: 90px 0;
+}
+
+
+#sponsors .sponsorName {background: url('http://static.planetminecraft.com/files/resource_media/screenshot/1327/1328800264_minecraft-logo_5843730_lrg.jpg')}
+#sponsors .chegg      { background: url('../img/sponsors/chegg.png');      }
+#sponsors .PayPal     { background: url('../img/sponsors/paypal.png');     }
+#sponsors .ibm        { background: url('../img/sponsors/ibm.jpg');        }
+#sponsors .auto       { background: url('../img/sponsors/automattic.jpg'); }
+#sponsors .pebble     { background: url('../img/sponsors/pebble.png');     }
+#sponsors .leapmotion { background: url('../img/sponsors/leapmotion.png'); }
+#sponsors .makeschool { background: url('../img/sponsors/makeschool.png'); }
+#sponsors .twilio     { background: url('../img/sponsors/twilio.png');     }
+#sponsors .twist      { background: url('../img/sponsors/twist.png')       }
+#sponsors .draper     { background: url('../img/sponsors/draper.png')      }
+#sponsors .bootstrap  { background: url('../img/sponsors/bootstrap.png');  }
+#sponsors .lyft       { background: url('../img/sponsors/lyft.png')        }
+#sponsors .namecheap  { background: url('../img/sponsors/namecheap.png');  }
+#sponsors .socket     { background: url('../img/sponsors/socket.png');     }
+#sponsors .edsurge    { background: url('../img/sponsors/edsurge.jpg')     }
+#sponsors .google     { background: url('../img/sponsors/google.png')      }
+#sponsors .firebase   { background: url('../img/sponsors/firebase.png')    }
+#sponsors .gun        { background: url('../img/sponsors/gun.png');        }
+#sponsors .thalmiclabs{ background: url('../img/sponsors/thalmiclabs.png');}
+#sponsors .pearlhacks { background: url('../img/sponsors/pearlhacks.png')  }
+#sponsors .nwhacks    { background: url('../img/sponsors/nwhacks.jpg')     }
+#sponsors .lahacks    { background: url('../img/sponsors/lahacks.jpeg')    }
+#sponsors .hack4baltimore { background: url('../img/sponsors/hack4baltimore.png'); }
+#sponsors .globalcommit { background: url('../img/sponsors/globalcommit.png'); }
+#sponsors .redbull    { background: url('../img/sponsors/redbull.png')     }
+#sponsors .roko    { background: url('../img/sponsors/roko.png')     }
+
+.tier, .tier a {
+  display: inline-block;
+}
+
+#sponsors figure, #sponsors a {
+  margin:  0 20px;
+  padding: 0;
+
+  box-sizing: border-box;
+    background-size: contain !important;
+    background-position: center center !important;
+    background-repeat: no-repeat !important
+}
+
+.tier {
+  width: 100%;
+  height: 100%;
+}
+
+.tier a {
+  margin: 20px !important;
+}
+
+.tier1 a {
+  min-width: 250px;
+  width:       50%;
+  height:     90px;
+}
+
+.tier2 a {
+  min-width: 250px;
+  width:       30%;
+  height:     90px;
+}
+
+.tier3 a, .tier4 a {
+  margin: 10px 50px !important;
+  min-width: 160px;
+  width:       10%;
+  height:     90px;
+}
+
+#partners .tier4 a {
+  z-index: -1;
+}
+
+
+
+/* =========================================================================
+                            Footer
+=======================================================================*/
+
+.footer {
+  background: #111;color:#eee
+}
+
+/* the wrapper element that will become the outer circle */
+.arrow-wrap {
+  position:absolute;
+  left: 0;
+  right: 0;
+  bottom: 2em;
+  width: 80px;
+  height: 80px;
+  border-radius:100%;
+  margin: auto;
+  border: 1px solid white;
+}
+
+/* a triangle to make the main part of the arrow. Adjust the border-color to fit your needs */
+.arrow {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 20px;
+  height: 20px;
+  border-right: 1px solid white;
+  border-bottom: 1px solid white;
+  transform: rotate(45deg);
+  margin-top: 25px;
+}
+
+/* a pseudo element arrow placed on top of the other one with the same color as the wrapper */
+.arrow:after {
+  content:'';
+  position:absolute;
+  top:-3.2em;
+  left:-3em;
+  width: 0px;
+  height: 0px;
+  border-style: solid;
+  border-width: 3em 3em 0 3em;
+  border-color: transparent transparent transparent transparent;
+  -webkit-transform:rotate(360deg);/* added for better anti-aliasing on webkit browsers */
+}
+
+.footer-icon{
+  display:inline-block;
+  padding: 0 0.3em;
+  margin-top: 0.2em;
+}
+
+
+
+
