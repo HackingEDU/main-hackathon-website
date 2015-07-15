@@ -191,7 +191,7 @@ body {
 }
 
 @media (max-height: 768px) {
-  .arrow-wrap {
+  .arrow {
     display: block;
   }
 }
@@ -237,14 +237,9 @@ body {
   .main-txt {
     font-size: 2.1em;
   }
-  .arrow-wrap {
+  .arrow {
     width: 40px !important;
     height: 40px !important;
-  }
-  .arrow {
-    height: 10px !important;
-    width: 10px !important;
-    margin-top: 15px !important;
   }
   .sub-text {
     font-size: 1.2em;
@@ -752,46 +747,16 @@ Social Links
 }
 
 /* the wrapper element that will become the outer circle */
-.arrow-wrap {
+.arrow {
   position:absolute;
   left: 0;
   right: 0;
-  bottom: 2em;
+  bottom: 1em;
   width: 80px;
   height: 80px;
-  border-radius:100%;
   margin: auto;
-  border: 1px solid white;
-}
-
-/* a triangle to make the main part of the arrow. Adjust the border-color to fit your needs */
-.arrow {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  margin: auto;
-  width: 20px;
-  height: 20px;
-  border-right: 1px solid white;
-  border-bottom: 1px solid white;
-  transform: rotate(45deg);
-  margin-top: 25px;
-}
-
-/* a pseudo element arrow placed on top of the other one with the same color as the wrapper */
-.arrow:after {
-  content:'';
-  position:absolute;
-  top:-3.2em;
-  left:-3em;
-  width: 0px;
-  height: 0px;
-  border-style: solid;
-  border-width: 3em 3em 0 3em;
-  border-color: transparent transparent transparent transparent;
-  -webkit-transform:rotate(360deg);/* added for better anti-aliasing on webkit browsers */
+  background: url("/img/downarrow.png");
+  background-size: contain;
 }
 
 .footer-icon{
