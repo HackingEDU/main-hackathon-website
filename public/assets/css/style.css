@@ -314,7 +314,11 @@ body {
     padding: 0px;
   }
   ul { padding: 0px; }
-  #navbar { border: none; }
+  #navbar {
+    border: none;
+    overflow-y: hidden;
+    overflow-x: hidden;
+  }
   #navbar ul li a {
     text-align: left;
     line-height: 2em;
