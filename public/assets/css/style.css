@@ -666,6 +666,29 @@ Social Links
   }
 }
 
+.fa {
+  display: block;
+  box-sizing:content-box;
+  font-size: 2em;
+  margin-top: 0.5em;
+}
+
+.fa-facebook:hover {
+  color: #3a5795;
+}
+
+.fa-twitter:hover {
+  color: #55acee;
+}
+
+.fa-instagram:hover {
+  color: #517fa4;
+}
+
+.fa-medium:hover {
+  color: #FFFF66;
+}
+
 .social-block {
   position: absolute;
   right: 0;
