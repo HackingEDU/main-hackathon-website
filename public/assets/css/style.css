@@ -592,30 +592,78 @@ a.san-mateo:hover{
 Social Links
 =======================================================================*/
 
-#social:hover {
-  -webkit-transform:scale(1.1);
-  -moz-transform:scale(1.1);
-  -o-transform:scale(1.1);
-}
-
 #social {
-  -webkit-transform:scale(0.8);
+  font-size: 2em;
+  margin: 0.4em;
+
+  -webkit-transform:scale(1);
   /* Browser Variations: */
-  -moz-transform:scale(0.8);
-  -o-transform:scale(0.8);
+  -moz-transform:scale(1);
+  -o-transform:scale(1);
   -webkit-transition-duration: 0.5s;
   -moz-transition-duration: 0.5s;
   -o-transition-duration: 0.5s;
 }
+.social-me {
+  -webkit-transform:scale(0.9) !important;
+  /* Browser Variations: */
+  -moz-transform:scale(0.9) !important;
+  -o-transform:scale(0.9) !important;
+  -webkit-transition-duration: 0.5s;
+  -moz-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+}
+
+#social:hover {
+  -webkit-transform:scale(1.3);
+  -moz-transform:scale(1.3);
+  -o-transform:scale(1.3);
+}
+
 .social-fb:hover { color: #3b5998; }
 .social-tw:hover { color: #00aced; }
 .social-ig:hover { color: #517fa4; }
 .social-em:hover { color: #dd4b39; }
 .social-me:hover {
   color: #ffff66;
-  -webkit-transform:scale(0.95) !important;
-  -moz-transform:scale(0.95)    !important;
-  -o-transform:scale(0.95)      !important;
+  -webkit-transform:scale(1.1) !important;
+  -moz-transform:scale(1.1)    !important;
+  -o-transform:scale(1.1)      !important;
+}
+
+@media (max-width: 768px) {
+  #social {
+    margin: 0.3em;
+
+    -webkit-transform:scale(0.8);
+    /* Browser Variations: */
+    -moz-transform:scale(0.8);
+    -o-transform:scale(0.8);
+    -webkit-transition-duration: 0.5s;
+    -moz-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+  }
+  .social-me {
+    -webkit-transform:scale(0.7) !important;
+    /* Browser Variations: */
+    -moz-transform:scale(0.7) !important;
+    -o-transform:scale(0.7) !important;
+    -webkit-transition-duration: 0.5s;
+    -moz-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+  }
+
+  #social:hover {
+    -webkit-transform:scale(1.1);
+    -moz-transform:scale(1.1);
+    -o-transform:scale(1.1);
+  }
+  .social-me:hover {
+    color: #ffff66;
+    -webkit-transform:scale(0.9) !important;
+    -moz-transform:scale(0.9)    !important;
+    -o-transform:scale(0.9)      !important;
+  }
 }
 
 .social-block {
@@ -624,7 +672,7 @@ Social Links
   color: white;
   display: inline-block;
   width: 50px;
-  margin-top: 3em;
+  margin-top: 4em;
   text-align: center;
 }
 
@@ -634,29 +682,6 @@ Social Links
 
 .social-footer a{
   color: white;
-}
-
-.fa {
-  display: block;
-  box-sizing:content-box;
-  font-size: 2em;
-  margin-top: 0.5em;
-}
-
-.fa-facebook:hover {
-  color: #3a5795;
-}
-
-.fa-twitter:hover {
-  color: #55acee;
-}
-
-.fa-instagram:hover {
-  color: #517fa4;
-}
-
-.fa-medium:hover {
-  color: #FFFF66;
 }
 
 #sponsors {
