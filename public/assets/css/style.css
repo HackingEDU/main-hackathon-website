@@ -589,8 +589,7 @@ Social Links
 =======================================================================*/
 
 #social {
-  font-size: 2em;
-  margin: 0.4em;
+  margin: 0.8em 0 !important;
 
   -webkit-transform:scale(1);
   /* Browser Variations: */
@@ -629,7 +628,7 @@ Social Links
 
 @media (max-width: 768px) {
   #social {
-    margin: 0.3em;
+    margin: 0.3em 0 !important;
 
     -webkit-transform:scale(0.8);
     /* Browser Variations: */
@@ -691,7 +690,7 @@ Social Links
   color: white;
   display: inline-block;
   width: 50px;
-  margin-top: 4em;
+  margin-top: 3em;
   text-align: center;
 }
 
