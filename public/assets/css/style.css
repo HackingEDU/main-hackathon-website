@@ -17,7 +17,7 @@ body {
   overflow-x: hidden;
 }
 
-*:hover {
+*:hover, *:visited, *:active, *:focus {
   text-decoration: none !important;
 }
 
@@ -191,7 +191,7 @@ body {
 }
 
 @media (max-height: 768px) {
-  .arrow-wrap {
+  .arrow {
     display: block;
   }
 }
@@ -237,14 +237,9 @@ body {
   .main-txt {
     font-size: 2.1em;
   }
-  .arrow-wrap {
+  .arrow {
     width: 40px !important;
     height: 40px !important;
-  }
-  .arrow {
-    height: 10px !important;
-    width: 10px !important;
-    margin-top: 15px !important;
   }
   .sub-text {
     font-size: 1.2em;
@@ -319,7 +314,11 @@ body {
     padding: 0px;
   }
   ul { padding: 0px; }
-  #navbar { border: none; }
+  #navbar {
+    border: none;
+    overflow-y: hidden;
+    overflow-x: hidden;
+  }
   #navbar ul li a {
     text-align: left;
     line-height: 2em;
@@ -372,12 +371,28 @@ body {
 }
 
 a.san-mateo{
-  color:white;
-
-}
-a.san-mateo:hover{
   color: white;
-  text-decoration: underline;
+
+  -webkit-transform:scale(1);
+  /* Browser Variations: */
+  -moz-transform:scale(1);
+  -o-transform:scale(1);
+  -webkit-transition-duration: 0.5s;
+  -moz-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+}
+
+a.san-mateo:hover{
+  display: inline-block;
+  color: white;
+
+  /* Browser Variations: */
+  -webkit-transform:scale(1.1);
+  -moz-transform:scale(1.1);
+  -o-transform:scale(1.1);
+  -webkit-transition-duration: 0.5s;
+  -moz-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
 }
 
 /* Header-Buttons */
@@ -577,48 +592,77 @@ a.san-mateo:hover{
 Social Links
 =======================================================================*/
 
-#social:hover {
-  -webkit-transform:scale(1.1);
-  -moz-transform:scale(1.1);
-  -o-transform:scale(1.1);
-}
-
 #social {
-  -webkit-transform:scale(0.8);
+  margin: 0.8em 0 !important;
+
+  -webkit-transform:scale(1);
   /* Browser Variations: */
-  -moz-transform:scale(0.8);
-  -o-transform:scale(0.8);
+  -moz-transform:scale(1);
+  -o-transform:scale(1);
   -webkit-transition-duration: 0.5s;
   -moz-transition-duration: 0.5s;
   -o-transition-duration: 0.5s;
 }
+.social-me {
+  -webkit-transform:scale(0.9) !important;
+  /* Browser Variations: */
+  -moz-transform:scale(0.9) !important;
+  -o-transform:scale(0.9) !important;
+  -webkit-transition-duration: 0.5s;
+  -moz-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+}
+
+#social:hover {
+  -webkit-transform:scale(1.3);
+  -moz-transform:scale(1.3);
+  -o-transform:scale(1.3);
+}
+
 .social-fb:hover { color: #3b5998; }
 .social-tw:hover { color: #00aced; }
 .social-ig:hover { color: #517fa4; }
 .social-em:hover { color: #dd4b39; }
 .social-me:hover {
   color: #ffff66;
-  -webkit-transform:scale(0.95) !important;
-  -moz-transform:scale(0.95)    !important;
-  -o-transform:scale(0.95)      !important;
+  -webkit-transform:scale(1.1) !important;
+  -moz-transform:scale(1.1)    !important;
+  -o-transform:scale(1.1)      !important;
 }
 
-.social-block {
-  position: absolute;
-  right: 0;
-  color: white;
-  display: inline-block;
-  width: 50px;
-  margin-top: 3em;
-  text-align: center;
-}
+@media (max-width: 768px) {
+  #social {
+    margin: 0.3em 0 !important;
 
-.fa-3x {
-  color: white;
-}
+    -webkit-transform:scale(0.8);
+    /* Browser Variations: */
+    -moz-transform:scale(0.8);
+    -o-transform:scale(0.8);
+    -webkit-transition-duration: 0.5s;
+    -moz-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+  }
+  .social-me {
+    -webkit-transform:scale(0.7) !important;
+    /* Browser Variations: */
+    -moz-transform:scale(0.7) !important;
+    -o-transform:scale(0.7) !important;
+    -webkit-transition-duration: 0.5s;
+    -moz-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+  }
 
-.social-footer a{
-  color: white;
+  #social:hover {
+    -webkit-transform:scale(1.1);
+    -moz-transform:scale(1.1);
+    -o-transform:scale(1.1);
+  }
+  .social-me:hover {
+    color: #ffff66;
+    -webkit-transform:scale(0.9) !important;
+    -moz-transform:scale(0.9)    !important;
+    -o-transform:scale(0.9)      !important;
+  }
 }
 
 .fa {
@@ -644,6 +688,24 @@ Social Links
   color: #FFFF66;
 }
 
+.social-block {
+  position: absolute;
+  right: 0;
+  color: white;
+  display: inline-block;
+  width: 50px;
+  margin-top: 3em;
+  text-align: center;
+}
+
+.fa-3x {
+  color: white;
+}
+
+.social-footer a{
+  color: white;
+}
+
 #sponsors {
   background: white;
   width:   100%;
@@ -651,12 +713,14 @@ Social Links
 }
 
 
-#sponsors .sponsorName {background: url('http://static.planetminecraft.com/files/resource_media/screenshot/1327/1328800264_minecraft-logo_5843730_lrg.jpg')}
+#sponsors .sponsorName { background: url('http://static.planetminecraft.com/files/resource_media/screenshot/1327/1328800264_minecraft-logo_5843730_lrg.jpg')}
 #sponsors .chegg      { background: url('../img/sponsors/chegg.png');      }
 #sponsors .PayPal     { background: url('../img/sponsors/paypal.png');     }
+#sponsors .Worldquant { background: url('../img/sponsors/worldquant_logo.jpg'); }
 #sponsors .ibm        { background: url('../img/sponsors/ibm.jpg');        }
 #sponsors .auto       { background: url('../img/sponsors/automattic.jpg'); }
 #sponsors .pebble     { background: url('../img/sponsors/pebble.png');     }
+#sponsors .club       { background: url('../img/sponsors/club1.png');      }
 #sponsors .leapmotion { background: url('../img/sponsors/leapmotion.png'); }
 #sponsors .makeschool { background: url('../img/sponsors/makeschool.png'); }
 #sponsors .twilio     { background: url('../img/sponsors/twilio.png');     }
@@ -664,7 +728,8 @@ Social Links
 #sponsors .draper     { background: url('../img/sponsors/draper.png')      }
 #sponsors .bootstrap  { background: url('../img/sponsors/bootstrap.png');  }
 #sponsors .lyft       { background: url('../img/sponsors/lyft.png')        }
-#sponsors .namecheap  { background: url('../img/sponsors/namecheap.png');  }
+#sponsors .namecheap  { background: url('../img/sponsors/namecheap1.png'); }
+#sponsors .rubicon  { background: url('../img/sponsors/RubiconProject.png'); }
 #sponsors .socket     { background: url('../img/sponsors/socket.png');     }
 #sponsors .edsurge    { background: url('../img/sponsors/edsurge.jpg')     }
 #sponsors .google     { background: url('../img/sponsors/google.png')      }
@@ -677,7 +742,7 @@ Social Links
 #sponsors .hack4baltimore { background: url('../img/sponsors/hack4baltimore.png'); }
 #sponsors .globalcommit { background: url('../img/sponsors/globalcommit.png'); }
 #sponsors .redbull    { background: url('../img/sponsors/redbull.png')     }
-#sponsors .roko    { background: url('../img/sponsors/roko.png')     }
+#sponsors .roko    { background: url('../img/sponsors/roko.png')           }
 
 .tier, .tier a {
   display: inline-block;
@@ -736,46 +801,16 @@ Social Links
 }
 
 /* the wrapper element that will become the outer circle */
-.arrow-wrap {
+.arrow {
   position:absolute;
   left: 0;
   right: 0;
-  bottom: 2em;
+  bottom: 1em;
   width: 80px;
   height: 80px;
-  border-radius:100%;
   margin: auto;
-  border: 1px solid white;
-}
-
-/* a triangle to make the main part of the arrow. Adjust the border-color to fit your needs */
-.arrow {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  margin: auto;
-  width: 20px;
-  height: 20px;
-  border-right: 1px solid white;
-  border-bottom: 1px solid white;
-  transform: rotate(45deg);
-  margin-top: 25px;
-}
-
-/* a pseudo element arrow placed on top of the other one with the same color as the wrapper */
-.arrow:after {
-  content:'';
-  position:absolute;
-  top:-3.2em;
-  left:-3em;
-  width: 0px;
-  height: 0px;
-  border-style: solid;
-  border-width: 3em 3em 0 3em;
-  border-color: transparent transparent transparent transparent;
-  -webkit-transform:rotate(360deg);/* added for better anti-aliasing on webkit browsers */
+  background: url("/img/downarrow.png");
+  background-size: contain;
 }
 
 .footer-icon{
