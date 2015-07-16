@@ -691,12 +691,14 @@ Social Links
 }
 
 
-#sponsors .sponsorName {background: url('http://static.planetminecraft.com/files/resource_media/screenshot/1327/1328800264_minecraft-logo_5843730_lrg.jpg')}
+#sponsors .sponsorName { background: url('http://static.planetminecraft.com/files/resource_media/screenshot/1327/1328800264_minecraft-logo_5843730_lrg.jpg')}
 #sponsors .chegg      { background: url('../img/sponsors/chegg.png');      }
 #sponsors .PayPal     { background: url('../img/sponsors/paypal.png');     }
+#sponsors .Worldquant { background: url('../img/sponsors/worldquant_logo.jpg'); }
 #sponsors .ibm        { background: url('../img/sponsors/ibm.jpg');        }
 #sponsors .auto       { background: url('../img/sponsors/automattic.jpg'); }
 #sponsors .pebble     { background: url('../img/sponsors/pebble.png');     }
+#sponsors .club       { background: url('../img/sponsors/club.png'); }
 #sponsors .leapmotion { background: url('../img/sponsors/leapmotion.png'); }
 #sponsors .makeschool { background: url('../img/sponsors/makeschool.png'); }
 #sponsors .twilio     { background: url('../img/sponsors/twilio.png');     }
@@ -705,6 +707,7 @@ Social Links
 #sponsors .bootstrap  { background: url('../img/sponsors/bootstrap.png');  }
 #sponsors .lyft       { background: url('../img/sponsors/lyft.png')        }
 #sponsors .namecheap  { background: url('../img/sponsors/namecheap.png');  }
+#sponsors .rubicon  { background: url('../img/sponsors/RubiconProject.png'); }
 #sponsors .socket     { background: url('../img/sponsors/socket.png');     }
 #sponsors .edsurge    { background: url('../img/sponsors/edsurge.jpg')     }
 #sponsors .google     { background: url('../img/sponsors/google.png')      }
