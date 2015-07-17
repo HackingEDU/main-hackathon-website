@@ -293,6 +293,7 @@
   $('.nav a').on('click', function(){
       $(".navbar-collapse").collapse('hide');
   });
+
   // Hides navbar on click outside the navbar
   $('body').bind('click', function(e) {
       if($(e.target).closest('.navbar').length == 0) {
