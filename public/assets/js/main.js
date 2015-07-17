@@ -14,3 +14,19 @@ $('a[href*=#]:not([href=#])').click(function(ev) {
 	  }
 	}
 });
+
+// Click anywhere on navbar to show menu on mobile
+$('#header').on('click', function(){
+  if ($('.navbar-toggle').css('display') === 'none') return false; //Check if mobile view
+  $('#header').hasClass('in') ? $(".navbar-collapse").collapse('hide') : $(".navbar-collapse").collapse('show');
+});
+
+var lastClicked = null;
+$('.nav a').on('click', function() {
+	if (lastClicked != null) {
+		lastClicked.css('font-weight', 'normal');
+	}
+
+	$(this).css('font-weight', 'bold');
+	lastClicked = $(this);
+});
