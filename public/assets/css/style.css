@@ -21,6 +21,10 @@ body {
   text-decoration: none !important;
 }
 
+a:focus {
+  outline: initial !important;
+}
+
 /* =========================================================================
                             Helpers
 =======================================================================*/
@@ -124,10 +128,15 @@ body {
 .navlink a {
   color: white;
 }
+.navlink a:focus {
+  background-color: transparent !important;
+}
 
-.navlink:hover {
+.navlink a:hover {
   font-weight: bold;
 }
+
+
 
 .nav-logo {
   position: absolute;
