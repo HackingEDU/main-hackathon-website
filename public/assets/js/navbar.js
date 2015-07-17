@@ -293,6 +293,13 @@
   $('.nav a').on('click', function(){
       $(".navbar-collapse").collapse('hide');
   });
+
+  // Click anywhere on navbar to show menu on mobile
+  $('#header').on('click', function(){
+      if ($('.navbar-toggle').css('display') === 'none') return false; //Check if mobile view
+      $('#header').hasClass('in') ? $(".navbar-collapse").collapse('hide') : $(".navbar-collapse").collapse('show');
+  });
+
   // Hides navbar on click outside the navbar
   $('body').bind('click', function(e) {
       if($(e.target).closest('.navbar').length == 0) {
