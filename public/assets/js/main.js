@@ -22,9 +22,24 @@ function smoothNav(hash) {
   }
 }
 
-$('.navbar-nav a').click(function(ev) {
+var lastClicked = null;
+$('a[href*=#]:not([href=#])').click(function(ev) {
   ev.preventDefault();
+
+	if (lastClicked != null) {
+		lastClicked.css('font-weight', 'normal');
+	}
+
+	$(this).css('font-weight', 'bold');
+	lastClicked = $(this);
+
   smoothNav(this.hash);
+  return false;
+});
+
+$("#nav-apply-butt").click(function() {
+  window.open("https://hackingedu.typeform.com/to/ynFajD", "_blank");
+  return true;
 });
 
 // Click anywhere on navbar to show menu on mobile
@@ -33,12 +48,3 @@ $('#header').on('click', function(){
   $('#header').hasClass('in') ? $(".navbar-collapse").collapse('hide') : $(".navbar-collapse").collapse('show');
 });
 
-var lastClicked = null;
-$('.nav a').on('click', function() {
-	if (lastClicked != null) {
-		lastClicked.css('font-weight', 'normal');
-	}
-
-	$(this).css('font-weight', 'bold');
-	lastClicked = $(this);
-});
