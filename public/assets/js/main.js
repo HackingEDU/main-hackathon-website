@@ -22,8 +22,17 @@ function smoothNav(hash) {
   }
 }
 
+var lastClicked = null;
 $('.navbar-nav a').click(function(ev) {
   ev.preventDefault();
+
+	if (lastClicked != null) {
+		lastClicked.css('font-weight', 'normal');
+	}
+
+	$(this).css('font-weight', 'bold');
+	lastClicked = $(this);
+
   smoothNav(this.hash);
 });
 
@@ -31,14 +40,4 @@ $('.navbar-nav a').click(function(ev) {
 $('#header').on('click', function(){
   if ($('.navbar-toggle').css('display') === 'none') return false; //Check if mobile view
   $('#header').hasClass('in') ? $(".navbar-collapse").collapse('hide') : $(".navbar-collapse").collapse('show');
-});
-
-var lastClicked = null;
-$('.nav a').on('click', function() {
-	if (lastClicked != null) {
-		lastClicked.css('font-weight', 'normal');
-	}
-
-	$(this).css('font-weight', 'bold');
-	lastClicked = $(this);
 });
