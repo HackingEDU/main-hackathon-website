@@ -785,7 +785,14 @@ Social Links
   height:     90px;
 }
 
-.tier3 a, .tier4 a {
+.tier3 a {
+  margin: 10px !important;
+  min-width: 240px;
+  width:       10%;
+  height:     90px;
+}
+
+.tier4 a {
   margin: 10px 50px !important;
   min-width: 160px;
   width:       10%;
