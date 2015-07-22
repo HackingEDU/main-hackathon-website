@@ -195,13 +195,13 @@ a:focus {
   100%{background-position:0% 50%}
 }
 
-@media (max-height: 768px) {
+@media (max-height: 639px) {
   .arrow {
     display: block;
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 639px) {
   body {
     overflow-x: hidden;
   }
@@ -302,13 +302,13 @@ a:focus {
   margin-bottom: 0px !important;
 }
 /* Justified Alignment*/
-@media (min-width: 768px){
+@media (min-width: 639px){
   #navbar{
     display: inline-block;
     widows: 100%;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 639px) {
   .navbar-default .navbar-toggle { border: none; }
   .navbar-default .navbar-collapse,
   .navbar-default .navbar-form {
@@ -430,7 +430,6 @@ a.san-mateo:hover{
   float:left;
 }
 
-
 /* About */
 
 #about span {
@@ -514,14 +513,15 @@ a.san-mateo:hover{
   background:url('../img/tday_info.jpg');
   background-size: auto 100%;
   background-position: center;
+  padding: 0px;
 }
 .image1:hover {background-size: auto 130%}
-
 
 .image2{
   background:url('../img/tday_photos.jpg');
   background-size: auto 100%;
   background-position: center;
+  padding: 0px;
 }
 
 .image2:hover {background-size: auto 130%}
@@ -530,9 +530,23 @@ a.san-mateo:hover{
   background:url('../img/tday_workshops.jpg');
   background-size: auto 100%;
   background-position: center;
+  padding: 0px;
 }
 
 .image3:hover {background-size: auto 130%}
+
+@media (max-width: 991px) and (min-width: 530px) {
+  .image1, .image2, .image3 {
+    max-width: 450px;
+    margin: auto;
+  }
+}
+
+@media (max-width: 529px) {
+  .image1, .image2, .image3 {
+    margin: 0px 10px 0px 10px;
+  }
+}
 
 .resize{
   width: 100%;
@@ -633,7 +647,7 @@ Social Links
   -o-transform:scale(1.1)      !important;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 639px) {
   #social {
     margin: 0.3em 0 !important;
 
@@ -732,21 +746,25 @@ Social Links
 #sponsors .bootstrap  { background: url('/img/sponsors/bootstrap.png');  }
 #sponsors .lyft       { background: url('/img/sponsors/lyft.png')        }
 #sponsors .namecheap  { background: url('/img/sponsors/namecheap1.png'); }
-#sponsors .rubicon    { background: url('/img/sponsors/RubiconProject.png'); }
 #sponsors .socket     { background: url('/img/sponsors/socket.png');     }
 #sponsors .edsurge    { background: url('/img/sponsors/edsurge.jpg')     }
 #sponsors .google     { background: url('/img/sponsors/google.png')      }
 #sponsors .firebase   { background: url('/img/sponsors/firebase.png')    }
 #sponsors .gun        { background: url('/img/sponsors/gun.png');        }
-#sponsors .thalmiclabs{ background: url('/img/sponsors/thalmiclabs.png');}
 #sponsors .pearlhacks { background: url('/img/sponsors/pearlhacks.png')  }
 #sponsors .nwhacks    { background: url('/img/sponsors/nwhacks.jpg')     }
 #sponsors .lahacks    { background: url('/img/sponsors/lahacks.jpeg')    }
-#sponsors .hack4baltimore { background: url('/img/sponsors/hack4baltimore.png'); }
-#sponsors .globalcommit { background: url('/img/sponsors/globalcommit.png'); }
 #sponsors .redbull    { background: url('/img/sponsors/redbull.png')     }
-#sponsors .roko       { background: url('/img/sponsors/roko.png')           }
-#sponsors .target     { background: url('/img/sponsors/target.png')           }
+#sponsors .roko       { background: url('/img/sponsors/roko.png')        }
+#sponsors .target     { background: url('/img/sponsors/target.png')      }
+#sponsors .linode     { background: url('/img/sponsors/linode.png')      }
+#sponsors .galvanize  { background: url('/img/sponsors/galvanize.png');  }
+#sponsors .codinghouse{ background: url('/img/sponsors/coding_house.png');       }
+#sponsors .thalmiclabs{ background: url('/img/sponsors/thalmiclabs.png');        }
+#sponsors .rubicon    { background: url('/img/sponsors/RubiconProject.png');     }
+#sponsors .ga         { background: url('/img/sponsors/general_assembly.png');   }
+#sponsors .hack4baltimore { background: url('/img/sponsors/hack4baltimore.png'); }
+#sponsors .globalcommit { background: url('/img/sponsors/globalcommit.png');     }
 
 .tier, .tier a {
   display: inline-block;
@@ -822,6 +840,24 @@ Social Links
   margin: auto;
   background: url("/img/downarrow.png");
   background-size: contain;
+
+  /* Browser Variations: */
+  -webkit-transform:scale(1);
+  -moz-transform:scale(1);
+  -o-transform:scale(1);
+  -webkit-transition-duration: 0.5s;
+  -moz-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+}
+
+.arrow:hover {
+  /* Browser Variations: */
+  -webkit-transform:scale(1.1);
+  -moz-transform:scale(1.1);
+  -o-transform:scale(1.1);
+  -webkit-transition-duration: 0.5s;
+  -moz-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s; 
 }
 
 .footer-icon{
@@ -829,7 +865,3 @@ Social Links
   padding: 0 0.3em;
   margin-top: 0.2em;
 }
-
-
-
-
