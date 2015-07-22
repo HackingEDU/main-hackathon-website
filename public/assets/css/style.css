@@ -195,13 +195,13 @@ a:focus {
   100%{background-position:0% 50%}
 }
 
-@media (max-height: 768px) {
+@media (max-height: 639px) {
   .arrow {
     display: block;
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 639px) {
   body {
     overflow-x: hidden;
   }
@@ -302,13 +302,13 @@ a:focus {
   margin-bottom: 0px !important;
 }
 /* Justified Alignment*/
-@media (min-width: 768px){
+@media (min-width: 639px){
   #navbar{
     display: inline-block;
     widows: 100%;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 639px) {
   .navbar-default .navbar-toggle { border: none; }
   .navbar-default .navbar-collapse,
   .navbar-default .navbar-form {
@@ -649,7 +649,7 @@ Social Links
   -o-transform:scale(1.1)      !important;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 639px) {
   #social {
     margin: 0.3em 0 !important;
 
