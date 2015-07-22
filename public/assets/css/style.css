@@ -514,14 +514,15 @@ a.san-mateo:hover{
   background:url('../img/tday_info.jpg');
   background-size: auto 100%;
   background-position: center;
+  padding: 0px;
 }
 .image1:hover {background-size: auto 130%}
-
 
 .image2{
   background:url('../img/tday_photos.jpg');
   background-size: auto 100%;
   background-position: center;
+  padding: 0px;
 }
 
 .image2:hover {background-size: auto 130%}
@@ -530,9 +531,23 @@ a.san-mateo:hover{
   background:url('../img/tday_workshops.jpg');
   background-size: auto 100%;
   background-position: center;
+  padding: 0px;
 }
 
 .image3:hover {background-size: auto 130%}
+
+@media (max-width: 991px) and (min-width: 530px) {
+  .image1, .image2, .image3 {
+    max-width: 450px;
+    margin: auto;
+  }
+}
+
+@media (max-width: 529px) {
+  .image1, .image2, .image3 {
+    margin: 0px 10px 0px 10px;
+  }
+}
 
 .resize{
   width: 100%;
@@ -831,7 +846,3 @@ Social Links
   padding: 0 0.3em;
   margin-top: 0.2em;
 }
-
-
-
-
