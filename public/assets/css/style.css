@@ -734,21 +734,25 @@ Social Links
 #sponsors .bootstrap  { background: url('/img/sponsors/bootstrap.png');  }
 #sponsors .lyft       { background: url('/img/sponsors/lyft.png')        }
 #sponsors .namecheap  { background: url('/img/sponsors/namecheap1.png'); }
-#sponsors .rubicon    { background: url('/img/sponsors/RubiconProject.png'); }
 #sponsors .socket     { background: url('/img/sponsors/socket.png');     }
 #sponsors .edsurge    { background: url('/img/sponsors/edsurge.jpg')     }
 #sponsors .google     { background: url('/img/sponsors/google.png')      }
 #sponsors .firebase   { background: url('/img/sponsors/firebase.png')    }
 #sponsors .gun        { background: url('/img/sponsors/gun.png');        }
-#sponsors .thalmiclabs{ background: url('/img/sponsors/thalmiclabs.png');}
 #sponsors .pearlhacks { background: url('/img/sponsors/pearlhacks.png')  }
 #sponsors .nwhacks    { background: url('/img/sponsors/nwhacks.jpg')     }
 #sponsors .lahacks    { background: url('/img/sponsors/lahacks.jpeg')    }
-#sponsors .hack4baltimore { background: url('/img/sponsors/hack4baltimore.png'); }
-#sponsors .globalcommit { background: url('/img/sponsors/globalcommit.png'); }
 #sponsors .redbull    { background: url('/img/sponsors/redbull.png')     }
-#sponsors .roko       { background: url('/img/sponsors/roko.png')           }
-#sponsors .target     { background: url('/img/sponsors/target.png')           }
+#sponsors .roko       { background: url('/img/sponsors/roko.png')        }
+#sponsors .target     { background: url('/img/sponsors/target.png')      }
+#sponsors .linode     { background: url('/img/sponsors/linode.png')      }
+#sponsors .galvanize  { background: url('/img/sponsors/galvanize.png');  }
+#sponsors .codinghouse{ background: url('/img/sponsors/coding_house.png');       }
+#sponsors .thalmiclabs{ background: url('/img/sponsors/thalmiclabs.png');        }
+#sponsors .rubicon    { background: url('/img/sponsors/RubiconProject.png');     }
+#sponsors .ga         { background: url('/img/sponsors/general_assembly.png');   }
+#sponsors .hack4baltimore { background: url('/img/sponsors/hack4baltimore.png'); }
+#sponsors .globalcommit { background: url('/img/sponsors/globalcommit.png');     }
 
 .tier, .tier a {
   display: inline-block;
