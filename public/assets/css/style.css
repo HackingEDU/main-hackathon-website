@@ -127,12 +127,32 @@ a:focus {
 
 .navlink a {
   color: white;
+
+  -webkit-transform:scale(1);
+  /* Browser Variations: */
+  -moz-transform:scale(1);
+  -o-transform:scale(1);
+  -webkit-transition-duration: 0.5s;
+  -moz-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
 }
 .navlink a:focus {
   background-color: transparent !important;
 }
-
-
+.navlink a:hover {
+  -webkit-transform:scale(1.1);
+  /* Browser Variations: */
+  -moz-transform:scale(1.1);
+  -o-transform:scale(1.1);
+  -webkit-transition-duration: 0.5s;
+  -moz-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+}
+#navbar_home     { width:  77px; }
+#navbar_about    { width:  76px; }
+#navbar_faq      { width:  68px; }
+#navbar_td       { width: 127px; }
+#navbar_sponsors { width:  99px; }
 
 .nav-logo {
   position: absolute;
