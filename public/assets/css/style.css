@@ -430,7 +430,6 @@ a.san-mateo:hover{
   float:left;
 }
 
-
 /* About */
 
 #about span {
@@ -839,6 +838,24 @@ Social Links
   margin: auto;
   background: url("/img/downarrow.png");
   background-size: contain;
+
+  /* Browser Variations: */
+  -webkit-transform:scale(1);
+  -moz-transform:scale(1);
+  -o-transform:scale(1);
+  -webkit-transition-duration: 0.5s;
+  -moz-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+}
+
+.arrow:hover {
+  /* Browser Variations: */
+  -webkit-transform:scale(1.1);
+  -moz-transform:scale(1.1);
+  -o-transform:scale(1.1);
+  -webkit-transition-duration: 0.5s;
+  -moz-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s; 
 }
 
 .footer-icon{
