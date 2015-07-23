@@ -195,9 +195,11 @@ a:focus {
   100%{background-position:0% 50%}
 }
 
-@media (max-height: 639px) {
+@media (max-width: 768px) {
   .arrow {
     display: block;
+    width: 40px !important;
+    height: 40px !important;
   }
 }
 
@@ -241,10 +243,6 @@ a:focus {
   }
   .main-txt {
     font-size: 2.1em;
-  }
-  .arrow {
-    width: 40px !important;
-    height: 40px !important;
   }
   .sub-text {
     font-size: 1.2em;
