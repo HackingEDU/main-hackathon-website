@@ -484,6 +484,18 @@ a.san-mateo:hover{
   position: relative
 }
 
+#tday-row {
+  width: 95%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+@media (min-width: 550px) {
+  #tday-row {
+    width: 85%;
+  }
+}
+
 .padtop30{
   padding-top: 30px;
 }
@@ -507,9 +519,11 @@ a.san-mateo:hover{
   color: black;
 }
 
-.tday_image {
-  display: table;
+.tday-image {
+  display: inline-table;
   height: 300px;
+  min-width: 300px;
+  width: 33%;
 
   background-size: auto 100%;
   background-position: center;
@@ -520,7 +534,7 @@ a.san-mateo:hover{
   -o-transition-duration: 0.5s;
 }
 
-.tday_image:hover {
+.tday-image:hover {
   background-size: auto 130%;
   -webkit-transition-duration: 0.5s;
   -moz-transition-duration: 0.5s;
@@ -532,15 +546,9 @@ a.san-mateo:hover{
 #tday_workshops { background-image: url('../img/tday_workshops.jpg'); }
 
 @media (max-width: 991px) and (min-width: 530px) {
-  .tday_image {
-    max-width: 450px;
-    margin: auto;
-  }
-}
-
-@media (max-width: 529px) {
-  .tday_image {
-    margin: 0px 10px 0px 10px;
+  .tday-image {
+    min-width: 450px;
+    margin: 0 auto;
   }
 }
 
