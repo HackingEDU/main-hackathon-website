@@ -365,7 +365,7 @@ a:focus {
 
 /* Header */
 .large-header {
-  background-image: url("../img/hack_background.jpg");
+  background-image: url("http://cdn4.hackingedu.co/img/hack_background.jpg");
   height: 100vh;
   background-size: cover;
   background-position: center center;
@@ -497,7 +497,7 @@ a.san-mateo:hover{
 /*Training Day Section*/
 
 #training-day {
-  background: url('../img/tdayBack.jpg');
+  background: url('http://cdn0.hackingedu.co/img/tdayBack.jpg');
   background-size:cover;
   background-repeat: no-repeat;
   box-shadow: 0 0px 20px rgba(0,0,0,0.4);
@@ -528,7 +528,7 @@ a.san-mateo:hover{
 }
 
 .image1{
-  background:url('../img/tday_info.jpg');
+  background:url('http://cdn1.hackingedu.co/img/tday_info.jpg');
   background-size: auto 100%;
   background-position: center;
   padding: 0px;
@@ -536,7 +536,7 @@ a.san-mateo:hover{
 .image1:hover {background-size: auto 130%}
 
 .image2{
-  background:url('../img/tday_photos.jpg');
+  background:url('http://cdn2.hackingedu.co/img/tday_photos.jpg');
   background-size: auto 100%;
   background-position: center;
   padding: 0px;
@@ -545,7 +545,7 @@ a.san-mateo:hover{
 .image2:hover {background-size: auto 130%}
 
 .image3{
-  background:url('../img/tday_workshops.jpg');
+  background:url('http://cdn3.hackingedu.co/img/tday_workshops.jpg');
   background-size: auto 100%;
   background-position: center;
   padding: 0px;
@@ -748,41 +748,41 @@ Social Links
 }
 
 
-#sponsors .sponsorName { background: url('http://static.planetminecraft.com/files/resource_media/screenshot/1327/1328800264_minecraft-logo_5843730_lrg.jpg')}
-#sponsors .chegg      { background: url('/img/sponsors/chegg.png');      }
-#sponsors .PayPal     { background: url('/img/sponsors/paypal.png');     }
-#sponsors .Worldquant { background: url('/img/sponsors/worldquant_logo.jpg'); }
-#sponsors .ibm        { background: url('/img/sponsors/ibm.jpg');        }
-#sponsors .auto       { background: url('/img/sponsors/automattic.jpg'); }
-#sponsors .pebble     { background: url('/img/sponsors/pebble.png');     }
-#sponsors .club       { background: url('/img/sponsors/club1.png');      }
-#sponsors .leapmotion { background: url('/img/sponsors/leapmotion.png'); }
-#sponsors .makeschool { background: url('/img/sponsors/makeschool.png'); }
-#sponsors .twilio     { background: url('/img/sponsors/twilio.png');     }
-#sponsors .twist      { background: url('/img/sponsors/twist.png')       }
-#sponsors .draper     { background: url('/img/sponsors/draper.png')      }
-#sponsors .bootstrap  { background: url('/img/sponsors/bootstrap.png');  }
-#sponsors .lyft       { background: url('/img/sponsors/lyft.png')        }
-#sponsors .namecheap  { background: url('/img/sponsors/namecheap1.png'); }
-#sponsors .socket     { background: url('/img/sponsors/socket.png');     }
-#sponsors .edsurge    { background: url('/img/sponsors/edsurge.jpg')     }
-#sponsors .google     { background: url('/img/sponsors/google.png')      }
-#sponsors .firebase   { background: url('/img/sponsors/firebase.png')    }
-#sponsors .gun        { background: url('/img/sponsors/gun.png');        }
-#sponsors .pearlhacks { background: url('/img/sponsors/pearlhacks.png')  }
-#sponsors .nwhacks    { background: url('/img/sponsors/nwhacks.jpg')     }
-#sponsors .lahacks    { background: url('/img/sponsors/lahacks.jpeg')    }
-#sponsors .redbull    { background: url('/img/sponsors/redbull.png')     }
-#sponsors .roko       { background: url('/img/sponsors/roko.png')        }
-#sponsors .target     { background: url('/img/sponsors/target.png')      }
-#sponsors .linode     { background: url('/img/sponsors/linode.png')      }
-#sponsors .galvanize  { background: url('/img/sponsors/galvanize.png');  }
-#sponsors .codinghouse{ background: url('/img/sponsors/coding_house.png');       }
-#sponsors .thalmiclabs{ background: url('/img/sponsors/thalmiclabs.png');        }
-#sponsors .rubicon    { background: url('/img/sponsors/RubiconProject.png');     }
-#sponsors .ga         { background: url('/img/sponsors/general_assembly.png');   }
-#sponsors .hack4baltimore { background: url('/img/sponsors/hack4baltimore.png'); }
-#sponsors .globalcommit { background: url('/img/sponsors/globalcommit.png');     }
+#sponsors .sponsorName{ background: url('http://static.planetminecraft.com/files/resource_media/screenshot/1327/1328800264_minecraft-logo_5843730_lrg.jpg')}
+#sponsors .chegg      { background: url('http://cdn0.hackingedu.co/img/sponsors/chegg.png');      }
+#sponsors .PayPal     { background: url('http://cdn1.hackingedu.co/img/sponsors/paypal.png');     }
+#sponsors .Worldquant { background: url('http://cdn2.hackingedu.co/img/sponsors/worldquant_logo.jpg'); }
+#sponsors .ibm        { background: url('http://cdn3.hackingedu.co/img/sponsors/ibm.jpg');        }
+#sponsors .auto       { background: url('http://cdn4.hackingedu.co/img/sponsors/automattic.jpg'); }
+#sponsors .pebble     { background: url('http://cdn5.hackingedu.co/img/sponsors/pebble.png');     }
+#sponsors .club       { background: url('http://cdn0.hackingedu.co/img/sponsors/club1.png');      }
+#sponsors .leapmotion { background: url('http://cdn1.hackingedu.co/img/sponsors/leapmotion.png'); }
+#sponsors .makeschool { background: url('http://cdn2.hackingedu.co/img/sponsors/makeschool.png'); }
+#sponsors .twilio     { background: url('http://cdn3.hackingedu.co/img/sponsors/twilio.png');     }
+#sponsors .twist      { background: url('http://cdn4.hackingedu.co/img/sponsors/twist.png')       }
+#sponsors .draper     { background: url('http://cdn5.hackingedu.co/img/sponsors/draper.png')      }
+#sponsors .bootstrap  { background: url('http://cdn0.hackingedu.co/img/sponsors/bootstrap.png');  }
+#sponsors .lyft       { background: url('http://cdn1.hackingedu.co/img/sponsors/lyft.png')        }
+#sponsors .namecheap  { background: url('http://cdn2.hackingedu.co/img/sponsors/namecheap1.png'); }
+#sponsors .socket     { background: url('http://cdn3.hackingedu.co/img/sponsors/socket.png');     }
+#sponsors .edsurge    { background: url('http://cdn4.hackingedu.co/img/sponsors/edsurge.jpg')     }
+#sponsors .google     { background: url('http://cdn5.hackingedu.co/img/sponsors/google.png')      }
+#sponsors .firebase   { background: url('http://cdn0.hackingedu.co/img/sponsors/firebase.png')    }
+#sponsors .gun        { background: url('http://cdn1.hackingedu.co/img/sponsors/gun.png');        }
+#sponsors .pearlhacks { background: url('http://cdn2.hackingedu.co/img/sponsors/pearlhacks.png')  }
+#sponsors .nwhacks    { background: url('http://cdn3.hackingedu.co/img/sponsors/nwhacks.jpg')     }
+#sponsors .lahacks    { background: url('http://cdn4.hackingedu.co/img/sponsors/lahacks.jpeg')    }
+#sponsors .redbull    { background: url('http://cdn5.hackingedu.co/img/sponsors/redbull.png')     }
+#sponsors .roko       { background: url('http://cdn0.hackingedu.co/img/sponsors/roko.png')        }
+#sponsors .target     { background: url('http://cdn1.hackingedu.co/img/sponsors/target.png')      }
+#sponsors .linode     { background: url('http://cdn2.hackingedu.co/img/sponsors/linode.png')      }
+#sponsors .galvanize  { background: url('http://cdn3.hackingedu.co/img/sponsors/galvanize.png');  }
+#sponsors .codinghouse{ background: url('http://cdn4.hackingedu.co/img/sponsors/coding_house.png');       }
+#sponsors .thalmiclabs{ background: url('http://cdn5.hackingedu.co/img/sponsors/thalmiclabs.png');        }
+#sponsors .rubicon    { background: url('http://cdn0.hackingedu.co/img/sponsors/RubiconProject.png');     }
+#sponsors .ga         { background: url('http://cdn1.hackingedu.co/img/sponsors/general_assembly.png');   }
+#sponsors .hack4baltimore { background: url('http://cdn2.hackingedu.co/img/sponsors/hack4baltimore.png'); }
+#sponsors .globalcommit   { background: url('http://cdn3.hackingedu.co/img/sponsors/globalcommit.png');   }
 
 .tier, .tier a {
   display: inline-block;
@@ -856,7 +856,7 @@ Social Links
   width: 80px;
   height: 80px;
   margin: auto;
-  background: url("/img/downarrow.png");
+  background: url("http://cdn3.hackingedu.co/img/downarrow.png");
   background-size: contain;
 
   /* Browser Variations: */
