@@ -507,50 +507,41 @@ a.san-mateo:hover{
   color: black;
 }
 
-.image1{
-  background:url('../img/tday_info.jpg');
+.tday_image {
+  display: table;
+  height: 300px;
+
   background-size: auto 100%;
   background-position: center;
-  padding: 0px;
-}
-.image1:hover {background-size: auto 130%}
+  text-align: center;
 
-.image2{
-  background:url('../img/tday_photos.jpg');
-  background-size: auto 100%;
-  background-position: center;
-  padding: 0px;
+  -webkit-transition-duration: 0.5s;
+  -moz-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
 }
 
-.image2:hover {background-size: auto 130%}
-
-.image3{
-  background:url('../img/tday_workshops.jpg');
-  background-size: auto 100%;
-  background-position: center;
-  padding: 0px;
+.tday_image:hover {
+  background-size: auto 130%;
+  -webkit-transition-duration: 0.5s;
+  -moz-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
 }
 
-.image3:hover {background-size: auto 130%}
+#tday_info      { background-image: url('../img/tday_info.jpg');      }
+#tday_photos    { background-image: url('../img/tday_photos.jpg');    }
+#tday_workshops { background-image: url('../img/tday_workshops.jpg'); }
 
 @media (max-width: 991px) and (min-width: 530px) {
-  .image1, .image2, .image3 {
+  .tday_image {
     max-width: 450px;
     margin: auto;
   }
 }
 
 @media (max-width: 529px) {
-  .image1, .image2, .image3 {
+  .tday_image {
     margin: 0px 10px 0px 10px;
   }
-}
-
-.resize{
-  width: 100%;
-  height: 300px;
-  transition-duration: .4s;
-  position: relative;
 }
 
 .bold{
@@ -559,10 +550,13 @@ a.san-mateo:hover{
 }
 
 .center-middle{
-  text-align: center;
-  padding-top: 130px;
-  color: white;
-  font-style: italic;
+  display:        table-cell;
+  vertical-align: middle;
+  text-align:     center;
+  color:          white;
+  font-style:     italic;
+
+  height: 100%;
 }
 
 /*Twitter*/
