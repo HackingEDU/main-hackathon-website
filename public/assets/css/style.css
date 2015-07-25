@@ -436,6 +436,30 @@ a.san-mateo:hover{
   margin-top: 30px;
 }
 
+#about-press {
+  text-align: center;
+  vertical-align: middle;
+}
+
+@media (max-width: 768px) {
+  #about-press-feature        { width: 100%; }
+  #about-press-feature strong { text-align: center !important; }
+}
+#about-press-header  { color: #777; }
+#about-press-feature { display: table; }
+#about-press-feature strong {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: right;
+}
+
+#about-press > * { margin: 20px 0; }
+#about-press div { height: 80px;   }
+
+#about-press img {
+  height: 100%;
+}
+
 .text-center{
   text-align: center;
 }
