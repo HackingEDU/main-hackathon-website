@@ -36,6 +36,10 @@ a:focus {
   margin-bottom: 50px;
 }
 
+.mt-100px{
+  margin-top:100px !important;
+}
+
 .bold {
   font-weight: bold;
 }
@@ -461,10 +465,16 @@ a.san-mateo:hover{
   vertical-align: middle;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 768px) {s
   #about-press-feature        { width: 100%; }
   #about-press-feature strong { text-align: center !important; }
+
+
+
 }
+
+
+
 #about-press-header  { color: #777; }
 #about-press-feature { display: table; }
 #about-press-feature strong {
