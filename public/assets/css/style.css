@@ -227,7 +227,7 @@ a:focus {
   }
 }
 
-@media (max-width: 639px) {
+@media (max-width: 740px) {
   body {
     overflow-x: hidden;
   }
@@ -324,13 +324,13 @@ a:focus {
   margin-bottom: 0px !important;
 }
 /* Justified Alignment*/
-@media (min-width: 639px){
+@media (min-width: 740px){
   #navbar{
     display: inline-block;
     widows: 100%;
   }
 }
-@media (max-width: 639px) {
+@media (max-width: 740px) {
   .navbar-default .navbar-toggle { border: none; }
   .navbar-default .navbar-collapse,
   .navbar-default .navbar-form {
@@ -671,7 +671,7 @@ Social Links
   -o-transform:scale(1.1)      !important;
 }
 
-@media (max-width: 639px) {
+@media (max-width: 740px) {
   #social {
     margin: 0.3em 0 !important;
 
