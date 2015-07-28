@@ -255,9 +255,4 @@
       }
   });
 
-  // Override apply button's preventDefault
-  $("#navbar > ul > li:last").bind("click", function(ev) {
-    return true;
-  });
-
 })(jQuery, window, document); // document ready end
