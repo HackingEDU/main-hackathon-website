@@ -37,6 +37,12 @@ $('a[href*=#]:not([href=#])').click(function(ev) {
   return false;
 });
 
+
+$("#nav-press-butt").click(function() {
+  window.open("https://drive.google.com/file/d/0BzI2Lz_qv89jeHZnVHQ3ZjlrUlE/view", "_blank");
+  return true;
+});
+
 $("#nav-apply-butt").click(function() {
   window.open("https://hackingedu.typeform.com/to/ynFajD", "_blank");
   return true;
