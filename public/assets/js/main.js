@@ -39,7 +39,7 @@ $('a[href*=#]:not([href=#])').click(function(ev) {
 
 
 $("#nav-press-butt").click(function() {
-  window.open("https://drive.google.com/file/d/0BzI2Lz_qv89jeHZnVHQ3ZjlrUlE/view", "_blank");
+  window.open("/HackingEDU_PressKit.pdf", "_blank");
   return true;
 });
 
