@@ -798,6 +798,8 @@ Social Links
 #sponsors .dolby      { background: url('http://cdn3.hackingedu.co/img/sponsors/dolby.png');              }
 #sponsors .hack4baltimore { background: url('http://cdn2.hackingedu.co/img/sponsors/hack4baltimore.png'); }
 #sponsors .globalcommit   { background: url('http://cdn3.hackingedu.co/img/sponsors/globalcommit.png');   }
+#sponsors .clusterpoint { background: url('../img/sponsors/clusterpoint.png');     }
+
 
 .tier, .tier a {
   display: inline-block;
