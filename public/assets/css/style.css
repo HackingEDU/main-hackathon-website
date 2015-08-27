@@ -48,6 +48,10 @@ a:focus {
   margin-bottom:30px;
 }
 
+.mt-50{
+  margin-top:50px;
+}
+
 /* =========================================================================
                             Main Section
 =======================================================================*/
@@ -804,6 +808,10 @@ Social Links
 #sponsors .moback { background: url('../img/sponsors/moback.png');     }
 #sponsors .roblox { background: url('../img/sponsors/roblox.png');     }
 #sponsors .braintree { background: url('../img/sponsors/braintree.png');     }
+#sponsors .muse { background: url('../img/sponsors/muse.png');     }
+#sponsors .emotiv { background: url('../img/sponsors/Emotiv.png');     }
+
+
 
 
 
