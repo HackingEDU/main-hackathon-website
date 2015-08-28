@@ -48,8 +48,12 @@ a:focus {
   margin-bottom:30px;
 }
 
-.mt-35{
-  margin-top:35px;
+.mt-40{
+  margin-top:40px;
+}
+
+.pd-bottom20{
+  padding-bottom: 20px;
 }
 
 /* =========================================================================
