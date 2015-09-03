@@ -404,6 +404,12 @@ a:focus {
   color:white;
 }
 
+.press-kit-color{
+  color:black;
+}
+
+
+
 a.san-mateo{
   color: white;
 
@@ -471,6 +477,10 @@ a.san-mateo:hover{
   text-align: center;
 }
 
+.text-right{
+  text-align: right;
+}
+
 .extra-line-height{
   line-height: 35px;
 }
@@ -504,6 +514,9 @@ a.san-mateo:hover{
 #faq{
   background-color:#eeeeee;
 }
+
+
+
 
 /*Training Day Section*/
 
@@ -820,6 +833,7 @@ Social Links
 
 
 
+
 .tier, .tier a {
   display: inline-block;
 }
@@ -869,9 +883,74 @@ Social Links
   height:     90px;
 }
 
+
+
 #partners .tier4 a {
   z-index: -1;
 }
+
+
+
+/* =========================================================================
+                            Press
+=======================================================================*/
+
+/*press*/
+#press{
+  background-color:#eeeeee;
+  width:   100%;
+  padding: 70px 0;
+}
+
+
+#press .techco { background: url('../img/press/techco.png');     }
+#press .berkeleybyte { background: url('../img/press/berkeleybyte.png');     }
+#press .forbes { background: url('../img/press/forbes.png');     }
+#press .educationews { background: url('../img/press/educationnews.png');     }
+
+#press figure, #press a {
+  margin:  0 0px;
+  padding: 0;
+
+  box-sizing: border-box;
+    background-size: contain !important;
+    background-position: center center !important;
+    background-repeat: no-repeat !important
+}
+
+.press-tier a{
+  margin: 10px 25px !important;
+  min-width: 160px;
+  width:       10%;
+  height:     90px;
+}
+
+#forbes-quote{
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.font-sixteen{
+  font-size: 20px;
+}
+
+.presslink:hover {
+  /* Browser Variations: */
+  -webkit-transform:scale(1.1);
+  -moz-transform:scale(1.1);
+  -o-transform:scale(1.1);
+  -webkit-transition-duration: 0.5s;
+  -moz-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s; 
+}
+
+a.hover-line{
+  text-decoration: underline;
+}
+
+
+
+
 
 
 
