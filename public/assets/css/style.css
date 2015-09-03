@@ -934,6 +934,20 @@ Social Links
   font-size: 20px;
 }
 
+.presslink:hover {
+  /* Browser Variations: */
+  -webkit-transform:scale(1.1);
+  -moz-transform:scale(1.1);
+  -o-transform:scale(1.1);
+  -webkit-transition-duration: 0.5s;
+  -moz-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s; 
+}
+
+a.hover-line{
+  text-decoration: underline;
+}
+
 
 
 
