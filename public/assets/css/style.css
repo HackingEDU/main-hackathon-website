@@ -899,7 +899,7 @@ Social Links
 #press{
   background-color:#eeeeee;
   width:   100%;
-  padding: 90px 0;
+  padding: 70px 0;
 }
 
 
@@ -909,7 +909,7 @@ Social Links
 #press .educationews { background: url('../img/press/educationnews.png');     }
 
 #press figure, #press a {
-  margin:  0 20px;
+  margin:  0 0px;
   padding: 0;
 
   box-sizing: border-box;
@@ -928,6 +928,10 @@ Social Links
 #forbes-quote{
   font-size: 18px;
   font-weight: bold;
+}
+
+.font-sixteen{
+  font-size: 20px;
 }
 
 
