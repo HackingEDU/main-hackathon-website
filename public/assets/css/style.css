@@ -864,20 +864,20 @@ Social Links
 }
 
 .tier2 a {
-  min-width: 250px;
+  min-width: 250px; /* Split into 2 columns */
   width:       30%;
   height:     90px;
 }
 
 .tier3 a {
-  margin: 10px !important;
+  margin: 10px !important; /* Split into 3 columns */
   min-width: 240px;
   width:       10%;
   height:     90px;
 }
 
 .tier4 a {
-  margin: 10px 50px !important;
+  margin: 10px 35px !important; /* Split into 4 columns */
   min-width: 160px;
   width:       10%;
   height:     90px;
