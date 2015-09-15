@@ -829,6 +829,22 @@ Social Links
 #sponsors .emotiv { background: url('../img/sponsors/Emotiv.png');     }
 #sponsors .ibmbluemix { background: url('../img/sponsors/ibm_bluemix.png');     }
 
+#sponsors .uber { background: url('../img/sponsors/uber.png');     }
+#sponsors .particle { background: url('../img/sponsors/particle.png');     }
+#sponsors .hacksterio { background: url('../img/sponsors/hacksterio.png');     }
+#sponsors .kpcb { background: url('../img/sponsors/kpcb.jpg');     }
+#sponsors .dashdoc { background: url('../img/sponsors/dashdoc.png');     }
+#sponsors .edtechworldtour { background: url('../img/sponsors/edtechworldtour.jpeg');     }
+#sponsors .ostem { background: url('../img/sponsors/ostemlogo.svg');     }
+#sponsors .alienware { background: url('../img/sponsors/alienware.png');     }
+
+
+
+
+
+
+
+
 
 
 
@@ -907,6 +923,9 @@ Social Links
 #press .berkeleybyte { background: url('../img/press/berkeleybyte.png');     }
 #press .forbes { background: url('../img/press/forbes.png');     }
 #press .educationews { background: url('../img/press/educationnews.png');     }
+#press .uber { background: url('../img/sponsors/uber.png');     }
+
+
 
 #press figure, #press a {
   margin:  0 0px;
