@@ -619,6 +619,21 @@ a.san-mateo:hover{
 
   height: 100%;
 }
+/*Schedule*/
+
+#schedule{
+  padding: 90px 0;
+}
+
+.schedule-item{
+  padding: 0.5em 0;
+  border-bottom: 1px solid #C8C8C8;
+}
+
+.m-top10p{
+  margin-top: 30px;
+}
+
 
 /* Speakers */
 
@@ -628,7 +643,7 @@ a.san-mateo:hover{
 
 .grid{
   margin-top: 30px;
-  padding:0 60px;
+  padding:0 2em;
 }
 
 .profile-picture{
