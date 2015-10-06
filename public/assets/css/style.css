@@ -642,14 +642,14 @@ a.san-mateo:hover{
 .speakerName {
     color: whitesmoke;
     position: relative;
-    top: 240px;
+    top: 200px;
     font-size: 21px;
 }
 
 .speakerInfo {
     color: whitesmoke;
     position: relative;
-    top: 215px;
+    top: 175px;
     font-size: 12px;
 }
 
@@ -657,105 +657,105 @@ a.san-mateo:hover{
 .speakerOne {
     background: url('../img/conrad.jpg');
     background-size: cover;
-    height: 300px;
+    height: 250px;
     border-radius: 15px;
 }
 
 .speakerTwo {
     background: url('../img/Rauch.png');
     background-size: cover;
-    height: 300px;
+    height: 250px;
     border-radius: 15px;
 }
 
 .speakerThree {
     background: url('../img/vivian.jpg');
     background-size: cover;
-    height: 300px;
+    height: 250px;
     border-radius: 15px;
 }
 
 .speakerFour {
     background: url('../img/liam.png');
     background-size: cover;
-    height: 300px;
+    height: 250px;
     border-radius: 15px;
 }
 
 .speakerFive {
     background: url('../img/azat.jpg');
     background-size: cover;
-    height: 300px;
+    height: 250px;
     border-radius: 15px;
 }
 
 .speakerSix {
     background: url('../img/3c5ef15.jpg');
     background-size: cover;
-    height: 300px;
+    height: 250px;
     border-radius: 15px;
 }
 
 .speakerSeven {
     background: url('../img/andrew.jpg');
     background-size: cover;
-    height: 300px;
+    height: 250px;
     border-radius: 15px;
 }
 
 .speakerEight {
     background: url('../img/evan.png');
     background-size: cover;
-    height: 300px;
+    height: 250px;
     border-radius: 15px;
 }
 
 .speakerNine {
     background: url('../img/jeremy.jpg');
     background-size: cover;
-    height: 300px;
+    height: 250px;
     border-radius: 15px;
 }
 
 .speakerTen {
     background: url('../img/dale.jpg');
     background-size: cover;
-    height: 300px;
+    height: 250px;
     border-radius: 15px;
 }
 
 .speakerEleven {
     background: url('../img/ashley.jpg');
     background-size: cover;
-    height: 300px;
+    height: 250px;
     border-radius: 15px;
 }
 
 .speakerTwelve {
     background: url('../img/matthew.jpg');
     background-size: cover;
-    height: 300px;
+    height: 250px;
     border-radius: 15px;
 }
 
 .speakerThirteen {
     background: url(../img/dave.jpg);
     background-size: cover;
-    height: 300px;
+    height: 250px;
     border-radius: 15px;
 }
 
 .speakerFourteen {
     background: url('../img/maegan.jpg');
     background-size: cover;
-    height: 300px;
+    height: 250px;
     border-radius: 15px;
 }
 
 .speakerFifteen {
     background: url('../img/evadora.jpg');
     background-size: cover;
-    height: 300px;
+    height: 250px;
     border-radius: 15px;
 }
 
@@ -768,7 +768,7 @@ a.san-mateo:hover{
 
 .speaker {
     width: 22%;
-    height: 300px;
+    height: 250px;
     display: inline-block;
     margin: auto;
     margin-left: 10px;
