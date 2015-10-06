@@ -626,24 +626,94 @@ a.san-mateo:hover{
 
 #speakers{
   padding: 90px 0;
+  text-align: center;
 }
 
-.grid{
-  margin-top: 30px;
-  padding:0 2em;
+/*This class 'cover' gives it the gray-ish color and the opacity styling */
+.cover {
+    width: 100%;
+    height: 100%;
+    background-color: dimgray;
+    border-radius: 15px;
+    opacity: 0.68;
+    
 }
 
-.profile-picture{
-  padding-bottom: 20px;
+.speakerName {
+    color: whitesmoke;
+    position: relative;
+    top: 240px;
+    font-size: 21px;
 }
 
-.m-bottom10p{
-  margin-bottom: 10px;
+.speakerInfo {
+    color: whitesmoke;
+    position: relative;
+    top: 215px;
+    font-size: 12px;
 }
 
-.m-bottom0{
-  margin-bottom: 0;
+/*Speaker 1,2, and 3 are up. Once there are more, I'll add them in */
+.speakerOne {
+    background: url('../img/conrad.jpg');
+    background-size: cover;
+    height: 300px;
+    border-radius: 15px;
 }
+
+.speakerTwo {
+    background: url('../img/Rauch.png');
+    background-size: cover;
+    height: 300px;
+    border-radius: 15px;
+}
+
+.speakerThree {
+    background: url('../img/vivian.jpg');
+    background-size: cover;
+    height: 300px;
+    border-radius: 15px;
+}
+
+.speaker {
+    width: 22%;
+    height: 300px;
+    display: inline-block;
+    margin: auto;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 15px;
+    vertical-align: top;
+    margin-top: 30px;
+}
+
+/*Media Queries for the speaker section -- makes it more responsive */
+
+@media(max-width: 970px ) {
+    
+    .speaker {
+        width: 35%;
+    }
+}
+
+@media(max-width: 850px ) {
+    
+    .speaker {
+        width: 40%;
+    }
+    
+}
+
+@media(max-width: 580px ) { 
+    
+    .speaker {
+        width: 70%;
+    }
+}
+
+
+
+
 
 /*Schedule*/
 
