@@ -675,6 +675,97 @@ a.san-mateo:hover{
     border-radius: 15px;
 }
 
+.speakerFour {
+    background: url('../img/liam.png');
+    background-size: cover;
+    height: 300px;
+    border-radius: 15px;
+}
+
+.speakerFive {
+    background: url('../img/azat.jpg');
+    background-size: cover;
+    height: 300px;
+    border-radius: 15px;
+}
+
+.speakerSix {
+    background: url('../img/3c5ef15.jpg');
+    background-size: cover;
+    height: 300px;
+    border-radius: 15px;
+}
+
+.speakerSeven {
+    background: url('../img/andrew.jpg');
+    background-size: cover;
+    height: 300px;
+    border-radius: 15px;
+}
+
+.speakerEight {
+    background: url('../img/evan.png');
+    background-size: cover;
+    height: 300px;
+    border-radius: 15px;
+}
+
+.speakerNine {
+    background: url('../img/jeremy.jpg');
+    background-size: cover;
+    height: 300px;
+    border-radius: 15px;
+}
+
+.speakerTen {
+    background: url('../img/dale.jpg');
+    background-size: cover;
+    height: 300px;
+    border-radius: 15px;
+}
+
+.speakerEleven {
+    background: url('../img/ashley.jpg');
+    background-size: cover;
+    height: 300px;
+    border-radius: 15px;
+}
+
+.speakerTwelve {
+    background: url('../img/matthew.jpg');
+    background-size: cover;
+    height: 300px;
+    border-radius: 15px;
+}
+
+.speakerThirteen {
+    background: url(../img/dave.jpg);
+    background-size: cover;
+    height: 300px;
+    border-radius: 15px;
+}
+
+.speakerFourteen {
+    background: url('../img/maegan.jpg');
+    background-size: cover;
+    height: 300px;
+    border-radius: 15px;
+}
+
+.speakerFifteen {
+    background: url('../img/evadora.jpg');
+    background-size: cover;
+    height: 300px;
+    border-radius: 15px;
+}
+
+.speakerSixteen {
+    background: url('../img/alex.jpg');
+    background-size: cover;
+    height: 300px;
+    border-radius: 15px;
+}
+
 .speaker {
     width: 22%;
     height: 300px;
@@ -710,8 +801,6 @@ a.san-mateo:hover{
         width: 70%;
     }
 }
-
-
 
 
 
