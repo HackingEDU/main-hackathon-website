@@ -684,84 +684,105 @@ a.san-mateo:hover{
 }
 
 .speakerFive {
-    background: url('../img/azat.jpg');
+    background: url('../img/sam.png');
     background-size: cover;
     height: 250px;
     border-radius: 15px;
 }
 
 .speakerSix {
-    background: url('../img/3c5ef15.jpg');
+    background: url('../img/azat.jpg');
     background-size: cover;
     height: 250px;
     border-radius: 15px;
 }
 
 .speakerSeven {
-    background: url('../img/andrew.jpg');
+    background: url('../img/3c5ef15.jpg');
     background-size: cover;
     height: 250px;
     border-radius: 15px;
 }
 
 .speakerEight {
-    background: url('../img/evan.png');
+    background: url('../img/andrew.jpg');
     background-size: cover;
     height: 250px;
     border-radius: 15px;
 }
 
 .speakerNine {
-    background: url('../img/jeremy.jpg');
+    background: url('../img/evan.png');
     background-size: cover;
     height: 250px;
     border-radius: 15px;
 }
 
 .speakerTen {
-    background: url('../img/dale.jpg');
+    background: url('../img/jeremy.jpg');
     background-size: cover;
     height: 250px;
     border-radius: 15px;
 }
 
 .speakerEleven {
-    background: url('../img/ashley.jpg');
+    background: url('../img/dale.jpg');
     background-size: cover;
     height: 250px;
     border-radius: 15px;
 }
 
 .speakerTwelve {
-    background: url('../img/matthew.jpg');
+    background: url('../img/ashley.jpg');
     background-size: cover;
     height: 250px;
     border-radius: 15px;
 }
 
 .speakerThirteen {
-    background: url('../img/dave.jpg');
+    background: url('../img/matthew.jpg');
     background-size: cover;
     height: 250px;
     border-radius: 15px;
 }
 
 .speakerFourteen {
-    background: url('../img/maegan.jpg');
+    background: url('../img/dave.jpg');
     background-size: cover;
     height: 250px;
     border-radius: 15px;
 }
 
 .speakerFifteen {
-    background: url('../img/evadora.jpg');
+    background: url('../img/maegan.jpg');
     background-size: cover;
     height: 250px;
     border-radius: 15px;
 }
 
 .speakerSixteen {
+    background: url('../img/evadora.jpg');
+    background-size: cover;
+    height: 250px;
+    border-radius: 15px;
+}
+
+.speakerSeventeen {
     background: url('../img/alex.jpg');
+    background-size: cover;
+    height: 250px;
+    border-radius: 15px;
+}
+
+.speakerEighteen {
+    background: url('../img/niko.jpg');
+    background-size: cover;
+    height: 250px;
+    border-radius: 15px;
+}
+
+.speakerNineteen {
+    background: url('../img/jack.jpg');
     background-size: cover;
     height: 250px;
     border-radius: 15px;
@@ -816,7 +837,7 @@ a.san-mateo:hover{
 
 .schedule-item{
   padding: 0.5em 0;
-  border-bottom: 1px solid #C8C8C8;
+  border-bottom: 1px solid #C8C8C8; 
 }
 
 .m-top10p{
@@ -831,6 +852,27 @@ a.san-mateo:hover{
 
 .m-bottom30p{
   margin-bottom: 30px;
+}
+
+/*Help Section*/
+
+#help h2 {
+    font-family: Helvetica Neue;
+    text-align: center;
+    color: #999;
+    font-weight: 100;
+    letter-spacing: 1px;
+    margin-top: 20px;
+}
+
+#help p {
+    font-family: Lato;
+    font-size: 15px;
+    font-weight: 100px;
+}
+
+#help {
+    //border-bottom: 1px solid #C8C8C8;
 }
 
 
@@ -1021,7 +1063,7 @@ Social Links
 #sponsors .socket     { background: url('http://cdn3.hackingedu.co/img/sponsors/socket.png');     }
 #sponsors .edsurge    { background: url('http://cdn4.hackingedu.co/img/sponsors/edsurge.jpg')     }
 #sponsors .google     { background: url('http://cdn5.hackingedu.co/img/sponsors/google.png')      }
-#sponsors .firebase   { background: url('http://cdn0.hackingedu.co/img/sponsors/firebase.png')    }
+#sponsors .wikihow   { background: url('../img/sponsors/wikihow.png')    }
 #sponsors .gun        { background: url('http://cdn1.hackingedu.co/img/sponsors/gun.png');        }
 #sponsors .pearlhacks { background: url('http://cdn2.hackingedu.co/img/sponsors/pearlhacks.png')  }
 #sponsors .nwhacks    { background: url('http://cdn3.hackingedu.co/img/sponsors/nwhacks.jpg')     }
@@ -1040,6 +1082,8 @@ Social Links
 #sponsors .hack4baltimore { background: url('http://cdn2.hackingedu.co/img/sponsors/hack4baltimore.png'); }
 #sponsors .globalcommit   { background: url('http://cdn3.hackingedu.co/img/sponsors/globalcommit.png');   }
 #sponsors .clusterpoint { background: url('../img/sponsors/clusterpoint.png');     }
+#sponsors .rocket {background: url('../img/sponsors/rocketfuel.png'); }
+#sponsors .studyblue {background: url('../img/sponsors/studyblue.jpg'); }
 
 #sponsors .coursehero { background: url('../img/sponsors/coursehero.png');     }
 #sponsors .moback { background: url('../img/sponsors/moback.png');     }
