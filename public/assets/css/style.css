@@ -788,6 +788,13 @@ a.san-mateo:hover{
     border-radius: 15px;
 }
 
+.speakerTwenty {
+    background: url('../img/josh_tyler.jpg');
+    background-size: cover;
+    height: 250px;
+    border-radius: 15px;
+}
+
 .speaker {
     width: 22%;
     height: 250px;
