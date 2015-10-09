@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Generator: Adobe Illustrator 18.1.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -34,3 +35,41 @@
 	<polygon fill="#61BEEB" points="630.4,659.3 505,360.2 569.8,360.2 695.1,659.2 	"/>
 </g>
 </svg>
+=======
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 18.1.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 1440 900" enable-background="new 0 0 1440 900" xml:space="preserve">
+<g>
+	<g>
+		<rect x="723.3" y="360.2" fill="#FAEF5C" width="59.8" height="298.9"/>
+		<path fill="#EF5E75" d="M860.5,536.5H723.3v-59.8h137.2c15.7,0,28.4-12.7,28.4-28.4c0-15.7-12.7-28.4-28.4-28.4H723.3v-59.8h137.2
+			c48.7,0,88.1,39.6,88.1,88.1S909.1,536.5,860.5,536.5z"/>
+		<path fill="#EF5E75" d="M859,659.3H723.3v-59.8H859c17.4,0,31.5-14.1,31.5-31.5s-14.1-31.5-31.5-31.5H723.3v-59.8H859
+			c50.4,0,91.3,40.9,91.3,91.3C950.3,618.4,909.4,659.3,859,659.3z"/>
+	</g>
+	<g>
+		<rect x="1240.4" y="360.2" fill="#FAEF5C" width="59.8" height="299.1"/>
+		<rect x="1240.4" y="360.2" fill="#61BEEB" width="197" height="59.8"/>
+		<rect x="1240.4" y="476.7" fill="#8CC85A" width="197" height="59.8"/>
+		<rect x="1240.4" y="599.4" fill="#EF5E75" width="197" height="59.8"/>
+	</g>
+	<g>
+		<rect x="1001.8" y="360.2" fill="#FAA84C" width="59.8" height="299.1"/>
+		<rect x="1001.8" y="599.4" fill="#61BEEB" width="197" height="59.8"/>
+	</g>
+	<g>
+		<rect x="122.3" y="360.2" fill="#F06A24" width="59.9" height="299.2"/>
+		<rect x="2.6" y="360.2" fill="#61BEEB" width="418.6" height="59.9"/>
+		<rect x="241.8" y="360.2" fill="#FAA84C" width="59.9" height="299.2"/>
+		<path fill="#454B56" d="M391.2,300.7c-16.6,0-30.1-13.5-30.1-30.1s13.5-30.1,30.1-30.1c16.6,0,30.1,13.5,30.1,30.1
+			S408,300.7,391.2,300.7z"/>
+	</g>
+	<g>
+		<polygon fill="#8C6EAF" points="444.5,659.3 569.8,360.2 505,360.2 379.7,659.2 		"/>
+		<polygon fill="#FAEF5C" points="662.5,581.4 412.1,581.4 437.3,521.6 637.5,521.6 		"/>
+	</g>
+	<polygon fill="#61BEEB" points="630.4,659.3 505,360.2 569.8,360.2 695.1,659.2 	"/>
+</g>
+</svg>
+>>>>>>> 5d3537ca9242f1640693a2661ada80aba7ec5ecd
