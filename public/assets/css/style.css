@@ -795,6 +795,13 @@ a.san-mateo:hover{
     border-radius: 15px;
 }
 
+.samaltman {
+    background: url('../img/samaltman.jpg');
+    background-size: cover;
+    height: 250px;
+    border-radius: 15px;
+}
+
 .speaker {
     width: 22%;
     height: 250px;
@@ -1125,6 +1132,7 @@ Social Links
 #sponsors .citrus { background: url('../img/sponsors/citrus.png');     }
 #sponsors .teachforamerica { background: url('../img/sponsors/teachforamerica.jpg');     }
 #sponsors .oreilly { background: url('../img/sponsors/oreilly.png');     }
+#sponsors .oreilly { background: url('../img/sponsors/table.svg');     }
 
 
 
