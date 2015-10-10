@@ -697,13 +697,6 @@ a.san-mateo:hover{
     border-radius: 15px;
 }
 
-.speakerSeven {
-    background: url('../img/3c5ef15.jpg');
-    background-size: cover;
-    height: 250px;
-    border-radius: 15px;
-}
-
 .speakerEight {
     background: url('../img/andrew.jpg');
     background-size: cover;
@@ -795,8 +788,15 @@ a.san-mateo:hover{
     border-radius: 15px;
 }
 
-.samaltman {
-    background: url('../img/samaltman.jpg');
+.speakerTwentyOne {
+    background: url('../img/jiquan.jpg');
+    background-size: cover;
+    height: 250px;
+    border-radius: 15px;
+}
+
+.speakerTwentyTwo {
+    background: url('../img/pk.png');
     background-size: cover;
     height: 250px;
     border-radius: 15px;
