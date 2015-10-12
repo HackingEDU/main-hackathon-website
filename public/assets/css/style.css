@@ -802,6 +802,48 @@ a.san-mateo:hover{
     border-radius: 15px;
 }
 
+.speakerTwentyThree {
+    background: url('../img/samaltman.jpg');
+    background-size: cover;
+    height: 250px;
+    border-radius: 15px;
+}
+
+.speakerTwentyFour {
+    background: url('../img/mike.jpg');
+    background-size: cover;
+    height: 250px;
+    border-radius: 15px;
+}
+
+.speakerTwentyFive {
+    background: url('../img/geoffschmidt.jpg');
+    background-size: cover;
+    height: 250px;
+    border-radius: 15px;
+}
+
+.speakerTwentySix {
+    background: url('../img/laurievoss.jpg');
+    background-size: cover;
+    height: 250px;
+    border-radius: 15px;
+}
+
+.speakerTwentySeven {
+    background: url('../img/randyterbush.jpg');
+    background-size: cover;
+    height: 250px;
+    border-radius: 15px;
+}
+
+.speakerTwentyEight {
+    background: url('../img/jadewang.jpg');
+    background-size: cover;
+    height: 250px;
+    border-radius: 15px;
+}
+
 .speaker {
     width: 22%;
     height: 250px;
