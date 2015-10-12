@@ -637,7 +637,7 @@ a.san-mateo:hover{
     background-color: dimgray;
     border-radius: 15px;
     opacity: 0.68;
-    
+
 }
 
 .speakerName {
@@ -818,22 +818,22 @@ a.san-mateo:hover{
 /*Media Queries for the speaker section -- makes it more responsive */
 
 @media(max-width: 970px ) {
-    
+
     .speaker {
         width: 35%;
     }
 }
 
 @media(max-width: 850px ) {
-    
+
     .speaker {
         width: 40%;
     }
-    
+
 }
 
-@media(max-width: 580px ) { 
-    
+@media(max-width: 580px ) {
+
     .speaker {
         width: 70%;
     }
@@ -851,7 +851,7 @@ a.san-mateo:hover{
 
 .schedule-item{
   padding: 0.5em 0;
-  border-bottom: 1px solid #C8C8C8; 
+  border-bottom: 1px solid #C8C8C8;
 }
 
 .m-top10p{
@@ -861,7 +861,7 @@ a.san-mateo:hover{
 /* Shuttles */
 
 #shuttles{
-  padding: 90px 0; 
+  padding: 90px 0;
 }
 
 .m-bottom30p{
@@ -1127,6 +1127,7 @@ Social Links
 #sponsors .gsvlabs { background: url('../img/sponsors/gsvlabs.png');     }
 
 #sponsors .audible { background: url('../img/sponsors/audible.png');     }
+#sponsors .moxtra { background: url('../img/sponsors/moxtra-logo.png');     }
 #sponsors .capitalone { background: url('../img/sponsors/capitalone.png');     }
 #sponsors .medhacks { background: url('../img/sponsors/medhacks.png');     }
 #sponsors .citrus { background: url('../img/sponsors/citrus.png');     }
@@ -1249,7 +1250,7 @@ Social Links
   -o-transform:scale(1.1);
   -webkit-transition-duration: 0.5s;
   -moz-transition-duration: 0.5s;
-  -o-transition-duration: 0.5s; 
+  -o-transition-duration: 0.5s;
 }
 
 a.hover-line{
@@ -1298,7 +1299,7 @@ a.hover-line{
   -o-transform:scale(1.1);
   -webkit-transition-duration: 0.5s;
   -moz-transition-duration: 0.5s;
-  -o-transition-duration: 0.5s; 
+  -o-transition-duration: 0.5s;
 }
 
 .footer-icon{
