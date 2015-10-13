@@ -844,6 +844,27 @@ a.san-mateo:hover{
     border-radius: 15px;
 }
 
+.speakerTwentyNine {
+    background: url('../img/andrewsutherland.jpg');
+    background-size: cover;
+    height: 250px;
+    border-radius: 15px;
+}
+
+.speakerThirty {
+    background: url('../img/erinbeitel.jpeg');
+    background-size: cover;
+    height: 250px;
+    border-radius: 15px;
+}
+
+.speakerThirtyOne {
+    background: url('../img/annedwane.jpg');
+    background-size: cover;
+    height: 250px;
+    border-radius: 15px;
+}
+
 .speaker {
     width: 22%;
     height: 250px;
