@@ -69,24 +69,39 @@
 
 /*NAV*/
 
-.nav {
+#nav {
         width: 100%;
         height: 5%;
         text-align: center;
         position: fixed;
-        z-index: 150;
+        z-index: 3;
         background-color: dimgray;
+        opacity: 1;
+    
+    
+      /*left: 0;
+      right: 0;
+      padding: 10px;
+      top: 0;
+      color: #fff;
+      background-color: rgba(40,40,40,0);
+      position: fixed;
+      z-index: 1;
+      height: 5%;
+      text-align: center;*/
+
+
 }
 
-.nav a {
+#nav a {
         display: inline-block;
-        margin: 6 auto;
+        margin: 0 auto;
         padding-right: 60px;
         text-decoration: none;
         padding-left: 60px;
 }
 
-.nav a p {
+#nav a p {
         font-size: 16px;
         color: white;
         font-family: Avenir;
@@ -121,7 +136,7 @@
 .info h2 {
     font-weight: 300;
     text-align: center;
-    letter-spacing: 1px;
+    //letter-spacing: 1px;
     padding-top: 25px;
     font-family: Lato;
     font-size: 40px;
@@ -140,9 +155,318 @@
     font-weight: 100;
 }
 
+/* -------------------- Speakers -------------------- */
+
+#speakers{
+  padding: 90px 0;
+  text-align: center;
+}
+
+#speakers h2 {
+    font-family: Lato;
+    font-weight: 100;
+    font-size: 40px;
+    margin-top: -60px;
+}
+
+/*This class 'cover' gives it the gray-ish color and the opacity styling */
+.cover {
+    width: 100%;
+    height: 100%;
+    background-color: dimgray;
+    border-radius: 15px;
+    opacity: 0.68;
+
+}
+
+.speakerName {
+    color: whitesmoke;
+    position: relative;
+    top: 200px;
+    font-size: 21px;
+}
+
+.speakerInfo {
+    color: whitesmoke;
+    position: relative;
+    top: 175px;
+    font-size: 12px;
+}
+
+/*Speaker 1,2, and 3 are up. Once there are more, I'll add them in */
+.speakerOne {
+    background: url('../public/assets/img/conrad.jpg');
+    background-size: cover;
+    height: 250px;
+    border-radius: 15px;
+}
+
+.speakerTwo {
+    background: url('../public/assets/img/Rauch.png');
+    background-size: cover;
+    height: 250px;
+    border-radius: 15px;
+}
+
+.speakerThree {
+    background: url('../public/assets/img/vivian.jpg');
+    background-size: cover;
+    height: 250px;
+    border-radius: 15px;
+}
+
+.speakerFour {
+    background: url('../public/assets/img/liam.png');
+    background-size: cover;
+    height: 250px;
+    border-radius: 15px;
+}
+
+.speakerFive {
+    background: url('../public/assets/img/sam.png');
+    background-size: cover;
+    height: 250px;
+    border-radius: 15px;
+}
+
+.speakerSix {
+    background: url('../public/assets/img/azat.jpg');
+    background-size: cover;
+    height: 250px;
+    border-radius: 15px;
+}
+
+.speakerEight {
+    background: url('../public/assets/img/andrew.jpg');
+    background-size: cover;
+    height: 250px;
+    border-radius: 15px;
+}
+
+.speakerNine {
+    background: url('../public/assets/img/evan.png');
+    background-size: cover;
+    height: 250px;
+    border-radius: 15px;
+}
+
+.speakerTen {
+    background: url('../public/assets/img/jeremy.jpg');
+    background-size: cover;
+    height: 250px;
+    border-radius: 15px;
+}
+
+.speakerEleven {
+    background: url('../public/assets/img/elizabethdouglas.jpg');
+    background-size: cover;
+    height: 250px;
+    border-radius: 15px;
+}
+
+.speakerTwelve {
+    background: url('../public/assets/img/ashley.jpg');
+    background-size: cover;
+    height: 250px;
+    border-radius: 15px;
+}
+
+.speakerThirteen {
+    background: url('../public/assets/img/matthew.jpg');
+    background-size: cover;
+    height: 250px;
+    border-radius: 15px;
+}
+
+.speakerFourteen {
+    background: url('../public/assets/img/dave.jpg');
+    background-size: cover;
+    height: 250px;
+    border-radius: 15px;
+}
+
+.speakerFifteen {
+    background: url('../public/assets/img/maegan.jpg');
+    background-size: cover;
+    height: 250px;
+    border-radius: 15px;
+}
+
+.speakerSixteen {
+    background: url('../public/assets/img/evadora.jpg');
+    background-size: cover;
+    height: 250px;
+    border-radius: 15px;
+}
+
+.speakerSeventeen {
+    background: url('../public/assets/img/alex.jpg');
+    background-size: cover;
+    height: 250px;
+    border-radius: 15px;
+}
+
+.speakerEighteen {
+    background: url('../public/assets/img/niko.jpg');
+    background-size: cover;
+    height: 250px;
+    border-radius: 15px;
+}
+
+.speakerNineteen {
+    background: url('../public/assets/img/jack.jpg');
+    background-size: cover;
+    height: 250px;
+    border-radius: 15px;
+}
+
+.speakerTwenty {
+    background: url('../public/assets/img/josh_tyler.jpg');
+    background-size: cover;
+    height: 250px;
+    border-radius: 15px;
+}
+
+.speakerTwentyOne {
+    background: url('../public/assets/img/jiquan.jpg');
+    background-size: cover;
+    height: 250px;
+    border-radius: 15px;
+}
+
+.speakerTwentyTwo {
+    background: url('../public/assets/img/pk.png');
+    background-size: cover;
+    height: 250px;
+    border-radius: 15px;
+}
+
+.speakerTwentyThree {
+    background: url('../public/assets/img/samaltman.jpg');
+    background-size: cover;
+    height: 250px;
+    border-radius: 15px;
+}
+
+.speakerTwentyFour {
+    background: url('../public/assets/img/mike.jpg');
+    background-size: cover;
+    height: 250px;
+    border-radius: 15px;
+}
+
+.speakerTwentyFive {
+    background: url('../public/assets/img/geoffschmidt.jpg');
+    background-size: cover;
+    height: 250px;
+    border-radius: 15px;
+}
+
+.speakerTwentySix {
+    background: url('../public/assets/img/laurievoss.jpg');
+    background-size: cover;
+    height: 250px;
+    border-radius: 15px;
+}
+
+.speakerTwentySeven {
+    background: url('../public/assets/img/randyterbush.jpg');
+    background-size: cover;
+    height: 250px;
+    border-radius: 15px;
+}
+
+.speakerTwentyEight {
+    background: url('../public/assets/img/jadewang.jpeg');
+    background-size: cover;
+    height: 250px;
+    border-radius: 15px;
+}
+
+.speakerTwentyNine {
+    background: url('../public/assets/img/andrewsutherland.jpg');
+    background-size: cover;
+    height: 250px;
+    border-radius: 15px;
+}
+
+.speakerThirty {
+    background: url('../public/assets/img/erinbeitel.jpeg');
+    background-size: cover;
+    height: 250px;
+    border-radius: 15px;
+}
+
+.speakerThirtyOne {
+    background: url('../public/assets/img/annedwane.jpg');
+    background-size: cover;
+    height: 250px;
+    border-radius: 15px;
+}
+
+.speakerThirtyTwo {
+    background: url('../public/assets/img/muzzammilzaveri.jpg');
+    background-size: cover;
+    height: 250px;
+    border-radius: 15px;
+}
+
+.speakerThirtyThree {
+    background: url('../public/assets/img/emilyleproust.jpg');
+    background-size: cover;
+    height: 250px;
+    border-radius: 15px;
+}
+
+.speakerThirtyFour {
+    background: url('../public/assets/img/jurgisorups.jpg');
+    background-size: cover;
+    height: 250px;
+    border-radius: 15px;
+}
+
+.speaker {
+    width: 22%;
+    height: 250px;
+    display: inline-block;
+    margin: auto;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 15px;
+    vertical-align: top;
+    margin-top: 30px;
+    z-index: 1;
+}
+
+
+/*Media Queries for the speaker section -- makes it more responsive */
+
+@media(max-width: 970px ) {
+
+    .speaker {
+        width: 35%;
+    }
+}
+
+@media(max-width: 850px ) {
+
+    .speaker {
+        width: 40%;
+    }
+
+}
+
+@media(max-width: 580px ) {
+
+    .speaker {
+        width: 70%;
+    }
+}
+
+
 
             
-/* -------------------- FOOTER -------------------- */
+/* -------------------- Schedule -------------------- */
             
 .schedule {
     width: 100%;
@@ -166,9 +490,7 @@
     font-size: 40px;
     font-weight: 200;
     color: #8FB7EB;
-    font-family: Lato;
-    letter-spacing: 1px;
-                
+    font-family: Lato;                
 }
             
 .schedule h4 {
@@ -328,8 +650,9 @@
 /* -------------------- SPONSORS/PARTNERS -------------------- */
 
 #sponsors {
-    background: white;
-    width: 100%;
+  background: white;
+  width:   100%;
+  padding: 90px 0;
     text-align: center;
 }
 
@@ -338,22 +661,24 @@
 #sponsors .chegg      { background: url('http://cdn0.hackingedu.co/img/sponsors/chegg.png');      }
 #sponsors .PayPal     { background: url('http://cdn1.hackingedu.co/img/sponsors/paypal.png');     }
 #sponsors .Worldquant { background: url('http://cdn2.hackingedu.co/img/sponsors/worldquant_logo.jpg'); }
-#sponsors .ibm        { background: url('http://cdn3.hackingedu.co/img/sponsors/ibm.jpg');        }
+#sponsors .ibm        { background: url('../public/assets/img/sponsors/ibm_bluemix.png');        }
 #sponsors .auto       { background: url('http://cdn4.hackingedu.co/img/sponsors/automattic.jpg'); }
 #sponsors .pebble     { background: url('http://cdn5.hackingedu.co/img/sponsors/pebble.png');     }
 #sponsors .club       { background: url('http://cdn0.hackingedu.co/img/sponsors/club1.png');      }
 #sponsors .leapmotion { background: url('http://cdn1.hackingedu.co/img/sponsors/leapmotion.png'); }
+#sponsors .wolfram { background: url('../public/assets/img/sponsors/wolframalpha.png'); }
 #sponsors .makeschool { background: url('http://cdn2.hackingedu.co/img/sponsors/makeschool.png'); }
 #sponsors .twilio     { background: url('http://cdn3.hackingedu.co/img/sponsors/twilio.png');     }
 #sponsors .twist      { background: url('http://cdn4.hackingedu.co/img/sponsors/twist.png')       }
-#sponsors .draper     { background: url('http://cdn5.hackingedu.co/img/sponsors/draper.png')      }
+#sponsors .draper     { background: url('../public/assets/img/sponsors/draper.png')      }
 #sponsors .bootstrap  { background: url('http://cdn0.hackingedu.co/img/sponsors/bootstrap.png');  }
 #sponsors .lyft       { background: url('http://cdn1.hackingedu.co/img/sponsors/lyft.png')        }
 #sponsors .namecheap  { background: url('http://cdn2.hackingedu.co/img/sponsors/namecheap1.png'); }
 #sponsors .socket     { background: url('http://cdn3.hackingedu.co/img/sponsors/socket.png');     }
 #sponsors .edsurge    { background: url('http://cdn4.hackingedu.co/img/sponsors/edsurge.jpg')     }
+#sponsors .kubby    { background: url('../public/assets/img/sponsors/kubby.png')     }
 #sponsors .google     { background: url('http://cdn5.hackingedu.co/img/sponsors/google.png')      }
-#sponsors .firebase   { background: url('http://cdn0.hackingedu.co/img/sponsors/firebase.png')    }
+#sponsors .wikihow   { background: url('../public/assets/img/sponsors/wikihow.png')    }
 #sponsors .gun        { background: url('http://cdn1.hackingedu.co/img/sponsors/gun.png');        }
 #sponsors .pearlhacks { background: url('http://cdn2.hackingedu.co/img/sponsors/pearlhacks.png')  }
 #sponsors .nwhacks    { background: url('http://cdn3.hackingedu.co/img/sponsors/nwhacks.jpg')     }
@@ -372,25 +697,29 @@
 #sponsors .hack4baltimore { background: url('http://cdn2.hackingedu.co/img/sponsors/hack4baltimore.png'); }
 #sponsors .globalcommit   { background: url('http://cdn3.hackingedu.co/img/sponsors/globalcommit.png');   }
 #sponsors .clusterpoint { background: url('../public/assets/img/sponsors/clusterpoint.png');     }
+#sponsors .rocket {background: url('../public/assets/img/sponsors/rocketfuel.png'); }
+#sponsors .studyblue {background: url('../public/assets/img/sponsors/studyblue.jpg'); }
 
 #sponsors .coursehero { background: url('../public/assets/img/sponsors/coursehero.png');     }
 #sponsors .moback { background: url('../public/assets/img/sponsors/moback.png');     }
 #sponsors .roblox { background: url('../public/assets/img/sponsors/roblox.png');     }
-#sponsors .braintree { background: url('../public/assets/img/sponsors/braintree.png');     }
+#sponsors .hackerrank { background: url('../public/assets/img/sponsors/HackerRank.png');     }
+#sponsors .braintree { background: url('../img/sponsors/braintree.png');     }
 #sponsors .muse { background: url('../public/assets/img/sponsors/muse.png');     }
 #sponsors .emotiv { background: url('../public/assets/img/sponsors/Emotiv.png');     }
-#sponsors .ibmbluemix { background: url('../public/assets/img/sponsors/ibm_bluemix.png');     }
+#sponsors .ibmbluemix { background: url('../img/sponsors/ibm_bluemix.png');     }
 
 #sponsors .uber { background: url('../public/assets/img/sponsors/uber.png');     }
 #sponsors .particle { background: url('../public/assets/img/sponsors/particle.png');     }
 #sponsors .hacksterio { background: url('../public/assets/img/sponsors/hacksterio.png');     }
+#sponsors .nanovr { background: url('../public/assets/img/sponsors/nanovr.png');     }
 #sponsors .kpcb { background: url('../public/assets/img/sponsors/kpcb.jpg');     }
 #sponsors .dashdoc { background: url('../public/assets/img/sponsors/dashdoc.png');     }
 #sponsors .edtechworldtour { background: url('../public/assets/img/sponsors/edtechworldtour.jpeg');     }
 #sponsors .ostem { background: url('../public/assets/img/sponsors/ostemlogo.svg');     }
 #sponsors .alienware { background: url('../public/assets/img/sponsors/alienware.png');     }
 
-#sponsors .bde { background: url('../public/assets/img/sponsors/bde.png'); }
+#sponsors .bde { background: url('../public/assets/img/sponsors/bde.png');     }
 #sponsors .devnetwork { background: url('../public/assets/img/sponsors/dev_network.png');     }
 #sponsors .femresources { background: url('../public/assets/img/sponsors/femresources.png');     }
 #sponsors .greenathon { background: url('../public/assets/img/sponsors/greenathon.png');     }
@@ -399,6 +728,18 @@
 #sponsors .aboutme { background: url('../public/assets/img/sponsors/aboutme.png');     }
 #sponsors .oculus { background: url('../public/assets/img/sponsors/oculus.png');     }
 #sponsors .gsvlabs { background: url('../public/assets/img/sponsors/gsvlabs.png');     }
+
+#sponsors .audible { background: url('../public/assets/img/sponsors/audible.png');     }
+#sponsors .moxtra { background: url('../public/assets/img/sponsors/moxtra.png');     }
+#sponsors .capitalone { background: url('../public/assets/img/sponsors/capitalone.png');     }
+#sponsors .medhacks { background: url('../public/assets/img/sponsors/medhacks.png');     }
+#sponsors .citrus { background: url('../public/assets/img/sponsors/citrus.png');     }
+#sponsors .teachforamerica { background: url('../public/assets/img/sponsors/teachforamerica.jpg');     }
+#sponsors .oreilly { background: url('../public/assets/img/sponsors/oreilly.png');     }
+
+
+
+#sponsors .table { background: url('../img/sponsors/table.svg'); }
 
 
 .tier, .tier a {
@@ -530,13 +871,13 @@ footer a h4 {
         font-size: 15px;
     }
     
-    .nav {
+    #nav {
         width: 100%;
         height: 5%;
         text-align: center;
     }
 
-    .nav a {
+    #nav a {
         display: inline-block;
         margin: 0 auto;
         padding-left: 40px;
@@ -544,7 +885,7 @@ footer a h4 {
         text-decoration: none;
     }
 
-    .nav a p {
+    #nav a p {
         font-size: 16px;
         color: white;
         font-family: Avenir;
@@ -554,13 +895,13 @@ footer a h4 {
 }
 
 @media(max-width: 740px ) {
-    .nav {
+    #nav {
         width: 100%;
         height: 5%;
         text-align: center;
     }
 
-    .nav a {
+    #nav a {
         display: inline-block;
         margin: 0 auto;
         padding-left: 30px;
@@ -568,7 +909,7 @@ footer a h4 {
         text-decoration: none;
     }
 
-    .nav a p {
+    #nav a p {
         font-size: 16px;
         color: white;
         font-family: Avenir;
@@ -590,14 +931,14 @@ footer a h4 {
         font-size: 13px;
     }
     
-    .nav {
+    #nav {
         //background-color: red;
         width: 100%;
         height: 5%;
         text-align: center;
     }
 
-    .nav a {
+    #nav a {
         display: inline-block;
         margin: 0 auto;
         padding-left: 5px;
@@ -605,7 +946,7 @@ footer a h4 {
         text-decoration: none;
     }
 
-    .nav a p {
+    #nav a p {
         font-size: 16px;
         color: white;
         font-family: Avenir;
