@@ -872,6 +872,20 @@ a.san-mateo:hover{
     border-radius: 15px;
 }
 
+.speakerThirtyThree {
+    background: url('../img/emilyleproust.jpg');
+    background-size: cover;
+    height: 250px;
+    border-radius: 15px;
+}
+
+.speakerThirtyFour {
+    background: url('../img/jurgisorups.jpg');
+    background-size: cover;
+    height: 250px;
+    border-radius: 15px;
+}
+
 .speaker {
     width: 22%;
     height: 250px;
