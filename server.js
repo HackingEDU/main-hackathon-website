@@ -39,13 +39,12 @@ app.use(bodyParser.json({limit: '10mb'}));
 // Index Route
 app.get('/', routes.home);
 app.get('/signup', routes.signup);
+app.get('/live', routes.live);
 app.post('/new_user', routes.newUser);
 app.get('/unsubscribe', routes.unsubscribe);
 
-// Live route
-app.get('/live', function(req, res) {
-    res.sendFile(path.join(__dirname + '/live.html'));
-});
+
+
 
 // Page Route
 app.get('/page/:page/:skip', routes.page);
