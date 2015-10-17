@@ -42,6 +42,11 @@ app.get('/signup', routes.signup);
 app.post('/new_user', routes.newUser);
 app.get('/unsubscribe', routes.unsubscribe);
 
+// Live route
+app.get('/', function(req, res) {
+    res.sendFile(path.join(__dirname + '/live.html'));
+});
+
 // Page Route
 app.get('/page/:page/:skip', routes.page);
 

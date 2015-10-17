@@ -75,7 +75,7 @@
         text-align: center;
         position: fixed;
         z-index: 3;
-        background-color: black;
+        //background-color: black;
         opacity: 1;
 }
 
@@ -119,8 +119,9 @@
 
 .info {
     width: 100%;
-    height: 60%;
+    //height: 60%;
     background-color: #D4D9DB;
+    padding-bottom: 10px;
 }
 
 .info h2 {
@@ -720,7 +721,7 @@
 #sponsors {
   background: white;
   width:   100%;
-  padding: 90px 0;
+  padding: 25px 0;
    text-align: center;
     position: relative;
     z-index: -1;
