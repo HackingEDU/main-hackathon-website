@@ -39,7 +39,7 @@ app.use(bodyParser.json({limit: '10mb'}));
 // Index Route
 app.get('/', routes.home);
 app.get('/signup', routes.signup);
-app.get('/liveapp', routes.liveapp);
+app.get('/live', routes.live);
 app.post('/new_user', routes.newUser);
 app.get('/unsubscribe', routes.unsubscribe);
 

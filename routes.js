@@ -11,7 +11,7 @@ module.exports = {
     res.sendFile(path.join(__dirname, 'public/index.html'));
   },
 
-  liveapp: function(req,res){
+  live: function(req,res){
     res.sendFile(path.join(__dirname, 'public/live.html'));
   },
 
