@@ -39,7 +39,7 @@ app.use(bodyParser.json({limit: '10mb'}));
 // Index Route
 app.get('/', routes.home);
 app.get('/signup', routes.signup);
-app.get('/live', routes.live);
+app.get('/liveapp', routes.liveapp);
 app.post('/new_user', routes.newUser);
 app.get('/unsubscribe', routes.unsubscribe);
 
@@ -50,7 +50,7 @@ app.get('/unsubscribe', routes.unsubscribe);
 app.get('/page/:page/:skip', routes.page);
 
 // Fire this bitch up (start our server)
-var server = http.createServer(app).listen(port, function() {
+var server = http.createServer(app).listen(port,'0.0.0.0', function() {
   console.log('Express server listening on port ' + port);
 });
 
