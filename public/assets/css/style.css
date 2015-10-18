@@ -887,7 +887,7 @@ a.san-mateo:hover{
 }
 
 .speakerThirtyFive {
-    background: url('../public/assets/img/alexkern.jpg');
+    background: url('../img/alexkern.jpg');
     background-size: cover;
     height: 250px;
     border-radius: 15px;
@@ -896,7 +896,7 @@ a.san-mateo:hover{
 }
 
 .speakerThirtySix {
-    background: url('../public/assets/img/pouyansalehi.jpg');
+    background: url('../img/pouyansalehi.jpg');
     background-size: cover;
     height: 250px;
     border-radius: 15px;
@@ -905,7 +905,7 @@ a.san-mateo:hover{
 }
 
 .speakerThirtySeven {
-    background: url('../public/assets/img/michaelstaton.jpg');
+    background: url('../img/michaelstaton.jpg');
     background-size: cover;
     height: 250px;
     border-radius: 15px;
@@ -914,7 +914,7 @@ a.san-mateo:hover{
 }
 
 .speakerThirtyEight {
-    background: url('../public/assets/img/elizabeth-yin.jpg');
+    background: url('../img/elizabeth-yin.jpg');
     background-size: cover;
     height: 250px;
     border-radius: 15px;
@@ -923,7 +923,7 @@ a.san-mateo:hover{
 }
 
 .speakerThirtyNine {
-    background: url('../public/assets/img/lijiang.jpg');
+    background: url('../img/lijiang.jpg');
     background-size: cover;
     height: 250px;
     border-radius: 15px;
