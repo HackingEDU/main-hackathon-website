@@ -43,10 +43,10 @@ $('#nav-press-butt').click(function() {
   return true;
 });
 
-$("#nav-apply-butt").click(function() {
+/*$("#nav-apply-butt").click(function() {
   window.open("../public/live.html", "_blank");
   return true;
-});
+});*/
 
 // Click anywhere on navbar to show menu on mobile
 $('#header').on('click', function(){
