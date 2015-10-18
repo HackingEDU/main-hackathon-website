@@ -153,13 +153,6 @@
   z-index: -1;
 }
 
-#speakers h2 {
-    font-family: Lato;
-    font-weight: 100;
-    font-size: 40px;
-    margin-top: -60px;
-}
-
 /*This class 'cover' gives it the gray-ish color and the opacity styling */
 .cover {
     width: 100%;
@@ -167,7 +160,7 @@
     background-color: dimgray;
     border-radius: 15px;
     opacity: 0.68;
-    z-index: -1;
+
 }
 
 .speakerName {
@@ -182,7 +175,6 @@
     position: relative;
     top: 175px;
     font-size: 12px;
-    z-index: -1;
 }
 
 /*Speaker 1,2, and 3 are up. Once there are more, I'll add them in */
@@ -191,8 +183,6 @@
     background-size: cover;
     height: 250px;
     border-radius: 15px;
-    position: relative;
-    z-index: -1;
 }
 
 .speakerTwo {
@@ -200,8 +190,6 @@
     background-size: cover;
     height: 250px;
     border-radius: 15px;
-    position: relative;
-    z-index: -1;
 }
 
 .speakerThree {
@@ -209,8 +197,6 @@
     background-size: cover;
     height: 250px;
     border-radius: 15px;
-    position: relative;
-    z-index: -1;
 }
 
 .speakerFour {
@@ -218,8 +204,6 @@
     background-size: cover;
     height: 250px;
     border-radius: 15px;
-    position: relative;
-    z-index: -1;
 }
 
 .speakerFive {
@@ -227,8 +211,6 @@
     background-size: cover;
     height: 250px;
     border-radius: 15px;
-    position: relative;
-    z-index: -1;
 }
 
 .speakerSix {
@@ -236,8 +218,6 @@
     background-size: cover;
     height: 250px;
     border-radius: 15px;
-    position: relative;
-    z-index: -1;
 }
 
 .speakerEight {
@@ -245,8 +225,6 @@
     background-size: cover;
     height: 250px;
     border-radius: 15px;
-    position: relative;
-    z-index: -1;
 }
 
 .speakerNine {
@@ -254,8 +232,6 @@
     background-size: cover;
     height: 250px;
     border-radius: 15px;
-    position: relative;
-    z-index: -1;
 }
 
 .speakerTen {
@@ -263,8 +239,6 @@
     background-size: cover;
     height: 250px;
     border-radius: 15px;
-    position: relative;
-    z-index: -1;
 }
 
 .speakerEleven {
@@ -272,8 +246,6 @@
     background-size: cover;
     height: 250px;
     border-radius: 15px;
-    position: relative;
-    z-index: -1;
 }
 
 .speakerTwelve {
@@ -288,8 +260,6 @@
     background-size: cover;
     height: 250px;
     border-radius: 15px;
-    position: relative;
-    z-index: -1;
 }
 
 .speakerFourteen {
@@ -297,8 +267,6 @@
     background-size: cover;
     height: 250px;
     border-radius: 15px;
-    position: relative;
-    z-index: -1;
 }
 
 .speakerFifteen {
@@ -306,8 +274,6 @@
     background-size: cover;
     height: 250px;
     border-radius: 15px;
-    position: relative;
-    z-index: -1;
 }
 
 .speakerSixteen {
@@ -315,8 +281,6 @@
     background-size: cover;
     height: 250px;
     border-radius: 15px;
-    position: relative;
-    z-index: -1;
 }
 
 .speakerSeventeen {
@@ -324,8 +288,6 @@
     background-size: cover;
     height: 250px;
     border-radius: 15px;
-    position: relative;
-    z-index: -1;
 }
 
 .speakerEighteen {
@@ -333,8 +295,6 @@
     background-size: cover;
     height: 250px;
     border-radius: 15px;
-    position: relative;
-    z-index: -1;
 }
 
 .speakerNineteen {
@@ -342,8 +302,6 @@
     background-size: cover;
     height: 250px;
     border-radius: 15px;
-    position: relative;
-    z-index: -1;
 }
 
 .speakerTwenty {
@@ -351,8 +309,6 @@
     background-size: cover;
     height: 250px;
     border-radius: 15px;
-    position: relative;
-    z-index: -1;
 }
 
 .speakerTwentyOne {
@@ -360,8 +316,6 @@
     background-size: cover;
     height: 250px;
     border-radius: 15px;
-    position: relative;
-    z-index: -1;
 }
 
 .speakerTwentyTwo {
@@ -369,8 +323,6 @@
     background-size: cover;
     height: 250px;
     border-radius: 15px;
-    position: relative;
-    z-index: -1;
 }
 
 .speakerTwentyThree {
@@ -378,8 +330,6 @@
     background-size: cover;
     height: 250px;
     border-radius: 15px;
-    position: relative;
-    z-index: -1;
 }
 
 .speakerTwentyFour {
@@ -387,8 +337,6 @@
     background-size: cover;
     height: 250px;
     border-radius: 15px;
-    position: relative;
-    z-index: -1;
 }
 
 .speakerTwentyFive {
@@ -396,8 +344,6 @@
     background-size: cover;
     height: 250px;
     border-radius: 15px;
-    position: relative;
-    z-index: -1;
 }
 
 .speakerTwentySix {
@@ -405,8 +351,6 @@
     background-size: cover;
     height: 250px;
     border-radius: 15px;
-    position: relative;
-    z-index: -1;
 }
 
 .speakerTwentySeven {
@@ -414,8 +358,6 @@
     background-size: cover;
     height: 250px;
     border-radius: 15px;
-    position: relative;
-    z-index: -1;
 }
 
 .speakerTwentyEight {
@@ -423,8 +365,6 @@
     background-size: cover;
     height: 250px;
     border-radius: 15px;
-    position: relative;
-    z-index: -1;
 }
 
 .speakerTwentyNine {
@@ -432,8 +372,6 @@
     background-size: cover;
     height: 250px;
     border-radius: 15px;
-    position: relative;
-    z-index: -1;
 }
 
 .speakerThirty {
@@ -441,8 +379,6 @@
     background-size: cover;
     height: 250px;
     border-radius: 15px;
-    position: relative;
-    z-index: -1;
 }
 
 .speakerThirtyOne {
@@ -450,8 +386,6 @@
     background-size: cover;
     height: 250px;
     border-radius: 15px;
-    position: relative;
-    z-index: -1;
 }
 
 .speakerThirtyTwo {
@@ -459,8 +393,6 @@
     background-size: cover;
     height: 250px;
     border-radius: 15px;
-    position: relative;
-    z-index: -1;
 }
 
 .speakerThirtyThree {
@@ -468,12 +400,53 @@
     background-size: cover;
     height: 250px;
     border-radius: 15px;
-    position: relative;
-    z-index: -1;
 }
 
 .speakerThirtyFour {
     background: url('../img/jurgisorups.jpg');
+    background-size: cover;
+    height: 250px;
+    border-radius: 15px;
+}
+
+.speakerThirtyFive {
+    background: url('../img/alexkern.jpg');
+    background-size: cover;
+    height: 250px;
+    border-radius: 15px;
+    position: relative;
+    z-index: -1;
+}
+
+.speakerThirtySix {
+    background: url('../img/pouyansalehi.jpg');
+    background-size: cover;
+    height: 250px;
+    border-radius: 15px;
+    position: relative;
+    z-index: -1;
+}
+
+.speakerThirtySeven {
+    background: url('../img/michaelstaton.jpg');
+    background-size: cover;
+    height: 250px;
+    border-radius: 15px;
+    position: relative;
+    z-index: -1;
+}
+
+.speakerThirtyEight {
+    background: url('../img/elizabeth-yin.jpg');
+    background-size: cover;
+    height: 250px;
+    border-radius: 15px;
+    position: relative;
+    z-index: -1;
+}
+
+.speakerThirtyNine {
+    background: url('../img/lijiang.jpg');
     background-size: cover;
     height: 250px;
     border-radius: 15px;
@@ -491,7 +464,6 @@
     border-radius: 15px;
     vertical-align: top;
     margin-top: 30px;
-    z-index: -1;
 }
 
 
@@ -518,7 +490,6 @@
         width: 70%;
     }
 }
-
 
 
             
