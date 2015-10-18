@@ -1156,11 +1156,12 @@ footer .signature {
     }
 }
 
-@media(max-height: 300px) {
+@media(max-height: 540px) {
  
     .header h4 {
         font-size: 15px;
         margin-top: -220px;
+        color: red;
     }
     
     #helloWorldPeople {
@@ -1169,7 +1170,7 @@ footer .signature {
     
 }
 
-@media screen and (device-aspect-ratio: 16/9) {
+/*@media screen and (device-aspect-ratio: 16/9) {
     .header h4 {
         font-size: 15px;
         margin-top: -220px;
@@ -1178,5 +1179,5 @@ footer .signature {
     #helloWorldPeople {
         font-size: 12px;
     }   
-}
+}*/
 
