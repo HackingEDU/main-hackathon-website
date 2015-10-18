@@ -43,10 +43,10 @@ $('#nav-press-butt').click(function() {
   return true;
 });
 
-/*$("#nav-apply-butt").click(function() {
-  window.open("../public/live.html", "_blank");
+$("#nav-apply-butt").click(function() {
+  window.open("https://hackingedu.typeform.com/to/ynFajD", "_blank");
   return true;
-});*/
+});
 
 // Click anywhere on navbar to show menu on mobile
 $('#header').on('click', function(){
