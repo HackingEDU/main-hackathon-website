@@ -1156,11 +1156,11 @@ footer .signature {
     }
 }
 
-@media(max-height: 620px) {
+@media(max-height: 420px) {
  
     .header h4 {
         font-size: 15px;
-        margin-top: -110px;
+        margin-top: -220px;
     }
     
     #helloWorldPeople {
