@@ -1169,3 +1169,14 @@ footer .signature {
     
 }
 
+@media screen and (device-aspect-ratio: 16/9) {
+    .header h4 {
+        font-size: 15px;
+        margin-top: -220px;
+    }
+    
+    #helloWorldPeople {
+        font-size: 12px;
+    }   
+}
+
