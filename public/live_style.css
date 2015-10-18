@@ -17,7 +17,7 @@
     font-size: 30px;
     color: white;
 }
-            
+
 .nice {
     background-color: azure;
     height: 75%;
@@ -30,7 +30,7 @@
     margin: auto;
     padding-top: 175px;
 }
-            
+
 .header {
     background-color: dimgray;
     opacity: 0.8;
@@ -38,7 +38,7 @@
     height: 100%;
     z-index: 100;
 }
-            
+
 .header h1 {
     text-align: center;
     font-family: Avenir;
@@ -49,7 +49,7 @@
     padding-top: 200px;
     z-index: -1;
 }
-            
+
 .header h1 span {
     font-size: 28px;
 }
@@ -58,7 +58,7 @@
     color: white;
     font-size: 36px;
 }
-            
+
 .header h4 {
     font-size: 25px;
     color: white;
@@ -100,7 +100,7 @@
 }
 
 @media(max-width: 800px ) {
-    
+
     #helloWorldPeople {
         font-size: 22px;
     }
@@ -108,7 +108,7 @@
 }
 
 @media(max-width: 500px ) {
-    
+
     #helloWorldPeople {
         font-size: 17px;
     }
@@ -483,6 +483,51 @@
     z-index: -1;
 }
 
+.speakerThirtyFive {
+    background: url('../public/assets/img/alexkern.jpg');
+    background-size: cover;
+    height: 250px;
+    border-radius: 15px;
+    position: relative;
+    z-index: -1;
+}
+
+.speakerThirtySix {
+    background: url('../public/assets/img/pouyansalehi.jpg');
+    background-size: cover;
+    height: 250px;
+    border-radius: 15px;
+    position: relative;
+    z-index: -1;
+}
+
+.speakerThirtySeven {
+    background: url('../public/assets/img/michaelstaton.jpg');
+    background-size: cover;
+    height: 250px;
+    border-radius: 15px;
+    position: relative;
+    z-index: -1;
+}
+
+.speakerThirtyEight {
+    background: url('../public/assets/img/elizabeth-yin.jpg');
+    background-size: cover;
+    height: 250px;
+    border-radius: 15px;
+    position: relative;
+    z-index: -1;
+}
+
+.speakerThirtyNine {
+    background: url('../public/assets/img/lijiang.jpg');
+    background-size: cover;
+    height: 250px;
+    border-radius: 15px;
+    position: relative;
+    z-index: -1;
+}
+
 .speaker {
     width: 22%;
     height: 250px;
@@ -523,9 +568,9 @@
 
 
 
-            
+
 /* -------------------- Schedule -------------------- */
-            
+
 .schedule {
     width: 100%;
     background-color: #f3f3f3;
@@ -558,24 +603,24 @@
     font-size: 40px;
     font-weight: 200;
     color: #8FB7EB;
-    font-family: Lato;                
+    font-family: Lato;
 }
-            
+
 .schedule h4 {
     text-align: center;
     font-family: Lato;
     font-weight: 200;
 }
-            
+
 .column1 {
     display: inline-block;
     width: 33%;
     height: 50px;
 }
-            
+
 .column2 {
     display: inline-block;
-    width: 33%;    
+    width: 33%;
     height: 50px;
 }
 
@@ -593,7 +638,7 @@
     padding-top: 12px;
     padding-bottom: 10px;
 }
-            
+
 .column1 h5 {
     padding-left: 15px;
     font-size: 18px;
@@ -602,7 +647,7 @@
     padding-top: 12px;
     padding-bottom: 10px;
 }
-            
+
 .column2 h5 {
     text-align: left;
     padding-right: 15px;
@@ -612,25 +657,25 @@
     padding-top: 12px;
     padding-bottom: 10px;
 }
-            
+
 .event {
     border-bottom: 1px solid black;
 }
-            
+
 .awesome {
     display: block;
     width: 55%;
     margin: 0 auto;
 }
-            
+
 /* -------------------- TRANSPORTATION -------------------- */
-            
+
 .shuttles {
     background-color: #DEE5EA;
     width: 100%;
     padding-bottom: 25px;
 }
-            
+
 .shuttles h1 {
     padding-top: 25px;
     font-family: Avenir;
@@ -647,7 +692,7 @@
     font-size: 22px;
     text-decoration: underline;
 }
-          
+
 .shuttles h6 {
     margin-top: 25px;
     text-align: center;
@@ -656,27 +701,27 @@
     font-size: 20px;
     font-family: Avenir;
 }
-            
+
 .shuttles p {
     text-align: center;
     font-size: 20px;
     font-family: Avenir;
 }
-            
+
 .transportInfo {
     width: 40%;
     margin: 0 auto;
     height: 40%;
     background-color: slategrey;
 }
-            
+
 /* -------------------- FAQ -------------------- */
-            
+
 .justified{
     text-align: justify;
-    
+
 }
-            
+
 #nice {
     margin: 10 auto;
     margin-right: 25px;
@@ -685,11 +730,11 @@
     vertical-align: top;
     z-index: -2;
 }
-            
+
 .row {
     text-align: center;
 }
-            
+
 #faq {
     background-color: #eeeeee;
     margin-top: -20px;
@@ -703,7 +748,7 @@
     padding-top: 50px;
     z-index: -2;
 }
-            
+
 #nice strong {
     font-size: 16px;
 }
@@ -711,7 +756,7 @@
 #nice p {
     font-size: 13px;
 }
-            
+
 #question {
     font-size: 14px;
 }
@@ -929,31 +974,31 @@ footer .signature {
 }
 
 /*Media Queries */
-            
+
 @media(max-width: 980px) {
-                
+
     #nice {
         width: 85%;
         display: block;
         margin: 10 auto;
     }
-                
+
     #nice strong {
         text-align: left;
     }
-                
+
     .column1 h5 {
         font-size: 15px;
     }
-                
+
     .column2 h5 {
         font-size: 15px;
     }
-    
+
     .column3 h5 {
         font-size: 15px;
     }
-    
+
     #nav {
         width: 100%;
         height: 5%;
@@ -1001,31 +1046,31 @@ footer .signature {
         text-decoration: none;
         text-decoration-line: none;
     }
-    
+
     .awesome {
         display: inline-block;
         margin: auto;
         width: 70%;
     }
-    
+
     .schedule {
         text-align: center;
     }
 }
-            
+
 @media(max-width: 600px) {
     .column1 h5 {
         font-size: 13px;
     }
-                
+
     .column2 h5 {
         font-size: 13px;
     }
-    
+
     .column3 h5 {
         font-size: 13px;
     }
-    
+
     #nav {
         width: 100%;
         height: 5%;
@@ -1048,25 +1093,25 @@ footer .signature {
         text-decoration: none;
         text-decoration-line: none;
     }
-    
+
     .header h1 {
         padding-top: 150px;
     }
-    
+
     .schedule {
         //text-align: center;
     }
-    
+
     .awesome {
         display: inline-block;
         margin: auto;
         width: 100%;
     }
-    
+
     .column2 h5 {
         text-align: center;
     }
-        
+
 }
 
 @media (max-width: 520px) {
@@ -1074,22 +1119,19 @@ footer .signature {
         font-size: 14px;
         text-align: left;
     }
-    
+
     .column2 h5 {
         font-size: 14px;
     }
-    
+
     .column3 h5 {
         font-size: 14px;
         text-align: center;
     }
-    
+
     .awesome {
         display: inline-block;
         width:100%;
     }
-    
+
 }
-
-
-
