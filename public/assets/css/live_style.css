@@ -1156,7 +1156,7 @@ footer .signature {
     }
 }
 
-@media(max-height: 420px) {
+@media(max-height: 300px) {
  
     .header h4 {
         font-size: 15px;
