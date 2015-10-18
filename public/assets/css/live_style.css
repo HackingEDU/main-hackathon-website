@@ -845,7 +845,7 @@
 
 footer {
     width: 100%;
-    height: 33%;
+    height: 250px;
     background-color: #193148;
     text-align: center;
 }
@@ -1132,6 +1132,18 @@ footer .signature {
     
     .event {
         width: 100%;
+    }
+    
+    .column1 {
+        width: 23%;
+    }
+    
+    .column2 {
+        width: 23%;
+    }
+    
+    .column3 {
+        width: 23%;
     }
 }
 
