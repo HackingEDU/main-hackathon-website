@@ -3,7 +3,7 @@
 .main {
     height: 100%;
     width: 100%;
-    background: url("/img/splash.jpg");
+    background: url("../img/splash.jpg");
     background-size: cover;
 }
 
@@ -75,7 +75,7 @@
         text-align: center;
         position: fixed;
         z-index: 3;
-        //background-color: black;
+        background-color: dimgray;
         opacity: 1;
 }
 
@@ -189,7 +189,7 @@
 
 /*Speaker 1,2, and 3 are up. Once there are more, I'll add them in */
 .speakerOne {
-    background: url('/img/conrad.jpg');
+    background: url('../img/conrad.jpg');
     background-size: cover;
     height: 250px;
     border-radius: 15px;
@@ -198,7 +198,7 @@
 }
 
 .speakerTwo {
-    background: url('/img/Rauch.png');
+    background: url('../img/Rauch.png');
     background-size: cover;
     height: 250px;
     border-radius: 15px;
@@ -207,7 +207,7 @@
 }
 
 .speakerThree {
-    background: url('/img/vivian.jpg');
+    background: url('../img/vivian.jpg');
     background-size: cover;
     height: 250px;
     border-radius: 15px;
@@ -216,7 +216,7 @@
 }
 
 .speakerFour {
-    background: url('/img/liam.png');
+    background: url('../img/liam.png');
     background-size: cover;
     height: 250px;
     border-radius: 15px;
@@ -225,7 +225,7 @@
 }
 
 .speakerFive {
-    background: url('/img/sam.png');
+    background: url('../img/sam.png');
     background-size: cover;
     height: 250px;
     border-radius: 15px;
@@ -234,7 +234,7 @@
 }
 
 .speakerSix {
-    background: url('/img/azat.jpg');
+    background: url('../img/azat.jpg');
     background-size: cover;
     height: 250px;
     border-radius: 15px;
@@ -243,7 +243,7 @@
 }
 
 .speakerEight {
-    background: url('/img/andrew.jpg');
+    background: url('../img/andrew.jpg');
     background-size: cover;
     height: 250px;
     border-radius: 15px;
@@ -252,7 +252,7 @@
 }
 
 .speakerNine {
-    background: url('/img/evan.png');
+    background: url('../img/evan.png');
     background-size: cover;
     height: 250px;
     border-radius: 15px;
@@ -261,7 +261,7 @@
 }
 
 .speakerTen {
-    background: url('/img/jeremy.jpg');
+    background: url('../img/jeremy.jpg');
     background-size: cover;
     height: 250px;
     border-radius: 15px;
@@ -270,7 +270,7 @@
 }
 
 .speakerEleven {
-    background: url('/img/elizabethdouglas.jpg');
+    background: url('../img/elizabethdouglas.jpg');
     background-size: cover;
     height: 250px;
     border-radius: 15px;
@@ -279,14 +279,14 @@
 }
 
 .speakerTwelve {
-    background: url('/img/ashley.jpg');
+    background: url('../img/ashley.jpg');
     background-size: cover;
     height: 250px;
     border-radius: 15px;
 }
 
 .speakerThirteen {
-    background: url('/img/matthew.jpg');
+    background: url('../img/matthew.jpg');
     background-size: cover;
     height: 250px;
     border-radius: 15px;
@@ -295,7 +295,7 @@
 }
 
 .speakerFourteen {
-    background: url('/img/dave.jpg');
+    background: url('../img/dave.jpg');
     background-size: cover;
     height: 250px;
     border-radius: 15px;
@@ -304,7 +304,7 @@
 }
 
 .speakerFifteen {
-    background: url('/img/maegan.jpg');
+    background: url('../img/maegan.jpg');
     background-size: cover;
     height: 250px;
     border-radius: 15px;
@@ -313,7 +313,7 @@
 }
 
 .speakerSixteen {
-    background: url('/img/evadora.jpg');
+    background: url('../img/evadora.jpg');
     background-size: cover;
     height: 250px;
     border-radius: 15px;
@@ -322,7 +322,7 @@
 }
 
 .speakerSeventeen {
-    background: url('/img/alex.jpg');
+    background: url('../img/alex.jpg');
     background-size: cover;
     height: 250px;
     border-radius: 15px;
@@ -331,7 +331,7 @@
 }
 
 .speakerEighteen {
-    background: url('/img/niko.jpg');
+    background: url('../img/niko.jpg');
     background-size: cover;
     height: 250px;
     border-radius: 15px;
@@ -340,7 +340,7 @@
 }
 
 .speakerNineteen {
-    background: url('/img/jack.jpg');
+    background: url('../img/jack.jpg');
     background-size: cover;
     height: 250px;
     border-radius: 15px;
@@ -349,7 +349,7 @@
 }
 
 .speakerTwenty {
-    background: url('/img/josh_tyler.jpg');
+    background: url('../img/josh_tyler.jpg');
     background-size: cover;
     height: 250px;
     border-radius: 15px;
@@ -358,7 +358,7 @@
 }
 
 .speakerTwentyOne {
-    background: url('/img/jiquan.jpg');
+    background: url('../img/jiquan.jpg');
     background-size: cover;
     height: 250px;
     border-radius: 15px;
@@ -367,7 +367,7 @@
 }
 
 .speakerTwentyTwo {
-    background: url('/img/pk.png');
+    background: url('../img/pk.png');
     background-size: cover;
     height: 250px;
     border-radius: 15px;
@@ -376,7 +376,7 @@
 }
 
 .speakerTwentyThree {
-    background: url('/img/sam_altman.jpg');
+    background: url('../img/sam_altman.jpg');
     background-size: cover;
     height: 250px;
     border-radius: 15px;
@@ -385,7 +385,7 @@
 }
 
 .speakerTwentyFour {
-    background: url('/img/mike.jpg');
+    background: url('../img/mike.jpg');
     background-size: cover;
     height: 250px;
     border-radius: 15px;
@@ -394,7 +394,7 @@
 }
 
 .speakerTwentyFive {
-    background: url('/img/geoffschmidt.jpg');
+    background: url('../img/geoffschmidt.jpg');
     background-size: cover;
     height: 250px;
     border-radius: 15px;
@@ -403,7 +403,7 @@
 }
 
 .speakerTwentySix {
-    background: url('/img/laurievoss.jpg');
+    background: url('../img/laurievoss.jpg');
     background-size: cover;
     height: 250px;
     border-radius: 15px;
@@ -412,7 +412,7 @@
 }
 
 .speakerTwentySeven {
-    background: url('/img/randyterbush.jpg');
+    background: url('../img/randyterbush.jpg');
     background-size: cover;
     height: 250px;
     border-radius: 15px;
@@ -421,7 +421,7 @@
 }
 
 .speakerTwentyEight {
-    background: url('/img/jadewang.jpeg');
+    background: url('../img/jadewang.jpeg');
     background-size: cover;
     height: 250px;
     border-radius: 15px;
@@ -430,7 +430,7 @@
 }
 
 .speakerTwentyNine {
-    background: url('/img/andrewsutherland.jpg');
+    background: url('../img/andrewsutherland.jpg');
     background-size: cover;
     height: 250px;
     border-radius: 15px;
@@ -439,7 +439,7 @@
 }
 
 .speakerThirty {
-    background: url('/img/erinbeitel.jpeg');
+    background: url('../img/erinbeitel.jpeg');
     background-size: cover;
     height: 250px;
     border-radius: 15px;
@@ -448,7 +448,7 @@
 }
 
 .speakerThirtyOne {
-    background: url('/img/annedwane.jpg');
+    background: url('../img/annedwane.jpg');
     background-size: cover;
     height: 250px;
     border-radius: 15px;
@@ -457,7 +457,7 @@
 }
 
 .speakerThirtyTwo {
-    background: url('/img/muzzammilzaveri.jpg');
+    background: url('../img/muzzammilzaveri.jpg');
     background-size: cover;
     height: 250px;
     border-radius: 15px;
@@ -466,7 +466,7 @@
 }
 
 .speakerThirtyThree {
-    background: url('/img/emilyleproust.jpg');
+    background: url('../img/emilyleproust.jpg');
     background-size: cover;
     height: 250px;
     border-radius: 15px;
@@ -475,7 +475,7 @@
 }
 
 .speakerThirtyFour {
-    background: url('/img/jurgisorups.jpg');
+    background: url('../img/jurgisorups.jpg');
     background-size: cover;
     height: 250px;
     border-radius: 15px;
@@ -737,7 +737,7 @@
 #sponsors .pebble     { background: url('http://cdn5.hackingedu.co/img/sponsors/pebble.png');     }
 #sponsors .club       { background: url('http://cdn0.hackingedu.co/img/sponsors/club1.png');      }
 #sponsors .leapmotion { background: url('http://cdn1.hackingedu.co/img/sponsors/leapmotion.png'); }
-#sponsors .wolfram { background: url('/img/sponsors/wolfram.png'); }
+#sponsors .wolfram { background: url('../img/sponsors/wolfram.png'); }
 #sponsors .makeschool { background: url('http://cdn2.hackingedu.co/img/sponsors/makeschool.png'); }
 #sponsors .twilio     { background: url('http://cdn3.hackingedu.co/img/sponsors/twilio.png');     }
 #sponsors .twist      { background: url('http://cdn4.hackingedu.co/img/sponsors/twist.png')       }
@@ -747,9 +747,9 @@
 #sponsors .namecheap  { background: url('http://cdn2.hackingedu.co/img/sponsors/namecheap1.png'); }
 #sponsors .socket     { background: url('http://cdn3.hackingedu.co/img/sponsors/socket.png');     }
 #sponsors .edsurge    { background: url('http://cdn4.hackingedu.co/img/sponsors/edsurge.jpg')     }
-#sponsors .kubby    { background: url('/img/sponsors/kubby.png')     }
+#sponsors .kubby    { background: url('../img/sponsors/kubby.png')     }
 #sponsors .google     { background: url('http://cdn5.hackingedu.co/img/sponsors/google.png')      }
-#sponsors .wikihow   { background: url('/img/sponsors/wikihow.png')    }
+#sponsors .wikihow   { background: url('../img/sponsors/wikihow.png')    }
 #sponsors .gun        { background: url('http://cdn1.hackingedu.co/img/sponsors/gun.png');        }
 #sponsors .pearlhacks { background: url('http://cdn2.hackingedu.co/img/sponsors/pearlhacks.png')  }
 #sponsors .nwhacks    { background: url('http://cdn3.hackingedu.co/img/sponsors/nwhacks.jpg')     }
@@ -767,55 +767,55 @@
 #sponsors .dolby      { background: url('http://cdn3.hackingedu.co/img/sponsors/dolby.png');              }
 #sponsors .hack4baltimore { background: url('http://cdn2.hackingedu.co/img/sponsors/hack4baltimore.png'); }
 #sponsors .globalcommit   { background: url('http://cdn3.hackingedu.co/img/sponsors/globalcommit.png');   }
-#sponsors .clusterpoint { background: url('/img/sponsors/clusterpoint.png');     }
-#sponsors .rocket {background: url('/img/sponsors/rocketfuel.png'); }
-#sponsors .studyblue {background: url('/img/sponsors/studyblue.jpg'); }
+#sponsors .clusterpoint { background: url('../img/sponsors/clusterpoint.png');     }
+#sponsors .rocket {background: url('../img/sponsors/rocketfuel.png'); }
+#sponsors .studyblue {background: url('../img/sponsors/studyblue.jpg'); }
 
-#sponsors .coursehero { background: url('/img/sponsors/coursehero.png');     }
-#sponsors .moback { background: url('/img/sponsors/moback.png');     }
-#sponsors .roblox { background: url('/img/sponsors/roblox.png');     }
-#sponsors .hackerrank { background: url('/img/sponsors/HackerRank.png');     }
-#sponsors .braintree { background: url('/img/sponsors/braintree.png');     }
-#sponsors .muse { background: url('/img/sponsors/muse.png');     }
-#sponsors .emotiv { background: url('/img/sponsors/Emotiv.png');     }
-#sponsors .ibmbluemix { background: url('/img/sponsors/ibm_bluemix.png');     }
+#sponsors .coursehero { background: url('../img/sponsors/coursehero.png');     }
+#sponsors .moback { background: url('../img/sponsors/moback.png');     }
+#sponsors .roblox { background: url('../img/sponsors/roblox.png');     }
+#sponsors .hackerrank { background: url('../img/sponsors/HackerRank.png');     }
+#sponsors .braintree { background: url('../img/sponsors/braintree.png');     }
+#sponsors .muse { background: url('../img/sponsors/muse.png');     }
+#sponsors .emotiv { background: url('../img/sponsors/Emotiv.png');     }
+#sponsors .ibmbluemix { background: url('../img/sponsors/ibm_bluemix.png');     }
 
-#sponsors .uber { background: url('/img/sponsors/uber.png');     }
-#sponsors .particle { background: url('/img/sponsors/particle.png');     }
-#sponsors .hacksterio { background: url('/img/sponsors/hacksterio.png');     }
-#sponsors .nanovr { background: url('/img/sponsors/nanovr.png');     }
-#sponsors .kpcb { background: url('/img/sponsors/kpcb.jpg');     }
-#sponsors .dashdoc { background: url('/img/sponsors/dashdoc.png');     }
-#sponsors .edtechworldtour { background: url('/img/sponsors/edtechworldtour.jpeg');     }
-#sponsors .ostem { background: url('/img/sponsors/ostemlogo.svg');     }
-#sponsors .alienware { background: url('/img/sponsors/alienware.png');     }
+#sponsors .uber { background: url('../img/sponsors/uber.png');     }
+#sponsors .particle { background: url('../img/sponsors/particle.png');     }
+#sponsors .hacksterio { background: url('../img/sponsors/hacksterio.png');     }
+#sponsors .nanovr { background: url('../img/sponsors/nanovr.png');     }
+#sponsors .kpcb { background: url('../img/sponsors/kpcb.jpg');     }
+#sponsors .dashdoc { background: url('../img/sponsors/dashdoc.png');     }
+#sponsors .edtechworldtour { background: url('../img/sponsors/edtechworldtour.jpeg');     }
+#sponsors .ostem { background: url('../img/sponsors/ostemlogo.svg');     }
+#sponsors .alienware { background: url('../img/sponsors/alienware.png');     }
 
-#sponsors .bde { background: url('/img/sponsors/bde.png');     }
-#sponsors .devnetwork { background: url('/img/sponsors/dev_network.png');     }
-#sponsors .femresources { background: url('/img/sponsors/femresources.png');     }
-#sponsors .greenathon { background: url('/img/sponsors/greenathon.png');     }
+#sponsors .bde { background: url('../img/sponsors/bde.png');     }
+#sponsors .devnetwork { background: url('../img/sponsors/dev_network.png');     }
+#sponsors .femresources { background: url('../img/sponsors/femresources.png');     }
+#sponsors .greenathon { background: url('../img/sponsors/greenathon.png');     }
 
-#sponsors .nyntech { background: url('/img/sponsors/nyntech.png');     }
-#sponsors .aboutme { background: url('/img/sponsors/aboutme.png');     }
-#sponsors .oculus { background: url('/img/sponsors/oculus.png');     }
-#sponsors .gsvlabs { background: url('/img/sponsors/gsvlabs.png');     }
+#sponsors .nyntech { background: url('../img/sponsors/nyntech.png');     }
+#sponsors .aboutme { background: url('../img/sponsors/aboutme.png');     }
+#sponsors .oculus { background: url('../img/sponsors/oculus.png');     }
+#sponsors .gsvlabs { background: url('../img/sponsors/gsvlabs.png');     }
 
-#sponsors .audible { background: url('/img/sponsors/audible.png');     }
-#sponsors .moxtra { background: url('/img/sponsors/moxtra.png');     }
-#sponsors .capitalone { background: url('/img/sponsors/capitalone.png');     }
-#sponsors .medhacks { background: url('/img/sponsors/medhacks.png');     }
-#sponsors .citrus { background: url('/img/sponsors/citrus.png');     }
-#sponsors .teachforamerica { background: url('/img/sponsors/teachforamerica.jpg');     }
-#sponsors .oreilly { background: url('/img/sponsors/oreilly.png');     }
+#sponsors .audible { background: url('../img/sponsors/audible.png');     }
+#sponsors .moxtra { background: url('../img/sponsors/moxtra.png');     }
+#sponsors .capitalone { background: url('../img/sponsors/capitalone.png');     }
+#sponsors .medhacks { background: url('../img/sponsors/medhacks.png');     }
+#sponsors .citrus { background: url('../img/sponsors/citrus.png');     }
+#sponsors .teachforamerica { background: url('../img/sponsors/teachforamerica.jpg');     }
+#sponsors .oreilly { background: url('../img/sponsors/oreilly.png');     }
 
 
 
-#sponsors .table { background: url('/img/sponsors/table.png'); }
-#sponsors .usertesting { background: url('/img/sponsors/usertesting.png'); }
-#sponsors .texasinstruments { background: url('/img/sponsors/texasinstruments.png'); }
-#sponsors .startups { background: url('/img/sponsors/500startups.png'); }
-#sponsors .code { background: url('/img/sponsors/code2040.png'); }
-#sponsors .teespring {background:url('/img/sponsors/teespring.png'); }
+#sponsors .table { background: url('../img/sponsors/table.png'); }
+#sponsors .usertesting { background: url('../img/sponsors/usertesting.png'); }
+#sponsors .texasinstruments { background: url('../img/sponsors/texasinstruments.png'); }
+#sponsors .startups { background: url('../img/sponsors/500startups.png'); }
+#sponsors .code { background: url('../img/sponsors/code2040.png'); }
+#sponsors .teespring {background:url('../img/sponsors/teespring.png'); }
 
 
 .tier, .tier a {
@@ -929,6 +929,21 @@ footer .signature {
 }
 
 /*Media Queries */
+
+@media(max-width: 1100px) {
+    #nav p a {
+        color: white;
+    }
+    
+    #nav p {
+        display: inline-block;
+        margin: 0 auto;
+        padding-left: 40px;
+        padding-right: 40px;
+        text-decoration: none;
+        padding-top: 5px;
+    }
+}
             
 @media(max-width: 980px) {
                 
@@ -971,11 +986,23 @@ footer .signature {
 
     #nav p a {
         font-size: 16px;
-        color: white;
         font-family: Avenir;
         text-decoration: none;
         text-decoration-line: none;
     }
+}
+
+@media(max-width: 900px ) {
+    
+    #nav p {
+        display: inline-block;
+        margin: 0 auto;
+        padding-left: 32px;
+        padding-right: 32px;
+        text-decoration: none;
+        padding-top: 5px;
+    }
+
 }
 
 @media(max-width: 740px ) {
@@ -988,15 +1015,14 @@ footer .signature {
     #nav p {
         display: inline-block;
         margin: 0 auto;
-        padding-left: 30px;
-        padding-right: 30px;
+        padding-left: 19px;
+        padding-right: 19px;
         text-decoration: none;
         padding-top: 5px;
     }
 
     #nav p a {
         font-size: 16px;
-        color: white;
         font-family: Avenir;
         text-decoration: none;
         text-decoration-line: none;
@@ -1043,7 +1069,6 @@ footer .signature {
 
     #nav p a {
         font-size: 16px;
-        color: white;
         font-family: Avenir;
         text-decoration: none;
         text-decoration-line: none;
@@ -1089,7 +1114,28 @@ footer .signature {
         width:100%;
     }
     
+    #nav p {
+        display: inline-block;
+        margin: 0 auto;
+        padding-left: 8px;
+        padding-right: 8px;
+        text-decoration: none;
+        padding-top: 8px;
+    }
+    
+    #nav p a {
+        font-size: 12px;
+        color: white;
+        font-family: Avenir;
+        text-decoration: none;
+        text-decoration-line: none;
+    }
+    
+    #helloWorldPeople {
+        font-size: 20px;
+        width: 80%;
+        font-family: Lato;
+    }
+        
 }
-
-
 
