@@ -1135,15 +1135,17 @@ footer .signature {
     }
     
     .column1 {
-        width: 23%;
+        width: 27%;
+        float: ;
     }
     
     .column2 {
-        width: 23%;
+        width: 27%;
     }
     
     .column3 {
-        width: 23%;
+        width: 27%;
+        
     }
 }
 
