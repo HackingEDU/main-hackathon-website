@@ -886,6 +886,51 @@ a.san-mateo:hover{
     border-radius: 15px;
 }
 
+.speakerThirtyFive {
+    background: url('../public/assets/img/alexkern.jpg');
+    background-size: cover;
+    height: 250px;
+    border-radius: 15px;
+    position: relative;
+    z-index: -1;
+}
+
+.speakerThirtySix {
+    background: url('../public/assets/img/pouyansalehi.jpg');
+    background-size: cover;
+    height: 250px;
+    border-radius: 15px;
+    position: relative;
+    z-index: -1;
+}
+
+.speakerThirtySeven {
+    background: url('../public/assets/img/michaelstaton.jpg');
+    background-size: cover;
+    height: 250px;
+    border-radius: 15px;
+    position: relative;
+    z-index: -1;
+}
+
+.speakerThirtyEight {
+    background: url('../public/assets/img/elizabeth-yin.jpg');
+    background-size: cover;
+    height: 250px;
+    border-radius: 15px;
+    position: relative;
+    z-index: -1;
+}
+
+.speakerThirtyNine {
+    background: url('../public/assets/img/lijiang.jpg');
+    background-size: cover;
+    height: 250px;
+    border-radius: 15px;
+    position: relative;
+    z-index: -1;
+}
+
 .speaker {
     width: 22%;
     height: 250px;
