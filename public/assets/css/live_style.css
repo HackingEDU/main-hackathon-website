@@ -11,8 +11,6 @@
     width: 50%;
     height: 130px;
     margin: 20 auto;
-    background-color: none;
-    opacity: none;
     font-family: Lato;
     font-size: 30px;
     color: white;
@@ -1168,10 +1166,6 @@ footer .signature {
     #helloWorldPeople {
         font-size: 12px;
     }
-    
-    
-
-    
     
 }
 
