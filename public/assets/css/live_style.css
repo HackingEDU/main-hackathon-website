@@ -599,49 +599,62 @@
     margin: 0 auto;
 }
 
-/*Panel Links*/
-.hackathonFounderPanel {
-    /* -- */
-}
 
-/*panel one*/
+/*general panel info*/
 
-.noice {
+.speakerCover {
+    width: 250px;
+    height: 250px;
+    background-color: dimgray;
+    border-radius: 10px;
+    opacity: 0.68;
+    color: white;
+    font-size: 28px;
     text-align: center;
-    height: 60%;
 }
-.panelOneTitle {
+
+.panelSpeakersTitle {
     text-align: center;
     font-family: Lato;
+    font-weight: 200;
+    text-decoration: underline;
 }
 
-.panelOneAbout {
+.panelTitle {
+    text-align: center;
+    font-family: Lato;
+    font-size: 40px;
+    font-weight: 300;
+}
+
+.panelAbout {
     text-align: right;
     margin-left: 5px;
     font-family: Lato;
     text-decoration: underline;
-    font-weight: 300;
+    font-weight: 200;
 }
 
-.panelOneButton {
+.panelButton {
     display: block;
     text-align: center;
     margin: auto;
 }
 
-#panelOneSpeakers {
+#panelSpeakers {
     vertical-align: top;
     background-size: cover;
     display: inline-block;
     width: 250px;
     height: 250px;
-    background-color: blue;
     margin: 20 auto;
     border-radius: 10px;
     font-size: 20px;
     color: black;
 }
 
+
+/*panel one */
 .panelOneSpeakerOne {
     background: url('../img/ashley.jpg');
 }
@@ -664,6 +677,74 @@
 
 .panelOneSpeakerSix {
     background: url('../img/alex.jpg');
+}
+
+.panelOneSpeakerSeven {
+    background: url('../img/maegan.jpg');
+}
+
+/*panel two*/
+
+.panelTwoSpeakerOne {
+    background: url('../img/pouyansalehi.jpg');
+}
+
+.panelTwoSpeakerTwo {
+    background: url('../img/evan.png');
+}
+
+.panelTwoSpeakerThree {
+    background: url('../img/erinbeitel.jpeg');
+}
+
+.panelTwoSpeakerFour {
+    background: url('../img/andrewsutherland.jpg');
+}
+
+.panelTwoSpeakerFive {
+    background: url('../img/michaelstaton.jpg');
+}
+
+/*panel three*/
+.panelThreeSpeakerOne {
+    background: url('../img/Rauch.png');
+}
+
+.panelThreeSpeakerTwo {
+    background: url('../img/geoffschmidt.jpg');
+}
+
+.panelThreeSpeakerThree {
+    background: url('../img/laurievoss.jpg');
+}
+
+.panelThreeSpeakerFour {
+    background: url('../img/randyterbush.jpg');
+}
+
+.panelThreeSpeakerFive {
+    background: url('../img/jadewang.jpg');
+}
+
+/*panel four */
+.panelFourSpeakerOne {
+    background: url('../img/sam.png');
+}
+
+.panelFourSpeakerTwo {
+    background: url('../img/azat.jpg');
+}
+
+.panelFourSpeakerThree {
+    background: url('../img/jiquan.jpg');
+}
+
+.panelFourSpeakerFour {
+    background: url('../img/pk.png');
+}
+
+.panelFourSpeakerFive {
+    background: url('../img/jeremy.jpg');
 }
             
 /* -------------------- TRANSPORTATION -------------------- */
