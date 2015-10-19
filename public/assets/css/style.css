@@ -1214,6 +1214,7 @@ Social Links
 #sponsors .makeschool { background: url('http://cdn2.hackingedu.co/img/sponsors/makeschool.png'); }
 #sponsors .twilio     { background: url('http://cdn3.hackingedu.co/img/sponsors/twilio.png');     }
 #sponsors .twist      { background: url('http://cdn4.hackingedu.co/img/sponsors/twist.png')       }
+#sponsors .backand    { background: url('../img/sponsors/back&.png')       }
 #sponsors .draper     { background: url('http://cdn5.hackingedu.co/img/sponsors/draper.png')      }
 #sponsors .bootstrap  { background: url('http://cdn0.hackingedu.co/img/sponsors/bootstrap.png');  }
 #sponsors .lyft       { background: url('http://cdn1.hackingedu.co/img/sponsors/lyft.png')        }
@@ -1242,6 +1243,7 @@ Social Links
 #sponsors .globalcommit   { background: url('http://cdn3.hackingedu.co/img/sponsors/globalcommit.png');   }
 #sponsors .clusterpoint { background: url('../img/sponsors/clusterpoint.png');     }
 #sponsors .rocket {background: url('../img/sponsors/rocketfuel.png'); }
+#sponsors .att {background: url('../img/sponsors/att.jpg'); }
 #sponsors .studyblue {background: url('../img/sponsors/studyblue.jpg'); }
 
 #sponsors .coursehero { background: url('../img/sponsors/coursehero.png');     }
@@ -1260,8 +1262,11 @@ Social Links
 #sponsors .kpcb { background: url('../img/sponsors/kpcb.jpg');     }
 #sponsors .dashdoc { background: url('../img/sponsors/dashdoc.png');     }
 #sponsors .edtechworldtour { background: url('../img/sponsors/edtechworldtour.jpeg');     }
+#sponsors .minerva { background: url('../img/sponsors/minerva.png');     }
+#sponsors .planetxone { background: url('../img/sponsors/planetxone.png');     }
 #sponsors .ostem { background: url('../img/sponsors/ostemlogo.svg');     }
 #sponsors .alienware { background: url('../img/sponsors/alienware.png');     }
+#sponsors .3dsystems { background: url('../img/sponsors/3dsystems.png');     }
 
 #sponsors .bde { background: url('../img/sponsors/bde.png');     }
 #sponsors .devnetwork { background: url('../img/sponsors/dev_network.png');     }
