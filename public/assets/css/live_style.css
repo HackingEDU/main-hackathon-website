@@ -604,8 +604,66 @@
     /* -- */
 }
 
-.animationOne {
-    //display: none;
+/*panel one*/
+
+.noice {
+    text-align: center;
+    height: 60%;
+}
+.panelOneTitle {
+    text-align: center;
+    font-family: Lato;
+}
+
+.panelOneAbout {
+    text-align: right;
+    margin-left: 5px;
+    font-family: Lato;
+    text-decoration: underline;
+    font-weight: 300;
+}
+
+.panelOneButton {
+    display: block;
+    text-align: center;
+    margin: auto;
+}
+
+#panelOneSpeakers {
+    vertical-align: top;
+    background-size: cover;
+    display: inline-block;
+    width: 250px;
+    height: 250px;
+    background-color: blue;
+    margin: auto;
+    border-radius: 10px;
+    font-size: 20px;
+    color: black;
+}
+
+.panelOneSpeakerOne {
+    background: url('../img/ashley.jpg');
+}
+
+.panelOneSpeakerTwo {
+    background: url('../img/alexkern.jpg');
+}
+
+.panelOneSpeakerThree {
+    background: url('../img/matthew.jpg');
+}
+
+.panelOneSpeakerFour {
+    background: url('../img/evadora.jpg');
+}
+
+.panelOneSpeakerFive {
+    background: url(../img/dave.jpg);
+}
+
+.panelOneSpeakerSix {
+    background: url('../img/alex.jpg');
 }
             
 /* -------------------- TRANSPORTATION -------------------- */

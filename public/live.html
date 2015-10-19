@@ -424,7 +424,7 @@
                                 <h5>7:30 PM</h5>
                             </div>
                             <div class="column2">
-                                <a id="demo01" class="hackathonFounderPanel" href="#animatedModal"><h5>hi</h5></a>
+                                <a id="demo01" class="hackathonFounderPanel" href="#animatedModal"><h5>Hackathon Founders Panel</h5></a>
                             </div>
                             <div class="column3">
                                 <h5>North Stage</h5>
@@ -436,8 +436,20 @@
                                 <a class="closeButton" href="">Close</a>
                             </div>
 
-                            <div class="modal-content">
-                                <h3 class="title">Hello World</h3>
+                            <div class="modal-content noice">
+                                <h3 class="panelOneTitle">Hackathon Founders Panel</h3>
+                                <h4 class="panelOneAbout">About</h4>
+                                <h4 class="panelOneAboutDescription">How do you throw/start a hackathon? What are some of the unforeseen challenges hackathon organizers face? Why start one in the first place? Learn from some of the original pioneers of the hackathon scene.</h4>
+                                <button class="panelOneEvent">Event Details</button>
+                                <br />
+                                <br />
+                                <h4>Speakers:</h4>
+                                <div id="panelOneSpeakers" class="panelOneSpeakerOne">Ashley Qian</div>
+                                <div id="panelOneSpeakers" class="panelOneSpeakerTwo"></div>
+                                <div id="panelOneSpeakers" class="panelOneSpeakerThree"></div>
+                                <div id="panelOneSpeakers" class="panelOneSpeakerFour"></div>
+                                <div id="panelOneSpeakers" class="panelOneSpeakerFive"></div>
+                                <div id="panelOneSpeakers" class="panelOneSpeakerSix"></div>
                             </div>
                         </div>
                         <div class="event">
@@ -604,12 +616,13 @@
                                 <h5>1:00 PM</h5>
                             </div>
                             <div class="column2">
-                                <h5>Panel: Turning a Hackathon Project into a Real Project</h5>
+                                <a id="demo02" class="hackathonFounderPanelTwo" href="#animatedModal"><h5>Panel: Turning a Hackathon Project into a Real Project</h5></a>
                             </div>
                             <div class="column3">
                                 <h5>Main Stage</h5>
                             </div>
                         </div>
+                        
                         <div class="event">
                             <div class="column1">
                                 <h5>2:00 PM - 6:00 PM</h5>
@@ -988,6 +1001,7 @@
             $(function () {
                 
                 $("#demo01").animatedModal();
+                $("#demo02").animatedModal();
                 
                 var austDay = new Date();
                 austDay = new Date(2015, 10-1, 24);
