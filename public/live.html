@@ -38,6 +38,9 @@
         <link rel="stylesheet" href="/css/live_style.css" type="text/css">
         <!-- Animated Modal -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.0/animate.min.css">
+        <!-- new modal (red) -->
+        <link rel="stylesheet" type="text/css" href="/css/component.css" />
+		<script src="/js/modernizr.custom.js"></script>
 
 
            
@@ -424,20 +427,16 @@
                                 <h5>7:30 PM</h5>
                             </div>
                             <div class="column2">
-                                <a id="demo01" class="hackathonFounderPanel" href="#animatedModal"><h5>Hackathon Founders Panel</h5></a>
+                                <a class="md-trigger" data-modal="modal-1"><h5>Hackathon Founders Panel</h5></a>
                             </div>
                             <div class="column3">
                                 <h5>North Stage</h5>
                             </div>
                         </div>
-                        <div id="animatedModal">
-                            <!--THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID  class="close-animatedModal" -->
-                            <div class="close-animatedModal"> 
-                                <a class="closeButton" href="">Close</a>
-                            </div>
-
-                            <div class="modal-content noice">
-                                <h3 class="panelOneTitle">Hackathon Founders Panel</h3>
+                        <div class="md-modal md-effect-1" id="modal-1">
+                            <div class="md-content">
+                                <div>
+                                    <h3 class="panelOneTitle">Hackathon Founders Panel</h3>
                                 <h4 class="panelOneAbout">About</h4>
                                 <h4 class="panelOneAboutDescription">How do you throw/start a hackathon? What are some of the unforeseen challenges hackathon organizers face? Why start one in the first place? Learn from some of the original pioneers of the hackathon scene.</h4>
                                 <button class="panelOneEvent">Event Details</button>
@@ -450,8 +449,10 @@
                                 <div id="panelOneSpeakers" class="panelOneSpeakerFour"></div>
                                 <div id="panelOneSpeakers" class="panelOneSpeakerFive"></div>
                                 <div id="panelOneSpeakers" class="panelOneSpeakerSix"></div>
+                                <button class="md-close">Close me!</button>
+                                </div>
                             </div>
-                        </div>
+		              </div>
                         <div class="event">
                             <div class="column1">
                                 <h5>7:30 PM</h5>
@@ -616,13 +617,37 @@
                                 <h5>1:00 PM</h5>
                             </div>
                             <div class="column2">
-                                <a id="demo02" class="hackathonFounderPanelTwo" href="#animatedModal"><h5>Panel: Turning a Hackathon Project into a Real Project</h5></a>
+                                <a class="md-trigger" data-modal="modal-2"><h5>Panel: Turning a Hackathon Project into a Real Project</h5></a>
                             </div>
                             <div class="column3">
                                 <h5>Main Stage</h5>
                             </div>
                         </div>
+                        <div class="md-modal md-effect-2" id="modal-2">
+                            <div class="md-content">
+                                <!--
+                                <div>
+                                    <h3 class="panelOneTitle">Hackathon Founders Panel</h3>
+                                <h4 class="panelOneAbout">About</h4>
+                                <h4 class="panelOneAboutDescription">How do you throw/start a hackathon? What are some of the unforeseen challenges hackathon organizers face? Why start one in the first place? Learn from some of the original pioneers of the hackathon scene.</h4>
+                                <button class="panelOneEvent">Event Details</button>
+                                <br />
+                                <br />
+                                <h4>Speakers:</h4>
+                                <div id="panelOneSpeakers" class="panelOneSpeakerOne">Ashley Qian</div>
+                                <div id="panelOneSpeakers" class="panelOneSpeakerTwo"></div>
+                                <div id="panelOneSpeakers" class="panelOneSpeakerThree"></div>
+                                <div id="panelOneSpeakers" class="panelOneSpeakerFour"></div>
+                                <div id="panelOneSpeakers" class="panelOneSpeakerFive"></div>
+                                <div id="panelOneSpeakers" class="panelOneSpeakerSix"></div>
+                                    <button class="md-close">Close me!</button>
+                                </div>
+                                -->
+                                <h3>Hello Dudes</h3>
+                                <button class="md-close">Close me!</button>
+                            </div>
                         
+		              </div>
                         <div class="event">
                             <div class="column1">
                                 <h5>2:00 PM - 6:00 PM</h5>
@@ -995,13 +1020,18 @@
         <script src="/js/jquery.plugin.js" type="text/javascript"></script>
         <script src="/js/jquery.countdown.js" type="text/javascript"></script>
         <script src="/js/animatedModal.js"></script>
+        <!-- modal (red) js files) -->
+        <script src="/js/classie.js"></script>
+		<script src="/js/modalEffects.js"></script>
+        <script src="/js/cssParser.js"></script>
+		<script src="/js/css-filters-polyfill.js"></script>
         
         <script type="text/javascript">
             
             $(function () {
-                
+                /* VOID ----
                 $("#demo01").animatedModal();
-                $("#demo02").animatedModal();
+                $("#demo02").animatedModal(); */
                 
                 var austDay = new Date();
                 austDay = new Date(2015, 10-1, 24);
