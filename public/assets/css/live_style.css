@@ -180,9 +180,10 @@
 .speakerInfo {
     color: whitesmoke;
     position: relative;
-    top: 195px;
+    top: 175;
     font-size: 12px;
 }
+
 
 /*Speaker 1,2, and 3 are up. Once there are more, I'll add them in */
 .speakerOne {
@@ -360,11 +361,25 @@
     border-radius: 15px;
 }
 
-.speakerTwentySeven {
+.speakerApache {
     background: url('../img/randyterbush.jpg');
     background-size: cover;
     height: 250px;
     border-radius: 15px;
+}
+
+.apacheInfo {
+    color: whitesmoke;
+    position: relative;
+    top: 160;
+    font-size: 12px;
+}
+
+.apacheName {
+    color: white;
+    position: relative;
+    top: 180;
+    font-size: 21px;
 }
 
 .speakerTwentyEight {
@@ -613,6 +628,11 @@
     text-align: center;
 }
 
+.speakerCover h5 {
+    position: relative;
+    top: 210;
+}
+
 .panelSpeakersTitle {
     text-align: center;
     font-family: Lato;
@@ -624,7 +644,7 @@
     text-align: center;
     font-family: Lato;
     font-size: 40px;
-    font-weight: 300;
+    font-weight: 400;
 }
 
 .panelAbout {
@@ -651,6 +671,10 @@
     border-radius: 10px;
     font-size: 20px;
     color: black;
+}
+
+.link:hover {
+    cursor: pointer;
 }
 
 
