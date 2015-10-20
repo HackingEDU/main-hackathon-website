@@ -628,6 +628,10 @@
     text-align: center;
 }
 
+.techLink {
+    text-decoration: none;
+}
+
 .speakerCover h5 {
     position: relative;
     top: 210;
