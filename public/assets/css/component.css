@@ -31,10 +31,10 @@ perspective effects (not including the modals and the overlay).
     overflow: auto;
 	top: 50%;
 	left: 50%;
-	width: 90%;
+	width: 100%;
 	//max-width: 630px;
 	//min-width: 320px;
-	height: 80%;
+	height: 100%;
 	z-index: 2000;
 	visibility: hidden;
 	-webkit-backface-visibility: hidden;
@@ -44,6 +44,7 @@ perspective effects (not including the modals and the overlay).
 	-moz-transform: translateX(-50%) translateY(-50%);
 	-ms-transform: translateX(-50%) translateY(-50%);
 	transform: translateX(-50%) translateY(-50%);
+    overflow-y: auto;
 }
 
 .md-show {

@@ -80,9 +80,9 @@
 #nav p {
         display: inline-block;
         margin: 0 auto;
-        padding-right: 60px;
+        padding-right: 50px;
         text-decoration: none;
-        padding-left: 60px;
+        padding-left: 50px;
         text-align: center;
         vertical-align: middle;
         padding-top: 11px;
@@ -139,10 +139,11 @@
 }
 
 .info h5 {
-    font-size: 18px;
+    font-size: 25px;
     text-align: center;
     font-weight: 100;
 }
+
 
 /* -------------------- Speakers -------------------- */
 
@@ -561,6 +562,17 @@
 .buttonHolder {
     text-align: center;
 }
+
+.buttonHolder button {
+    background-color: #91A3AB;
+}
+
+.buttonClose {
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    color: red;
+}
             
 .column1 {
     display: inline-block;
@@ -685,6 +697,75 @@
     cursor: pointer;
 }
 
+/*bus info*/
+
+.busInfo {
+    display: block;
+    width: 55%;
+    //background-color: red;
+    margin: 0 auto;
+    //height: 40%;
+}
+
+.school {
+    border-bottom: 1px solid black;
+}
+
+.col1 {
+    display: inline-block;
+    width: 24%;
+    //background-color: blue;
+    height: 50px;
+}
+
+.col1 h5 {
+    margin-top: 10px;
+    font-size: 12px;
+    text-align: center;
+}
+
+
+
+.col2 {
+    display: inline-block;
+    width: 24%;
+    //background-color: green;
+    height: 50px;
+}
+
+.col2 h5 {
+    font-size: 12px;
+    font-family: Lato;
+    padding-top: 30px;
+    text-align: center;
+}
+
+.col3 {
+    display: inline-block;
+    width: 24%;
+    //background-color: yellow;
+    height: 50px;
+}
+
+.col3 h5 {
+    font-size: 12px;
+    font-family: Lato;
+    padding-bottom: -50px;
+    text-align: center;
+}
+
+.col4 h5 {
+    text-align: center;
+    font-size: 12px;
+}
+    
+
+.col4 {
+    display: inline-block;
+    width: 24%;
+    //background-color: orange;
+    height: 50px;
+}
 
 /*panel one */
 .panelOneSpeakerOne {
@@ -715,6 +796,10 @@
     background: url('../img/maegan.jpg');
 }
 
+#foundersPanelLink {
+    text-decoration: none;
+}
+
 /*panel two*/
 
 .panelTwoSpeakerOne {
@@ -735,6 +820,10 @@
 
 .panelTwoSpeakerFive {
     background: url('../img/michaelstaton.jpg');
+}
+
+#panelTwoLink {
+    text-decoration: none;
 }
 
 /*panel three*/
@@ -758,6 +847,10 @@
     background: url('../img/jadewang.jpg');
 }
 
+#panelThreeLink {
+    text-decoration: none;
+}
+
 /*panel four */
 .panelFourSpeakerOne {
     background: url('../img/sam.png');
@@ -777,6 +870,28 @@
 
 .panelFourSpeakerFive {
     background: url('../img/jeremy.jpg');
+}
+
+#panelFourLink {
+    text-decoration: none;
+}
+
+#cancel {
+    display: block;
+    position: relative;
+    top: 55;
+    right: 35;
+}
+
+.awesomeButton {
+    display: block;
+    position: fixed;
+    top: 10;
+    right: 10;
+}
+
+.awesomeButton:hover {
+    cursor: pointer;
 }
             
 /* -------------------- TRANSPORTATION -------------------- */
@@ -825,6 +940,44 @@
     height: 40%;
     background-color: slategrey;
 }
+
+table, th, td {
+    border: 1px solid black;
+    //border-collapse: collapse;
+    margin: auto;
+    overflow-x: hidden;
+}
+th, td {
+    padding: 12px;
+    width: 10px;
+    overflow-x: hidden;
+}
+
+
+/* -------------------- Venue Map --------------*/
+
+.venuemap {
+    width: 100%;
+    height: 160%;
+}
+
+.venuemap img {
+    text-align: center;
+    width: 60%;
+    height: 90%;
+}
+
+.venuemap h2 {
+    margin-top: 25px;
+    text-align: center;
+    font-weight: 200;
+    
+}
+
+.imageHolder {
+    text-align: center;
+    height: 100%;
+}
             
 /* -------------------- FAQ -------------------- */
             
@@ -871,6 +1024,67 @@
 #question {
     font-size: 14px;
 }
+
+/* ------------------------ PRIZES -------------------------------*/
+
+.prizes {
+    width: 100%;
+    height: 50%;
+    background-color: #D2DCDE;
+    margin-top: -25px;
+}
+
+.prizes h2 {
+    font-family: Lato;
+    padding-top: 25px;
+    font-weight: 200;
+    text-align: center;
+    font-size: 35px;
+}
+
+.prizes h4 {
+    text-align: center;
+}
+
+.prizeButtonHolder {
+    text-align: center;
+}
+
+.prizeButton {
+    background-color: #5D9294;
+}
+
+/* ------------------------ RESOURCES ---------------------------- */
+
+.resources {
+    width: 100%;
+    height: 60%;
+    background-color: #A5A4A2;
+}
+
+.resources h2 {
+    padding-top: 25px;
+    text-align: center;
+    font-size: 35px;
+    font-family: Lato;
+    font-weight: 200;
+}
+
+.resourceButtonHolder {
+    text-align: center;
+}
+
+.resourcebutton {
+    margin: 25px;
+    background-color: #eeeeee;
+}
+
+.resourcebutton:hover {
+    background-color: #193148;
+    color: whitesmoke;
+}
+
+
 
 /* -------------------- SPONSORS/PARTNERS -------------------- */
 
@@ -1032,7 +1246,7 @@
 
 footer {
     width: 100%;
-    height: 210px;
+    height: 230px;
     background-color: #193148;
     text-align: center;
 }
@@ -1094,8 +1308,8 @@ footer .signature {
     #nav p {
         display: inline-block;
         margin: 0 auto;
-        padding-left: 40px;
-        padding-right: 40px;
+        padding-left: 32px;
+        padding-right: 32px;
         text-decoration: none;
         padding-top: 5px;
     }
@@ -1134,8 +1348,8 @@ footer .signature {
     #nav p {
         display: inline-block;
         margin: 0 auto;
-        padding-left: 40px;
-        padding-right: 40px;
+        padding-left: 32px;
+        padding-right: 32px;
         text-decoration: none;
         padding-top: 5px;
     }
@@ -1153,8 +1367,8 @@ footer .signature {
     #nav p {
         display: inline-block;
         margin: 0 auto;
-        padding-left: 28px;
-        padding-right: 28px;
+        padding-left: 20px;
+        padding-right: 20px;
         text-decoration: none;
         padding-top: 5px;
     }
@@ -1171,8 +1385,8 @@ footer .signature {
     #nav p {
         display: inline-block;
         margin: 0 auto;
-        padding-left: 15px;
-        padding-right: 15px;
+        padding-left: 8px;
+        padding-right: 8px;
         text-decoration: none;
         padding-top: 5px;
     }
@@ -1217,8 +1431,8 @@ footer .signature {
     #nav p {
         display: inline-block;
         margin: 0 auto;
-        padding-left: 4px;
-        padding-right: 4px;
+        padding-left: 1px;
+        padding-right: 1px;
         text-decoration: none;
         padding-top: 5px;
     }
@@ -1228,6 +1442,7 @@ footer .signature {
         font-family: Avenir;
         text-decoration: none;
         text-decoration-line: none;
+        color: green;
     }
     
     .header h1 {
@@ -1246,6 +1461,16 @@ footer .signature {
     
     .column2 h5 {
         text-align: center;
+    }
+    
+    .venuemap img {
+        width: 90%;
+    }
+    
+    th, td {
+        padding: 1px;
+        width: 50%;
+        overflow-x: hidden;
     }
         
 }
@@ -1292,6 +1517,11 @@ footer .signature {
         width: 75%;
         font-family: Lato;
         font-size: 14px;
+    }
+    
+    .venuemap img {
+        width: 100%;
+        height: 50%;
     }
         
 }

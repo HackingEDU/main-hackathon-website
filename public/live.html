@@ -34,13 +34,13 @@
         <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
         <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
         <!-- Latest compiled and minified CSS -->
-        <link href="assets/css/jquery.countdown.css" rel="stylesheet" type="text/css">
-        <link rel="stylesheet" href="assets/css/live_style.css" type="text/css">
+        <link href="/css/jquery.countdown.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="/css/live_style.css" type="text/css">
         <!-- Animated Modal -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.0/animate.min.css">
         <!-- new modal (red) -->
-        <link rel="stylesheet" type="text/css" href="assets/css/component.css" />
-		<script src="assets/js/modernizr.custom.js"></script>
+        <link rel="stylesheet" type="text/css" href="/css/component.css" />
+		<script src="/js/modernizr.custom.js"></script>
 
 
            
@@ -61,11 +61,12 @@
                 -->
                 <div id="nav" class="navbar-collapse collapse">
                     <p><a href="#">Home</a></p>
-                    <p><a href="#linkSpeaker">Speakers</a></p>
+                    <p><a href="#linkSpeaker">Judges</a></p>
                     <p><a href="#linkSchedule">Schedule</a></p>
+                    <p><a href="#linkMap">Map</a></p>
                     <p><a href="#linkTransport">Transportation</a></p>
-                    <p><a href="#linkFAQ">FAQ</a></p>
-                    <p><a href="#linkSponsor">Sponsors</a></p>
+                    <p><a href="#linkPrizes">Prizes</a></p>
+                    <p><a href="#linkResources">Resources</a></p>
                 </div>
                 <img src="http://imgur.com/uFeQcop.png">
                 <div id="helloWorldPeople"></div>
@@ -77,16 +78,17 @@
                 <h4>Wi-Fi:</h4>
                 <h5>Name: HackingEdu</h5>
                 <h5>Password: cheggrocks</h5>
-                <h4>Prize Info: TBA</h4>
+                
+                
             </div>
             
             <section id="speakers">
                 <a name="linkSpeaker"></a>
-        <h2 class="speakerSectionTitle">Speakers & Judges</h2>
+        <h2 class="speakerSectionTitle">Judges</h2>
         <div class="container">
 
 
-
+            <!--
             <div class="speaker">
                 <div class="speakerOne">
                     <div class="cover">
@@ -141,7 +143,7 @@
                 <div class="speakerApache">
                     <div class="cover">
                         <h5 class="apacheName">Randy Terbush</h5>
-                        <h6 class="apacheInfo">Co-founder of Apache, CTO Lifeguard Health Networks</h6>
+                        <h6 class="apacheInfo">Co-founder, Apache & CTO, <br /> Lifeguard Health Networks</h6>
                     </div>
                 </div>
             </div>
@@ -178,6 +180,7 @@
                     </div>
                 </div>
             </div>
+            -->
             <div class="speaker">
                 <div class="speakerThirtySeven">
                     <div class="cover">
@@ -186,6 +189,7 @@
                     </div>
                 </div>
             </div>
+            <!--
             <div class="speaker">
                 <div class="speakerFive">
                     <div class="cover">
@@ -235,6 +239,7 @@
                     </div>
                 </div>
             </div>
+            -->
             <div class="speaker">
                 <div class="speakerEleven">
                     <div class="cover">
@@ -259,6 +264,7 @@
                     </div>
                 </div>
             </div>
+            <!--
             <div class="speaker">
                 <div class="speakerTwelve">
                     <div class="cover">
@@ -309,6 +315,7 @@
                     </div>
                 </div>
             </div>
+            -->
             <div class="speaker">
                 <div class="speakerThirtyTwo">
                     <div class="cover">
@@ -343,6 +350,7 @@
                     </div>
                 </div>
             </div>
+            <!--
             <div class="speaker">
                 <div class="speakerTwentyOne">
                     <div class="cover">
@@ -379,6 +387,7 @@
                     </div>
                 </div>
             </div>
+            -->
 
         </div> <!-- end of 'container-fluid' -->
     </section>
@@ -388,8 +397,8 @@
                     <h1>Schedule</h1>
                     <h5 class="mapLink"><a href="https://drive.google.com/file/d/0BzI2Lz_qv89jcGszemg0Q3JzSlk/view">Click here</a> for a map of the venue</h5>
                     <div class="buttonHolder">
-                        <button class="schedulePDF">Click here for Schedule</button>
-                        <button class="venueLocation">Venue Location</button>
+                        <a href="https://drive.google.com/file/d/0BzI2Lz_qv89jWnE5TlF5Sm5ScXM/view"><button class="schedulePDF">Click here for Schedule</button></a>
+                        <a href="https://www.google.com/maps/place/San+Mateo+County+Event+Center/@37.5463881,-122.3059452,17z/data=!4m7!1m4!3m3!1s0x808f9efcf05475a3:0x7d50c6f6710309d!2sSan+Mateo+Event+Center!3b1!3m1!1s0x808f9ee3b7d9b983:0x168a111f000c46ef" class="venueLocation"><button>Venue Location</button></a>
                     </div>
                     <div class="awesome">
                     <h4>Friday, October 23</h4>
@@ -438,12 +447,12 @@
                             </div>
                         </div>
                         <div class="md-modal md-effect-1" id="modal-1">
-                            <div class="md-content">
+                            <div class="md-content holder">
                                 <div>
                                     <h2 class="panelTitle">Hackathon Founders Panel</h2>
                                 <h4 class="panelAbout">About</h4>
-                                <h4 class="panelAboutDescription">How do you throw/start a hackathon? What are some of the unforeseen challenges hackathon organizers face? Why start one in the first place? Learn from some of the original pioneers of the hackathon scene.</h4>
-                                <button href="" class="panelEvent">Event Details</button>
+                                <h5 class="panelAboutDescription">How do you throw/start a hackathon? What are some of the unforeseen challenges hackathon organizers face? Why start one in the first place? Learn from some of the original pioneers of the hackathon scene.</h5>
+                                    <a id="foundersPanelLink" href="https://www.facebook.com/events/1722589621294529/?ref=44&unit_ref=related_events&action_history=null"><button class="panelEvent">Facebook Event</button></a>
                                 <br />
                                 <br />
                                 <h4 class="panelSpeakersTitle">Speakers</h4>
@@ -482,8 +491,11 @@
                                     <div class="speakerCover">
                                         <h5>Maegan Clawges</h5>
                                     </div>    
-                                </div>    
-                                <button class="md-close">Close me!</button>
+                                </div>  
+                                    <!--
+                                    <button class="md-close awesomeButton">Close</button>
+                                        -->
+                                    <a class="md-close awesomeButton"><img src='assets/img/close15.png'></a>
                                 </div>
                             </div>
 		              </div>
@@ -657,13 +669,13 @@
                                 <h5>Main Stage</h5>
                             </div>
                         </div>
-                        <div class="md-modal md-effect-2" id="modal-2">
+                        <div class="md-modal md-effect-1" id="modal-2">
                             <div class="md-content">
                                 <div>
-                                <h3 class="panelTitle">From Concept To Reality</h3>
+                                <h2 class="panelTitle">From Concept To Reality</h2>
                                 <h4 class="panelAbout">About</h4>
-                                <h4 class="panelOneAboutDescription">How do you take a project you built at a hackathon and actually turn it into a real product? Words of wisdom and war stories from the founders and CEOs who run today's hottest startups. Topics include: building a team, networking, pitching, raising funds, launching, and the art of the pivot.</h4>
-                                <button class="panelOneEvent">Event Details</button>
+                                <h5 class="panelOneAboutDescription">How do you take a project you built at a hackathon and actually turn it into a real product? Words of wisdom and war stories from the founders and CEOs who run today's hottest startups. Topics include: building a team, networking, pitching, raising funds, launching, and the art of the pivot.</h5>
+                                    <a id="panelTwoLink" href="https://www.facebook.com/events/957174970987849/?ref=44&unit_ref=related_events&action_history=null"><button class="panelOneEvent">Event Details</button></a>
                                 <br />
                                 <br />
                                 <h4 class="panelSpeakersTitle">Speakers</h4>
@@ -692,7 +704,7 @@
                                         <h5>Michael Staton</h5>
                                     </div>    
                                 </div>
-                                <button class="md-close">Close me!</button>
+                                <a class="md-close awesomeButton"><img src='assets/img/close15.png'></a>
                                 </div>
                             </div>
                         
@@ -730,13 +742,13 @@
                                 <h5>Main Stage</h5>
                             </div>
                         </div>
-                        <div class="md-modal md-effect-4" id="modal-4">
+                        <div class="md-modal md-effect-1" id="modal-4">
                             <div class="md-content">
                                 <div>
-                                <h3 class="panelTitle">Open Source in Business</h3>
+                                <h2 class="panelTitle">How Technology is Changing Education</h2>
                                 <h4 class="panelAbout">About</h4>
-                                <h4 class="panelAboutDescription">How has technology influenced the evolution of education over the last few decades? What is the future of education and what current/upcoming technologies will play a big part? Hear from leading EdTech influencers on these topics, what they are doing to change education, and how we as a community can help facilitate this change.</h4>
-                                    <a class="techLink" href="https://www.facebook.com/events/889770857725419/"><button href="https://www.facebook.com/events/889770857725419/" class="panelEvent">Event Details</button></a>
+                                <h5 class="panelAboutDescription">How has technology influenced the evolution of education over the last few decades? What is the future of education and what current/upcoming technologies will play a big part? Hear from leading EdTech influencers on these topics, what they are doing to change education, and how we as a community can help facilitate this change.</h5>
+                                    <a id="panelThreeLink" href="https://www.facebook.com/events/889770857725419/?ref=44&unit_ref=related_events&action_history=null" class="panelEvent"><button>Event Details</button></a>
                                 <br />
                                 <br />
                                 <h4 class="panelSpeakersTitle">Speakers</h4>
@@ -765,7 +777,7 @@
                                         <h5>Jeremy Rossman</h5>
                                     </div>    
                                 </div>
-                                <button class="md-close">Close me!</button>
+                                <a class="md-close awesomeButton"><img src='assets/img/close15.png'></a>
                                 </div>
                             </div>
                         
@@ -792,13 +804,13 @@
                                 <h5>East and West Stage Areas</h5>
                             </div>
                         </div>
-                        <div class="md-modal md-effect-12" id="modal-12">
+                        <div class="md-modal md-effect-1" id="modal-12">
                             <div class="md-content">
                                 <div>
-                                <h3 class="panelTitle">Open Source in Business</h3>
+                                <h2 class="panelTitle">Open Source in Business</h2>
                                 <h4 class="panelAbout">About</h4>
-                                <h4 class="panelAboutDescription">What is open source? Why is it important? How do you build a successful open source project/company? Join top tech innovators as they explore the world of open source and share their experiences.</h4>
-                                <button class="panelEvent">Event Details</button>
+                                <h5 class="panelAboutDescription">What is open source? Why is it important? How do you build a successful open source project/company? Join top tech innovators as they explore the world of open source and share their experiences.</h5>
+                                <a id="panelFourLink" href="https://www.facebook.com/events/874844125901950/?ref=44&unit_ref=related_events&action_history=null"><button class="panelEvent">Event Details</button></a>
                                 <br />
                                 <br />
                                 <h4 class="panelSpeakersTitle">Speakers</h4>
@@ -827,7 +839,7 @@
                                         <h5>Jade Wang</h5>
                                     </div>    
                                 </div>
-                                <button class="md-close">Close me!</button>
+                                <a class="md-close awesomeButton"><img src='assets/img/close15.png'></a>
                                 </div>
                             </div>
                         
@@ -938,6 +950,13 @@
                         </div>
                     </div>
             </div> <!-- end of 'schedule' -->
+            <div class="venuemap">
+                <a name="linkMap"></a>
+                <h2>Venue Map</h2>
+                <div class="imageHolder">
+                    <img src="../public/assets/img/venue_map.jpeg">
+                </div>
+            </div>
             <div class="shuttles">
                 <a name="linkTransport"></a>
                 <h1>Transportation</h1>
@@ -949,7 +968,134 @@
                 <h6><strong>Need a ride or travel buddy?</strong> <a href="http://www.rickyrides.com/hackingedu-hackathon">Check this out</a>!</h6>
                 <h2>Public Transportation</h2>
                 <h6>The Hayward Caltrain Station is 15 minutes away from the venue. On Saturday and Sunday, Caltrain operates on a slower schedule.</h6>
+                <!-- 
+                <h2>Bus Information</h2> -->
+                    <!--
+                    <div class="busInfo">
+                    
+                        <div class="school">
+                            <div class="col1">
+                                <h5>School</h5>
+                            </div>
+                            <div class="col2">
+                                <h5>Location</h5>
+                            </div>
+                            <div class="col3">
+                                <h5>Time</h5>
+                            </div>
+                            <div class="col4">
+                                <h5>Link</h5>
+                            </div>
+                        </div> 
+
+                        <div class="school">
+                            <div class="col1">
+                                <h5>UC Davis</h5>
+                            </div>
+                            <div class="col2">
+                                <h5>Memorial Union Bus Terminal<br /> 
+                                457 Memorial Union, Davis, CA <br />
+                                Davis, CA 95616</h5>
+                            </div>
+                            <div class="col3">
+                                <h5>1:30 PM</h5>
+                            </div>
+                            <div class="col4">
+                            </div>
+                        </div>
+
+                
+                    </div> -->
+                
+                <!-- bus table info (commented out) -->
+                <!--
+                <table style="width:90%">
+                    <tr>
+                        <th>School</th>
+                        <th>Location</th>		
+                        <th>Departure Time</th>
+                        <th>Link</th>
+                    </tr>
+                    <tr>
+                        <td>UC Davis</td>
+                        <td>Memorial Union Bus Terminal<br /> 
+                            457 Memorial Union, Davis, CA<br/> 
+                            Davis, CA 95616</td>		
+                        <td>1:30 PM <br /> <br />
+                            2:00 PM <br /> <br />
+                            4:30 PM <br /></td>
+                        <td><a href="https://www.eventbrite.com/e/hackingedu-uc-davis-bus-signup-tickets-19131145772">Details</a></td>
+                    </tr>
+                    <tr>
+                        <td>UCLA</td>
+                        <td>280 Charles E Young Dr <br />
+                            Los Angeles, CA 90095</td>		
+                        <td>10 AM</td>
+                        <td><a href="https://www.eventbrite.com/e/hackingedu-ucla-bus-signup-tickets-19133285171">Details</a></td>
+                    </tr>
+                    <tr>
+                        <td>UC Irvine</td>
+                        <td>Bus Loop - Irvine, CA 92612</td>		
+                        <td>10 AM</td>
+                        <td><a href="https://www.eventbrite.com/e/hackingedu-uc-irvine-bus-signup-tickets-19133277147">Details</a></td>
+                    </tr>
+                    <tr>
+                        <td>UC San Diego</td>
+                        <td>Lot P704 <br />
+                            Voigt Drive <br />
+                            La Jolla, CA 92093</td>		
+                        <td>10 AM</td>
+                        <td><a href="https://www.eventbrite.com/e/hackingedu-uc-san-diego-bus-signup-tickets-19133292192">Details</a></td>
+                    </tr>
+                    <tr>
+                        <td>Stanford University</td>
+                        <td>Tresidder Parking Lot - 459 Lagunita Dr Stanford, CA 94305</td>		
+                        <td>6 PM</td>
+                        <td><a href="https://www.eventbrite.com/e/hackingedu-stanford-bus-signup-tickets-19133270126">Details</a></td>
+                    </tr>
+                    <tr>
+                        <td>UC Santa Cruz</td>
+                        <td>East Remote Parking Lot - Hagar Drive Santa Cruz, CA 95064 </td>		
+                        <td>1 PM</td>
+                        <td><a href="https://www.eventbrite.com/e/hackingedu-uc-santa-cruz-bus-signup-tickets-19133225994">Details</a></td>
+                    </tr>
+                    <tr>
+                        <td>UC Berkeley</td>
+                        <td>W Entrance & University Dr. <br />
+                            Berkeley, CA 94720</td>		
+                        <td>2:30 PM <br /> <br />
+                            5:00 PM <br /> <br />
+                            5:30 PM <br /> <br /></td>
+                        <td><a href="https://www.eventbrite.com/e/hackingedu-uc-berkeley-bus-signup-tickets-19133013358">Details</a></td>
+                    </tr>
+                    <tr>
+                        <td>San Jose State University</td>
+                        <td>Duncan Hall <br />
+                            Washington Sq <br />
+                            San Jose, CA 95192</td>		
+                        <td>3:30 PM <br /><br />
+                            5:00 PM <br /><br />
+                            5:15 PM <br /><br />
+                            5:30 PM <br /><br /></td>
+                        <td><a href="https://www.eventbrite.com/e/hackingedu-sjsu-bus-sign-up-tickets-19133252072">Details</a></td>
+                    </tr>
+                    <tr>
+                        <td>San Francisco State University</td>
+                        <td>SF State</td>		
+                        <td>4 PM</td>
+                        <td><a href="https://www.eventbrite.com/e/hackingedu-sfsu-bus-signup-tickets-19133265111">Details</a></td>
+                    </tr> 
+                    
+                </table> 
+
+                -->
+
+                
+
+                
             </div> <!-- End of 'shuttles' -->
+            
+            <!-- taking out faq
             <section id="faq" class="spaced-container">
                 <a name="linkFAQ"></a>
       <div class="container">
@@ -1012,8 +1158,34 @@
         <br/>
           
       </div>
-        </section> <!-- end of 'faq' -->
+        </section> 
+-->
+            
+    <div class="prizes">
+        <a name="linkPrizes"></a>
+        <h2>Prizes</h2> 
+        <h4>Prizes Section is being updated</h4>
+        <div class="prizeButtonHolder">
+                    <a href="http://hackingedu.devpost.com/"><button class="prizeButton">Prize Information!</button></a>
+        </div>
+    </div>        
+            
+    <div class="resources">
+        <a name="linkResources"></a>
+        <h2>Resources</h2>
+        <div class="resourceButtonHolder">
+            <a href="http://bit.ly/speakerguide"><button id="speakerguide" class="resourcebutton">Speaker Guide</button></a>
+            <a href="http://bit.ly/sponsorshipguide"><button class="resourcebutton">Sponsor Guide</button></a>
+            <a href="http://bit.ly/judgingguide"><button class="resourcebutton">Judging Guide</button></a>
+            <a href="http://bit.ly/apiinfo"><button class="resourcebutton">API/Platform Resources</button></a>
+            <a href="http://bit.ly/hackingeduschedule"><button class="resourcebutton">Schedule</button></a>
+            <a href="http://bit.ly/pressguide"><button class="resourcebutton">Press Guide</button></a>
+            <a href="http://hackingeduhackathon.slack.com/"><button class="resourcebutton">HackingEDU Hackathon Slack</button></a>
+            <a href="https://www.google.com/maps/place/San+Mateo+County+Event+Center/@37.5463881,-122.3059452,17z/data=!4m7!1m4!3m3!1s0x808f9efcf05475a3:0x7d50c6f6710309d!2sSan+Mateo+Event+Center!3b1!3m1!1s0x808f9ee3b7d9b983:0x168a111f000c46ef"><button class="resourcebutton">Venue Location</button></a>
+        </div>
+    </div>    <!-- end of 'resources' -->     
        
+    <!--
     <section id="sponsors">
         <a name="linkSponsor"></a>
       <div class="container text-center">
@@ -1114,6 +1286,7 @@
         </div>
       </div>
     </section>
+        --> <!--Commented out 'Sponsors/Partners' section -->
             
     <footer>
         <h3>Have fun hacking!</h3>
@@ -1146,14 +1319,14 @@
         
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
         
-        <script src="assets/js/jquery.plugin.js" type="text/javascript"></script>
-        <script src="assets/js/jquery.countdown.js" type="text/javascript"></script>
-        <script src="assets/js/animatedModal.js"></script>
+        <script src="/js/jquery.plugin.js" type="text/javascript"></script>
+        <script src="/js/jquery.countdown.js" type="text/javascript"></script>
+        <script src="/js/animatedModal.js"></script>
         <!-- modal (red) js files) -->
-        <script src="assets/js/classie.js"></script>
-		<script src="assets/js/modalEffects.js"></script>
-        <script src="assets/js/cssParser.js"></script>
-		<script src="assets/js/css-filters-polyfill.js"></script>
+        <script src="/js/classie.js"></script>
+		<script src="/js/modalEffects.js"></script>
+        <script src="/js/cssParser.js"></script>
+		<script src="/js/css-filters-polyfill.js"></script>
         
         <script type="text/javascript">
             
