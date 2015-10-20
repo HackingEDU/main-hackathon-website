@@ -557,6 +557,10 @@
     font-family: Lato;
     font-weight: 200;
 }
+
+.buttonHolder {
+    text-align: center;
+}
             
 .column1 {
     display: inline-block;
