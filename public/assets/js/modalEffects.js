@@ -11,13 +11,12 @@
 var ModalEffects = (function() {
 
 	function init() {
-
-		var overlay = document.querySelector( '.md-overlay' );
+    /* FIXED CLOSE BUTTON HACK */
+    var close = document.querySelector( '.md-close-hack' );
 
 		[].slice.call( document.querySelectorAll( '.md-trigger' ) ).forEach( function( el, i ) {
-
-			var modal = document.querySelector( '#' + el.getAttribute( 'data-modal' ) ),
-				close = modal.querySelector( '.md-close' );
+			var modal = document.querySelector( '#' + el.getAttribute( 'data-modal' ) );
+				//close = modal.querySelector( '.md-close' );
 
 			function removeModal( hasPerspective ) {
 				classie.remove( modal, 'md-show' );
@@ -33,8 +32,12 @@ var ModalEffects = (function() {
 
 			el.addEventListener( 'click', function( ev ) {
 				classie.add( modal, 'md-show' );
-				overlay.removeEventListener( 'click', removeModalHandler );
-				overlay.addEventListener( 'click', removeModalHandler );
+				close.removeEventListener( 'click', removeModalHandler );
+				close.addEventListener( 'click', removeModalHandler );
+
+        // FIXED DISPLAY ISSUES
+        modal.style.overflowY = "auto";
+        close.style.display = "block";
 
 				if( classie.has( el, 'md-setperspective' ) ) {
 					setTimeout( function() {
@@ -45,6 +48,11 @@ var ModalEffects = (function() {
 
 			close.addEventListener( 'click', function( ev ) {
 				ev.stopPropagation();
+
+        // FIXED DISPLAY ISSUES
+        modal.style.overflowY = "hidden";
+        close.style.display = "none";
+
 				removeModalHandler();
 			});
 

@@ -930,15 +930,16 @@
     right: 35;
 }
 
-.awesomeButton {
-    display: block;
+.md-close-hack {
+    display: none;
     position: fixed;
     top: 12;
-    right: 16;
+    right: 20;
+    z-index: 9999;
     animation-fill-mode: forwards; 
 }
 
-.awesomeButton:hover {
+.md-close-hack:hover {
     cursor: pointer;
     //transform: rotate(45deg);
     -webkit-animation-name: rotate; 
