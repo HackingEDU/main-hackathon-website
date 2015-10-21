@@ -1306,6 +1306,7 @@ Social Links
 #sponsors .citrus { background: url('../img/sponsors/citrus.png');     }
 #sponsors .teachforamerica { background: url('../img/sponsors/teachforamerica.jpg');     }
 #sponsors .oreilly { background: url('../img/sponsors/oreilly.png');     }
+#sponsors .sharethebus { background: url('../img/sponsors/sharethebus.png');     }
 
 
 
@@ -1390,11 +1391,12 @@ Social Links
 }
 
 
-#press .techco { background: url('../img/press/techco.png');     }
-#press .berkeleybyte { background: url('../img/press/berkeleybyte.png');     }
-#press .forbes { background: url('../img/press/forbes.png');     }
-#press .educationews { background: url('../img/press/educationnews.png');     }
-#press .uber { background: url('../img/sponsors/uber.png');     }
+#press .techco { background: url('/img/press/techco.png');     }
+#press .berkeleybyte { background: url('/img/press/berkeleybyte.png');     }
+#press .forbes { background: url('/img/press/forbes.png');     }
+#press .educationews { background: url('/img/press/educationnews.png');     }
+#press .uber { background: url('/img/sponsors/uber.png');     }
+#press .leapmotionpress { background: url('/img/sponsors/leapmotion.png');     }
 
 
 
