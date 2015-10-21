@@ -751,19 +751,28 @@
 .col1 {
     display: inline-block;
     width: 24%;
-    //background-color: blue;
     height: 125px;
+}
+
+.col1 strong p {
+    padding-top: 75px;
+}
+
+.col1 p {
+    //padding-top: 48px;
 }
 
 .col2 {
     display: inline-block;
-    //background-color: green;
     width: 24%;
     height: 125px;
 }
 
+.col2 strong p {
+    //padding-top: 75px;
+}
+
 .col2 p {
-    padding-top: -7px;
     font-size: 16px;
 }
 
@@ -771,19 +780,25 @@
 .col3 {
     display: inline-block;
     width: 24%;
-    //background-color: yellow;
     height: 125px;
+}
+
+.col3 strong p {
+    padding-top: 75px;
 }
 
 .col4 {
     display: inline-block;
     width: 24%;
-    //background-color: orange;
     height: 125px;
 }
 
 .col4 {
     font-size: 16px;
+}
+
+.col4 strong p {
+    padding-top: 75px;
 }
 
 #infoSchool {
@@ -1449,6 +1464,26 @@ footer .signature {
         text-decoration: none;
         text-decoration-line: none;
     }
+    
+    #infoSchool {
+        height: 90px;
+    }
+    
+    .col1 strong p {
+        padding-top: 50px;
+    }
+    
+    .col2 strong  p {
+        padding-top: 50px;
+    }
+    
+    .col3 strong p {
+        padding-top: 50px;
+    }
+    
+    .col4 strong p {
+        padding-top: 50px;
+    }
 }
 
 @media(max-width: 900px ) {
@@ -1498,7 +1533,7 @@ footer .signature {
     }
     
     #infoSchool {
-        width: 18%;
+        width: 21%;
     }
 }
             
@@ -1559,13 +1594,10 @@ footer .signature {
         width: 90%;
     }
     
-    th, td {
-        padding: 1px;
-        width: 50%;
-        overflow-x: hidden;
+    #infoSchool {
+        width: 23%;
     }
     
-   
         
 }
 
@@ -1647,7 +1679,7 @@ footer .signature {
     
     .column1 {
         width: 27%;
-        float: ;
+        
     }
     
     .column2 {
