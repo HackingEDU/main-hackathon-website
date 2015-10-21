@@ -330,10 +330,7 @@ a:focus {
 .navbar-default .navbar-toggle .icon-bar {
   background-color: #fff !important;
 }
-#schedule h4, #schedule p {
-  margin-top: 20px !important;
-  margin-bottom: 0px !important;
-}
+
 /* Justified Alignment*/
 @media (min-width: 740px){
   #navbar{
@@ -1023,9 +1020,18 @@ a.san-mateo:hover{
 }
 
 /* Shuttles */
-
 #shuttles{
   padding: 90px 0;
+}
+
+.bus_table {
+  margin: 0 auto;
+}
+
+.bus_table tr * {
+  width: 250px;
+  vertical-align: middle;
+  text-align: center;
 }
 
 .m-bottom30p{
