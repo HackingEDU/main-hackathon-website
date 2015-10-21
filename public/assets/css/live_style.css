@@ -1078,9 +1078,10 @@ th, td {
 
 .prizes {
     width: 100%;
-    height: 50%;
+    //height: 50%;
     background-color: #D2DCDE;
     margin-top: -25px;
+    padding-bottom: 60px;
 }
 
 .prizes h2 {
@@ -1101,6 +1102,41 @@ th, td {
 
 .prizeButton {
     background-color: #5D9294;
+}
+
+.prizeInfo {
+    background-color: #EFF3F4;
+    border-radius: 15px;
+    display: block;
+    width: 275px;
+    height: 200px;
+    margin: auto;
+    display: inline-block;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 20px;
+    vertical-align: top;
+    overflow-y: auto;
+    margin-top: 20px;
+}
+
+.prizeHolder {
+    text-align: center;
+}
+
+.prizeHolder h5 {
+    text-align: center;
+    font-weight: 100;
+    font-family: Lato;
+}
+
+.prizeInfo p {
+    text-align: center;
+    max-width: 300;
+    font-size: 17px;
+    font-family: Lato;
+    font-weight: 200;
+    max-height: 30%;
 }
 
 /* ------------------------ RESOURCES ---------------------------- */
