@@ -736,7 +736,7 @@
 
 .busInfo {
     display: block;
-    width: 55%;
+    width: 80%;
     //background-color: red;
     margin: 0 auto;
     //height: 40%;
@@ -744,62 +744,60 @@
 
 .school {
     border-bottom: 1px solid black;
+    //height: 50px;
+    text-align: center;
 }
 
 .col1 {
     display: inline-block;
     width: 24%;
     //background-color: blue;
-    height: 50px;
+    height: 125px;
 }
-
-.col1 h5 {
-    margin-top: 10px;
-    font-size: 12px;
-    text-align: center;
-}
-
-
 
 .col2 {
     display: inline-block;
+    //background-color: green;
     width: 24%;
-    height: 50px;
+    height: 125px;
 }
 
-.col2 h5 {
-    font-size: 12px;
-    font-family: Lato;
-    padding-top: 30px;
-    text-align: center;
+.col2 p {
+    padding-top: -7px;
+    font-size: 16px;
 }
+
 
 .col3 {
     display: inline-block;
     width: 24%;
     //background-color: yellow;
-    height: 50px;
+    height: 125px;
 }
-
-.col3 h5 {
-    font-size: 12px;
-    font-family: Lato;
-    padding-bottom: -50px;
-    text-align: center;
-}
-
-.col4 h5 {
-    text-align: center;
-    font-size: 12px;
-}
-    
 
 .col4 {
     display: inline-block;
     width: 24%;
     //background-color: orange;
-    height: 50px;
+    height: 125px;
 }
+
+.col4 {
+    font-size: 16px;
+}
+
+#infoSchool {
+    margin: auto;
+    vertical-align: top;
+    text-align: center;
+}
+
+#col1 p {
+    padding-top: 7px;
+    //max-width: 20%;
+    text-align: center;
+}
+
 
 /*panel one */
 .panelOneSpeakerOne {
@@ -1498,6 +1496,10 @@ footer .signature {
     .schedule {
         text-align: center;
     }
+    
+    #infoSchool {
+        width: 18%;
+    }
 }
             
 @media(max-width: 600px) {
@@ -1562,6 +1564,8 @@ footer .signature {
         width: 50%;
         overflow-x: hidden;
     }
+    
+   
         
 }
 
@@ -1588,8 +1592,8 @@ footer .signature {
     #nav p {
         display: inline-block;
         margin: 0 auto;
-        padding-left: 5px;
-        padding-right: 5px;
+        padding-left: 2px;
+        padding-right: 2px;
         text-decoration: none;
         padding-top: 8px;
     }
@@ -1656,6 +1660,17 @@ footer .signature {
     }
 }
 
+@media(max-width: 1040px) {
+    .busInfo {
+        width: 100%;
+    }
+    
+    .busInfo p {
+        font-size: 11px;
+        
+    }
+}
+
 @media(max-height: 540px) {
  
     .header h4 {
@@ -1669,16 +1684,6 @@ footer .signature {
     
 }
 
-/*@media screen and (device-aspect-ratio: 16/9) {
-    .header h4 {
-        font-size: 15px;
-        margin-top: -220px;
-    }
-    
-    #helloWorldPeople {
-        font-size: 12px;
-    }   
-}*/
 
 @-webkit-keyframes rotate {
     from {-webkit-transform: rotate(0deg);}
