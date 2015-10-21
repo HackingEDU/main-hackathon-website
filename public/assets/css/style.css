@@ -1248,14 +1248,15 @@ Social Links
 #sponsors .namecheap  { background: url('http://cdn2.hackingedu.co/img/sponsors/namecheap1.png'); }
 #sponsors .socket     { background: url('http://cdn3.hackingedu.co/img/sponsors/socket.png');     }
 #sponsors .edsurge    { background: url('http://cdn4.hackingedu.co/img/sponsors/edsurge.jpg')     }
-#sponsors .kubby    { background: url('../img/sponsors/kubby.png')     }
+#sponsors .kubby      { background: url('../img/sponsors/kubby.png')     }
 #sponsors .google     { background: url('http://cdn5.hackingedu.co/img/sponsors/google.png')      }
-#sponsors .wikihow   { background: url('../img/sponsors/wikihow.png')    }
+#sponsors .wikihow    { background: url('../img/sponsors/wikihow.png')    }
 #sponsors .gun        { background: url('http://cdn1.hackingedu.co/img/sponsors/gun.png');        }
 #sponsors .pearlhacks { background: url('http://cdn2.hackingedu.co/img/sponsors/pearlhacks.png')  }
 #sponsors .nwhacks    { background: url('http://cdn3.hackingedu.co/img/sponsors/nwhacks.jpg')     }
 #sponsors .lahacks    { background: url('http://cdn4.hackingedu.co/img/sponsors/lahacks.jpeg')    }
 #sponsors .redbull    { background: url('http://cdn5.hackingedu.co/img/sponsors/redbull.png')     }
+#sponsors .drinkhint  { background: url('/img/sponsors/drinkhint.jpg')                            }
 #sponsors .roko       { background: url('http://cdn0.hackingedu.co/img/sponsors/roko.png')        }
 #sponsors .target     { background: url('http://cdn1.hackingedu.co/img/sponsors/target.png')      }
 #sponsors .linode     { background: url('http://cdn2.hackingedu.co/img/sponsors/linode.png')      }
@@ -1302,6 +1303,8 @@ Social Links
 
 #sponsors .nyntech { background: url('../img/sponsors/nyntech.png');     }
 #sponsors .aboutme { background: url('../img/sponsors/aboutme.png');     }
+#sponsors .prosky { background: url('/img/sponsors/prosky.png');     }
+#sponsors .branchio { background: url('/img/sponsors/branchio.png');     }
 #sponsors .oculus { background: url('../img/sponsors/oculus.png');     }
 #sponsors .gsvlabs { background: url('../img/sponsors/gsvlabs.png');     }
 
