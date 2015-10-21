@@ -69,6 +69,7 @@
                     <p><a href="#linkResources">Resources</a></p>
                 </div>
                 <img src="http://imgur.com/uFeQcop.png">
+                <h2 class="beginHacking">BEGIN HACKING!!</h2>
                 <div id="helloWorldPeople"></div>
                 <br />
                 <h4>San Mateo Event Center <br /> October 23-25, 2015</h4>
@@ -395,7 +396,7 @@
             <div class="schedule">
                     <a name="linkSchedule"></a>
                     <h1>Schedule</h1>
-                    <h5 class="mapLink"><a href="https://drive.google.com/file/d/0BzI2Lz_qv89jcGszemg0Q3JzSlk/view">Click here</a> for a map of the venue</h5>
+                    
                     <div class="buttonHolder">
                         <a href="https://drive.google.com/file/d/0BzI2Lz_qv89jWnE5TlF5Sm5ScXM/view"><button class="schedulePDF">Click here for Schedule</button></a>
                         <a href="https://www.google.com/maps/place/San+Mateo+County+Event+Center/@37.5463881,-122.3059452,17z/data=!4m7!1m4!3m3!1s0x808f9efcf05475a3:0x7d50c6f6710309d!2sSan+Mateo+Event+Center!3b1!3m1!1s0x808f9ee3b7d9b983:0x168a111f000c46ef" class="venueLocation"><button>Venue Location</button></a>
@@ -565,7 +566,7 @@
                                 <h5>North and South Stag</h5>
                             </div>
                         </div>
-                        <div class="event">
+                        <div class="eventNot">
                             <div class="column1">
                                 <h5>12:00 AM</h5>
                             </div>
@@ -674,8 +675,8 @@
                                 <div>
                                 <h2 class="panelTitle">From Concept To Reality</h2>
                                 <h4 class="panelAbout">About</h4>
-                                <h5 class="panelOneAboutDescription">How do you take a project you built at a hackathon and actually turn it into a real product? Words of wisdom and war stories from the founders and CEOs who run today's hottest startups. Topics include: building a team, networking, pitching, raising funds, launching, and the art of the pivot.</h5>
-                                    <a id="panelTwoLink" href="https://www.facebook.com/events/957174970987849/?ref=44&unit_ref=related_events&action_history=null"><button class="panelOneEvent">Event Details</button></a>
+                                <h5 class="panelAboutDescription">How do you take a project you built at a hackathon and actually turn it into a real product? Words of wisdom and war stories from the founders and CEOs who run today's hottest startups. Topics include: building a team, networking, pitching, raising funds, launching, and the art of the pivot.</h5>
+                                    <a id="panelTwoLink" href="https://www.facebook.com/events/957174970987849/?ref=44&unit_ref=related_events&action_history=null"><button class="panelOneEvent">Facebook Event</button></a>
                                 <br />
                                 <br />
                                 <h4 class="panelSpeakersTitle">Speakers</h4>
@@ -748,7 +749,7 @@
                                 <h2 class="panelTitle">How Technology is Changing Education</h2>
                                 <h4 class="panelAbout">About</h4>
                                 <h5 class="panelAboutDescription">How has technology influenced the evolution of education over the last few decades? What is the future of education and what current/upcoming technologies will play a big part? Hear from leading EdTech influencers on these topics, what they are doing to change education, and how we as a community can help facilitate this change.</h5>
-                                    <a id="panelThreeLink" href="https://www.facebook.com/events/889770857725419/?ref=44&unit_ref=related_events&action_history=null" class="panelEvent"><button>Event Details</button></a>
+                                    <a id="panelThreeLink" href="https://www.facebook.com/events/889770857725419/?ref=44&unit_ref=related_events&action_history=null" class="panelEvent"><button>Facebook Event</button></a>
                                 <br />
                                 <br />
                                 <h4 class="panelSpeakersTitle">Speakers</h4>
@@ -810,7 +811,7 @@
                                 <h2 class="panelTitle">Open Source in Business</h2>
                                 <h4 class="panelAbout">About</h4>
                                 <h5 class="panelAboutDescription">What is open source? Why is it important? How do you build a successful open source project/company? Join top tech innovators as they explore the world of open source and share their experiences.</h5>
-                                <a id="panelFourLink" href="https://www.facebook.com/events/874844125901950/?ref=44&unit_ref=related_events&action_history=null"><button class="panelEvent">Event Details</button></a>
+                                <a id="panelFourLink" href="https://www.facebook.com/events/874844125901950/?ref=44&unit_ref=related_events&action_history=null"><button class="panelEvent">Facebook Event</button></a>
                                 <br />
                                 <br />
                                 <h4 class="panelSpeakersTitle">Speakers</h4>
@@ -844,7 +845,7 @@
                             </div>
                         
 		              </div>
-                        <div class="event">
+                        <div class="eventNot">
                             <div class="column1">
                                 <h5>11:00 PM - 1:00 AM</h5>
                             </div>
@@ -937,7 +938,7 @@
                                 <h5>Main Stage</h5>
                             </div>
                         </div>
-                        <div class="event">
+                        <div class="eventNot">
                             <div class="column1">
                                 <h5>6:30 PM - 8:30 PM</h5>
                             </div>
@@ -1337,7 +1338,14 @@
                 
                 var austDay = new Date();
                 austDay = new Date(2015, 10-1, 24);
-                $('#helloWorldPeople').countdown({until: austDay});
+                $('#helloWorldPeople').countdown({until: austDay   , onExpiry: countUp});
+                
+                function countUp() {
+                    console.log("Hello World!");
+                    //$('#helloWorldPeople').countdown({until: '+36h'  , format: 'hMS'});
+                    $('.beginHacking').css('display' , 'block');
+                }
+                
             });
                 
                 /*if ($(document).scrollTop() !== 0) {
