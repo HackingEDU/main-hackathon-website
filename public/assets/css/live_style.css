@@ -1646,6 +1646,10 @@ footer .signature {
         font-size: 15px;
         text-align: right;
     }
+    
+    .event {
+        height: 70px;
+    }
 
     
     .awesome {
