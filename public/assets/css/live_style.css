@@ -1637,6 +1637,7 @@ footer .signature {
     }
     
     .column2 h5 {
+        display: inline-block;
         font-size: 14px;
         text-align: center;
     }
@@ -1689,15 +1690,15 @@ footer .signature {
     }
     
     .column1 h5 {
-        font-size: 15px;
+        font-size: 18px;
     }
     
     .column2 h5 {
-        font-size: 15px;
+        font-size: 18px;
     }
     
     .column3 h5 {
-        font-size: 15px;
+        font-size: 18px;
     }
     
     .schedule {
@@ -1709,16 +1710,16 @@ footer .signature {
     }
     
     .column1 {
-        width: 27%;
+        width: 30%;
         
     }
     
     .column2 {
-        width: 27%;
+        width: 30%;
     }
     
     .column3 {
-        width: 27%;
+        width: 30%;
         
     }
 }
