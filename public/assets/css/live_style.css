@@ -1562,15 +1562,15 @@ footer .signature {
             
 @media(max-width: 600px) {
     .column1 h5 {
-        font-size: 13px;
+        font-size: 15px;
     }
                 
     .column2 h5 {
-        font-size: 13px;
+        font-size: 15px;
     }
     
     .column3 h5 {
-        font-size: 13px;
+        font-size: 15px;
     }
     
     #nav {
@@ -1631,19 +1631,19 @@ footer .signature {
 
 @media (max-width: 520px) {
     .column1 h5 {
-        font-size: 18px;
+        font-size: 15px;
         text-align: left;
         padding-left: 0;
     }
     
     .column2 h5 {
         display: inline-block;
-        font-size: 14px;
+        font-size: 15px;
         text-align: center;
     }
     
     .column3 h5 {
-        font-size: 14px;
+        font-size: 15px;
         text-align: right;
     }
 
@@ -1690,15 +1690,15 @@ footer .signature {
     }
     
     .column1 h5 {
-        font-size: 18px;
+        font-size: 15px;
     }
     
     .column2 h5 {
-        font-size: 18px;
+        font-size: 15px;
     }
     
     .column3 h5 {
-        font-size: 18px;
+        font-size: 15px;
     }
     
     .schedule {
