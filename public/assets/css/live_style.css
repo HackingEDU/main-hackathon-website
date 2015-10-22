@@ -739,7 +739,6 @@
     width: 80%;
     //background-color: red;
     margin: 0 auto;
-    //height: 40%;
 }
 
 .school {
@@ -751,25 +750,26 @@
 .col1 {
     display: inline-block;
     width: 24%;
-    height: 125px;
+    height: 70px;
 }
 
 .col1 strong p {
-    padding-top: 75px;
+    //padding-top: 75px;
 }
 
 .col1 p {
     //padding-top: 48px;
+    vertical-align: middle;
 }
 
 .col2 {
     display: inline-block;
     width: 24%;
-    height: 125px;
+    height: 70px;
 }
 
 .col2 strong p {
-    padding-top: 75px;
+    //padding-top: 75px;
 }
 
 .col2 p {
@@ -780,17 +780,17 @@
 .col3 {
     display: inline-block;
     width: 24%;
-    height: 125px;
+    height: 70px;
 }
 
 .col3 strong p {
-    padding-top: 75px;
+    //padding-top: 75px;
 }
 
 .col4 {
     display: inline-block;
     width: 24%;
-    height: 125px;
+    height: 70px;
 }
 
 .col4 {
@@ -798,13 +798,18 @@
 }
 
 .col4 strong p {
-    padding-top: 75px;
+    //padding-top: 75px;
 }
 
 #infoSchool {
+    display: inline-block;
     margin: auto;
     vertical-align: top;
     text-align: center;
+}
+
+#infoSchool p {
+    font-size: 14px;
 }
 
 #col1 p {
@@ -813,6 +818,19 @@
     text-align: center;
 }
 
+/*ziggy table style */
+.bus_table {
+  margin: 0 auto;
+    border: 0;
+    border: thin solid black;
+    border-collapse: collapse;
+}
+
+.bus_table tr * {
+  width: 250px;
+  vertical-align: middle;
+  text-align: center;
+}
 
 /*panel one */
 .panelOneSpeakerOne {
@@ -1536,6 +1554,10 @@ footer .signature {
     #infoSchool {
         width: 21%;
     }
+    
+    .bus_table tr * {
+        width: 120px;
+    }
 }
             
 @media(max-width: 600px) {
@@ -1599,23 +1621,31 @@ footer .signature {
         width: 23%;
     }
     
+    .bus_table {
+        font-size: 15px;
+        width: 100px;
+    }
+    
         
 }
 
 @media (max-width: 520px) {
     .column1 h5 {
-        font-size: 14px;
+        font-size: 18px;
         text-align: left;
+        padding-left: 0;
     }
     
     .column2 h5 {
         font-size: 14px;
+        text-align: center;
     }
     
     .column3 h5 {
         font-size: 14px;
-        text-align: center;
+        text-align: right;
     }
+
     
     .awesome {
         display: inline-block;
@@ -1659,15 +1689,15 @@ footer .signature {
     }
     
     .column1 h5 {
-        font-size: 10px;
+        font-size: 15px;
     }
     
     .column2 h5 {
-        font-size: 10px;
+        font-size: 15px;
     }
     
     .column3 h5 {
-        font-size: 10px;
+        font-size: 15px;
     }
     
     .schedule {
