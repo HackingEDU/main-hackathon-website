@@ -628,6 +628,7 @@
     font-weight: 300;
     padding-top: 12px;
     padding-bottom: 10px;
+    text-align: left;
 }
             
 .column1 h5 {
@@ -638,6 +639,7 @@
     //padding-top: 15px;
     //padding-bottom: 10px;
     vertical-align: text-bottom;
+    text-align: left;
 }
             
 .column2 h5 {
@@ -981,7 +983,7 @@
 .shuttles {
     background-color: #DEE5EA;
     width: 100%;
-    padding-bottom: 25px;
+    padding-bottom: 65px;
 }
             
 .shuttles h1 {
