@@ -606,19 +606,19 @@
 .column1 {
     display: inline-block;
     width: 33%;
-    height: 50px;
+    height: 70px;
 }
             
 .column2 {
     display: inline-block;
     width: 33%;    
-    height: 50px;
+    height: 70px;
 }
 
 .column3 {
     display: inline-block;
     width: 33%;
-    height: 50px;
+    height: 70px;
 }
 
 .column3 h5 {
@@ -635,8 +635,9 @@
     font-size: 18px;
     font-family: Lato;
     font-weight: 300;
-    padding-top: 12px;
-    padding-bottom: 10px;
+    //padding-top: 15px;
+    //padding-bottom: 10px;
+    vertical-align: text-bottom;
 }
             
 .column2 h5 {
@@ -1648,7 +1649,7 @@ footer .signature {
     }
     
     .event {
-        height: 70px;
+        //height: 70px;
     }
 
     
