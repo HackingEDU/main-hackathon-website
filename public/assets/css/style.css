@@ -960,6 +960,15 @@ a.san-mateo:hover{
     height: 250px;
     border-radius: 15px;
 }
+.speakerJoeyPrimiani {
+    background: url('../img/JoeyPrimiani.jpg');
+    background-size: cover;
+    height: 250px;
+    border-radius: 15px;
+    position: relative;
+    z-index: -1;
+
+}
 
 .apacheInfo {
     color: whitesmoke;
