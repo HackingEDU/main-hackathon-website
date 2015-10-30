@@ -941,6 +941,15 @@ a.san-mateo:hover{
     z-index: -1;
 }
 
+.speakerForty {
+    background: url('../img/salkhan.jpg');
+    background-size: cover;
+    height: 250px;
+    border-radius: 15px;
+    position: relative;
+    z-index: -1;
+}
+
 .speaker {
     width: 22%;
     height: 250px;
