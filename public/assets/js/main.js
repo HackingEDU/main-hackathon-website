@@ -44,7 +44,7 @@ $('#nav-press-butt').click(function() {
 });
 
 $("#nav-apply-butt").click(function() {
-  window.open("https://hackingedu.typeform.com/to/ynFajD", "_blank");
+  window.open("https://hackingedu.typeform.com/to/sLHFpG", "_blank");
   return true;
 });
 
