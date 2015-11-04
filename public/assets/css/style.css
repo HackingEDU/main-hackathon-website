@@ -192,7 +192,35 @@ a:focus {
   font-size: 16pt;
   line-height: 10px;
   font-family:Lato, sans-serif;
+    display: block;
 }
+
+#comingsoon {
+    -webkit-transform:scale(1);
+  /* Browser Variations: */
+  -moz-transform:scale(1);
+  -o-transform:scale(1);
+  -webkit-transition-duration: 0.5s;
+  -moz-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+    display: block;
+    font-size: 16pt;
+    color: white;
+}
+    
+
+#comingsoon:hover {
+    text-decoration-color: white;
+    display: block;
+    -webkit-transform:scale(1.1);
+  /* Browser Variations: */
+  -moz-transform:scale(1.1);
+  -o-transform:scale(1.1);
+  -webkit-transition-duration: 0.5s;
+  -moz-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+}
+    
 
 .spaced-container {
   padding: 100px 0;
