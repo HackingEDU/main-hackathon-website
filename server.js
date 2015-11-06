@@ -3,7 +3,6 @@ var express = require('express'),
   bodyParser = require('body-parser'),
   http = require('http'),
   routes = require('./routes'),
-  //config = require('./config'),
   debug = require('debug'),
   sassMiddleware = require('node-sass-middleware'),
   path = require('path');
@@ -32,16 +31,7 @@ app.use(bodyParser.json({limit: '10mb'}));
 
 // Index Route
 app.get('/', routes.home);
-app.get('/signup', routes.signup);
 app.get('/live', routes.live);
-app.post('/new_user', routes.newUser);
-app.get('/unsubscribe', routes.unsubscribe);
-
-
-
-
-// Page Route
-app.get('/page/:page/:skip', routes.page);
 
 // Fire this bitch up (start our server)
 var server = http.createServer(app).listen(port,'0.0.0.0', function() {
