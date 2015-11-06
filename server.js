@@ -6,12 +6,12 @@ var express = require('express'),
 
 // Create an express instance and set a port variable
 var app = express();
-var port = process.env.PORT || 8080;
+var port = process.env.PORT || 80;
 
 // Disable etag headers on responses
 app.disable('etag');
 
-// Set /public as our static content dir
+// Set /public/assets as our static content dir
 app.use('/', express.static(path.join(__dirname, 'public/assets')));
 
 // Index Route
