@@ -1,0 +1,20 @@
+{
+  "name": "main-hackathon-website",
+  "version": "1.0.0",
+  "description": "## Configuring NGINX (Instructions for pointing to /path/to/main-hackathon-website/www)",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HackingEDU/main-hackathon-website.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HackingEDU/main-hackathon-website/issues"
+  },
+  "homepage": "https://github.com/HackingEDU/main-hackathon-website#readme"
+}
