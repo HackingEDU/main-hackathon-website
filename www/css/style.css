@@ -439,6 +439,17 @@ a.main-title-sub:hover {
   text-align: justify;
 }
 
+button.butt.substatement.half {
+    width: 250px;
+    display: inline-block;
+    margin-left: 20px;
+}
+
+button.butt.substatement.block {
+    display: block;
+    width: 100%;
+}
+
 .butt {
   border-radius: .55em;
   display:inline-block;

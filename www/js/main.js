@@ -24,8 +24,8 @@ function smoothNav(hash) {
 
 var lastClicked = null;
 $('a[href*=#]:not([href=#])').click(function(ev) {
+  if(!ev.currentTarget.href.includes("2015")){ // External URL. <2015.hackingedu.co>
   ev.preventDefault();
-
 	if (lastClicked != null) {
 		lastClicked.css('font-weight', 'normal');
 	}
@@ -35,6 +35,7 @@ $('a[href*=#]:not([href=#])').click(function(ev) {
 
   smoothNav(this.hash);
   return false;
+}
 });
 
 
@@ -44,7 +45,7 @@ $('#nav-press-butt').click(function() {
 });
 
 $("#nav-apply-butt").click(function() {
-  window.open("https://hackingedu.typeform.com/to/sLHFpG", "_blank");
+  window.open("http://2015.hackingedu.co/", "_blank");
   return true;
 });
 
